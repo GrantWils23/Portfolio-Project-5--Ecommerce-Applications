@@ -155,7 +155,9 @@
     </header>
 
     <!-- later re-insert toasts here -->
-
+    {% if messages %}
+    <div class="container-fluid"></div>
+    {% endif %}
 
     {% block page_header %}
     {% endblock %}

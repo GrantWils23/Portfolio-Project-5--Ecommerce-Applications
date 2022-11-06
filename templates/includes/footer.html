@@ -15,12 +15,12 @@
                 </div>
 
                 <div class="col-6 col-md-2 mb-3">
-                    <h5><a href="{}" class="nav-link">About Us</a></h5> <!-- to do later -->
+                    <h5><a href="{% url 'about_us' %}" class="nav-link">About Us</a></h5> <!-- to do later -->
                     <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Contact Us</a></li> <!-- to do later -->
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li> <!-- to do later -->
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Privacy Policy</a></li> <!-- to do later -->
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Sitemap</a></li> <!-- to do later -->
+                        <li class="nav-item mb-2"><a href="{% url 'contact_us' %}" class="nav-link p-0 text-muted">Contact Us</a></li> <!-- to do later -->
+                        <li class="nav-item mb-2"><a href="{% url 'faqs' %}" class="nav-link p-0 text-muted">FAQs</a></li> <!-- to do later -->
+                        <li class="nav-item mb-2"><a href="{% url 'privacy_policy' %}" class="nav-link p-0 text-muted">Privacy Policy</a></li> <!-- to do later -->
+                        <li class="nav-item mb-2"><a href="{% url 'sitemap' %}" class="nav-link p-0 text-muted">Sitemap</a></li> <!-- to do later -->
                     </ul>
                 </div>
 
@@ -37,11 +37,11 @@
                             {% endif %}
                             <li class="nav-item nb-2"><a class="nav-link p-0 text-muted" href="#">User Profile</a></li> <!-- come back to later -->
 
-                            <li class="nav-item nb-2" i><a class="nav-link p-0 text-muted" href="{% url 'account_logout' %}">Log out</a></li>
-                            {% else %}
-                            <li class="nav-item nb-2"><a class="nav-link p-0 text-muted" href="{% url 'account_signup' %}">Register</a></li>
-                            <li class="nav-item nb-2"><a class="nav-link p-0 text-muted" href="{% url 'account_login' %}">Log in</a></li>
-                            {% endif %}
+                            <l class="nav-item nb-2" i><a class="nav-link p-0 text-muted" href="{% url 'account_logout' %}">Log out</a></li>
+                                {% else %}
+                                <li class="nav-item nb-2"><a class="nav-link p-0 text-muted" href="{% url 'account_signup' %}">Register</a></li>
+                                <li class="nav-item nb-2"><a class="nav-link p-0 text-muted" href="{% url 'account_login' %}">Log in</a></li>
+                                {% endif %}
                         </ul>
                     </div>
                 </div>
@@ -87,10 +87,8 @@
                     <li class="ms-3 text-white">
                         <a class="nav-link text-secondary" href="https://ukara.org.uk/" target="_blank">
                             <div class="ukara-img-box pt-1">
-                                <!-- <img src="../media/ukara-logo-grey.jpeg" alt="ukara logo"> fix path for file later -->
                                 <img src="{{ MEDIA_URL }}/media/ukara-logo-grey.jpeg" alt="ukara logo"> <!-- fix path for file later -->
                             </div>
-
                         </a>
                     </li>
                 </ul>

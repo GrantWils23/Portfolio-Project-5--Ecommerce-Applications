@@ -21,7 +21,6 @@ body {
 
 .homepage-container {
     height: 100vh;
-    width: 100vw;
     top: 0;
     left: 0;
     background: url('/media/rifle-homepage-bg.jpg') no-repeat center center fixed;
@@ -30,14 +29,6 @@ body {
     font-size: 1.1rem;
     color: #ffffff8c;
     z-index: unset;
-}
-
-.overlay {
-    height: 100vh;
-    width: 100vw;
-    top: 0;
-    left: 0;
-    background-color: #222;
 }
 
 .header-btn-colour {
@@ -73,6 +64,22 @@ body {
     width: 40px;
 }
 
+.text-black {
+    color: #000 !important;
+}
+
+
+/* ----------- allauth adjustments -----------  */
+
+.allauth-link {
+    color: rgb(39, 39, 39);
+}
+
+.allauth-link:hover,
+.allauth-link:active,
+.allauth-link:focus {
+    color: #000;
+}
 
 /* from Bulma */
 
@@ -88,8 +95,10 @@ body {
     font-family: 'Special Elite', cursive;
 }
 
-.main-logo-link {
-    width: fit-content;
+.secondary-font {
+    /* font-family: 'Judson', serif; */
+    /* font-family: 'GFS Didot', serif; */
+    font-family: 'Marcellus', serif;
 }
 
 /* ------------------------------------------------------ Media Queries */
