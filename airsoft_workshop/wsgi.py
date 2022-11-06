@@ -1,5 +1,5 @@
 """
-WSGI config for airsoft_workhop project.
+WSGI config for airsoft_workshop project.
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
@@ -11,6 +11,6 @@ import os
 
 from django.core.wsgi import get_wsgi_application
 
-os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'airsoft_workhop.settings')
+os.environ.setdefault('DJANGO_SETTINGS_MODULE', 'airsoft_workshop.settings')
 
 application = get_wsgi_application()
