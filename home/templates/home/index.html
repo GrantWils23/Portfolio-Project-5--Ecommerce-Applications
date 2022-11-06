@@ -1,8 +1,31 @@
-{% extends "base.html" %}
-{% load static %}
+{% extends "base.html" %} {% load static %} {% block content %}
+{% comment %} <div class="homepage-container"></div> {% endcomment %}
+<div class="pushdown-small"></div>
+<div class="container-fluid homepage-container">
+    <div class="pushdown-small"></div>
+    <div class="pushdown-small "></div>
+    <div class="pushdown-small "></div>
+    <div class="row">
+        <div class="col-7 col-md-6 my-auto">
+            <div class="container">
+                <h1 class="display-4 text-white p-0 ps-md-5">Welcome to the Custom Airsoft Shop</h1>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="pushdown-small"></div>
+        <div class="col-2"></div>
+        <div class="col-8 offset-md-2">
+            <div class="display-3 my-sm-5 text-middle p-sm-5">
+                <h1>
+                    <a href="{}" type="button" class="btn btn-lg btn-secondary rounded-2 text-uppercase">Gear Up</a>
+                </h1>
+            </div>
+        </div>
+        <div class="col-2"></div>
+    </div>
+</div>
 
-{% block content %}
-
-<h1>working website</h1>
+{% comment %} <div class="footer-pushdown my-5"></div> {% endcomment %}
 
 {% endblock %}
