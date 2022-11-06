@@ -6,3 +6,8 @@ from django.shortcuts import render
 def index(request):
     """ A view to return the index page """
     return render(request, 'home/index.html')
+
+
+def services(request):
+    """ A view that displays the services page """
+    return render(request, 'home/services_page.html')

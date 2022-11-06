@@ -128,3 +128,72 @@ body {
         display: none;
     }
 }
+
+
+/* --------------------- Services Page ---------------------- */
+
+.image-container img {
+    border: 5px grey solid;
+    border-radius: 3px;
+}
+
+.service-card {
+    margin: 0 10px;
+    border-width: 3px;
+    border-color: white;
+}
+
+.service-card p {
+    font-size: 1.05vmax;
+}
+
+.service-card:hover {
+    box-shadow: 0 0 45px green;
+}
+
+
+/* ----------------------------------------------------- Media Queries for Service Page */
+
+@media (max-width:1200px) {
+    .service-card {
+        margin: 0 10px 0 10px;
+    }
+
+    .service-card p {
+        font-size: 1.3vmax;
+    }
+}
+
+@media (max-width: 991px) {
+    .service-card {
+        margin: 0 130px 30px 130px;
+    }
+
+    .service-card p {
+        font-size: 1.8vmax;
+    }
+}
+
+@media (max-width:650px) {
+    .service-card {
+        margin: 0 80px 30px 80px;
+    }
+}
+
+@media (max-width:550px) {
+    .service-card {
+        margin: 0 60px 30px 60px;
+    }
+}
+
+@media (max-width:450px) {
+    .service-card {
+        margin: 0 30px 30px 30px;
+    }
+}
+
+@media (max-width:300px) {
+    .service-card {
+        padding: 0;
+    }
+}

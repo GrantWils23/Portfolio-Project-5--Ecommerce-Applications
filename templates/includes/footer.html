@@ -7,7 +7,7 @@
                 <div class="col-6 col-md-2 mb-3">
                     <h5><a href="{% url 'home' %}" class="nav-link">Home</a></h5>
                     <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Services</a></li> <!-- to do later -->
+                        <li class="nav-item mb-2"><a href="{% url 'services' %}" class="nav-link p-0 text-muted">Services</a></li> <!-- to do later -->
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Store</a></li> <!-- to do later -->
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Paint Services</a></li> <!-- to do later -->
                         <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Tech Services</a></li> <!-- to do later -->
@@ -37,11 +37,11 @@
                             {% endif %}
                             <li class="nav-item nb-2"><a class="nav-link p-0 text-muted" href="#">User Profile</a></li> <!-- come back to later -->
 
-                            <l class="nav-item nb-2" i><a class="nav-link p-0 text-muted" href="{% url 'account_logout' %}">Log out</a></li>
-                                {% else %}
-                                <li class="nav-item nb-2"><a class="nav-link p-0 text-muted" href="{% url 'account_signup' %}">Register</a></li>
-                                <li class="nav-item nb-2"><a class="nav-link p-0 text-muted" href="{% url 'account_login' %}">Log in</a></li>
-                                {% endif %}
+                            <li class="nav-item nb-2" i><a class="nav-link p-0 text-muted" href="{% url 'account_logout' %}">Log out</a></li>
+                            {% else %}
+                            <li class="nav-item nb-2"><a class="nav-link p-0 text-muted" href="{% url 'account_signup' %}">Register</a></li>
+                            <li class="nav-item nb-2"><a class="nav-link p-0 text-muted" href="{% url 'account_login' %}">Log in</a></li>
+                            {% endif %}
                         </ul>
                     </div>
                 </div>

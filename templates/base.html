@@ -95,7 +95,7 @@
                         <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="">Services</a> <!-- come back to later -->
+                        <a class="nav-link" href="{% url 'services' %}">Services</a> <!-- come back to later -->
                     </li>
                     <li class="nav-item">
                     <li class="nav-item dropdown">
@@ -154,27 +154,8 @@
         </div>
     </header>
 
-    {% if messages %}
-    <div class="message-container">
-        {% for message in messages %}
-        {% with message.level as level %}
-        {% if level == 40 %}
-        <!-- error level -->
-        {% include 'includes/toasts/toast_error.html' %}
-        {% elif level == 30 %}
-        <!-- warning level -->
-        {% include 'includes/toasts/toast_warning.html' %}
-        {% elif level == 25 %}
-        <!-- success level -->
-        {% include 'includes/toasts/toast_success.html' %}
-        {% else %}
-        <!-- info level -->
-        {% include 'includes/toasts/toast_info.html' %}
-        {% endif %}
-        {% endwith %}
-        {% endfor %}
-    </div>
-    {% endif %}
+    <!-- later re-insert toasts here -->
+
 
     {% block page_header %}
     {% endblock %}
