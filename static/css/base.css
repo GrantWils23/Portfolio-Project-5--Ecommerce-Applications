@@ -7,7 +7,7 @@
 
 html {
     height: 100%;
-    background-color: #222;
+    background-color: rgb(63, 62, 62);
 }
 
 body {
@@ -68,6 +68,104 @@ body {
     color: #000 !important;
 }
 
+nav {
+    box-shadow: 0 0 15px #198754;
+}
+
+/* --------------- animations ----------------- */
+
+.animate {
+    animation-duration: 2.5s;
+    animation-name: animate-fade;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+    animation-direction: alternate;
+}
+
+@keyframes animate-fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+/* Glow In */
+.animate.glow {
+    animation-name: animate-glow;
+    animation-timing-function: ease;
+}
+
+@keyframes animate-glow {
+    0% {
+        opacity: 0;
+        filter: brightness(1) saturate(1);
+        transform: scale(0.8, 0.8);
+    }
+
+    100% {
+        opacity: 1;
+        filter: brightness(1) saturate(1);
+        transform: scale(1, 1);
+    }
+}
+
+.delay-1 {
+    animation-delay: 1s;
+}
+
+.delay-2 {
+    animation-delay: 1.2s;
+}
+
+.delay-3 {
+    animation-delay: 1.1s;
+}
+
+
+
+.animated-btn {
+    display: block;
+    width: fit-content;
+    height: 55px;
+    font-size: 30px;
+    text-decoration: none;
+    color: #ffffff8c;
+    border: 3px solid #333;
+    letter-spacing: 2px;
+    position: relative;
+    transition: all .35s;
+    background-color: #212529;
+}
+
+.animated-btn span {
+    position: relative;
+    z-index: 2;
+}
+
+.animated-btn:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: #198754a2;
+    transition: all .35s;
+    border-radius: 4px;
+}
+
+.animated-btn:hover {
+    color: #ffffff8c;
+    box-shadow: 0 0 15px #198754;
+
+}
+
+.animated-btn:hover:after {
+    width: 100%;
+}
 
 /* ----------- allauth adjustments -----------  */
 
@@ -114,6 +212,7 @@ body {
     }
 }
 
+
 /* ---------------- NAVBAR NAME CHANGE CODE --------------- */
 
 
@@ -147,17 +246,19 @@ body {
 }
 
 .service-card {
-    margin: 0 10px;
+    max-width: 350px;
+    margin: 0 15px;
     border-width: 3px;
     border-color: white;
 }
 
 .service-card p {
-    font-size: 1.05vmax;
+    font-size: 0.8vmax;
 }
 
 .service-card:hover {
-    box-shadow: 0 0 45px green;
+    box-shadow: 0 0 55px #198754;
+
 }
 
 
@@ -166,10 +267,11 @@ body {
 @media (max-width:1200px) {
     .service-card {
         margin: 0 10px 0 10px;
+        max-width: unset;
     }
 
     .service-card p {
-        font-size: 1.3vmax;
+        font-size: 1.2vmax;
     }
 }
 
