@@ -1,4 +1,5 @@
 {% extends "base.html" %} {% block content %}
+
 <!-- Page Title -->
 
 <div class="container-fluid">
@@ -9,47 +10,46 @@
         </div>
     </div>
     <div class="row justify-content-center">
-        <!-- <div class="col d-none d-xxl-block"></div> -->
         <!--Item1-->
         <div class="col-lg-3 mb-5">
             <div class="card service-card animate glow delay-1">
                 <img class="card-img-top" src="{{ MEDIA_URL }}/media/ghost-camo-rifle.jpg" alt="Paint Services">
-                <div class="card-body">
+                <div class="card-body secondary-font">
                     <h4 class="card-title text-secondary">Paint Services</h4>
                     <p class="card-text text-secondary"> Ever wanted your Rifle to look unique, or ever wanted it to blend in with your environment? Book your RIF in with us and we will give it some war paint.</p>
-                    <a href="#" class="btn btn-success">Book Now</a>
+                    <button type="button" class="btn btn-success my-3" data-bs-toggle="modal" data-bs-target="#paintServiceModal">More Info</button>
+                    <a href="#" class="btn btn-success m-1">Book Now</a>
                 </div>
             </div>
         </div>
-        <!--break-->
-        <!-- <div class="col d-none d-xxl-block"></div> -->
         <!--Item2-->
         <div class="col-lg-3 mb-5">
             <div class="card service-card animate glow delay-2">
                 <img class="card-img-top" src="{{ MEDIA_URL }}/media/desert-camo-weaponset.jpg" alt="Tech Services">
-                <div class="card-body">
+                <div class="card-body secondary-font">
                     <h4 class="card-title text-secondary">Tech Services</h4>
                     <p class="card-text text-secondary">Is your Airsoft weapon, broken, or not performing how you would like it? Well put your RIF weapon in with us and we will get it performing as good as new.</p>
-                    <a href="#" class="btn btn-success">Book Now</a>
+                    <button type="button" class="btn btn-success m-1" data-bs-toggle="modal" data-bs-target="#techServiceModal">More Info</button>
+                    <a href="#" class="btn btn-success m-1">Enquire Now</a>
                 </div>
             </div>
         </div>
-        <!--break-->
-        <!-- <div class="col d-none d-xxl-block"></div> -->
         <!--Item3-->
         <div class=" col-lg-3 mb-5">
             <div class="card service-card animate glow delay-3">
                 <img class="card-img-top " src="{{ MEDIA_URL }}/media/airsoft-consumables.jpg " alt="Consumables ">
-                <div class="card-body ">
+                <div class="card-body secondary-font">
                     <h4 class="card-title text-secondary ">Consumables</h4>
                     <p class="card-text text-secondary ">We also here at airsoft supply drop sell consumables to our airsoft community in the wake of BBs and accessories at good prices. Come and have a look for yourselves.</p>
-                    <a href="# " class="btn btn-success ">Shop Now</a>
+                    <a href="# " class="btn btn-success m-1">Shop Now</a>
                 </div>
             </div>
         </div>
-        <!-- <div class="col d-none d-xxl-block"></div> -->
     </div>
 </div>
 <div class="footer-pushdown-small"></div>
+
+{% include 'includes/tech_service_modal.html' %}
+{% include 'includes/paint_service_modal.html' %}
 
 {% endblock %}

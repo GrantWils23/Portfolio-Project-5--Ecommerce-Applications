@@ -1,9 +1,63 @@
 {% extends "base.html" %} {% load static %} {% block content %}
 
 <div class="pushdown-small mb-2"></div>
-<div class="container-fluid">
+<div class="container-fluid secondary-font">
     <div class="pushdown-small mb-2"></div>
-    about_us
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-5 d-inline-flex">
+            <div class="text-sm-left lh-base font-normal text-none text-decoration-none text-reset mb-3">
+                <h1>About us....</h1>
+                <p>Airsoft workshop is a startup project setup by an enfusiastic airsoft player, with 5 years of
+                    experience playing out in the fields. Upon getting incredibly hooked on the sport.
+                    <br><br>Airsoft is a great hobby, where you can make lots of new friends and through this experience
+                    I got the inspiration speaking to fellow airsofters about the difficulties assosicate in airsoft.
+                    Players are often wanting to spray paint their RIFs and repair their weapons when they have
+                    problems, but this is where the Airsoft workshop provides its customers the best care and attention
+                    regarding getting your RIFs exactly the way you want them.
+                    <br>
+                    <br>
+                    If you are interested in getting to know me before you would like me to do any work on your RIF, I
+                    invite you to meet me in store or even out on the field. As an airsofter, it is important to meet
+                    the people in the game and there is no better time then on an actual game day. So if you are, feel
+                    free to <a href="{% url 'contact_us' %}">contact us</a> and we will be able to tell you what airsoft
+                    site I will be attending.
+                </p>
+            </div>
+        </div>
+        <div class="col-md-5 d-inline-flex">
+            <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="{{ MEDIA_URL }}/media/FB_IMG_1607941252528.jpg" class="d-block w-100" alt="Company owner playing airsoft with his camo painted M4">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{{ MEDIA_URL }}/media/FB_IMG_1623101576268.jpg" class="d-block w-100" alt="Company owner playing airsoft with his camo painted M4">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="{{ MEDIA_URL }}/media/FB_IMG_1594677129171.jpg" class="d-block w-100" alt="Company owner playing airsoft attacking from barrier">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+        <div class="col-md-1"></div>
+    </div>
 </div>
+<div class="footer-pushdown"></div>
+</div>
+
 
 {% endblock %}

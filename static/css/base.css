@@ -7,11 +7,11 @@
 
 html {
     height: 100%;
-    background-color: rgb(63, 62, 62);
+    background-color: #222;
+
 }
 
 body {
-    /* background: url('/media/pexels-jenda-kubes-6566976.jpg') no-repeat center center fixed; */
     background-color: #222;
     background-size: cover;
     font-family: 'Special Elite', cursive;
@@ -31,6 +31,16 @@ body {
     z-index: unset;
 }
 
+.logo-font {
+    font-family: 'Special Elite', cursive;
+}
+
+.secondary-font {
+    /* font-family: 'Judson', serif; */
+    /* font-family: 'GFS Didot', serif; */
+    font-family: 'Marcellus', serif;
+}
+
 .header-btn-colour {
     color: #ffffff8c;
 }
@@ -43,6 +53,7 @@ body {
     height: 70px;
 }
 
+
 .footer-pushdown {
     height: 250px;
 }
@@ -52,6 +63,7 @@ body {
 }
 
 .footer-base {
+    border-top: 2px solid #333;
     background-color: #212529;
     /* font-family: 'Judson', serif; */
     /* font-family: 'GFS Didot', serif; */
@@ -69,6 +81,10 @@ body {
 }
 
 nav {
+    box-shadow: 0 0 15px #198754;
+}
+
+.green-on-hov:hover {
     box-shadow: 0 0 15px #198754;
 }
 
@@ -124,15 +140,13 @@ nav {
     animation-delay: 1.1s;
 }
 
-
-
 .animated-btn {
     display: block;
     width: fit-content;
     height: 55px;
     font-size: 30px;
     text-decoration: none;
-    color: #ffffff8c;
+    color: #198754;
     border: 3px solid #333;
     letter-spacing: 2px;
     position: relative;
@@ -189,14 +203,22 @@ nav {
     width: 1.5rem;
 }
 
-.logo-font {
-    font-family: 'Special Elite', cursive;
+/* --------- modal image and media queries ---------- */
+
+.modal-img {
+    height: auto;
+    float: right;
+    width: 45%;
+    margin-right: 5%;
+    padding: 0 0 20px 20px;
 }
 
-.secondary-font {
-    /* font-family: 'Judson', serif; */
-    /* font-family: 'GFS Didot', serif; */
-    font-family: 'Marcellus', serif;
+@media (max-width: 768px) {
+    .modal-img {
+        width: 100%;
+        margin-right: 0;
+        padding: 5px;
+    }
 }
 
 /* ------------------------------------------------------ Media Queries */
@@ -218,17 +240,19 @@ nav {
 
 /* Hide short text by default (resolution > 1200px) */
 
+.large-logo {
+    padding-left: 10px;
+}
+
 .small-logo {
     display: none;
 }
 
-
-/* When resolution <= 1200px, hide full text and show short text */
-
-@media (max-width: 527px) {
+@media (max-width: 470px) {
     .small-logo {
-        display: flex;
-        position: relative;
+        display: inline;
+        position: absolute;
+        top: 0px;
         padding-left: 10px;
     }
 
@@ -237,6 +261,19 @@ nav {
     }
 }
 
+@media (max-width: 300px) {
+    .small-logo {
+        font-size: 1.05rem;
+        top: 5px;
+        padding-left: 2px;
+    }
+}
+
+@media (max-width: 283px) {
+    .homepage-main-btn {
+        font-size: 1.65rem;
+    }
+}
 
 /* --------------------- Services Page ---------------------- */
 
