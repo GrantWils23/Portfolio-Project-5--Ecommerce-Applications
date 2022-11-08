@@ -5,7 +5,7 @@
 
 <p>The Idea for this website came from my hobby. I am an airsofter and it is my biggest passion outside work. I got really envolved in the sport and have always looked at the idea of working more closely within the airsoft community and would like to provide a unique, bespoke service that offers spray painting, camoflaging of Realistic Imitation Firearms (RIFs). When i speak with fellow airsofters they always would like a way to stand out from the crowd and have unique equipment and that is where the airsoft workshop comes into play. from selling consumables and to offering high-end services such as maintainance and repairs.</p>
 
-click here to go to the deployed website: <a href="https://bebeauty-app.herokuapp.com/" target="_blank"><b><i>"The Airsoft Workshop"</i></b></a> 
+click here to go to the deployed website: <a href="" target="_blank"><b><i>"The Airsoft Workshop"</i></b></a> 
 <!-- Change HREF HERE -->
 <br><br>
 
@@ -44,9 +44,11 @@ click here to go to the deployed website: <a href="https://bebeauty-app.herokuap
 # User Experience UX
 
 ## User Stories
-Provide a user stories table here or list of the general user stories.
+User Stories make up an important part of the process to help steer the project in the right direction. These itemized points act as a guide during the build of the project.
 
-<!-- Display in form of a picture from the PDF within Excel file i created -->
+Follow this link to <a href="https://github.com/GrantWils23/Portfolio-Project-5--Ecommerce-Applications/blob/main/assets/User%20Stories%20Spreadsheet.pdf" target="_blank"><b><i>"The User Stories List"</i></b></a>.
+
+An additional User Story to be added on here is..... As a "User", I can "Add my favourite items to a list" So that "I can find them easily if I wish to purchase them when i return to the website."
 
 [Back to Top](<#contents>)
 
@@ -62,7 +64,7 @@ Epics Explaining what has been acheived
 To work along with the user stories that i created to help build the site, I used GitHubs's Project Board to manage my workflow. The Kanban style work board is very useful when trying to implement a working Agile environment. This tool helped me break down the importance of time management and helped me track my progress. It's a super powerful tool, with the abiltity to add small notes and labels to items within the project board.
 <br>
 
-<!-- image for product management goes here -->
+![image](https://user-images.githubusercontent.com/72948843/200688676-60bbf45a-9a46-4b59-be1a-c8c9983a935d.png)
 <br>
 
 [Back to Top](<#contents>)
@@ -78,38 +80,36 @@ Here below you can find the Data schema used to create the data model. This was 
 [Back to Top](<#contents>)
 
 ## Wireframes
-The Wireframes for this project started off as a base idea with some users feedback from some of my friends who would use a service and they gave me feedback as time went on. These basic templates were the foundation of which the website style is built on but with the help of real user feedback I implemented it along the way.
+The Wireframes for this project are the building foundations of the website. Some of the ideas have come from user feedback. Friends and fellow airsofters who would use a service like this gave me valuable information as time went on what works and what does not... These basic templates were the foundation of which the website style is built on but with the help of real user feedback I implemented it along the way.
 
-<!-- Links or images to wireframes go here -->
+Follow this link to <a href="https://github.com/GrantWils23/Portfolio-Project-5--Ecommerce-Applications/blob/main/assets/Airsoft%20Workshop%20Wireframes.pdf" target="_blank"><b><i>"The Airsoft Workshop Wireframes"</i></b></a>.
+
 
 [Back to Top](<#contents>)
 <br>
  
  ## Site Structure
-The site structure is extremely important to the clients who will wish to book an appointment with BeBeauty. It is imperative that the site is user friendly and easy to access, read, and find the pages you want to with the least hassle. The site structure will consist of a navigation menu bar that will be present at the top of all pages as well as a footer with the appropriate social links. The body of the pages will be broken down into the following... <!-- template from old project - edit accordingly -->
+Navigating around the site is easy due to the simple layout. here below is the basic site structure. <!-- template from old project - edit accordingly -->
 <ul>
     <li>Home Page</li>
-    <li>Services</li>
-    <li>Prices</li>
-    <li>Gallery</li>
-    <li>Contact</li>
-    <li>Sign Up</li>
-    <li>Sign In</li>
-    <li>Sign Out</li>
-    <li>My Bookings</li>
-    <li>Create Booking</li>
-    <li>Booking Details</li>
-    <li>Edit Booking</li>
-    <li>Cancel Booking</li>
-    <li>Delete Bookig</li>
-    <li>Admin-Planner</li>
-    <li>Admin Add Booking</li>
-    <li>Admin Edit Booking</li>
-    <li>Admin Cancel Booking</li>
-    <li>Admin Delete Booking</li>
+    <li>Services Page</li>
+    <li>Store</li>
+    <li>Tech Services</li>
+    <li>Paint Services</li>
+    <li>Allauth Pages (includes, Login, Logout, Register, etc...)</li>
+    <li>My Profile</li>
+    <li>Product Management</li>
+    <li>Products</li>
+    <li>Product Details</li>
+    <li>Bag</li>
+    <li>Checkout</li>
+    <li>About Us</li>
+    <li>Contact Us</li>
+    <li>Privacy Policy</li>
+    <li>Sitemap</li>
 </ul>
 
-The Desktop version of the site is very spacious but when the user drops down to a smaller aspect ratio the content will be forced to occupy a majority of the screen not to waste the restricted space that is left on the display. So any Wireframes above that take up larger areas with content and spacing will be forced to a column that occupies the screen so it displays all on one screen with no side to side juddering. This will greatly improve the UX as it will be easier to use on smaller devices, just as it would be on a desktop or larger screen device.
+The Desktop version of the site is very spacious but when the user drops down to a smaller aspect ratio the content will be forced to occupy a majority of the screen not to waste the restricted space that is left on the display. This will greatly improve the UX as it will be easier to use on smaller devices, just as it would be on a desktop or larger screen device.
 
 [Back to Top](<#contents>)
 <br>
@@ -121,12 +121,42 @@ To speed up the process of making a really interactive website page, I learnt to
 ## Colour Scheme
 the colour scheme chosen for this website is a submersive navy-blue/black colour and dark grey  <!-- colour tags go here -->. This is really nice as it highlights images and makes reading easy as a light grey font was chosen to work in contrast with the background color.
 
-the colour scheme also around the website largely uses hints of green throughout to add the unique personal touch of the Airsoft Workshop website. As the main logo font is green, it naturally appears throughout the website to give the user an enhanced UX.
--	
-- Functional buttons within the booking pages hold a simple colour scheme of:
+The colour scheme also around the website largely uses hints of green throughout to add the unique personal touch of the Airsoft Workshop website. 
+
+- The main logo font is green, it naturally appears throughout the website to give the user an enhanced UX.
+
+- The homepage "GEAR UP" button is really important to the website: Its unique to all the other buttons on the site as it is designed to draw the user in. It holds the same color tones that feature throughout the site.	
+
+- Functional buttons within the website use all of the bootstraps inbuilt buttons. The green success button features mostly thoughout the site as a button to navigate and make progressive page changes. The secondary button also appears in the site which serves a majority of the time in the site as a return button.
+
+The colour codes are:
+- Custom green: #198754
+- Main background colour: #222
+- Font color against the Black-Grey background: #ffffff8c 
+- background for Navbar and Footer: #212529
+- font-color against Navbar and Footer background: #6c757d
+
+Main Logo Colour:
+<br>
+
+![image](https://user-images.githubusercontent.com/72948843/200686879-b5c220a3-6222-46d4-b014-56d0dc7160ad.png)
+
+Font colours against background in Footer:
+<br>
+
+![image](https://user-images.githubusercontent.com/72948843/200686372-3eb0c765-8861-4f4d-a2ec-1a14aa2363cf.png)
+
+Home page "Gear Up" button static:
+<br>
+
+![image](https://user-images.githubusercontent.com/72948843/200687036-14320df6-200d-428d-9932-6d28680daea2.png)
+
+Home page "Gear Up" button on hover:
+<br>
+
+![image](https://user-images.githubusercontent.com/72948843/200686487-b362fa7d-6b35-49bb-8365-c254f7e02c56.png)
 
 
-<!-- image here of colour shcemes working -->
 <br>
 
 [Back to Top](<#contents>)
@@ -134,14 +164,18 @@ the colour scheme also around the website largely uses hints of green throughout
 
 ## Fonts
 
-The first font...
+The selections of the fonts were chosen really carefully, the main logo font used is "Special Elite" which was supplied from Google Fonts. This font was chosen for its unique 'worn' style that gives it a ruggedness and slight military look. The secondary font used is 'Marcellus,' which too can be found on Google Fonts.
 
- <!-- font example here within website -->
+The first font...
+<br>
+
+![image](https://user-images.githubusercontent.com/72948843/200687580-6dd232c4-c40c-461b-af68-701420cffdbe.png)
 
 The second font...
- 
- <!-- font example here within website -->
+<br>
 
+![image](https://user-images.githubusercontent.com/72948843/200688308-ec471f6e-8714-4e65-8880-865be57c98fe.png)
+<br>
 
 [Back to Top](<#contents>)
 <br>

@@ -70,10 +70,18 @@ body {
     font-family: 'Marcellus', serif;
 }
 
+.contact-icons {
+    color: #ffffff8c;
+}
+
+.contact-icons:hover {
+    color: #dfdfdf8c;
+}
+
 .ukara-img-box img {
-    padding-top: 5px;
-    height: 45px;
+    height: 38px;
     width: 40px;
+    margin-top: 5px;
 }
 
 .text-black {
@@ -85,7 +93,11 @@ nav {
 }
 
 .green-on-hov:hover {
-    box-shadow: 0 0 15px #198754;
+    text-shadow: 0 0 10px #198754;
+}
+
+.green-on-hov-bg:hover {
+    box-shadow: 0 0 10px #198754;
 }
 
 /* --------------- animations ----------------- */
