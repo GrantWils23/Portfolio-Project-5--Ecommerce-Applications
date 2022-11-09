@@ -71,9 +71,9 @@ To work along with the user stories that i created to help build the site, I use
 <br>
 
 ## Data Model
-Here below you can find the Data schema used to create the data model. This was useful in helping me understand the flow and direction on how to create the app models, views and templates. A well working data schema is important to the database be established properly for the website to work correctly.
+Here below you can find the Data schema used to create the data models. This was useful in helping me understand the flow and direction on how to create the app models, views and templates. A well working data schema is important to the database be established properly for the website to work correctly.
  
-<!-- image for product management goes here -->
+Follow this link to <a href="https://github.com/GrantWils23/Portfolio-Project-5--Ecommerce-Applications/blob/main/assets/airsoft-workshop-database-schema.png" target="_blank"><b><i>"The Airsoft Workshop Database Schema"</i></b></a>.
 
 <br>
 
