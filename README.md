@@ -184,170 +184,128 @@ The second font...
 
 ## Existing Features
 * [Navigation Menu](<#navigation-menu>)
-* [Sign In](<#sign-in>)
-* [Sign Up](<#sign-up>)
-* [Sign Out](<#sign-out>)
+* [Allauth Functionality](<#allauth-functionality>)
 * [services Page](<#services-page>)
-* [Prices Page](<#prices-page>)
-* [Gallery](<#gallery>)
-* [Contact](<#contact>)
-* [The Booking Form](<#the-booking-form>)
-* [My Bookings](<#my-bookings>)
-* [Booking Details](<#booking-details>)
-* [Cancel and Delete Bookings](<#cancel-and-delete-bookings>)
 * [Footer](<#footer>)
-* [Pop-up Messages](<#pop-up-messages>)
+* [Toast and Messages](<#toast-and-messages>)
+* [Basket](<#basket>)
+* [Checkout](<#checkout>)
+* [Favourites](<#favourites>)
+
 
 
 ### Navigation Menu
 <!-- examples form previous, change accordingly -->
--	The nav menu is set at the top of all the pages. It is fully responsive and converts to a small dropdown menu on smaller screen ratios for a better UX. The nav contains links to all the pages of the site to enable quick searching through the website.
--	The logo is clickable with a link back to the home page for enhanced UX.
--	The bookings tab will only appear if the user is authenticated and logged in otherwise there is no bookings to view within the nav menu which makes it clearer for new customers that you need to sign up to book appointments
+- The nav menu is set at the top of all the pages. It is fully responsive and converts to a small dropdown menu on smaller screen ratios for a better UX. The nav contains links to all the important customer usable pages.
+- The nav menu is fitted inside of a clickable button that opens up a offcanvas dropdown menu. It is hidden off screen to increase the viewing portal space around giving the user more space and a less cultered view.
+- The offcanvas menu has link to the homepage, to the services page and then links to all the individual service links, along with the account dropdown menu with all related field options contained within.
+- The logo is clickable with a link back to the home page for enhanced UX.
+<br>
+<br>
 
+![image](https://user-images.githubusercontent.com/72948843/200792615-30d89016-b13e-4193-a272-af9e689ca7cf.png)
+<i>Navbar menu - smaller aspect ratio devices</i>
 
-<i>Not Signed in</i>
+![image](https://user-images.githubusercontent.com/72948843/200794557-5d6fc4d2-cff6-4396-aa50-9433cb7a38e7.png)
+<i>Off Canvas Dropdown menu</i>
 
-<!-- img -->
+![image](https://user-images.githubusercontent.com/72948843/200793688-14d6f2c0-57e5-43a7-9b9c-f30ed583b5b8.png)
+<i>Store sub category options</i>
 
-<i>User signed in</i>
-
-<!-- img -->
-
-<i>Admin signed in</i>
-
-<!-- img -->
-
-<i>Dropdown menu - smaller aspect ratio devices</i>
-
-<!-- examples form previous, change accordingly -->
+![image](https://user-images.githubusercontent.com/72948843/200795018-60aed44b-8229-41df-a1f0-ad74e9f97c1c.png)
+<i>Account Dropdown menu - Superuser View</i>
 
 [Back to Existing Features](<#existing-features>)
 <br>
 
-### Sign In
+### Allauth Functionality
 <!-- example text from pervious project, change accordingly -->
-- The Sign In page has a title in large letters.
-- The sign in form has the required fields: Username and Password.
-- There is a 'Remember Me' box located beneath the username and password fields, if a user wishes to hold their log in data.
-- There is a clearly visible pink 'Sign In' button that submits the form for the user to sign in and redirects the user to the home page. 
+- The allauth functionality allows the generation of user profiles which helps customers create a profile that they can save and have records of their orders in their account. This has been intergrated within the airsoft workshop to give the user the ability to signin, signout, register.
 
-<!-- ![image](https://user-images.githubusercontent.com/72948843/183263239-7b719076-42c6-4a8f-9fb2-ad27238b9a85.png) -->
-<!-- image -->
+![image](https://user-images.githubusercontent.com/72948843/200797736-de2a378e-5bca-4fd7-a2c5-8e64563b5541.png)
+<i>Sign in</i>
+
+![image](https://user-images.githubusercontent.com/72948843/200797938-24af6e58-4d31-4ec6-b0e5-9c46956c8c91.png)
+<i>Sign Up</i>
+
+![image](https://user-images.githubusercontent.com/72948843/200798310-00f5843d-3883-4b8f-89cd-511e2953a7c0.png)
+<i>Sign Out</i>
+<br>
 
 [Back to Existing Features](<#existing-features>)
 <br>
-
-### Sign Up
-- The sign Up page has a title in large letters.
-- In the form to sign up to the website, there are the fields: Username, Email, Password and Password(again) input boxes.
-- There is a clearly visible pink 'Sign Up' button that submits the form for the user to sign Up and redirects the user to the home page. 
-
-![image](https://user-images.githubusercontent.com/72948843/183263408-72fa0bec-bd85-41dd-8e5b-518699bceaa5.png)
-
-[Back to Existing Features](<#existing-features>)
-<br>
-
-### Sign Out
-- The Sign Out page has a title in large letters.
-- a centered box contains a message asking the user if they are sure they want to log out?
-- There is a clearly visible pink 'Sign Out' button that signs out the user and redirects the user to the home page. 
-
-![image](https://user-images.githubusercontent.com/72948843/183263434-aafbc67c-d265-4162-8ff5-f1757f3fcbd8.png)
-
-[Back to Existing Features](<#existing-features>)
 <br>
 
 ### Services Page
-The services page is designed to give the users a brief insight into the services of what the company offers its clients with a description of the beautician’s experience and really is where you get a feel for the company and the professional nature of it. The page is designed to be eye-catching and give the user a well-rounded experience as they view what company has to offer.
+The services page is designed to give the users a brief insight into the services of what the company offers its clients with a description of the beautician’s experience and really is where you get a feel for the company and the professional nature of it. The page is designed to be eye-catching and give the user a well-rounded experience as they view what company has to offer. The cards have a green shadow appear around them when the cursor enters a card to focus your view on the card the user are reading helping to boost the users UX.
  
-![image](https://user-images.githubusercontent.com/72948843/178738891-d482c632-cea1-486a-b77f-d7272512f8e7.png)
+![image](https://user-images.githubusercontent.com/72948843/200798942-5810353e-1a85-45bc-bb6b-deb8c7594b5d.png)
+<i>Services page on a large view device</i>
+
+
+![image](https://user-images.githubusercontent.com/72948843/200799508-1c5b11b1-2eb0-4190-91e8-e08138a090c4.png)
+<i>Services page on a small view device</i>
 
 [Back to Existing Features](<#existing-features>)
 <br>
-
-### Prices Page
-The prices page gives and accurate breakdown of the services that BeBeauty has to offer, as well as the description and prices and approximate time it takes each session. It is displayed in a list format to give users a clear presentation that is navigate to the service they are most interested in. It uses a modal to display the larger information of each booking. The modals give the user a real user friendly feel as it is free flowing the colour scheme matches the rest of the websites design giving a very pleasant UX.
-
-![image](https://user-images.githubusercontent.com/72948843/178738621-9bece993-1377-42d2-b84e-f27a04017072.png)
-
-![image](https://user-images.githubusercontent.com/72948843/178738736-a1e20a78-e6fc-4e46-bd85-80b3f0c89727.png)
-
-[Back to Existing Features](<#existing-features>)
 <br>
 
-### Gallery
-The gallery is a small sneak peak of just some of the work that BeBeauty has done for some its clients. The current idea is to have a small sample of photos with which the users can see now. If the users want to view more, they are encouraged to check them out on the social media links located below for more day-to-day photos if you follow them on the likes of Instagram or Facebook. This will likely change, and the owner may wish that they have a more robust website with a larger gallery later.
 
-![image](https://user-images.githubusercontent.com/72948843/178739016-b4d4c666-d7c9-44ab-b602-a63050b91e5c.png)
-
-[Back to Existing Features](<#existing-features>)
-<br>
-
-### Contact
-The contact page is small and consists of the T&C's of the company's policy and how they operate. It is a clean format that clearly labels all important details regarding any bookings. 
-
-![image](https://user-images.githubusercontent.com/72948843/178741286-6607523f-77b7-4833-8500-b4fe8820ed3e.png)
-
-[Back to Existing Features](<#existing-features>)
-<br>
-
-### The Booking Form
-The booking form is a simple and easy to use, once signed in it knows you are a valid user and so it generates the user and email name already for submission.
-
-![image](https://user-images.githubusercontent.com/72948843/178740493-0c2a52f6-af0e-49ca-9dce-0b9a7b31c1dd.png)
-
-[Back to Existing Features](<#existing-features>)
-<br>
-
-### My Bookings
-The bookings page is a paginated page that displays a max of 6 appointments on any one page before having to cycle through to view more previous bookings. Its list view is very easy and clear to read and is set up according to the booking reference. The page displays the most significant information within the list view and has a link to view the booking attached to it. to the right side is the bookings edit and cancel buttons that give the user the ability to edit and cancel bookings or just to view old or completed bookings.
-
-![image](https://user-images.githubusercontent.com/72948843/178739501-9bc45d9c-aaed-409b-ac30-13405a2dfdf2.png)
-
-[Back to Existing Features](<#existing-features>)
-<br>
-
-### Booking Details
-The booking page holds all relevant details required regarding the booking. Located at the bottom of each booking is again buttons to edit and cancel the booking giving the user more than one way just to alter a booking, which prevents having to scroll through multiple pages just to alter it and giving the user a warmer UX.
-
-![image](https://user-images.githubusercontent.com/72948843/178742207-3c9c101e-bbb9-48ba-b6be-fa482c878ae5.png)
-
-[Back to Existing Features](<#existing-features>)
-<br>
-
-### Cancel and Delete Bookings
-This Page is a warning page for the user, it alerts them to the actions they plan on taking. By diverting to a new page, it gives the user a warning in clue of a visible prompt that with the request they plan to make will alter the booking in some way, this gives the user a greater UX when it comes to making sure they didn't cancel the booking by accident.
-
-![image](https://user-images.githubusercontent.com/72948843/178741783-e1991d20-abf3-4c8c-9072-ca5c367ee852.png)
-
-[Back to Existing Features](<#existing-features>)
-<br>
 
 ### Footer
- The Footer is lightweight and is very minimalistic, this gives greater UX to the rest of the page as the footer displays social media links which is there for users who want to view more about the company outside of the dedicated website. The links are large and blend in with the rest of the page to show there is some significance in clicking the links. The social links would be directly linked to the businesses pages once the website is set for production.
+The footer contains all the main menu links but also some addition links that are to extra content in the shape of Contact_us, About_us, FAQs, Sitemap, Privacy Policy. These additional links are important to the site but in general do not need to be present in the main navbar as they are less likely to be visited. Beyond these links are some extra content too. We have a Subscribe to Newsletter housed in footer, for those who wish to join our email marketing to recieve monthly updates and promo codes. Also beneath a line break we have a copyright disclaimer and social media links and other important links related to the company.
 
-![image](https://user-images.githubusercontent.com/72948843/178743421-51723903-10ab-450b-8558-21e869f35146.png)
-
-[Back to Existing Features](<#existing-features>)
-<br>
-
-### Pop-up messages
-The pop-up messages are integrated into the websites UX to provide the user with some useful feedback information. The messages will display on the success of a given task like signing in or upon a completion of a given task, or in the event of something failing, like the appointment booking is not possible, it will throw and error to the user in a message box. below are some examples...
-
-![image](https://user-images.githubusercontent.com/72948843/178992505-afc8e9df-c791-4379-84a1-7a1edc6c4906.png)
+- The Subscribe to newsletter feature is located in the footer so that it doesn't intefer with the Hero Image in the main view and for new potential customers they have a quick and easy means of signing up to our email marketing scheme.
+ 
+![image](https://user-images.githubusercontent.com/72948843/200807466-62965b96-22be-4838-9c74-bfff201f4ce6.png)
+<i>Footer on a large view device</i>
 
 
-![image](https://user-images.githubusercontent.com/72948843/178721734-56da133c-8ff3-4175-8040-db75e741501f.png)
-<br>
+![image](https://user-images.githubusercontent.com/72948843/200807674-f9f0bb3b-d0c7-4132-9ab2-be12fe002f87.png)
+<i>Footer on a small view device</i>
 
 [Back to Existing Features](<#existing-features>)
 <br>
 
-<hr>
-
-[Back to Top](<#contents>)
+## Toast and Messages
 <br>
+<!-- Add later more content -->
+
+[Back to Existing Features](<#existing-features>)
+<br>
+
+
+## Basket
+<br>
+<!-- Add later more content -->
+
+[Back to Existing Features](<#existing-features>)
+<br>
+
+
+## Checkout
+<br>
+<!-- Add later more content -->
+
+[Back to Existing Features](<#existing-features>)
+<br>
+
+## Favourites
+<br>
+<!-- Add later more content -->
+
+[Back to Existing Features](<#existing-features>)
+<br>
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+
 
 
 ## Input Validation and checking
@@ -378,12 +336,15 @@ This can be a list of unfinished or future new user stories on how to improve th
 
 [Back to Top](<#contents>)
 <br>
-
+<br>
+<br>
 # Testing
 
-<p>To find out more about the tests related to the project. please follow this <!--<a href="https://github.com/GrantWils23/Portfolio-Project-4--Full-Stack-Toolkit/blob/main/tests/TESTS.md"> --> link</a> to the testing page.</p>
+<p>To find out more about the tests related to the project. please follow this <a href="https://github.com/GrantWils23/Portfolio-Project-5--Ecommerce-Applications/blob/main/tests/TESTS.md" target="_blank">link</a> to the testing page.</p>
 
 [Back to Top](<#contents>)
+<br>
+<br>
 <br>
 
 ## Technologies Used

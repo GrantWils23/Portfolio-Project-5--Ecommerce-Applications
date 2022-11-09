@@ -79,9 +79,8 @@ body {
 }
 
 .ukara-img-box img {
-    height: 38px;
-    width: 40px;
-    margin-top: 5px;
+    top: auto;
+    height: 40px;
 }
 
 .text-black {
