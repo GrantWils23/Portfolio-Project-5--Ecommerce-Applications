@@ -1,0 +1,34 @@
+[
+{
+    "model": "products.category",
+    "pk": 1,
+    "fields": {
+        "name": "BBs",
+        "friendly_name": "BBs"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 2,
+    "fields": {
+        "name": "Gas",
+        "friendly_name": "Gas"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 3,
+    "fields": {
+        "name": "Patches",
+        "friendly_name": "Patches"
+    }
+},
+{
+    "model": "products.category",
+    "pk": 4,
+    "fields": {
+        "name": "Batteries",
+        "friendly_name": "Batteries"
+    }
+}
+]

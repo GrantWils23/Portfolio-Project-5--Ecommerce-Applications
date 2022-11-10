@@ -1,0 +1,917 @@
+[
+{
+    "model": "products.product",
+    "pk": 1,
+    "fields": {
+        "category": 1,
+        "brand": 3,
+        "sku": "pp10055001",
+        "name": "G&G Armament 0.20g P.S.B.P Competition Grade 6mm BB 1KG Bag",
+        "description": "This is G&G's competition grade Airsoft BBs. They are High quality, well polished and have superb construction. Made from polymer, the polish on them makes them smoother, making the more aerodynamic for a more consistent flight path.\r\n\r\n- 0.20g BBs\r\n- 1KG Resealable Bag\r\n- 5.95mm +/- 0.01mm\r\n- Competition Grade BB\r\n- 5000 BBs",
+        "price": "14.99",
+        "rating": "5.00",
+        "image_url": null,
+        "image": "GG-0.20g-competition-BBs.png"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 2,
+    "fields": {
+        "category": 1,
+        "brand": 3,
+        "sku": "pp10055002",
+        "name": "G&G Armament 0.20g  Competition Grade 6mm BIO BB 1KG Bag",
+        "description": "This is G&G's competition grade Airsoft  'Bio' BBs. They offer the same level of performance as their non-Bio counterpart but with that all-important part that they do their part for the environment. Perfect for outdoor skirmishers. \r\n\r\n- 0.20g BBs\r\n- 1KG Resealable Bag\r\n- 5.95mm +/- 0.01mm\r\n- Competition Grade BB\r\n- 5000 BBs\r\n- Biodegrade in about 50 days",
+        "price": "14.99",
+        "rating": "5.00",
+        "image_url": null,
+        "image": "GG-0.20g-competition-BBs-Bio.png"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 3,
+    "fields": {
+        "category": 1,
+        "brand": 3,
+        "sku": "pp10055003",
+        "name": "G&G Armament 0.25g P.S.B.P Competition Grade 6mm BB 1KG Bag",
+        "description": "This is G&G's competition grade Airsoft BBs. They are High quality, well polished and have superb construction. Made from polymer, the polish on them makes them smoother, making the more aerodynamic for a more consistent flight path.\r\n\r\n- 0.25g BBs\r\n- 1KG Resealable Bag\r\n- 5.95mm +/- 0.01mm\r\n- Competition Grade BB\r\n- 4000 BBs",
+        "price": "13.99",
+        "rating": "4.50",
+        "image_url": null,
+        "image": "GG-0.25g-competition-BBs.png"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 4,
+    "fields": {
+        "category": 1,
+        "brand": 3,
+        "sku": "pp10055004",
+        "name": "G&G Armament 0.25g 4000rnd Competition Grade 6mm BIO BB 1KG Bag",
+        "description": "This is G&G's competition grade Airsoft  'Bio' BBs. They offer the same level of performance as their non-Bio counterpart but with that all-important part that they do their part for the environment. Perfect for outdoor skirmishers. \r\n\r\n- 0.25g BBs\r\n- 1KG Resealable Bag\r\n- 5.95mm +/- 0.01mm\r\n- Competition Grade BB\r\n- 4000 BBs\r\n- Biodegrade in about 60 days",
+        "price": "15.99",
+        "rating": "4.90",
+        "image_url": null,
+        "image": "GG-0.25g-competition-BBs-Bio.png"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 5,
+    "fields": {
+        "category": 1,
+        "brand": 3,
+        "sku": "pp10055005",
+        "name": "G&G Armament 0.28g P.S.B.P Competition Grade 6mm BB 1KG Bag",
+        "description": "This is G&G's competition grade Airsoft BBs. They are High quality, well polished and have superb construction. Made from polymer, the polish on them makes them smoother, making the more aerodynamic for a more consistent flight path.\r\n\r\n- 0.28g BBs\r\n- 1KG Resealable Bag\r\n- 5.95mm +/- 0.01mm\r\n- Competition Grade BB\r\n-  3571 BBs",
+        "price": "16.99",
+        "rating": "4.50",
+        "image_url": null,
+        "image": "GG-0.28g-competition-BBs.png"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 6,
+    "fields": {
+        "category": 1,
+        "brand": 3,
+        "sku": "pp10055006",
+        "name": "G&G Armament 0.30g P.S.B.P Competition Grade 6mm BB x 2000",
+        "description": "A bag of approximately 2000 high quality competition grade 0.30g Airsoft BBs, constructed from polymer, and polished to provide a smooth and aerodynamically enhanced external surface.\r\n\r\n- 5.95mm +/- 0.01mm\r\n- 2000 BB Resealable Bag\r\n- 0.30g Competition Grade BBs",
+        "price": "11.99",
+        "rating": "5.00",
+        "image_url": null,
+        "image": "GG-0.30g-competition-BBs.png"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 7,
+    "fields": {
+        "category": 1,
+        "brand": 4,
+        "sku": "pp10055007",
+        "name": "ASG 0.36g Precision Ammunition 6mm BB x 1000",
+        "description": "The BBs that Airsoft snipers have been waiting for: the ultimate heavyweight, precicsion made 0.36g Airsoft BBs, designed to offer users enhanced range and accuracy.\r\n\r\n- White In Colour\r\n- Heavyweight BBs\r\n- Improve Range & Accuracy",
+        "price": "17.99",
+        "rating": "5.00",
+        "image_url": null,
+        "image": "ASG-0.36g-sniper-BBs.png"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 8,
+    "fields": {
+        "category": 1,
+        "brand": 4,
+        "sku": "pp10055008",
+        "name": "ASG 0.40g Precision Ammunition 6mm BB x 1000",
+        "description": "The BBs that Airsoft snipers have been waiting for: the ultimate heavyweight, precision-made 0.40g Airsoft BBs, designed to offer users enhanced range and accuracy.\r\n\r\n- White In Colour\r\n- Heavyweight BBs\r\n- Improve Range & Accuracy",
+        "price": "13.99",
+        "rating": "4.80",
+        "image_url": null,
+        "image": "ASG-0.40g-sniper-BBs.png"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 9,
+    "fields": {
+        "category": 1,
+        "brand": 4,
+        "sku": "pp10055009",
+        "name": "ASG 0.43g Precision Ammunition 6mm BB x 1000",
+        "description": "The BBs that Airsoft snipers have been waiting for: the ultimate heavyweight, precision-made 0.43g Airsoft BBs, designed to offer users enhanced range and accuracy.\r\n\r\n- White In Colour\r\n- Heavyweight BBs\r\n- Improve Range & Accuracy",
+        "price": "17.99",
+        "rating": "5.00",
+        "image_url": null,
+        "image": "ASG-0.43g-sniper-BBs.png"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 10,
+    "fields": {
+        "category": 1,
+        "brand": 4,
+        "sku": "pp10055010",
+        "name": "ASG 0.48g Precision Ammunition 6mm BB x 1000",
+        "description": "The AI Precision 0.48g BBs from ASG are a pot of 1000 extremely high quality, heavyweight BBs that are ideal for Sniper Rifles and other high-power Airsoft Guns. Made to a very high standard with the finest tolerances in weight and size, these 0.48g BBs are perfectly suited to those seeking consistency and long-range precision from their Rifle. If you're in search of a true Diamond-Grade Precision BB for your Airsoft Gun, then these 0.48g will certainly help your target call their hits.\r\n\r\n- Sniper Rifle BB\r\n- Heavyweight BBs\r\n- Long-Range Round",
+        "price": "21.99",
+        "rating": "5.00",
+        "image_url": null,
+        "image": "ASG-0.48g-sniper-BBs.png"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 11,
+    "fields": {
+        "category": 1,
+        "brand": 5,
+        "sku": "pp10055011",
+        "name": "NUPROL RZR 0.20g Precision BB x3300",
+        "description": "NUPROL's latest offering into the Airsoft Market with newly designed 5.95mm 0.20g BBs made to be more accurate and consistent than ever before. \r\n\r\n- White BBs\r\n- 0.20g in Weight\r\n- Approx 3300 BBs",
+        "price": "8.99",
+        "rating": "3.80",
+        "image_url": null,
+        "image": "Nurpol-RZR-0.20g-BBs.png"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 12,
+    "fields": {
+        "category": 1,
+        "brand": 5,
+        "sku": "pp10055012",
+        "name": "NUPROL RZR 0.20g Precision BIO BB x3300",
+        "description": "NUPROL's latest environmentally friendly offering into the Airsoft Market with newly designed 0.20g BBs made to offer consistent performance and great accuracy, which Degrade and Breakdown over time after use.\r\n\r\n- White BIO BBs\r\n- 0.20g in Weight\r\n- Approx 3300 BBs",
+        "price": "10.99",
+        "rating": "2.50",
+        "image_url": null,
+        "image": "Nurpol-RZR-0.20g-BBs-Bio.png"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 13,
+    "fields": {
+        "category": 1,
+        "brand": 5,
+        "sku": "pp10055013",
+        "name": "NUPROL RZR 0.20g Precision Tracer BB x3300 Green",
+        "description": "NUPROL's latest offering into the Airsoft Market with newly designed 0.20g green illuminated tracer BBs, made to be more consistent and have better accuracy than ever before. \r\n\r\n- Tracer BBs\r\n- 0.20g in Weight\r\n- Approx 3300 BBs",
+        "price": "16.99",
+        "rating": "4.50",
+        "image_url": null,
+        "image": "Nurpol-RZR-0.20g-BBs-Tracer-Green.png"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 14,
+    "fields": {
+        "category": 1,
+        "brand": 5,
+        "sku": "pp10055014",
+        "name": "NUPROL RZR 0.20g Precision Tracer BB x330 Red0",
+        "description": "NUPROL's latest offering into the Airsoft Market with newly designed 0.20g red illuminated tracer BBs, made to be more consistent and have better accuracy that ever before. \r\n\r\n- Tracer BBs\r\n- 0.20g in Weight\r\n- Approx 3300 BBs",
+        "price": "16.99",
+        "rating": "4.70",
+        "image_url": null,
+        "image": "Nurpol-RZR-0.20g-BBs-Tracer-Red.png"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 15,
+    "fields": {
+        "category": 1,
+        "brand": 5,
+        "sku": "pp10055015",
+        "name": "NUPROL RZR 0.25g Precision BB x3300",
+        "description": "NUPROL's latest offering into the Airsoft Market with newly designed 5.95mm 0.25g BBs made to have more consistent performance and greater accuracy than ever before.\r\n\r\n- White BBs\r\n- 0.25g in Weight\r\n- Approx 3300 BBs",
+        "price": "10.99",
+        "rating": "4.10",
+        "image_url": null,
+        "image": "Nurpol-RZR-0.25g-BBs.png"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 16,
+    "fields": {
+        "category": 1,
+        "brand": 5,
+        "sku": "pp10055016",
+        "name": "NUPROL RZR 0.25g Precision BIO BB x3300",
+        "description": "NUPROL's latest environmentally friendly offering into the Airsoft Market with newly designed 0.25g BBs made to offer consistent performance and great accuracy, which degrades and Breakdown over time. This 0.25g weight of BBs are less affected by the wind than the traditional 0.20g BBs and is great for both CQB and Indoor Environments and essential for sites which only allow Bio-BBs which degrade. \r\n\r\nThese BBs are perfect for any Airsoft Skirmisher looking for their next go-to brand of BB, and for those looking for a more reliable and consistent BB. \r\n\r\n- White BIO BBs\r\n- 0.25g in Weight\r\n- Approx 3300 BBs",
+        "price": "12.99",
+        "rating": "5.00",
+        "image_url": null,
+        "image": "Nurpol-RZR-0.25g-BBs-Bio.png"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 17,
+    "fields": {
+        "category": 1,
+        "brand": 5,
+        "sku": "pp10055017",
+        "name": "NUPROL RZR 0.25g Precision Tracer BB x3300 Green",
+        "description": "NUPROL's latest offering into the Airsoft Market with newly designed 0.25g green illuminated tracer BBs, made to be more consistent and have better accuracy than ever before. \r\n\r\n- 0.25g in Weight\r\n- Approx 3300 BBs\r\n- Green Tracer BBs",
+        "price": "20.99",
+        "rating": "4.80",
+        "image_url": null,
+        "image": "Nurpol-RZR-0.25g-BBs-Tracer-Green.png"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 18,
+    "fields": {
+        "category": 1,
+        "brand": 5,
+        "sku": "pp10055018",
+        "name": "NUPROL RZR 0.25g Precision Tracer BB x3300 Red",
+        "description": "NUPROL's latest offering into the Airsoft Market with newly designed 0.25g red illuminated tracer BBs, made to be more consistent and have better accuracy than ever before. \r\n\r\n- 0.25g in Weight\r\n- Approx 3300 BBs\r\n- Red Tracer BBs",
+        "price": "21.99",
+        "rating": "4.70",
+        "image_url": null,
+        "image": "Nurpol-RZR-0.25g-BBs-Tracer-Red.png"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 19,
+    "fields": {
+        "category": 1,
+        "brand": 5,
+        "sku": "pp10055019",
+        "name": "NUPROL RZR 0.28g Precision BB x3300",
+        "description": "High-quality, medium-weight 0.28g Airsoft BB Ammunition, suitable for both indoor CQB Airsoft and outdoor open environments. \r\n\r\nThese BBs are perfect for any Airsoft Skirmisher looking to up their gameplay without having to invest time and money into upgrading and modifying their Airsoft gun, in addition to those looking for their next go-to brand of BB, and for those looking for a more reliable and consistent BB.",
+        "price": "11.99",
+        "rating": "3.30",
+        "image_url": null,
+        "image": "Nurpol-RZR-0.28g-BBs.png"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 20,
+    "fields": {
+        "category": 1,
+        "brand": 5,
+        "sku": "pp10055020",
+        "name": "NUPROL RZR 0.28g Precision BIO BB x3300",
+        "description": "NUPROL's latest environmentally friendly offering into the Airsoft Market with newly designed heavy-weight BBs made to offer excellently consistent performance at long-range and greater accuracy, which after using, degrade and break down over time. \r\n\r\n- White BIO BBs\r\n- 0.28g in Weight\r\n- Approx 3300 BBs",
+        "price": "15.99",
+        "rating": "5.00",
+        "image_url": null,
+        "image": "Nurpol-RZR-0.28g-BBs-Bio.png"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 21,
+    "fields": {
+        "category": 1,
+        "brand": 5,
+        "sku": "pp10055021",
+        "name": "NUPROL RZR 0.30g Precision BB x3300",
+        "description": "NUPROL's latest offering into the Airsoft Market with newly designed 5.95mm 0.30g BBs made to be more accurate and consistent than ever before. \r\n\r\n- White BBs\r\n- 0.30g in Weight\r\n- Approx 3300 BBs",
+        "price": "18.99",
+        "rating": "4.00",
+        "image_url": null,
+        "image": "Nurpol-RZR-0.30g-BBs.png"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 22,
+    "fields": {
+        "category": 1,
+        "brand": 5,
+        "sku": "pp10055022",
+        "name": "NUPROL RZR 0.30g Precision BIO BB x3300",
+        "description": "NUPROL's latest offering into the Airsoft Market with newly designed BBs made to be more accurate and consistent than ever before.\r\n\r\n- White BIO BBs\r\n- 0.30g in Weight\r\n- Approx 3300 BBs",
+        "price": "17.99",
+        "rating": "4.60",
+        "image_url": null,
+        "image": "Nurpol-RZR-0.30g-BBs-Bio.png"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 23,
+    "fields": {
+        "category": 1,
+        "brand": 5,
+        "sku": "pp10055023",
+        "name": "NUPROL RZR 0.32g Precision BB x3300",
+        "description": "NUPROL's latest offering into the Airsoft Market with newly designed BBs made to be more accurate and consistent than ever before, with a strict tolerance of 0.01mm per BB. \r\n\r\n- White BBs\r\n- 0.32g in Weight\r\n- Approx 3300 BBs",
+        "price": "17.99",
+        "rating": "4.10",
+        "image_url": null,
+        "image": "Nurpol-RZR-0.32g-BBs.png"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 24,
+    "fields": {
+        "category": 1,
+        "brand": 5,
+        "sku": "pp10055024",
+        "name": "NUPROL RZR 0.32g Precision BIO BB x3300",
+        "description": "NUPROL's eco-friendly ammunition offering for Snipers, heavy-weight 0.32g BBs made to offer excellently consistent performance at long-range and greater accuracy, which biodegrades after use.\r\n\r\n- White BIO BBs\r\n- 0.32g in Weight\r\n- Approx 3300 BBs",
+        "price": "22.99",
+        "rating": "4.40",
+        "image_url": null,
+        "image": "Nurpol-RZR-0.32g-BBs-Bio.png"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 25,
+    "fields": {
+        "category": 1,
+        "brand": 10,
+        "sku": "pp10055025",
+        "name": "Ares 0.40g Amoeba Diamond Precision Ammunition 6mm BB x1000",
+        "description": "A pot of 1000 0.4g rounds of a white colour, which are much heavier than standard rounds meaning you can apply more HOP to really reach out and touch your target.\r\n\r\n- White Colour\r\n- Bottle of 1000\r\n- Heavyweight BB",
+        "price": "18.99",
+        "rating": "5.00",
+        "image_url": null,
+        "image": "ARES-amoeba-0.40g-BBs.png"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 26,
+    "fields": {
+        "category": 1,
+        "brand": 10,
+        "sku": "pp10055026",
+        "name": "Ares 0.40g Bio Amoeba Diamond Precision Ammunition 6mm BB x 1000",
+        "description": "A pot of 1000 x 0.4g rounds of a white colour, which are much heavier than standard rounds meaning you can apply more HOP to really reach out and touch your target - finally available in a biodegradable form to keep Mother Earth happy.\r\n\r\n- Pot of 1000\r\n- Biodegradable\r\n- Heavyweight BBs",
+        "price": "18.99",
+        "rating": "4.80",
+        "image_url": null,
+        "image": "ARES-amoeba-0.40g-BBs-Bio.png"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 27,
+    "fields": {
+        "category": 1,
+        "brand": 10,
+        "sku": "pp10055027",
+        "name": "Ares Amoeba Diamond Precision 0.50g BBs - 500rnds",
+        "description": "A heavier BB designed for upgraded HOP units and Airsoft Sniper rifles, intended to provide a flatter trajectory when a greater HOP effect is applied. These BBs are grey in colour which helps the shooter remain concealed, preventing the enemy from spotting the incoming fire and its point of origin!\r\n\r\n- 0.5g Heavy/Sniper BB\r\n- Bottle of 500rnds\r\n- \"Invisible\" Grey colour",
+        "price": "16.99",
+        "rating": "3.40",
+        "image_url": null,
+        "image": "ARES-amoeba-0.50g-BBs-Black.png"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 28,
+    "fields": {
+        "category": 1,
+        "brand": 10,
+        "sku": "pp10055028",
+        "name": "Ares 0.50g Amoeba Diamond Precision Ammunition 6mm BB x1000",
+        "description": "A pot of 1000 0.5g rounds of a grey colour, which are super heavyweight meaning you can apply more HOP to really reach out and touch your target.\r\n\r\n- Bottle of 1000\r\n- Heavyweight BB\r\n- \"Invisible Rounds\"",
+        "price": "22.99",
+        "rating": "4.10",
+        "image_url": null,
+        "image": "ARES-amoeba-0.50g-BBs-Black-1000.png"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 29,
+    "fields": {
+        "category": 2,
+        "brand": 11,
+        "sku": "pp10066001",
+        "name": "Abbey 144a Predator Summer Gun Gas 700ml",
+        "description": "A very popular selling gas especially during summer and in countries that have warmer climates. This gas really is a low-power gas. It has a high silicone content, so you will need to clean your GBB Airsoft weapon more frequently to ensure longevity. \r\n\r\nStocked and used by our Patrol Base workshop and other staff members for years, each can has 700ml of contents and can be used to reduce the output power of a hot gas gun, or ensure the smooth silky operation of a Polymer slid pistol.\r\n\r\n- Weaker Than Ultra Gas\r\n- Ideal Summer Gas\r\n- 700ml Content",
+        "price": "8.99",
+        "rating": "2.90",
+        "image_url": null,
+        "image": "Abbey-Gun-Gas-Green.png"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 30,
+    "fields": {
+        "category": 2,
+        "brand": 11,
+        "sku": "pp10066002",
+        "name": "Abbey Predator Maintenance Gas 144A 270ml",
+        "description": "Designed to restore life to dried-out seals in Airsoft GBB and NBB pistol magazines, 40mm grenades and other gas devices. Stocked and used by our Patrol Base workshop and other staff members for years. Each can has 270ml contents and can restore magazines over and over. \r\n\r\nPlease note this is not a guaranteed item to repair leaky magazines, but so far we have been impressed with its success rate. We have used this in-store many times and repaired many magazines with slow leaks.\r\n\r\n- Repair Leaking Mags\r\n- Extra Lubricated\r\n- Super Compact",
+        "price": "4.99",
+        "rating": "4.90",
+        "image_url": null,
+        "image": "Abbey-Gun-Gas-Green-Small.png"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 31,
+    "fields": {
+        "category": 2,
+        "brand": 11,
+        "sku": "pp10066003",
+        "name": "Abbey Predator Ultra Mini Airsoft Green Gas 270ml",
+        "description": "A miniature bottle of Abbey Predator Ultra Gas, designed to be compact enough to take out into the Game Field, being able to be stored in Magazine and Utility pouches.\r\n\r\n- Super Compact\r\n- Ideal Summer Gas\r\n- Low Power Results",
+        "price": "4.99",
+        "rating": "4.30",
+        "image_url": null,
+        "image": "Abbey-Gun-Gas-Red-small.png"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 32,
+    "fields": {
+        "category": 2,
+        "brand": 11,
+        "sku": "pp10066004",
+        "name": "Abbey Predator Ultra Gas 700ml",
+        "description": "Abbey Predator Ultra GAS is the perfect propellant for any gas weapon from pistols to high-tech sniper rifles. It contains UPL+ lubricant which is designed to stay permanently mixed with the propellant.\r\n\r\n- High Power Gas\r\n- Metal Fill Nozzle\r\n- Contains UPL+ Lubricant",
+        "price": "10.99",
+        "rating": "4.00",
+        "image_url": null,
+        "image": "Abbey-Gun-Gas-Red.png"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 33,
+    "fields": {
+        "category": 2,
+        "brand": 5,
+        "sku": "pp10066005",
+        "name": "NUPROL 1.0 Premium Blue Gas 300g",
+        "description": "A bottle of Low Powered Gas designed by NUPROL as part of their Green Gas Range, designed to be used with Plastic Bodied Weapons and Small Submachine Guns which require lower powers to operate. \r\n\r\n- Low Powered Gas\r\n- Silicone Lubricants\r\n- For Polymer Pistols",
+        "price": "9.99",
+        "rating": "3.00",
+        "image_url": null,
+        "image": "Nurpol-Blue-Gas.png"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 34,
+    "fields": {
+        "category": 2,
+        "brand": 5,
+        "sku": "pp10066006",
+        "name": "NUPROL 2.0 Airsoft Green Gas 300g",
+        "description": "NUPROL's newer, cleaner and higher performance Airsoft gas, now named NUPROL 2.0. A slightly larger bottle than its predecessor with cleaner propane gas and silicone contents internally. \r\n\r\nThis Airsoft Green Gas will give your Airsoft gun an FPS boost whilst keeping everything running smoothly and cleanly. \r\n\r\nAn excellent all-year-round gas from NUPROL, a must for any GBB pistol, Airsoft carbine and other gas devices.\r\n\r\n- Dust Cover Included\r\n- Metal Fill Nozzle\r\n- 300g Contents",
+        "price": "11.99",
+        "rating": "5.00",
+        "image_url": null,
+        "image": "Nurpol-Green-Gas.png"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 35,
+    "fields": {
+        "category": 2,
+        "brand": 5,
+        "sku": "pp10066007",
+        "name": "NUPROL 2.0 Mini Airsoft Green Gas 85g",
+        "description": "A Gas can which is used to fill Airsoft Gas Blowback Pistols and Weapon Magazine created by NUPROL and designed to be cleaner, with a higher performance than WE Europe's old Green Gas.\r\n\r\nThis gas is a must-have for any Airsoft Skirmisher who has a Gas Blowback Pistol, Carbine or Rifle and wants to re-gas their magazines in the field, allowing them to play for longer without having to go back to the safe zone to re-fill magazines.\r\n\r\n-CFC Free Formula\r\n- Metal Fill Nozzle\r\n- 85g Gas Bottle",
+        "price": "6.99",
+        "rating": "4.20",
+        "image_url": null,
+        "image": "Nurpol-Green-Gas-Mini.png"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 36,
+    "fields": {
+        "category": 2,
+        "brand": 5,
+        "sku": "pp10066008",
+        "name": "NUPROL 3.0 Extreme Power 300g 1L Gas",
+        "description": "Designed to make your gas Airsoft RIF more consistent between every shot and work far better in colder conditions. You will also achieve an increase in FPS but you must let the gas settle in your magazine first! \r\n\r\n- 300g Contents\r\n- Metal Fill Nozzle\r\n- Dust Cover Included",
+        "price": "12.99",
+        "rating": "5.00",
+        "image_url": null,
+        "image": "Nurpol-Red-Gas.png"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 37,
+    "fields": {
+        "category": 2,
+        "brand": 5,
+        "sku": "pp10066009",
+        "name": "NUPROL 4.0 Ultimate Power 300g 1L Gas",
+        "description": "A high-performance gas, designed to operate at lower temperatures (between 3c - 20c) allowing you to use your weapon all year round. Using this high-power mix gives an increase in FPS, GBB efficiency and a harder kick.\r\n\r\n- 300g Contents\r\n- Metal Fill Nozzle\r\n- Dust Cover Included",
+        "price": "15.99",
+        "rating": "5.00",
+        "image_url": null,
+        "image": "Nurpol-Black-Gas.png"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 38,
+    "fields": {
+        "category": 2,
+        "brand": 4,
+        "sku": "pp10066010",
+        "name": "ASG ULTRAIR Power Green Gas 520ml",
+        "description": "Green Gas is designed for use on gas-powered Airsoft pistols, Rifles and Shotguns. The gas comes in a lightweight aluminium can and has a heavy-duty metal nozzle meaning it won't snap. \r\n\r\n- Green Gas\r\n- 520ml Contents\r\n- 90% Propane / 10% Butane",
+        "price": "7.99",
+        "rating": "5.00",
+        "image_url": null,
+        "image": "ASG-Ultraair-Gas.png"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 39,
+    "fields": {
+        "category": 4,
+        "brand": 4,
+        "sku": "pp10077001",
+        "name": "ASG 7.4V 1000 mAh 30C LiPo PEQ Battery Pack",
+        "description": "An ideal battery for those who have very limited space or for those who have a front-wired PEQ box-style setup or RC cars. With a 1000mAh 30C discharge expect a good rate of fire but 2 or 3 are recommended for a full day of constant shooting.\r\n\r\n-7.4v 2S\r\n- 1000mAh\r\n- 30C Rating",
+        "price": "14.49",
+        "rating": "3.80",
+        "image_url": null,
+        "image": "ASG-7.4v-1000mA-30c-Lipo-rectangle-battery.png"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 40,
+    "fields": {
+        "category": 4,
+        "brand": 4,
+        "sku": "pp10077002",
+        "name": "ASG 7.4V 1300mAh 20c LiPo Crane Stock Battery",
+        "description": "A Standard powered Airsoft Battery, designed to be used in almost all Airsoft AEG weapons with a mini-Tamiya connector, providing the perfect amount of power for most Airsoft Weapons. \r\n\r\n- 1300mAh\r\n- 7.4v 2S LiPo\r\n- Crane Battery",
+        "price": "15.49",
+        "rating": "4.80",
+        "image_url": null,
+        "image": "ASG-7.4v-1300mA-20c-Lipo-cane-battery.png"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 41,
+    "fields": {
+        "category": 4,
+        "brand": 4,
+        "sku": "pp10077003",
+        "name": "ASG 11.1V 900mAh 15C LiPo Stick Battery",
+        "description": "A high-powered Airsoft Battery, designed to be used in a highly tuned top-end gearbox. The battery comes in a 'stick' configuration, with two adjoined cells in one block, allowing the battery to be squeezed into even the tightest of buffer tubes. \r\n\r\n- 900mAh\r\n- Stick Battery\r\n- 11.1v 2S LiPo",
+        "price": "16.99",
+        "rating": "4.00",
+        "image_url": null,
+        "image": "ASG-11.1v-900mA-15c-Lipo-stick-battery.png"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 42,
+    "fields": {
+        "category": 4,
+        "brand": 4,
+        "sku": "pp10077004",
+        "name": "ASG 11.1V 1300mAh 20c LiPo Crane Stock Battery",
+        "description": "A high-powered Airsoft Battery, designed to be used in a highly tuned top-end gearbox. \r\n\r\n- 1300mAh\r\n- 11.1v 3S LiPo\r\n- Crane Battery",
+        "price": "21.99",
+        "rating": "2.90",
+        "image_url": null,
+        "image": "ASG-11.1v-1300mA-20c-Lipo-cane-battery.png"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 43,
+    "fields": {
+        "category": 4,
+        "brand": 5,
+        "sku": "pp10077005",
+        "name": "NUPROL 7.4v 1500mAh 20c Micro PEQ LiPo Battery",
+        "description": "A 7.4v 1500mAh LiPo battery that provides a 20c discharge rate and is highly compact, making it ideal for external PEQ battery boxes and tight spaces.\r\n\r\n- 7.4v 2S\r\n- 1500mAh\r\n- 20C Rating",
+        "price": "18.49",
+        "rating": "5.00",
+        "image_url": null,
+        "image": "Nurpol-7.4v-1500mA-20c-Lipo-rectangle-battery.png"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 44,
+    "fields": {
+        "category": 4,
+        "brand": 5,
+        "sku": "pp10077006",
+        "name": "NUPROL 11.1v 1000mAh LiPo Super Slim Stick (AK)",
+        "description": "An ultra-thin and lightweight battery, designed to squeeze into AK compartments. The battery provides 1100mAh of power with a discharge rate of 40C.\r\n\r\n- 11.1v 3S\r\n- 1100mAh\r\n- 40C Rating",
+        "price": "26.99",
+        "rating": "4.60",
+        "image_url": null,
+        "image": "Nurpol-11.1v-1000mA-20c-Lipo-superslim-battery.png"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 45,
+    "fields": {
+        "category": 4,
+        "brand": 5,
+        "sku": "pp10077007",
+        "name": "NUPROL 11.1v 1200mAh 20c Stock Tube Stick LiPo Battery",
+        "description": "A large stick-type LiPo battery, ideally suited to fitting inside an M4 or M16 type AEG stock tube.\r\n\r\n- 1200mAh\r\n- 20C Rating\r\n- 11.1v 3S LiPo",
+        "price": "23.99",
+        "rating": "4.00",
+        "image_url": null,
+        "image": "Nurpol-11.1v-1200mA-20c-Lipo-stocktube-battery.png"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 46,
+    "fields": {
+        "category": 4,
+        "brand": 5,
+        "sku": "pp10077008",
+        "name": "NUPROL 11.1v 1300mAh 20c Micro PEQ LiPo Battery",
+        "description": "A high-quality and compact PEQ box-sized 11.1v Lithium Polymer Battery with 1300mAh of capacity, and a 20C discharge rating.\r\n\r\n- 1300mAh\r\n- 20c Rating\r\n- 11.1v 3S LiPo",
+        "price": "21.49",
+        "rating": "3.40",
+        "image_url": null,
+        "image": "Nurpol-11.1v-1300mA-20c-Lipo-rectangle-battery.png"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 47,
+    "fields": {
+        "category": 4,
+        "brand": 5,
+        "sku": "pp10077009",
+        "name": "NUPROL 11.1v 1450mAh 30c Stock Tube LiPo Battery",
+        "description": "High-quality WE 11.1v 1450mAh 30C LiPo Stick Battery, provides great battery life and fits most battery compartments. The 30C rating means the battery discharges quicker to give a higher rate of fire and better trigger response.\r\n\r\n-1450mAh\r\n- Stick Battery\r\n- 11.1v 3S LiPo",
+        "price": "25.49",
+        "rating": "4.00",
+        "image_url": null,
+        "image": "Nurpol-11.1v-1450mA-20c-Lipo-stocktube-battery.png"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 48,
+    "fields": {
+        "category": 4,
+        "brand": 5,
+        "sku": "pp10077010",
+        "name": "NUPROL 11.1v 1450mAh 30c Crane Stock LiPo Battery",
+        "description": "An Airsoft Gun Battery designed and built by NUPROL specifically for Airsoft Skirmishers and is part of their POWER range of Batteries. \r\n\r\n- 1450mAh\r\n- 11.1v 3S LiPo\r\n- Crane Battery",
+        "price": "30.99",
+        "rating": "4.80",
+        "image_url": null,
+        "image": "Nurpol-11.1v-1450mA-30c-Lipo-cane-battery.png"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 49,
+    "fields": {
+        "category": 4,
+        "brand": 5,
+        "sku": "pp10077011",
+        "name": "NUPROL 11.1v 1600mAh 20c Crane LiPo Battery",
+        "description": "An Airsoft Gun Battery designed and built by NUPROL specifically for Airsoft Skirmishers and are part of their POWER range of Batteries.\r\n\r\n- 1600mAh\r\n- Crane Battery\r\n- 11.1v 20C LiPo",
+        "price": "28.99",
+        "rating": "4.10",
+        "image_url": null,
+        "image": "Nurpol-11.1v-1600mA-20c-Lipo-cane-battery.png"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 50,
+    "fields": {
+        "category": 3,
+        "brand": 13,
+        "sku": "pp10088001",
+        "name": "TMC M67 PVC Patch",
+        "description": "A PVC Patch with a velcro-back, that is designed to sit on Hats, Rigs, Backpacks, or anywhere with a free space of Velcro. The patch features an M67 Fragmentation Grenade as used by the United States Armed Forces, and is the perfect finishing touch to any loadout.\r\n\r\n- PVC 3D Effect\r\n- M67 Grenade\r\n- Velcro Backed",
+        "price": "5.00",
+        "rating": "5.00",
+        "image_url": null,
+        "image": "TMC-M67-PVC-patch.png"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 51,
+    "fields": {
+        "category": 3,
+        "brand": 13,
+        "sku": "pp10088002",
+        "name": "TMC M433 PVC Patch",
+        "description": "A PVC velcro-backed 3D effect morale patch which features a 40mm HEDP M433 grenade, that is perfect for placing on Hats, Rigs, Backpacks or anywhere with free velcro space. The 40mm HEDP M433 is a High Explosive Dual Purpose grenade that has the ability to penetrate 2 inches of Steel Armour in the real world, making it a nice balance of Anti-Personnel and Anti-Material. \r\n\r\n- PVC 3D Patch\r\n- Velcro Backed\r\n- 40mm Grenade",
+        "price": "6.00",
+        "rating": "4.90",
+        "image_url": null,
+        "image": "TMC-M433-PVC-patch.png"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 52,
+    "fields": {
+        "category": 3,
+        "brand": 6,
+        "sku": "pp10088003",
+        "name": "Patch Lab Polish SF SMG-5 3D PVC Morale Patch Limited Edition",
+        "description": "Looking for a way to broadcast your national pride or your love for CYMA and Taiwangun? The Patch Lab Polish SF SMG-5 3D PVC morale patch depicts a fully kitted out elite Polish operator packing a custom SMG-5 which looks a lot like the CM.041G. The patch is constructed from PVC with raised and recessed detail to create a 3D effect and has a subdued colour scheme of olive and grey. The Polish flag on the operator's helmet is in full colour, as are the CYMA and Taiwangun logos on teeny, tiny patches attached to the operator's dangler pouch. The level of detail in this patch is rather impressive, and it would look awesome with practically any loadout.\r\n\r\n- Limited edition 3D PVC patch\r\n- Velcro backed\r\n- Depicts a GROM operator and CYMA fan!",
+        "price": "15.00",
+        "rating": "5.00",
+        "image_url": null,
+        "image": "Patch-Lab-Polish-SF-SMG-5-3D-PVC-Morale-Patch-Limited-Edition.png"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 53,
+    "fields": {
+        "category": 3,
+        "brand": 9,
+        "sku": "pp10088004",
+        "name": "JTG Dare To Be Unique PVC Morale Patch",
+        "description": "Style up your Airsoft kit with this unique, to say the least, patch from JTG! The patch is constructed from PVC and has a 3D effect and depicts a creature of some form that appears to be derived from a Seahorse and a Unicorn. Creepy, but some might find it cute, and it certainly is unique! What better way to mark yourself out from the crowd than by wearing this patch? The masses, with their boring olive green and tan patches depicting everyday things such as national flags, won't know what hit them when they lay eyes on this patch!\r\n\r\n- 3D PVC Patch\r\n- Velcro backed\r\n- Depicts a Seahorse-Unicorn hybrid creature",
+        "price": "6.00",
+        "rating": "5.00",
+        "image_url": null,
+        "image": "JTG-Dare-To-Be-Unique-PVC-Morale-Patch.png"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 54,
+    "fields": {
+        "category": 3,
+        "brand": 8,
+        "sku": "pp10088005",
+        "name": "8Fields Tactical GAME OVER Rubber Patch",
+        "description": "The patch is constructed from rubber, with light grey text, and a dark grey background, with male Velcro on the rear of the patch.\r\n\r\n- Velcro Patch\r\n- Medium Sized\r\n- Comedic Patch",
+        "price": "5.00",
+        "rating": "4.98",
+        "image_url": null,
+        "image": "8Fields-Tactical-GAME-OVER-Rubber-Patch.png"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 55,
+    "fields": {
+        "category": 3,
+        "brand": 12,
+        "sku": "pp10088006",
+        "name": "101 Inc. Predator PVC 3D Patch",
+        "description": "A Velcro Backed 3D PVC Vanity Patch designed to be attached to Rigs, Vests, Bags, and pretty much anywhere with spare Velcro Panels.\r\n\r\n- Clever Girl\r\n- Large Sized \r\n- 3D PVC Patch",
+        "price": "5.00",
+        "rating": "3.50",
+        "image_url": null,
+        "image": "101-inc-predator-PVC-3D-Patch.png"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 56,
+    "fields": {
+        "category": 3,
+        "brand": 12,
+        "sku": "pp10088007",
+        "name": "101 Inc. Rubber Duck PVC 3D Patch",
+        "description": "A velcro-backed 3D PVC vanity patch designed to be attached to rigs, vests, bags, and pretty much anywhere with spare Velcro panels. \r\n\r\n- 3D PVC Patch\r\n- Quack Quack\r\n- 7.4cm x 7.5cm",
+        "price": "5.00",
+        "rating": "3.30",
+        "image_url": null,
+        "image": "101-inc-rubber-duck-PVC-3D-patch.png"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 57,
+    "fields": {
+        "category": 3,
+        "brand": 12,
+        "sku": "pp10088008",
+        "name": "101 Inc. Serial Killer Mode PVC 3D Patch",
+        "description": "A velcro-backed 3D PVC patch designed to be attached to your Airsoft kit on any Velcro patch you have - chest rigs, backpacks, jackets, anywhere!\r\n\r\n- 3.2cm x 6cm\r\n- 3D PVC Patch\r\n- Velcro Backed",
+        "price": "4.50",
+        "rating": "4.99",
+        "image_url": null,
+        "image": "101-inc-serial-killer-mode-PVC-3D-patch.png"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 58,
+    "fields": {
+        "category": 3,
+        "brand": 1,
+        "sku": "pp10088009",
+        "name": "Helikon-Tex Road Sign PVC Patch",
+        "description": "The  Helikon-Tex Road Sign morale patch is part of Helikon's range of outdoor adventurous range of cool and stylish patches. Its unique American-style road sign is bound to get you noticed.\r\n\r\n- Made of durable PVC\r\n- Hook velcro on the back allows attaching the patch to clothing, packs, bags\r\n- 5cm x 5cm",
+        "price": "6.00",
+        "rating": "5.00",
+        "image_url": null,
+        "image": "Helikon-Tex-Road-Sign-PVC-Patch.png"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 59,
+    "fields": {
+        "category": 3,
+        "brand": 1,
+        "sku": "pp10088010",
+        "name": "Helikon-Tex Gun is Fun Patch",
+        "description": "The  Helikon-Tex Gun is Fun morale patch is part of Helikon's range of outdoor shooting range of cool and stylish patches. Its unique red diamond and blue font are bound to get you noticed.\r\n\r\n- Made of durable PVC\r\n- Hook velcro on the back allows attaching the patch to clothing, packs, bags\r\n- 7cm x 5.5cm",
+        "price": "6.00",
+        "rating": "4.30",
+        "image_url": null,
+        "image": "Helikon-Tex-Gun-Is-Fun-Patch.png"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 60,
+    "fields": {
+        "category": 3,
+        "brand": 1,
+        "sku": "pp10088011",
+        "name": "Helikon-Tex Heart PVC Patch",
+        "description": "The  Helikon-Tex Hearts morale patch is part of Helikon's range of outdoor adventurous range of cool and stylish patches. The heart shape is built up of the brand's logo chameleon sign is bound to get you noticed.\r\n\r\n- Made of durable PVC\r\n- Hook velcro on the back allows attaching the patch to clothing, packs, bags\r\n- 7cm x 7.5cm",
+        "price": "6.00",
+        "rating": "4.50",
+        "image_url": null,
+        "image": "Helikon-Tex-Heart-PCV-Patch.png"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 61,
+    "fields": {
+        "category": 3,
+        "brand": 1,
+        "sku": "pp10088012",
+        "name": "Helikon-Tex Logo PVC Patch",
+        "description": "This is Helikon-Tex's traditional brand logo patch in black PVC with the chameleon in its famous vibrant orange. A must-have bag if you like Helikon-Tex products and want to show them!\r\n\r\n- Rounded corners\r\n- Made of durable PVC\r\n- Hook velcro on the back allows attaching the patch to clothing, packs, bags \r\n- Matt finish\r\n- 5.5cm x 3.5cm",
+        "price": "6.00",
+        "rating": "4.50",
+        "image_url": null,
+        "image": "Helikon-Tex-Logo-PVC-Patch.png"
+    }
+}
+]
