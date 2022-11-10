@@ -36,9 +36,13 @@ body {
 }
 
 .secondary-font {
-    /* font-family: 'Judson', serif; */
-    /* font-family: 'GFS Didot', serif; */
+
     font-family: 'Marcellus', serif;
+}
+
+.tertiary-font {
+    /* font-family: 'Judson', serif; */
+    font-family: 'GFS Didot', serif;
 }
 
 .header-btn-colour {
@@ -53,6 +57,10 @@ body {
     height: 70px;
 }
 
+footer {
+    z-index: 2;
+    position: relative;
+}
 
 .footer-pushdown {
     height: 250px;
@@ -65,8 +73,6 @@ body {
 .footer-base {
     border-top: 2px solid #333;
     background-color: #212529;
-    /* font-family: 'Judson', serif; */
-    /* font-family: 'GFS Didot', serif; */
     font-family: 'Marcellus', serif;
 }
 
@@ -354,5 +360,187 @@ nav {
 @media (max-width:300px) {
     .service-card {
         padding: 0;
+    }
+}
+
+/* ------------ Products CSS --------------- */
+
+.products-container {
+    width: calc(100% - 225px);
+    margin-left: 225px;
+}
+
+.image-container {
+    max-width: 100%;
+}
+
+.img-container img {
+    object-fit: contain;
+    height: 250px;
+}
+
+.card-text-container {
+    max-height: 70px;
+    font-size: 1vw;
+    margin-bottom: 6px;
+}
+
+.side-navbar {
+    width: 225px;
+    height: 100vh;
+    position: fixed;
+    padding: 20px 10px 3px 10px;
+    display: block;
+    box-shadow: 0 0 6px #0d492d;
+}
+
+.side-navbar-link {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #818181;
+    display: block;
+}
+
+.side-navbar-link:hover {
+    color: white;
+}
+
+.store-link {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: #198754;
+    display: block;
+}
+
+.store-link:hover {
+    color: #20aa69;
+}
+
+.product-card {
+    margin: 15px;
+    font-size: 1.1rem;
+}
+
+.btt-button {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 10px;
+    left: 50%;
+    z-index: 3;
+}
+
+.btt-link,
+.update-link,
+.remove-item {
+    cursor: pointer;
+}
+
+/* -------- MEDIA QUERIES FOR THE SIDENAV --------- */
+
+
+
+@media screen and (max-width: 700px) {
+    .side-navbar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    .side-navbar a {
+        padding: 6px;
+    }
+
+    .products-container {
+        width: 100%;
+        margin-left: unset;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .side-navbar {
+        font-size: 1.1rem;
+    }
+
+    .side-navbar a {
+        text-align: center;
+        float: none;
+    }
+
+}
+
+
+
+/* ----------------------------------------- */
+
+/* ------- card-container-breakpoints ------ */
+
+@media screen and (max-width: 1300px) {
+    .card-text-container {
+        height: 110px;
+        font-size: 1.1vw;
+        margin-bottom: 6px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .card-text-container {
+
+        height: 90px;
+        font-size: 1.5vw;
+        margin-bottom: 6px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .card-text-container {
+
+        height: 120px;
+        font-size: 1.65vw;
+        margin-bottom: 6px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .card-text-container {
+
+        height: 120px;
+        font-size: 2vw;
+        margin-bottom: 6px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .card-text-container {
+        height: 110px;
+        font-size: 3vw;
+        margin-bottom: 6px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .card-text-container {
+        height: 100px;
+        font-size: 3.7vw;
+        margin-bottom: 6px;
+    }
+
+    .product-card {
+        margin: 45px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .card-text-container {
+        height: 180px;
+        font-size: 4.8vw;
+        margin-bottom: 6px;
+    }
+
+    .product-card {
+        margin: 20px;
     }
 }

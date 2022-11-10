@@ -2,54 +2,146 @@
 {% load static %}
 {% block content %}
 
-<!-- Page Title -->
+<!--fixed left side navbar-->
+<nav>
+    <div class="side-navbar d-flex flex-column bg-dark secondary-font">
+        <a class="d-none d-md-block pt-3 pb-2 store-link" href="{% url 'products' %}">Store</a>
+        <ul class="list-unstyled">
+            <li><a class="side-navbar-link" href="{% url 'products' %}">All Products</a></li>
+            <li><a class="side-navbar-link" href="#">BBs</a></li>
+            <li><a class="side-navbar-link" href="#">Gas</a></li>
+            <li><a class="side-navbar-link" href="#">Patches</a></li>
+            <li><a class="side-navbar-link" href="#">Batteries</a></li>
+        </ul>
+        <!-- search form -->
+        <form class="d-flex mt-3" role="search">
+            <input class="form-control me-1" type="search" placeholder="Store Search" aria-label="Search">
+            <button class="btn btn-success text-center align-content-center" type="submit">Search</button>
+        </form>
+        <!-- back to top button  -->
 
-<div class="container-fluid">
-    <div class="pushdown-small mb-2"></div>
-    <div class="container-fluid">
-        <div class="row">
-            <h2 class="display-2 text-center my-5 animate">Products</h2>
+    </div>
+</nav>
+
+<!-- Products container -->
+
+<section>
+    <!-- Product Title -->
+    <div class="products-container tertiary-font">
+        <div class="row g-0">
+            <h2 class="display-3 text-center my-5 logo-font">Products</h2>
+            {% for c in current_categories %}
+            <a class="category-badge text-decoration-none" href="{}?category={{ c.name }}">
+                <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-bark">{{ c.friendly_name }}</span>
+            </a>
+            {% endfor %}
+            <div class="container-fluid justify-content-center w-75">
+                <hr>
+            </div>
+        </div>
+        <!-- Product Sorting -->
+        <div class="row g-0">
+            <div class="product-container">
+                <div class="row g-0">
+                    <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
+                        <div class="mx-5 w-sm-50 w-md-75 pr-3">
+                            <select id="sort-selector" class="rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
+                                <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
+                                <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price (low to high)</option>
+                                <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price (high to low)</option>
+                                <option value="rating_asc" {% if current_sorting == 'rating_asc' %}selected{% endif %}>Rating (low to high)</option>
+                                <option value="rating_desc" {% if current_sorting == 'rating_desc' %}selected{% endif %}>Rating (high to low)</option>
+                                <option value="name_asc" {% if current_sorting == 'name_asc' %}selected{% endif %}>Name (A-Z)</option>
+                                <option value="name_desc" {% if current_sorting == 'name_desc' %}selected{% endif %}>Name (Z-A)</option>
+                                <option value="category_asc" {% if current_sorting == 'category_asc' %}selected{% endif %}>Category (A-Z)</option>
+                                <option value="category_desc" {% if current_sorting == 'category_desc' %}selected{% endif %}>Category (Z-A)</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 order-md-first">
+                        <p class="text-muted mx-5 text-center text-sm-center text-md-start">
+                            {% if search_term or current_categories or current_sorting != 'None_None' %}
+                            <span class="h6"><a href="{% url 'products' %}">Products Home</a> | </span>
+                            {% endif %}
+                            {{ products|length }} Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Product Cards -->
+        <div class="row g-0 justify-content-center">
+            {% for product in products %}
+            <div class="col-md-6 col-lg-4 col-xxl-3">
+                <div class="card product-card m-sm-5 m-md-5 m-lg-3 m-xl-5">
+                    <div class="img-container">
+                        {% if product.image %}
+                        <a href="{}">
+                            <img class="card-img-top" src="{{ product.image.url }}" alt="{{ product.name }}"></a>
+                        {% else %}
+                        <a href="{}">
+                            <img class="card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}"></a>
+                        {% endif %}
+                    </div>
+                    <div class="card-text card-text-container p-2 text-secondary">
+                        <p class="mb-5 h-100%">{{ product.name }}</p>
+                    </div>
+                    <div class="card-footer text-secondary bg-white pt-0 text-left">
+                        <div class="row">
+                            <div class="col">
+                                <p class="mb-0 text-left text-black font-weight-bold"><strong>£{{ product.price }}</strong></p>
+                                {% if product.category %}
+                                <p class="small mt-1 mb-0">
+                                    <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
+                                        <i class="fas fa-tag mr-1"></i>{{product.category.friendly_name}}
+                                    </a>
+                                </p>
+                                {% endif %}
+                                {% if product.rating %}
+                                <small class="text-muted">
+                                    <i class="fas fa-star mr-1"></i>
+                                    {{ product.rating }}
+                                    / 5</small>
+                                {% else %}
+                                <small class="text-muted">No Rating</small>
+                                {% endif %}
+                                <br>
+                                {% if request.user.is_superuser %}
+                                <small class="ml-3">
+                                    <a href="#">Edit</a> |
+                                    <a class="text-danger" href="#">Delete</a>
+                                </small>
+                                {% endif %}
+                                <br>
+                                <small class="text-end"> add to wishlist <a class=" text-success text-decoration-none" href=""><i class="fas fa-plus"></i></a></small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+            <div class="row g-0">
+                <div class="btn btt-button">
+                    <a href="" class="display-6">
+                        <i class="fas fa-arrow-up text-success mx-auto my-auto green-on-hov"></i>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="row justify-content-center">
-        {{ products }}
-        <!--Item1-->
-        <!-- <div class="col-lg-3 mb-5">
-            <div class="card service-card animate glow delay-1">
-                <img class="card-img-top" src="{{ MEDIA_URL }}/media/ghost-camo-rifle.jpg" alt="Paint Services">
-                <div class="card-body secondary-font">
-                    <h4 class="card-title text-secondary">Paint Services</h4>
-                    <p class="card-text text-secondary"> Ever wanted your Rifle to look unique, or ever wanted it to blend in with your environment? Book your RIF in with us and we will give it some war paint.</p>
-                    <button type="button" class="btn btn-success my-3" data-bs-toggle="modal" data-bs-target="#paintServiceModal">More Info</button>
-                    <a href="#" class="btn btn-success m-1">Book Now</a>
-                </div>
-            </div>
-        </div> -->
-        <!--Item2-->
-        <!-- <div class="col-lg-3 mb-5">
-            <div class="card service-card animate glow delay-2">
-                <img class="card-img-top" src="{{ MEDIA_URL }}/media/desert-camo-weaponset.jpg" alt="Tech Services">
-                <div class="card-body secondary-font">
-                    <h4 class="card-title text-secondary">Tech Services</h4>
-                    <p class="card-text text-secondary">Is your Airsoft weapon, broken, or not performing how you would like it? Well put your RIF weapon in with us and we will get it performing as good as new.</p>
-                    <button type="button" class="btn btn-success m-1" data-bs-toggle="modal" data-bs-target="#techServiceModal">More Info</button>
-                    <a href="#" class="btn btn-success m-1">Enquire Now</a>
-                </div>
-            </div>
-        </div> -->
-        <!--Item3-->
-        <!-- <div class=" col-lg-3 mb-5">
-            <div class="card service-card animate glow delay-3">
-                <img class="card-img-top " src="{{ MEDIA_URL }}/media/airsoft-consumables.jpg " alt="Consumables ">
-                <div class="card-body secondary-font">
-                    <h4 class="card-title text-secondary ">Consumables</h4>
-                    <p class="card-text text-secondary ">We also here at airsoft supply drop sell consumables to our airsoft community in the wake of BBs and accessories at good prices. Come and have a look for yourselves.</p>
-                    <a href="# " class="btn btn-success m-1">Shop Now</a>
-                </div>
-            </div>
-        </div> -->
-    </div>
-</div>
-<div class="footer-pushdown-small"></div>
+</section>
+
+<div class="footer-pushdown"></div>
+
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+<script type="text/javascript">
+    $('.btt-link').click(function(e) {
+        window.scrollTo(0, 0)
+    })
+</script>
+
 
 {% endblock %}

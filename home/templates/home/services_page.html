@@ -5,7 +5,6 @@
 <!-- Page Title -->
 
 <div class="container-fluid">
-    <div class="pushdown-small mb-2"></div>
     <div class="container-fluid">
         <div class="row">
             <h2 class="display-2 text-center my-5 animate">What we offer</h2>
@@ -19,7 +18,7 @@
                 <div class="card-body secondary-font">
                     <h4 class="card-title text-secondary">Paint Services</h4>
                     <p class="card-text text-secondary"> Ever wanted your Rifle to look unique, or ever wanted it to blend in with your environment? Book your RIF in with us and we will give it some war paint.</p>
-                    <button type="button" class="btn btn-success my-3" data-bs-toggle="modal" data-bs-target="#paintServiceModal">More Info</button>
+                    <button type="button" class="btn btn-success m-1" data-bs-toggle="modal" data-bs-target="#paintServiceModal">More Info</button>
                     <a href="#" class="btn btn-success m-1">Book Now</a>
                 </div>
             </div>
@@ -41,9 +40,9 @@
             <div class="card service-card animate glow delay-3">
                 <img class="card-img-top " src="{{ MEDIA_URL }}/media/airsoft-consumables.jpg " alt="Consumables ">
                 <div class="card-body secondary-font">
-                    <h4 class="card-title text-secondary ">Consumables</h4>
+                    <h4 class="card-title text-secondary ">Store</h4>
                     <p class="card-text text-secondary ">We also here at airsoft supply drop sell consumables to our airsoft community in the wake of BBs and accessories at good prices. Come and have a look for yourselves.</p>
-                    <a href="# " class="btn btn-success m-1">Shop Now</a>
+                    <a href="{% url 'products' %} " class="btn btn-success m-1">Shop Now</a>
                 </div>
             </div>
         </div>
