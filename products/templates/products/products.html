@@ -8,12 +8,13 @@
     <div class="pushdown-small mb-2"></div>
     <div class="container-fluid">
         <div class="row">
-            <h2 class="display-2 text-center my-5 animate">What we offer</h2>
+            <h2 class="display-2 text-center my-5 animate">Products</h2>
         </div>
     </div>
     <div class="row justify-content-center">
+        {{ products }}
         <!--Item1-->
-        <div class="col-lg-3 mb-5">
+        <!-- <div class="col-lg-3 mb-5">
             <div class="card service-card animate glow delay-1">
                 <img class="card-img-top" src="{{ MEDIA_URL }}/media/ghost-camo-rifle.jpg" alt="Paint Services">
                 <div class="card-body secondary-font">
@@ -23,9 +24,9 @@
                     <a href="#" class="btn btn-success m-1">Book Now</a>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!--Item2-->
-        <div class="col-lg-3 mb-5">
+        <!-- <div class="col-lg-3 mb-5">
             <div class="card service-card animate glow delay-2">
                 <img class="card-img-top" src="{{ MEDIA_URL }}/media/desert-camo-weaponset.jpg" alt="Tech Services">
                 <div class="card-body secondary-font">
@@ -35,9 +36,9 @@
                     <a href="#" class="btn btn-success m-1">Enquire Now</a>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!--Item3-->
-        <div class=" col-lg-3 mb-5">
+        <!-- <div class=" col-lg-3 mb-5">
             <div class="card service-card animate glow delay-3">
                 <img class="card-img-top " src="{{ MEDIA_URL }}/media/airsoft-consumables.jpg " alt="Consumables ">
                 <div class="card-body secondary-font">
@@ -46,12 +47,9 @@
                     <a href="# " class="btn btn-success m-1">Shop Now</a>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
 </div>
 <div class="footer-pushdown-small"></div>
-
-{% include 'includes/tech_service_modal.html' %}
-{% include 'includes/paint_service_modal.html' %}
 
 {% endblock %}
