@@ -442,7 +442,7 @@ nav {
 
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 767px) {
     .side-navbar {
         width: 100%;
         height: auto;
@@ -450,7 +450,7 @@ nav {
     }
 
     .side-navbar a {
-        padding: 6px;
+        padding: 2px;
     }
 
     .products-container {
