@@ -96,7 +96,7 @@
                         <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{% url 'services' %}">Services</a> <!-- come back to later -->
+                        <a class="nav-link" href="{% url 'services' %}">Services</a>
                     </li>
                     <li class="nav-item">
                     <li class="nav-item dropdown">
@@ -104,23 +104,23 @@
                             Store
                         </a>
                         <ul class="dropdown-menu dropdown-menu-dark">
-                            <li><a class="dropdown-item" href="{% url 'products' %}">All Products</a></li> <!-- come back to later -->
+                            <li><a class="dropdown-item" href="{% url 'products' %}?category=Batteries,BBs,Gas,Patches">All Products</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">BBs</a></li> <!-- come back to later -->
+                            <li><a class="dropdown-item" href="{% url 'products' %}?category=Batteries">Batteries</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Gas</a></li> <!-- come back to later -->
+                            <li><a class="dropdown-item" href="{% url 'products' %}?category=BBs">BBs</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Patches</a></li> <!-- come back to later -->
+                            <li><a class="dropdown-item" href="{% url 'products' %}?category=Gas">Gas</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>
-                            <li><a class="dropdown-item" href="#">Batteries</a></li> <!-- come back to later -->
+                            <li><a class="dropdown-item" href="{% url 'products' %}?category=Patches">Patches</a></li>
                         </ul>
                     </li>
                     <a class="nav-link" href="#">Paint Services</a> <!-- come back to later -->

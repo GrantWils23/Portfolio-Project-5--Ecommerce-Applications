@@ -395,7 +395,7 @@ nav {
 }
 
 .side-navbar-link {
-    padding: 6px 8px 6px 16px;
+    padding: 6px 5px 6px 10px;
     text-decoration: none;
     font-size: 1.2rem;
     color: #818181;
@@ -406,16 +406,18 @@ nav {
     color: white;
 }
 
-.store-link {
-    padding: 6px 8px 6px 16px;
+.clear-all-link {
     text-decoration: none;
-    font-size: 1.2rem;
-    color: #198754;
-    display: block;
+    padding: 6px 5px 6px 10px;
+    justify-content: baseline;
+    font-size: 1rem;
+    color: #6C757D;
+    display: inline;
 }
 
-.store-link:hover {
-    color: #20aa69;
+.clear-all-link:hover,
+.clear-all-link:active {
+    color: darkred;
 }
 
 .product-card {
