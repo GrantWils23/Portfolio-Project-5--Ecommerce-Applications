@@ -147,8 +147,8 @@
                         </ul>
                     </li>
                 </ul>
-                <form class="d-flex mt-3" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Store Search" aria-label="Search">
+                <form class="d-flex mt-3" method="GET" action="{% url 'products' %}">
+                    <input class="form-control me-2" type="text" placeholder="Store Search" name="q">
                     <button class="btn btn-success text-center align-content-center" type="submit">Search</button>
                 </form>
             </div>

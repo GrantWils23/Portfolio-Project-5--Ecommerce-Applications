@@ -2,69 +2,12 @@
 {% load static %}
 {% block content %}
 
-
-
-
-<!-- search navbar display on meduim screens and smaller -->
-<nav class="d-md-none navbar-dark bg-dark pb-2 pt-4 mb-3 secondary-font justify-content-center text-center">
-    <button class="navbar-toggler b-0" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-bs-target="#productNavbar" aria-controls="productNavbar" aria-expanded="false" aria-label="Toggle navigation">
-        Refine by: <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse" id="productNavbar">
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link p-1" href="{% url 'products' %}">All Products</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link p-1" href="#">Batteries</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link p-1" href="#">BBs</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link p-1" href="#">Gas</span></a>
-            </li>
-            <li class="nav-item active">
-                <a class="nav-link p-1" href="#">Patches</a>
-            </li>
-        </ul>
-        <form class="d-flex p-2 my-1" role="search">
-            <input class="form-control me-1" type="search" placeholder="Store Search" aria-label="Search">
-            <button class="btn btn-success text-center align-content-center" type="submit">Search</button>
-        </form>
-    </div>
-</nav>
-
-
-<!-- search navbar display on large screens and larger -->
-<nav class="d-none d-md-block">
-    <div class="side-navbar d-flex flex-column bg-dark secondary-font">
-        <a class=" pt-3 pb-2 store-link" href="{% url 'products' %}">Store</a>
-        <div id="productsNavbar" class="">
-            <ul class=" navbar-nav list-unstyled">
-                <li><a class="navbar-item side-navbar-link" href="{% url 'products' %}">All Products</a></li>
-                <li><a class="side-navbar-link" href="#">Batteries</a></li>
-                <li><a class="side-navbar-link" href="#">BBs</a></li>
-                <li><a class="side-navbar-link" href="#">Gas</a></li>
-                <li><a class="side-navbar-link" href="#">Patches</a></li>
-            </ul>
-            <!-- search form -->
-            <form class="d-flex my-3" role="search">
-                <input class="form-control me-1" type="search" placeholder="Store Search" aria-label="Search">
-                <button class="btn btn-success text-center align-content-center" type="submit">Search</button>
-            </form>
-            <!-- back to top button  -->
-        </div>
-    </div>
-</nav>
-
-
-
+<!-- products navbar -->
+{% include 'includes/products_navbar.html' %}
 
 <!-- Products container -->
 
 <!-- Product Cards -->
-<!-- <div class="pushdown-small"></div> -->
 <div class="pushdown-small d-none d-lg-block"></div>
 <div class="container mt-4 g-0 secondary-font">
     <div class="row g-0 justify-content-center p-1 m-1">
@@ -118,8 +61,6 @@
         </div>
     </div>
 </div>
-
-
 
 
 <div class="footer-pushdown"></div>
