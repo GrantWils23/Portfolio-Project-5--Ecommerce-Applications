@@ -1,42 +1,39 @@
 <!-- search navbar display on meduim screens and smaller -->
 <nav class="d-md-none navbar-dark bg-dark pb-2 pt-4 mb-3 secondary-font justify-content-center text-center">
-    <button class="navbar-toggler b-0" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-bs-target="#productNavbar" aria-controls="productNavbar" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler b-1 px-1" type="button" data-toggle="collapse" data-bs-toggle="collapse" data-bs-target="#productNavbar" aria-controls="productNavbar" aria-expanded="false" aria-label="Toggle navigation">
         Store Menu <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse" id="productNavbar">
         <ul class="navbar-nav mr-auto">
-            <li class="nav-item p-1">
+            <li class="md-device-products-link text-secondary p-1">
                 Refine By: <a class="nav-link clear-all-link" href="{% url 'products' %}">clear all x</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link p-0" href="{% url 'products' %}">All Products</a>
+                <a class="md-device-products-link p-0" href="{% url 'products' %}">All Products</a>
             </li>
             <li class="nav-item active">
-                <a class="nav-link p-0" href="{% url 'products' %}?category=Batteries">Batteries</a>
+                <a class="md-device-products-link p-0" href="{% url 'products' %}?category=Batteries">Batteries</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link p-0" href="{% url 'products' %}?category=BBs">BBs</a>
+                <a class="md-device-products-link p-0" href="{% url 'products' %}?category=BBs">BBs</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link p-0" href="{% url 'products' %}?category=Gas">Gas</a>
+                <a class="md-device-products-link p-0" href="{% url 'products' %}?category=Gas">Gas</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link p-0" href="{% url 'products' %}?category=Patches">Patches</a>
+                <a class="md-device-products-link p-0" href="{% url 'products' %}?category=Patches">Patches</a>
             </li>
             <!-- Brand dropdown to go here -->
-            <!-- <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <li class="nav-item dropdown">
+                <a class="md-device-products-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                     Filter by Brand
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                    {% for b in current_brands %}
-                    <li><a class="dropdown-item" href="{% url 'products' %}?brand={{ b.name }}">{{ b.friendly_name }}</a></li>
-                    <li>
-                        <hr class="dropdown-divider">
-                    </li>
+                <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
+                    {% for brand in current_brands %}
+                    <li><a class="dropdown-item" href="{% url 'products' %}?brand={{ brand.name }}">{{ brand.friendly_name }}</a></li>
                     {% endfor %}
                 </ul>
-            </li> -->
+            </li>
             <!-- end of Brand Filter dropdown -->
         </ul>
         <form class="d-flex p-2 my-1" method="GET" action="{% url 'products' %}">
@@ -62,25 +59,22 @@
         </div>
         <div id="productsNavbar" class="">
             <ul class=" navbar-nav list-unstyled">
-                <li><a class="navbar-item side-navbar-link" href="{% url 'products' %}?category=Batteries,BBs,Gas,Patches">All Products</a></li>
+                <li><a class="navbar-item side-navbar-link" href="{% url 'products' %}">All Products</a></li>
                 <li><a class="side-navbar-link" href="{% url 'products' %}?category=Batteries">Batteries</a></li>
                 <li><a class="side-navbar-link" href="{% url 'products' %}?category=BBs">BBs</a></li>
                 <li><a class="side-navbar-link" href="{% url 'products' %}?category=Gas">Gas</a></li>
                 <li><a class="side-navbar-link" href="{% url 'products' %}?category=Patches">Patches</a></li>
                 <!-- Brand dropdown to go here -->
-                <!-- <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <li class="nav-item dropdown">
+                    <a class="side-navbar-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Filter by Brand
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        {% for b in current_brands %}
-                        <li><a class="dropdown-item" href="{% url 'products' %}?brand={{ b.name }}">{{ b.friendly_name }}</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
+                    <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
+                        {% for brand in current_brands %}
+                        <li><a class="dropdown-item" href="{% url 'products' %}?brand={{ brand.name }}">{{ brand.friendly_name }}</a></li>
                         {% endfor %}
                     </ul>
-                </li> -->
+                </li>
                 <!-- end of Brand Filter dropdown -->
             </ul>
             <!-- search form -->

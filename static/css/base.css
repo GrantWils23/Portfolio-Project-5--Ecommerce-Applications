@@ -403,7 +403,18 @@ nav {
 }
 
 .side-navbar-link:hover {
-    color: white;
+    color: whitesmoke;
+}
+
+
+.md-device-products-link {
+    text-decoration: none;
+    color: #6C757D;
+}
+
+.md-device-products-link:hover,
+.md-device-products-link:active {
+    color: whitesmoke;
 }
 
 .clear-all-link {
@@ -438,6 +449,16 @@ nav {
 .update-link,
 .remove-item {
     cursor: pointer;
+}
+
+.product-filterdown-link {
+    text-decoration: none;
+    color: #6C757D;
+}
+
+.product-filterdown-link:hover,
+.product-filterdown-link:active {
+    color: whitesmoke;
 }
 
 /* -------- MEDIA QUERIES FOR THE SIDENAV --------- */

@@ -11,14 +11,7 @@
     <!-- Product Title -->
     <div class="products-container tertiary-font">
         <div class="row g-0">
-            <h2 class="display-3 text-center my-5 logo-font">Products</h2>
-            <!-- Category Filter Results -->
-            <!-- {% for c in current_categories %}
-            <a class="category-badge text-decoration-none" href="{}?category={{ c.name }}">
-                <span class="p-2 mt-2 badge badge-white text-black rounded-0 border border-bark">{{ c.friendly_name }}</span>
-            </a>
-            {% endfor %} -->
-            <!-- End of Category Filter Results -->
+            <h2 class="display-3 text-center mt-5 mb-3 logo-font">Products</h2>
             <div class="container-fluid justify-content-center w-75">
                 <hr>
             </div>
@@ -27,9 +20,10 @@
         <div class="row g-0">
             <div class="product-container">
                 <div class="row g-0">
+                    <!-- product-sort-bar -->
                     <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
                         <div class="mx-5 w-sm-50 w-md-75 pr-3">
-                            <select id="sort-selector" class="rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %}">
+                            <select id="sort-selector" class="rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %} h5">
                                 <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
                                 <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price (low to high)</option>
                                 <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price (high to low)</option>
@@ -42,14 +36,16 @@
                             </select>
                         </div>
                     </div>
+                    <!-- Category Filter Results -->
                     <div class="col-12 col-md-6 order-md-first">
-                        <p class="text-muted mx-5 text-center text-sm-center text-md-start">
+                        <p class="text-muted mx-5 text-center text-sm-center text-md-start h5">
                             {% if search_term or current_categories or current_sorting != 'None_None' %}
-                            <span class="h6"><a href="{% url 'products' %}">Products Home</a> | </span>
+                            <span><a class="product-filterdown-link" href="{% url 'products' %}">Products Home</a> {% for c in current_categories %} > <a class=" product-filterdown-link" href="{{ request.path }}?category={{ c.name }}">{{ c.friendly_name }}</a> {% endfor %} | </span>
                             {% endif %}
                             {{ products|length }} Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
                         </p>
                     </div>
+                    <!-- End of Category Filter Results -->
                 </div>
             </div>
         </div>
