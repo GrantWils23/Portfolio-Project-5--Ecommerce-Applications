@@ -1,0 +1,149 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<!-- Page Header-->
+<div class="container-fluid tertiary-font">
+    <div class="row g-0">
+        <div class="col">
+            <h2 class="display-3 text-center mt-5 mb-3 logo-font">Basket</h2>
+        </div>
+        <div class="container-fluid justify-content-center w-75">
+            <hr>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
+
+{% block content %}
+
+
+<!-- Product Title -->
+
+<div class="container">
+    <!-- row-1 -->
+    <div class="row">
+        <div class="col">
+            <hr>
+            <h2 class="logo-font mb-4">Your Basket</h2>
+            <hr>
+        </div>
+    </div>
+    <!-- row-1 end -->
+    <!-- row-2 -->
+    <div class="row">
+        <div class="col">
+            {% if basket_items %}
+            <div class="table-repsonsive rounded-0"></div>
+            {% else %}
+            <p class="lead mb-5">Your Bag is Empty</p>
+            <a href="{% url 'products' %}" class="btn btn-success rounded-1 btn-lg">
+                Keep Shopping
+            </a>
+            {% endif %}
+        </div>
+    </div>
+    <!-- row-2 end -->
+</div>
+
+<!-- Product Cards -->
+<div class=" row g-0 justify-content-center">
+    {% for product in products %}
+    <div class="col-md-6 col-lg-4 col-xxl-3">
+        <div class="card product-card m-sm-5 m-md-5 m-lg-3 m-xl-5">
+            <div class="img-container">
+                {% if product.image %}
+                <a href="{% url 'product_detail' product.id %}">
+                    <img class="card-img-top" src="{{ product.image.url }}" alt="{{ product.name }}"></a>
+                {% else %}
+                <a href="{% url 'product_detail' product.id %}">
+                    <img class="card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}"></a>
+                {% endif %}
+            </div>
+            <div class="card-text card-text-container p-2 text-secondary">
+                <p class="mb-5 h-100%">{{ product.name }}</p>
+            </div>
+            <div class="card-footer text-secondary bg-white pt-0 text-left">
+                <div class="row">
+                    <div class="col">
+                        <p class="mb-0 text-left text-black font-weight-bold"><strong>£{{ product.price }}</strong></p>
+                        {% if product.category %}
+                        <p class="small mt-1 mb-0">
+                            <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
+                                <i class="fas fa-tag mr-1"></i>{{product.category.friendly_name}}
+                            </a>
+                        </p>
+                        {% endif %}
+                        {% if product.rating %}
+                        <small class="text-muted">
+                            <i class="fas fa-star mr-1"></i>
+                            {{ product.rating }}
+                            / 5</small>
+                        {% else %}
+                        <small class="text-muted">No Rating</small>
+                        {% endif %}
+                        <br>
+                        {% if request.user.is_superuser %}
+                        <small class="ml-3">
+                            <a href="#">Edit</a> |
+                            <a class="text-danger" href="#">Delete</a>
+                        </small>
+                        {% endif %}
+                        <br>
+                        <small class="text-end"> add to wishlist <a class=" text-success text-decoration-none" href=""><i class="fas fa-plus"></i></a></small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+    <div class="row g-0">
+        <div class="btn btt-button">
+            <a href="" class="display-6">
+                <i class="fas fa-arrow-up text-success mx-auto my-auto green-on-hov"></i>
+            </a>
+        </div>
+    </div>
+</div>
+</div>
+</section>
+
+<div class="footer-pushdown"></div>
+
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+<script type="text/javascript">
+    $('.btt-link').click(function(e) {
+        window.scrollTo(0, 0)
+    })
+</script>
+
+<script type="text/javascript">
+    $('#sort-selector').change(function() {
+        var selector = $(this);
+        var currentUrl = new URL(window.location);
+
+        var selectedVal = selector.val();
+        if (selectedVal != "reset") {
+            var sort = selectedVal.split("_")[0];
+            var direction = selectedVal.split("_")[1];
+
+            currentUrl.searchParams.set("sort", sort);
+            currentUrl.searchParams.set("direction", direction);
+
+            window.location.replace(currentUrl);
+        } else {
+            currentUrl.searchParams.delete("sort");
+            currentUrl.searchParams.delete("direction");
+
+            window.location.replace(currentUrl);
+        }
+    })
+</script>
+
+
+{% endblock %}

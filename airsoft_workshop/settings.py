@@ -68,6 +68,7 @@ INSTALLED_APPS = [
     'products',
     'django_filters',
     'crispy_forms',
+    'basket',
 ]
 
 MIDDLEWARE = [
