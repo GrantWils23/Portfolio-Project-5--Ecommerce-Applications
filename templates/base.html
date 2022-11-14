@@ -59,13 +59,13 @@
                 </a>
                 <span class="pe-sm-3">
                     <button class="navbar-toggler pt-2" type="button">
-                        <a class="{% if grand_total %} text-warning {% else %} header-btn-colour {% endif %} nav-link" href="{% url 'view_basket' %}">
+                        <a class="{% if grand_total %} text-success {% else %} header-btn-colour {% endif %} nav-link" href="{% url 'view_basket' %}">
                             <!-- come back to later -->
                             <div class="text-center">
                                 <div><i class="fas fa-shopping-cart"></i></div>
                                 <p class="my-0">
                                     {% if grand_total %}
-                                    ${{ grand_total|floatformat:2 }}
+                                    £{{ grand_total|floatformat:2 }}
                                     {% else %}
                                     £0.00
                                     {% endif %}
