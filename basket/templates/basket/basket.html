@@ -5,8 +5,8 @@
 <!-- Page Header-->
 <div class="container-fluid tertiary-font">
     <div class="row g-0">
-        <div class="col">
-            <h2 class="display-3 text-center mt-5 mb-3 logo-font">Basket</h2>
+        <div class="col-12 justify-content-center">
+            <h2 class="display-3 text-center mt-5 mb-1 logo-font">Basket</h2>
         </div>
         <div class="container-fluid justify-content-center w-75">
             <hr>
@@ -26,8 +26,7 @@
     <!-- row-1 -->
     <div class="row">
         <div class="col">
-            <hr>
-            <h2 class="logo-font mb-4">Your Basket</h2>
+            <h2 class="logo-font mt-3 mb-4">Your Basket</h2>
             <hr>
         </div>
     </div>
@@ -37,8 +36,63 @@
         <div class="col">
             {% if basket_items %}
             <div class="table-repsonsive rounded">
-                {{ basket_items }}
+                <table class="table table-sm table-borderless text-secondary tertiary-font">
+                    <thead class="text-secondary">
+                        <tr>
+                            <th scope="col">Product Info</th>
+                            <th scope="col"></th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Qty</th>
+                            <th scope="col">Subtotal</th>
+                        </tr>
+                    </thead>
+
+                    {% for item in basket_items %}
+                    <tr>
+                        <td class="p-3 w-25">
+                            <img src="{{ item.product.image.url }}" alt="" class="img-fluid rounded">
+                        </td>
+                        <td class="py-3">
+                            <p class="my-0"><strong>{{ item.product.name }}</strong></p>
+                            <p class="my-0 small text-muted">SKU: {{ item.product.sku|upper }}</p>
+                        </td>
+                        <td class="py-3">
+                            <p class="my-0">£{{ item.product.price }}</p>
+                        </td>
+                        <td class="py-3 w-25">
+                            <p class="my-0">{{ item.product.quantity }}</p>
+                        </td>
+                        <td class="py-3">
+                            <p class="my-0">{{ item.product.price }}</p>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                    <tr>
+                        <td colspan="5" c;ass="pt-5 text-right">
+                            <h6><strong>Basket Total: £{{ total|floatformat:2 }}</strong></h6>
+                            <h6>Delivery: £{{ delivery|floatformat:2 }}</h6>
+                            <h4 class="mt-4"><strong>Grand Total: £{{ grand_total|floatformat:2 }}</strong></h4>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" class="text-right">
+                            <a href="{% url 'products' %}" class="btn btn-secondary rounded-1 btn-lg">
+                                <span class="icon">
+                                    <i class="fas fa-chevron-left"></i>
+                                </span>
+                                <span class="text-uppercase">Keep Shopping</span>
+                            </a>
+                            <a href="" class="btn btn-success rounded-1 btn-lg">
+                                <span class="text-uppercase">Secure Checkout</span>
+                                <span class="icon">
+                                    <i class="fas fa-lock"></i>
+                                </span>
+                            </a>
+                        </td>
+                    </tr>
+                </table>
             </div>
+            <div class="pushdown-small"></div>
             {% else %}
             <p class="lead mb-5">Your Bag is Empty</p>
             <a href="{% url 'products' %}" class="btn btn-success rounded-1 btn-lg">
@@ -46,72 +100,9 @@
             </a>
             {% endif %}
         </div>
+        <div class="pushdown-small"></div>
     </div>
     <!-- row-2 end -->
 </div>
-
-<!-- Product Cards -->
-<div class=" row g-0 justify-content-center">
-    {% for product in products %}
-    <div class="col-md-6 col-lg-4 col-xxl-3">
-        <div class="card product-card m-sm-5 m-md-5 m-lg-3 m-xl-5">
-            <div class="img-container">
-                {% if product.image %}
-                <a href="{% url 'product_detail' product.id %}">
-                    <img class="card-img-top" src="{{ product.image.url }}" alt="{{ product.name }}"></a>
-                {% else %}
-                <a href="{% url 'product_detail' product.id %}">
-                    <img class="card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}"></a>
-                {% endif %}
-            </div>
-            <div class="card-text card-text-container p-2 text-secondary">
-                <p class="mb-5 h-100%">{{ product.name }}</p>
-            </div>
-            <div class="card-footer text-secondary bg-white pt-0 text-left">
-                <div class="row">
-                    <div class="col">
-                        <p class="mb-0 text-left text-black font-weight-bold"><strong>£{{ product.price }}</strong></p>
-                        {% if product.category %}
-                        <p class="small mt-1 mb-0">
-                            <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
-                                <i class="fas fa-tag mr-1"></i>{{product.category.friendly_name}}
-                            </a>
-                        </p>
-                        {% endif %}
-                        {% if product.rating %}
-                        <small class="text-muted">
-                            <i class="fas fa-star mr-1"></i>
-                            {{ product.rating }}
-                            / 5</small>
-                        {% else %}
-                        <small class="text-muted">No Rating</small>
-                        {% endif %}
-                        <br>
-                        {% if request.user.is_superuser %}
-                        <small class="ml-3">
-                            <a href="#">Edit</a> |
-                            <a class="text-danger" href="#">Delete</a>
-                        </small>
-                        {% endif %}
-                        <br>
-                        <small class="text-end"> add to wishlist <a class=" text-success text-decoration-none" href=""><i class="fas fa-plus"></i></a></small>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    {% endfor %}
-    <div class="row g-0">
-        <div class="btn btt-button">
-            <a href="" class="display-6">
-                <i class="fas fa-arrow-up text-success mx-auto my-auto green-on-hov"></i>
-            </a>
-        </div>
-    </div>
-</div>
-</div>
-</section>
-
-<div class="footer-pushdown"></div>
 
 {% endblock %}
