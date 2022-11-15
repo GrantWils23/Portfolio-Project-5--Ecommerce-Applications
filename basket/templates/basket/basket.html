@@ -32,8 +32,8 @@
     </div>
     <!-- row-1 end -->
     <!-- row-2 -->
-    <div class="row">
-        <div class="col">
+    <div class="row g-0">
+        <div class="col g-0">
             {% if basket_items %}
             <div class="table-repsonsive rounded">
                 <table class="table table-sm table-borderless text-secondary tertiary-font">
@@ -60,7 +60,30 @@
                             <p class="my-0">£{{ item.product.price }}</p>
                         </td>
                         <td class="py-3 w-25">
-                            <p class="my-0">{{ item.product.quantity }}</p>
+                            <!-- Quantity controller -->
+                            <form class="form update-form" action="" method="POST">
+                                <!-- return to the action call -->
+                                {% csrf_token %}
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <div class="input-group-prepend">
+                                            <button class="decrement-qty btn btn-sm btn-secondary rounded-0" data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}">
+                                                <i class="fas fa-minus fa-sm"></i>
+                                            </button>
+                                        </div>
+                                        <input class="form-control form-control-sm qty_input" type="number" name="quantity" value="{{ item.quantity }}" min="1" max="99" data-item_id="{{ item.item_id }}" id="id_qty_{{ item.item_id }}">
+                                        <div class="input-group-append">
+                                            <button class="increment-qty btn btn-sm btn-secondary rounded-0" data-item_id="{{ item.item_id }}" id="increment-qty_{{ item.item_id }}">
+                                                <i class="fas fa-plus fa-sm"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <a class="update-link btn btn-success boarder-1 m-1 opacity-75 text-decoration-none"><small>Update</small></a>
+                            <a class="remove-item btn btn-danger boarder-1 m-1 opacity-75 text-decoration-none float-end" id="remove_{{ item.item_id }}"><small>Remove</small></a>
+                            <!-- Quantity controller end -->
+
                         </td>
                         <td class="py-3">
                             <p class="my-0">{{ item.product.price }}</p>
@@ -94,7 +117,7 @@
             </div>
             <div class="pushdown-small"></div>
             {% else %}
-            <p class="lead mb-5">Your Bag is Empty</p>
+            <p class="lead mb-5">Your Basket is Empty</p>
             <a href="{% url 'products' %}" class="btn btn-success rounded-1 btn-lg">
                 Keep Shopping
             </a>
@@ -105,4 +128,33 @@
     <!-- row-2 end -->
 </div>
 
+{% endblock %}
+
+
+{% block postloadjs %}
+{{ block.super }}
+{% include 'products/includes/quantity_input_script.html' %}
+
+<script type="text/javascript">
+    // Update quantity on click
+    $('.update-link').click(function(e) {
+        var form = $(this).prev('.update-form');
+        form.submit();
+    })
+
+    // Remove item and reload on click
+    $('.remove-item').click(function(e) {
+        var csrfToken = "{{ csrf_token }}";
+        var itemId = $(this).attr('id').split('remove_')[1];
+        var url = `/basket/remove/${itemId}`;
+        var data = {
+            'csrfmiddlewaretoken': csrfToken,
+        };
+
+        $.post(url, data)
+            .done(function() {
+                location.reload();
+            });
+    })
+</script>
 {% endblock %}

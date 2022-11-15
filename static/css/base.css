@@ -315,6 +315,13 @@ nav {
 
 }
 
+/* -------------------- update and remove link buttons ---------------------- */
+
+.remove-item,
+.update-link {
+    cursor: pointer;
+}
+
 
 /* ----------------------------------------------------- Media Queries for Service Page */
 
