@@ -474,8 +474,62 @@ nav {
     }
 }
 
-/* -------- MEDIA QUERIES FOR THE SIDENAV --------- */
+/* -------------- Toast components -------------- */
 
+.message-container {
+    position: absolute;
+    top: 80px;
+    right: 15px;
+    z-index: 9999999999;
+}
+
+.custom-toast {
+    overflow: visible;
+}
+
+.success-shadow {
+    box-shadow: 0 0 20px #28a745;
+}
+
+.warning-shadow {
+    box-shadow: 0 0 20px #ffc107;
+}
+
+.info-shadow {
+    box-shadow: 0 0 20px #17a2b8;
+}
+
+.danger-shadow {
+    box-shadow: 0 0 20px #dc3545;
+}
+
+
+@media (max-width: 380px) {
+    .message-container {
+        position: static;
+        right: 0;
+        z-index: 9999999999;
+    }
+
+    .success-shadow {
+        margin: 15px auto;
+    }
+
+    .warning-shadow {
+        margin: 15px auto;
+    }
+
+    .info-shadow {
+        margin: 15px auto;
+    }
+
+    .danger-shadow {
+        margin: 15px auto;
+    }
+}
+
+
+/* -------- MEDIA QUERIES FOR THE SIDENAV --------- */
 
 
 @media screen and (max-width: 767px) {
@@ -493,7 +547,6 @@ nav {
         width: 100%;
         margin-left: unset;
     }
-
 }
 
 @media screen and (max-width: 400px) {

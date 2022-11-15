@@ -111,6 +111,7 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'airsoft_workshop.wsgi.application'
 
+MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
