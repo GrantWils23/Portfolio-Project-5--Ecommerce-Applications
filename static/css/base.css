@@ -468,6 +468,12 @@ nav {
     color: whitesmoke;
 }
 
+@media (max-width: 360px) {
+    .w-basket-special-75 {
+        width: 100vw;
+    }
+}
+
 /* -------- MEDIA QUERIES FOR THE SIDENAV --------- */
 
 

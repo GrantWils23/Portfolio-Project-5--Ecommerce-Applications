@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load basket_tools %}
 
 {% block page_header %}
 <!-- Page Header-->
@@ -32,8 +33,8 @@
     </div>
     <!-- row-1 end -->
     <!-- row-2 -->
-    <div class="row g-0">
-        <div class="col g-0">
+    <div class="row">
+        <div class="col">
             {% if basket_items %}
             <div class="table-repsonsive rounded">
                 <table class="table table-sm table-borderless text-secondary tertiary-font">
@@ -61,7 +62,7 @@
                         </td>
                         <td class="py-3 w-25">
                             <!-- Quantity controller -->
-                            <form class="form update-form" action="" method="POST">
+                            <form class="form update-form" action="{% url 'adjust_basket' item.item_id %}" method="POST">
                                 <!-- return to the action call -->
                                 {% csrf_token %}
                                 <div class="form-group">
@@ -86,7 +87,7 @@
 
                         </td>
                         <td class="py-3">
-                            <p class="my-0">{{ item.product.price }}</p>
+                            <p class="my-0">£{{ item.product.price | calc_subtotal:item.quantity }}</p>
                         </td>
                     </tr>
                     {% endfor %}
@@ -99,13 +100,13 @@
                     </tr>
                     <tr>
                         <td colspan="5" class="text-right">
-                            <a href="{% url 'products' %}" class="btn btn-secondary rounded-1 btn-lg">
+                            <a href="{% url 'products' %}" class="btn btn-secondary rounded-1 btn-lg m-1">
                                 <span class="icon">
                                     <i class="fas fa-chevron-left"></i>
                                 </span>
                                 <span class="text-uppercase">Keep Shopping</span>
                             </a>
-                            <a href="" class="btn btn-success rounded-1 btn-lg">
+                            <a href="" class="btn btn-success rounded-1 btn-lg m-1">
                                 <span class="text-uppercase">Secure Checkout</span>
                                 <span class="icon">
                                     <i class="fas fa-lock"></i>
@@ -146,7 +147,7 @@
     $('.remove-item').click(function(e) {
         var csrfToken = "{{ csrf_token }}";
         var itemId = $(this).attr('id').split('remove_')[1];
-        var url = `/basket/remove/${itemId}`;
+        var url = `/basket/remove/${itemId}/`;
         var data = {
             'csrfmiddlewaretoken': csrfToken,
         };
