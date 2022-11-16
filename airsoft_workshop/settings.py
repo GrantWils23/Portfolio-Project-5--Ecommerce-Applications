@@ -59,7 +59,6 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-    'phonenumber_field',
     'django.contrib.staticfiles',
     'django.contrib.sites',
     'allauth',
@@ -68,7 +67,9 @@ INSTALLED_APPS = [
     'home',
     'products',
     'django_filters',
-    'crispy_forms',
+    "crispy_forms",
+    "crispy_bootstrap5",
+    'phonenumber_field',
     'basket',
     'checkout',
 ]

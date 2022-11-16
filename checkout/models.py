@@ -7,8 +7,11 @@ from products.models import Product
 
 
 class DeliveryMethod(models.Model):
-    delivery_method = models.CharField(max_length=50, null=False, blank=False)
-    delivery_cost = models.DecimalField(max_digits=6, decimal_places=2, null=False, default=3.50)
+    delivery_method_name = models.CharField(max_length=50, null=False, blank=False,)
+    delivery_method_cost = models.DecimalField(max_digits=6, decimal_places=2, null=False, default=3.50)
+
+    def __str__(self):
+        return self.delivery_method_name
 
 
 class Order(models.Model):
@@ -23,7 +26,7 @@ class Order(models.Model):
     street_address2 = models.CharField(max_length=80, null=True, blank=True)
     county = models.CharField(max_length=80, null=True, blank=True)
     date = models.DateTimeField(auto_now_add=True)
-    delivery_cost = models.ForeignKey(DeliveryMethod, null=False, blank=False, on_delete=models.CASCADE)
+    delivery_method = models.ForeignKey(DeliveryMethod, null=False, blank=False, on_delete=models.CASCADE, related_name='deliverymethod')
     order_total = models.DecimalField(max_digits=10, decimal_places=2, null=False, default=0)
     grand_total = models.DecimalField(max_digits=10, decimal_places=2, null=False, default=0)
 
@@ -40,7 +43,7 @@ class Order(models.Model):
         """
 
         self.order_total = self.lineitems.aggregate(Sum('lineitem_total'))['lineitem_total__sum']
-        self.grand_total = self.order_total + self.delivery_cost
+        self.grand_total = self.order_total + self.delivery_method.delivery_method_cost
         self.save()
 
     def save(self, *args, **kwargs):
