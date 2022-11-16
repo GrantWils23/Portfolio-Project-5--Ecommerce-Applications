@@ -51,7 +51,9 @@
                     {% for item in basket_items %}
                     <tr>
                         <td class="p-3 w-25">
-                            <img src="{{ item.product.image.url }}" alt="" class="img-fluid rounded">
+                            <a href="{% url 'product_detail' item.item_id %}">
+                                <img src="{{ item.product.image.url }}" alt="" class="img-fluid rounded">
+                            </a>
                         </td>
                         <td class="py-3">
                             <p class="my-0"><strong>{{ item.product.name }}</strong></p>
