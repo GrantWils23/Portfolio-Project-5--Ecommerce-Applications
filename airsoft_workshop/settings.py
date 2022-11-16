@@ -59,6 +59,7 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
+    'phonenumber_field',
     'django.contrib.staticfiles',
     'django.contrib.sites',
     'allauth',
@@ -69,6 +70,7 @@ INSTALLED_APPS = [
     'django_filters',
     'crispy_forms',
     'basket',
+    'checkout',
 ]
 
 MIDDLEWARE = [
@@ -168,3 +170,10 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+STANDARD_DELIVERY_COST = 3.50
+FIRST_CLASS_DELIVERY_COST = 6.99
+EXPRESS_DELIVERY_COST = 11.99
+
+PHONENUMBER_DB_FORMAT = 'NATIONAL'
+PHONENUMBER_DEFAULT_REGION = 'GB'
