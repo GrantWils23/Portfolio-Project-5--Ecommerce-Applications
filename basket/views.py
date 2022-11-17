@@ -3,13 +3,40 @@ from django.shortcuts import HttpResponse, get_object_or_404
 from django.contrib import messages
 
 from products.models import Product
+from .models import DeliveryMethod
+from checkout.forms import DeliveryForm
 
-# Create your views here.
+
 
 
 def view_basket(request):
     """ A view that returns basket page and its contents """
-    return render(request, 'basket/basket.html')
+    if request.method == 'POST':
+        deliveryform = DeliveryForm(request.POST)
+        delivery = request.POST.get("delivery")
+        if delivery == '1':
+            delivery_method = DeliveryMethod.objects.get(id=1)
+        elif delivery == '2':
+            delivery_method = DeliveryMethod.objects.get(id=2)
+        elif delivery == '3':
+            delivery_method = DeliveryMethod.objects.get(id=3)
+        request.session['delivery'] = str(delivery_method.delivery_method_cost)
+    else:
+        deliveryform = DeliveryForm()
+
+    context = {
+        'deliveryform': deliveryform,
+    }
+    return render(request, 'basket/basket.html', context)
+
+
+def update_delivery_method(request, delivery_id):
+    """ A view that returns a form for a delivery method for the order """
+
+    deliverymethod = get_object_or_404(DeliveryMethod, pk=delivery_id)
+    delivery = request.session.get('delivery')
+
+    delivery = DeliveryMethod.delivery_method_cost
 
 
 def add_to_basket(request, item_id):

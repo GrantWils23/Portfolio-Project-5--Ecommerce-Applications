@@ -28,8 +28,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
-# CSRF_TRUSTED_ORIGINS = ['https://8000-grantwils23-portfoliopr-7o2kyngu7uz.ws-eu74.gitpod.io']
-CSRF_TRUSTED_ORIGINS = ['https://8000-grantwils23-portfoliopr-7o2kyngu7uz.ws-eu75.gitpod.io']
+CSRF_TRUSTED_ORIGINS = ['https://8000-grantwils23-portfoliopr-7o2kyngu7uz.ws-eu74.gitpod.io']
+# CSRF_TRUSTED_ORIGINS = ['https://8000-grantwils23-portfoliopr-7o2kyngu7uz.ws-eu75.gitpod.io']
 
 AUTHENTICATION_BACKENDS = [
     # Needed to login by username in Django admin, regardless of `allauth`
@@ -86,7 +86,10 @@ MIDDLEWARE = [
 
 ROOT_URLCONF = 'airsoft_workshop.urls'
 
-CRISPY_TEMPLATE_PACK = 'bootstrap4'
+CRISPY_ALLOWED_TEMPLATE_PACKS = "bootstrap5"
+
+CRISPY_TEMPLATE_PACK = "bootstrap5"
+
 
 TEMPLATES = [
     {

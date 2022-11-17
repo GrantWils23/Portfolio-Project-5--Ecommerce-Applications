@@ -2,6 +2,7 @@ from decimal import Decimal
 from django.conf import settings
 from django.shortcuts import get_object_or_404
 from products.models import Product
+from .models import DeliveryMethod
 
 
 def basket_contents(request):
@@ -9,9 +10,9 @@ def basket_contents(request):
     basket_items = []
     total = 0
     product_count = 0
-    delivery = 0
+    delivery = request.session.get('delivery', Decimal(0))
     basket = request.session.get('basket', {})
-    
+
     for item_id, quantity in basket.items():
         product = get_object_or_404(Product, pk=item_id)
         total += quantity * product.price
@@ -21,8 +22,8 @@ def basket_contents(request):
             'quantity': quantity,
             'product': product,
         })
-    
-    grand_total = delivery + total
+
+    grand_total = Decimal(delivery) + total
 
     context = {
         'basket_items': basket_items,

@@ -1,10 +1,11 @@
 {% extends "base.html" %}
 {% load static %}
 {% load basket_tools %}
+{% load crispy_forms_tags %}
 
 {% block page_header %}
 <!-- Page Header-->
-<div class="container-fluid tertiary-font">
+<div class="container-fluid">
     <div class="row g-0">
         <div class="col-12 justify-content-center">
             <h2 class="display-3 text-center mt-5 mb-1 logo-font">Basket</h2>
@@ -93,8 +94,25 @@
                         </td>
                     </tr>
                     {% endfor %}
+                    <!-- Delivery Method Form  -->
                     <tr>
-                        <td colspan="5" c;ass="pt-5 text-right">
+                        <td>
+                            <div class="col">
+                                <form action="" method="POST" id="delivery-form" class="form-group">
+                                    {% csrf_token %}
+                                    <fieldset class="rounded mb-5">
+                                        <legend class="fieldset-label text-success px-2 w-100">Delivery Options</legend>
+                                        {{ deliveryform|crispy }}
+                                        <button class="btn btn-success" type="submit">Select</button>
+                                        <input type="hidden" name="redirect_url" value="{{ request.path }}">
+                                    </fieldset>
+                                </form>
+                            </div>
+                        </td>
+                    </tr>
+                    <!-- Delivery Method Form End -->
+                    <tr>
+                        <td colspan="5" class="pt-5 text-right">
                             <h6><strong>Basket Total: £{{ total|floatformat:2 }}</strong></h6>
                             <h6>Delivery: £{{ delivery|floatformat:2 }}</h6>
                             <h4 class="mt-4"><strong>Grand Total: £{{ grand_total|floatformat:2 }}</strong></h4>
@@ -108,7 +126,7 @@
                                 </span>
                                 <span class="text-uppercase">Keep Shopping</span>
                             </a>
-                            <a href="" class="btn btn-success rounded-1 btn-lg m-1">
+                            <a href="{% url 'checkout' %}" class="btn btn-success rounded-1 btn-lg m-1">
                                 <span class="text-uppercase">Secure Checkout</span>
                                 <span class="icon">
                                     <i class="fas fa-lock"></i>
