@@ -1,11 +1,10 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.core.paginator import Paginator
 from django.contrib import messages
 from django.db.models import Q
 from django.db.models.functions import Lower
 
 from .models import Product, Category, Brand
-
-# Create your views here.
 
 
 def all_products(request):
@@ -13,12 +12,18 @@ def all_products(request):
 
     brands = Brand.objects.all()
     products = Product.objects.all()
+    paginator = Paginator(products, 12)    # show 12 products per page
+    page_number = request.GET.get('page')
+    page_obj = paginator.get_page(page_number)
+    selected_category = None
+    selected_brand = None
     query = None
     categories = None
     sort = None
     direction = None
 
     if request.GET:
+
         if 'sort' in request.GET:
             sortkey = request.GET['sort']
             sort = sortkey
@@ -34,15 +39,25 @@ def all_products(request):
                 if direction == "desc":
                     sortkey = f'-{sortkey}'
             products = products.order_by(sortkey)
+            paginator = Paginator(products, 12)
+            page_number = request.GET.get('page')
+            page_obj = paginator.get_page(page_number)
 
         if 'category' in request.GET:
             categories = request.GET['category'].split(',')
+            selected_category = request.GET['category']
             products = products.filter(category__name__in=categories)
-            categories = Category.objects.filter(name__in=categories)
+            paginator = Paginator(products, 12)
+            page_number = request.GET.get('page')
+            page_obj = paginator.get_page(page_number)
 
         if 'brand' in request.GET:
             brands = request.GET['brand'].split(',')
+            selected_brand = request.GET['brand']
             products = products.filter(brand__name__in=brands)
+            page_number = request.GET.get('page')
+            paginator = Paginator(products, 12)
+            page_obj = paginator.get_page(page_number)
             brands = Brand.objects.filter(name__in=brands)
 
         if 'q' in request.GET:
@@ -53,6 +68,9 @@ def all_products(request):
 
             queries = Q(name__icontains=query) | Q(description__icontains=query)
             products = products.filter(queries)
+            paginator = Paginator(products, 12)
+            page_number = request.GET.get('page')
+            page_obj = paginator.get_page(page_number)
 
     current_sorting = f'{sort}_{direction}'
 
@@ -62,6 +80,11 @@ def all_products(request):
         'current_categories': categories,
         'current_brands': brands,
         'current_sorting': current_sorting,
+        'page_obj': page_obj,
+        'selected_category': selected_category,
+        'selected_brand': selected_brand,
+        'sort': sort,
+        'direction': direction,
     }
 
     return render(request, 'products/products.html', context)

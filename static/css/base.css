@@ -534,6 +534,25 @@ nav {
     }
 }
 
+/* -------- Pagination CSS --------- */
+
+.page-link-success {
+    color: #198754;
+}
+
+.page-link-success:hover {
+    color: #13613d;
+}
+
+.fs-pag {
+    font-size: calc(1.275rem + .3vw);
+}
+
+@media (max-width: 570px) {
+    .fs-pag {
+        font-size: calc(1.05rem + .3vw);
+    }
+}
 
 /* -------- MEDIA QUERIES FOR THE SIDENAV --------- */
 
