@@ -3,15 +3,21 @@ from django.conf import settings
 from django.shortcuts import get_object_or_404
 from products.models import Product
 from .models import DeliveryMethod
+from checkout.models import Order
+from checkout.forms import OrderForm
 
 
 def basket_contents(request):
-
+    delmeth = DeliveryMethod.objects.get(pk=1)  # default shipping method
+    deliverymethods = DeliveryMethod.objects.all()
+    order = request.session.get('order')
     basket_items = []
     total = 0
     product_count = 0
-    delivery = request.session.get('delivery', Decimal(0))
+    delivery = request.session.get('delivery', delmeth.cost)
     basket = request.session.get('basket', {})
+    grand_total = 0
+    delivery_id = request.session.get('delivery_id')  # delivery id from the field --- inject into the order form> >>
 
     for item_id, quantity in basket.items():
         product = get_object_or_404(Product, pk=item_id)
@@ -23,14 +29,19 @@ def basket_contents(request):
             'product': product,
         })
 
-    grand_total = Decimal(delivery) + total
+    if product_count == 0:
+        delivery = 0
+    else:
+        grand_total = Decimal(delivery) + total
 
     context = {
         'basket_items': basket_items,
         'total': total,
         'product_count': product_count,
         'delivery': delivery,
+        'delivery_id': delivery_id,
         'grand_total': grand_total,
+        'order': order,
     }
 
     return context

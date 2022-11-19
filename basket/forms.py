@@ -10,4 +10,4 @@ class DeliveryMethodForm(forms.ModelForm):
     class Meta:
         ''' meta data for the admin booking form '''
         model = DeliveryMethod
-        fields = ['delivery_method_name', 'delivery_method_cost']
+        fields = ['name', 'cost', 'friendly_name']

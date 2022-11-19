@@ -4,7 +4,7 @@ from .models import DeliveryMethod
 
 class DeliveryMethodAdmin(admin.ModelAdmin):
     """ Delivery Method Information admin panel """
-    list_display = ('delivery_method_name', 'delivery_method_cost')
+    list_display = ('name', 'cost', 'friendly_name')
 
 
 admin.site.register(DeliveryMethod, DeliveryMethodAdmin)
