@@ -4,36 +4,33 @@ from django.contrib import messages
 
 from products.models import Product
 from .models import DeliveryMethod
-from checkout.forms import OrderForm
+from checkout.forms import OrderForm, DeliveryForm
 
 
 def view_basket(request):
     """ A view that returns basket page and its contents """
 
     if request.method == 'POST':
-        orderform = OrderForm(request.POST)
+        deliveryform = DeliveryForm(request.POST)
         # delivery_data = request.POST.get("delivery_data")
         # create an instance of delivery (this is the 'delivery' field from the order form which is the foreign key to the deliverymethod)
         delivery = request.POST.get("delivery")
         if delivery == '1':
-            d = DeliveryMethod.objects.get(pk=1)
-            del_meth = DeliveryMethod.objects.get(id=1)
+            d = DeliveryMethod.objects.get(id=1)
         elif delivery == '2':
-            d = DeliveryMethod.objects.get(pk=2)
-            del_meth = DeliveryMethod.objects.get(id=2)
+            d = DeliveryMethod.objects.get(id=2)
         elif delivery == '3':
-            d = DeliveryMethod.objects.get(pk=3)
-            del_meth = DeliveryMethod.objects.get(id=3)
+            d = DeliveryMethod.objects.get(id=3)
         # see if i can manipulate this back to just the model and edit it in context.py
-        request.session['delivery'] = str(del_meth.cost)
-        request.session['delivery_id'] = str(del_meth.pk)
+        request.session['delivery'] = str(d.cost)
+        request.session['delivery_id'] = str(d.pk)
         messages.success(request, f' {d.friendly_name}'
                          ' has been selected as shipping method')
     else:
-        orderform = OrderForm()
+        deliveryform = DeliveryForm()
 
     context = {
-        'order_form': orderform,
+        'delivery_form': deliveryform,
     }
     return render(request, 'basket/basket.html', context)
 
@@ -70,7 +67,7 @@ def adjust_basket(request, item_id):
 
     if quantity > 0:
         basket[item_id] = quantity
-        messages.info(
+        messages.success(
             request, f'Updated {product.name}'
             f' quantity to {basket[item_id]}'
         )
