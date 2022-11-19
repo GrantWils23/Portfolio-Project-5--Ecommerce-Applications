@@ -9,7 +9,7 @@ from .models import Order
 
 def checkout(request):
     """ The view that returns the checkout page """
-    delivery_id = request.session.get('delivery_id')    # delivery_id availble from the context basket... insert into the order from delivery field
+    delivery_id = request.session.get('delivery_id')  # del_id from context.py
     delivery_method = get_object_or_404(DeliveryMethod, pk=delivery_id)
     print(delivery_id)
     print(delivery_method)
@@ -29,6 +29,8 @@ def checkout(request):
         'delivery_method': delivery_method,
         'order_form': order_form,
         'delivery_id': delivery_id,
+        'stripe_public_key': 'pk_test_51Lam8XGUiCQtdmRkzO1vpX4e89cf0Ogf1mBt2hHJ1UnDdKYNR65bPYd9QQiKCKyK2EoxhukvD3NUi52jrRxEPZSW00xl4EHDi0',
+        'client_secret': 'test client secret key',
     }
 
     return render(request, template, context)

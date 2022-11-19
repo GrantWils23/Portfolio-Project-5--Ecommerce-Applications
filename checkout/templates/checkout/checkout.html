@@ -3,7 +3,7 @@
 {% load basket_tools %}
 
 {% block extra_css %}
-<link rel="stylesheet" href="{% static 'chcekout/css/checkout.css' %}">
+<link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
 {% endblock %}
 
 {% block page_header %}
@@ -75,24 +75,25 @@
             </div>
         </div>
         <div class="col-12 col-lg-6">
+            <!-- Payment Form-->
             <p class="text-muted">Please fill out the form below to complete your order</p>
             <form action="{% url 'checkout' %}" method="POST" id="payment-form">
                 {% csrf_token %}
-                <fieldset class="rounded px-3 mb-5">
-                    <legend class="fieldset-label small text-success px-2 w-auto">Details</legend>
+                <fieldset class="rounded px-3 mb-3">
+                    <legend class="fieldset-label text-success px-2 w-auto">Details</legend>
                     {{ order_form.full_name | as_crispy_field }}
                     {{ order_form.email | as_crispy_field }}
                 </fieldset>
-                <fieldset class="rounded px-3 mb-5">
-                    <legend class="fieldset-label small text-success px-2 w-auto">Delivery Method</legend>
+                <fieldset class="rounded px-3 mb-3">
+                    <legend class="fieldset-label text-success px-2 w-auto">Delivery Method</legend>
                     <div class="input-group mb-3">
 
                         <span type="text" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default">{{ delivery_method }}</span>
                     </div>
 
                 </fieldset>
-                <fieldset class="rounded px-3 mb-5">
-                    <legend class="fieldset-label small text-success px-2 w-auto">Delivery</legend>
+                <fieldset class="rounded px-3 mb-3">
+                    <legend class="fieldset-label text-success px-2 w-auto">Delivery</legend>
                     {{ order_form.phone_number | as_crispy_field }}
                     {{ order_form.country | as_crispy_field }}
                     {{ order_form.postcode | as_crispy_field }}
@@ -112,8 +113,8 @@
                         {% endif %}
                     </div>
                 </fieldset>
-                <fieldset class="px-3">
-                    <legend class="fieldset-label small text-success px-2 w-auto">Payment</legend>
+                <fieldset class="px-3 mt-5 mb-2">
+                    <legend class="fieldset-label text-success px-2 w-auto">Payment</legend>
                     <!-- A stripe Card Element -->
                     <div class="mb-3" id="card-element"></div>
                     <!-- A stripe Card Element End -->
@@ -122,7 +123,7 @@
                     <!-- Used to Display form Errors end -->
                 </fieldset>
 
-                <div class="submit-button text-right-mt-5 mb-2">
+                <div class="submit-button text-right-mt-5 mb-2 m-1 px-3">
                     <a href="{% url 'view_basket' %}" class="btn btn-secondary rounded-1 btn-lg m-1">
                         <span class="">Adjust Basket</span>
                     </a>
@@ -146,4 +147,11 @@
 </div>
 <div class="pushdown-small"></div>
 
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+{{ stripe_public_key|json_script:"id_stripe_public_key" }}
+{{ client_secret|json_script:"id_client_secret" }}
+<script src="{% static 'checkout/js/stripe_elements.js' %}"></script>
 {% endblock %}
