@@ -30,6 +30,8 @@ ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
 
 CSRF_TRUSTED_ORIGINS = ['https://8000-grantwils23-portfoliopr-7o2kyngu7uz.ws-eu74.gitpod.io']
 # CSRF_TRUSTED_ORIGINS = ['https://8000-grantwils23-portfoliopr-7o2kyngu7uz.ws-eu75.gitpod.io']
+# CSRF_TRUSTED_ORIGINS = ['https://8000-grantwils23-portfoliopr-7o2kyngu7uz.ws-eu77.gitpod.io']
+
 
 AUTHENTICATION_BACKENDS = [
     # Needed to login by username in Django admin, regardless of `allauth`
@@ -177,7 +179,7 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 STANDARD_DELIVERY_COST = 3.50
 FIRST_CLASS_DELIVERY_COST = 6.99
-EXPRESS_DELIVERY_COST = 11.99
+EXPRESS_DELIVERY_COST = 10.99
 
 PHONENUMBER_DB_FORMAT = 'NATIONAL'
 PHONENUMBER_DEFAULT_REGION = 'GB'
