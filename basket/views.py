@@ -11,8 +11,7 @@ def view_basket(request):
     """ A view that returns basket page and its contents """
 
     if request.method == 'POST':
-        deliveryform = DeliveryForm(request.POST)
-        # delivery_data = request.POST.get("delivery_data")
+        orderform = OrderForm(request.POST)
         # create an instance of delivery (this is the 'delivery' field from the order form which is the foreign key to the deliverymethod)
         delivery = request.POST.get("delivery")
         if delivery == '1':
@@ -22,15 +21,18 @@ def view_basket(request):
         elif delivery == '3':
             d = DeliveryMethod.objects.get(id=3)
         # see if i can manipulate this back to just the model and edit it in context.py
-        request.session['delivery'] = str(d.cost)
+        request.session['deliveryfee'] = str(d.cost)
         request.session['delivery_id'] = str(d.pk)
         messages.success(request, f' {d.friendly_name}'
                          ' has been selected as shipping method')
     else:
-        deliveryform = DeliveryForm()
+        request.session['deliveryfee'] = str(3.50)
+        request.session['delivery_id'] = str(1)
+        orderform = OrderForm()
+        orderform.save(commit=False)
 
     context = {
-        'delivery_form': deliveryform,
+        'delivery_form': orderform,
     }
     return render(request, 'basket/basket.html', context)
 

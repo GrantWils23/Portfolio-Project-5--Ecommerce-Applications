@@ -41,6 +41,9 @@ def checkout(request):
     delivery_id = request.session.get('delivery_id')  # del_id from context.py
     delivery_method = get_object_or_404(DeliveryMethod, pk=delivery_id)
 
+    initial_data = {
+        'delivery': delivery_id,
+    }
 # -------------------------------------------------------------------------
 
     if request.method == 'POST':

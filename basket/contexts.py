@@ -14,7 +14,7 @@ def basket_contents(request):
     basket_items = []
     total = 0
     product_count = 0
-    delivery = request.session.get('delivery', delmeth.cost)
+    delivery = request.session.get('deliveryfee', delmeth.cost)
     basket = request.session.get('basket', {})
     grand_total = 0
     delivery_id = request.session.get('delivery_id')  # delivery id from the field --- inject into the order form> >>
@@ -38,7 +38,7 @@ def basket_contents(request):
         'basket_items': basket_items,
         'total': total,
         'product_count': product_count,
-        'delivery': delivery,
+        'deliveryfee': delivery,
         'delivery_id': delivery_id,
         'grand_total': grand_total,
         'order': order,

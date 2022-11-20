@@ -20,7 +20,7 @@ class Order(models.Model):
     county = models.CharField(max_length=80, null=True, blank=True)
     date = models.DateTimeField(auto_now_add=True)
     delivery = models.ForeignKey(DeliveryMethod, null=False, blank=False,
-                                 on_delete=models.CASCADE, related_name='deliverymethod')
+                                 on_delete=models.CASCADE, related_name='deliverymethod', default=1)
     order_total = models.DecimalField(
         max_digits=10, decimal_places=2, null=False, default=0)
     grand_total = models.DecimalField(
