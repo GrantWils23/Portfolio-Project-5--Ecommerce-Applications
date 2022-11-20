@@ -1,90 +1,78 @@
-[
-{
+[{
     "model": "products.brand",
     "pk": 1,
     "fields": {
         "name": "Helikon-Tex",
         "friendly_name": "Helikon-Tex"
     }
-},
-{
+}, {
     "model": "products.brand",
     "pk": 3,
     "fields": {
-        "name": "G&G Armament",
+        "name": "GnG Armament",
         "friendly_name": "G&G"
     }
-},
-{
+}, {
     "model": "products.brand",
     "pk": 4,
     "fields": {
         "name": "Action Sport Games",
         "friendly_name": "ASG"
     }
-},
-{
+}, {
     "model": "products.brand",
     "pk": 5,
     "fields": {
         "name": "Nurpol",
         "friendly_name": "Nurpol"
     }
-},
-{
+}, {
     "model": "products.brand",
     "pk": 6,
     "fields": {
         "name": "Patch Lab",
         "friendly_name": "Patch Lab"
     }
-},
-{
+}, {
     "model": "products.brand",
     "pk": 8,
     "fields": {
         "name": "8Fields",
         "friendly_name": "8Fields"
     }
-},
-{
+}, {
     "model": "products.brand",
     "pk": 9,
     "fields": {
         "name": "Jackets To Go",
         "friendly_name": "JTG"
     }
-},
-{
+}, {
     "model": "products.brand",
     "pk": 10,
     "fields": {
         "name": "ARES Airsoft",
         "friendly_name": "ARES"
     }
-},
-{
+}, {
     "model": "products.brand",
     "pk": 11,
     "fields": {
         "name": "AbbeySupply",
         "friendly_name": "Abbey"
     }
-},
-{
+}, {
     "model": "products.brand",
     "pk": 12,
     "fields": {
         "name": "101 Inc.",
         "friendly_name": "101 Inc."
     }
-},
-{
+}, {
     "model": "products.brand",
     "pk": 13,
     "fields": {
         "name": "TMC Tactical Gear",
         "friendly_name": "TMC"
     }
-}
-]
+}]

@@ -58,7 +58,7 @@ def checkout(request):
             'town_or_city': request.POST['town_or_city'],
             'street_address1': request.POST['street_address1'],
             'street_address2': request.POST['street_address2'],
-            'country': request.POST['full_name'],
+            'country': request.POST['country'],
             'delivery': delivery_id,
         }
         order_form = OrderForm(form_data)
@@ -134,8 +134,8 @@ def checkout_success(request, order_number):  # get order from successful req
     if 'basket' in request.session:
         del request.session['basket']
         # reset the delivery method upon successful order
-        request.session['delivery'] = str(3.50)
-        request.session['delivery_id'] = 1
+        request.session['deliveryfee'] = str(3.50)
+        request.session['delivery_id'] = str(1)
 
 
     template = 'checkout/checkout_success.html'
