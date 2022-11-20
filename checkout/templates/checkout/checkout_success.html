@@ -1,0 +1,67 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
+{% endblock %}
+
+{% block page_header %}
+<!-- Page Header-->
+<div class="container-fluid">
+    <div class="row g-0">
+        <div class="col-12 justify-content-center">
+            <h2 class="display-3 text-center mt-5 mb-1 logo-font">Order Completed</h2>
+        </div>
+        <div class="container-fluid justify-content-center w-75">
+            <hr>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
+
+{% block content %}
+
+<div class="pushdown-small"></div>
+
+<!-- Product Title -->
+<div class="container tertiary-font">
+    <div class="row">
+        <div class="col">
+            <br>
+            <h2 class="mb-4 success-header-fontsize">Thank you for your business,</h2>
+            <br>
+            <p class='my-3 success-p-fontsize'>Your order information is below. A confirmation email will be sent to <i>{{ order.email }}</i>.</p>
+        </div>
+    </div>
+</div>
+
+<div class="pushdown-small"></div>
+
+<div class="container tertiary-font">
+    <!-- order summary -->
+    <div class="row">
+        <div class="col-12 col-lg-7"></div>
+    </div>
+    <!-- completed direction buttons -->
+    <div class="row">
+        <div class="col-12 text-center">
+            <span>
+                <a href="{% url 'home' %}" class="btn-secondary btn btn-lg mx-2 my-3 text-uppercase">
+                    Return to home
+                </a>
+            </span>
+            <span>
+                <a href="{% url 'products' %}" class="btn-success btn btn-lg mx-2 my-3 text-uppercase">
+                    Return to the store
+                </a>
+            </span>
+        </div>
+    </div>
+</div>
+<div class="pushdown-small"></div>
+<div class="pushdown-small"></div>
+
+{% endblock %}

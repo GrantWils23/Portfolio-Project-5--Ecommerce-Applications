@@ -42,3 +42,11 @@
     font-family: 'Marcellus', serif;
     font-family: 'Special Elite', cursive;
  */
+
+.success-header-fontsize {
+    font-size: x-large;
+}
+
+.success-p-fontsize {
+    font-size: large;
+}
