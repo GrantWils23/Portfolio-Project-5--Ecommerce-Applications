@@ -109,7 +109,9 @@ def checkout_success(request, order_number):  # get order from successful req
             email will be sent to {order.email}.')
 
     if 'basket' in request.session:
-        del request.session['basket']   # check opon high delivery value if resets
+        del request.session['basket']
+        request.session['delivery'] = str(3.50)
+        # check opon high delivery value if resets
         # may need delete delivery similar to the view in basket delete
 
     template = 'checkout/checkout_success.html'
