@@ -17,7 +17,7 @@ def basket_contents(request):
     delivery = request.session.get('deliveryfee', delmeth.cost)
     basket = request.session.get('basket', {})
     grand_total = 0
-    delivery_id = request.session.get('delivery_id')  # delivery id from the field --- inject into the order form> >>
+    delivery_id = request.session.get('delivery_id')
 
     for item_id, quantity in basket.items():
         product = get_object_or_404(Product, pk=item_id)
