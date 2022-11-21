@@ -2,21 +2,27 @@
 
 {% block content %}
 <div class="container-fluid homepage-container">
+    <!-- <div class="pushdown-small"></div> -->
     <div class="pushdown-small"></div>
-    <div class="pushdown-small"></div>
-    <div class="row">
-        <div class="col-md-4 col-sm-3 col-1"></div>
-        <div class="col-md-4 col-sm-6">
+    <div class="row justify-content-center">
+        <div class="col-xl-4 col-lg-3 col-md-2 col-sm-2 col-1"></div>
+        <div class="col-xl-4 col-lg-6 col-md-8 col-sm-8">
             <div class="card bg-secondary p-3 secondary-font text-decoration-none">
-                {% block inner_content %}
-                {% endblock %}
+                <div class="row">
+                    <div class="col-1 d-none d-sm-block"></div>
+                    <div class="col-sm-10 col-12">
+                        {% block inner_content %}
+                        {% endblock %}
+                    </div>
+                    <div class="col-1 d-none d-sm-block"></div>
+                </div>
                 <hr>
                 <div class="">
                     <a href="{% url 'home' %}" class="btn btn-secondary m-1">Return to home</a>
                 </div>
             </div>
         </div>
-        <div class="col-md-4 col-sm-3 col-1"></div>
+        <div class="col-xl-4 col-lg-3 col-md-2 col-sm-2 col-1"></div>
 
     </div>
 </div>
