@@ -135,7 +135,7 @@
                         <ul class="dropdown-menu dropdown-menu-dark">
                             {% if request.user.is_authenticated %}
                             {% if request.user.is_superuser %}
-                            <li><a class="dropdown-item" href="#">Product Management</a></li> <!-- come back to later -->
+                            <li><a class="dropdown-item" href="{% url 'admin_controls' %}">Store Management</a></li> <!-- come back to later -->
                             {% endif %}
                             <li><a class="dropdown-item" href="{% url 'profile' %}">User Profile</a></li> <!-- come back to later -->
                             <li>

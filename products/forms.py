@@ -16,6 +16,6 @@ class ProductForm(forms.ModelForm):
         b_friendly_names = [(b.id, b.get_friendly_name()) for b in brands]
 
         self.fields['category'].choices = c_friendly_names
-        self.fields['brands'].choices = b_friendly_names
+        self.fields['brand'].choices = b_friendly_names
         for field_name, field in self.fields.items():
-            field.widget.attrs['class']
+            field.widget.attrs['class'] = 'text-secondary'

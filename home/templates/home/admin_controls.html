@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% load static %}
+{% block content %}
+
+<!-- Page Title -->
+
+<div class="container">
+    <div class="container">
+        <div class="row">
+            <h2 class="display-4 text-center my-5">Store Managment | {{ request.user }}</h2>
+        </div>
+    </div>
+    <div class="row tertiary-font">
+        <div class="col-12 col-md-6 border-secondary border">
+            <div class="row my-4">
+                <h2 class="py-2 text-secondary"><i>Product Managment: </i><i class="fas fa-barcode"></i></h2>
+                <br>
+                <span><a href="{% url 'add_product' %}" class="ms-3 btn btn-secondary">Add a Product</a></span>
+            </div>
+            <div class="row my-4">
+                <h2 class="py-2 text-secondary"><i>Orders: </i><i class="fas fa-clipboard-list"></i></h2>
+                <br>
+                <span><a href="" class="ms-3 btn btn-secondary">View Orders</a></span>
+            </div>
+            <div class="row my-4">
+                <h2 class="py-2 text-secondary"><i>Paint Work Enquiries: </i><i class="fas fa-spray-can"></i></h2>
+                <br>
+                <span><a href="" class="ms-3 btn btn-secondary">View Paint Requests</a></span>
+            </div>
+            <div class="row my-4">
+                <h2 class="py-2 text-secondary"><i>Tech Work Enquiries: </i><i class="fa fa-gears"></i></h2>
+                <br>
+                <span><a href="" class="ms-3 btn btn-secondary">View Tech Requests</a></span>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<div class="footer-pushdown-small"></div>
+
+{% endblock %}

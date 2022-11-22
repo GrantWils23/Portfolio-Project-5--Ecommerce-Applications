@@ -25,4 +25,5 @@ urlpatterns = [
     path('privacy_policy/', views.privacy_policy, name='privacy_policy'),
     path('sitemap/', views.sitemap_page, name='sitemap'),
     path('about_us/', views.about_us, name='about_us'),
+    path('admin_controls/', views.admin_controls, name='admin_controls'),
 ]

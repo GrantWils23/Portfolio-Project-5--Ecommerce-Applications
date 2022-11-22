@@ -36,3 +36,8 @@ def sitemap_page(request):
 def about_us(request):
     """ A view that displays the about us page"""
     return render(request, 'home/about_us.html')
+
+
+def admin_controls(request):
+    """ A view that returns the admin controls panel """
+    return render(request, 'home/admin_controls.html')
