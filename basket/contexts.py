@@ -10,7 +10,7 @@ from checkout.forms import OrderForm
 def basket_contents(request):
     delmeth = DeliveryMethod.objects.get(pk=1)  # default shipping method
     deliverymethods = DeliveryMethod.objects.all()
-    order = request.session.get('order')
+    # order = request.session.get('order')
     basket_items = []
     total = 0
     product_count = 0
@@ -41,7 +41,7 @@ def basket_contents(request):
         'deliveryfee': delivery,
         'delivery_id': delivery_id,
         'grand_total': grand_total,
-        'order': order,
+        # 'order': order,
     }
 
     return context
