@@ -1,5 +1,17 @@
 from django import forms
+from django.contrib.auth.models import User
+from django.contrib.auth.forms import UserChangeForm
 from .models import UserProfile
+
+
+class EditUserProfileForm(UserChangeForm):
+
+    class Meta:
+        model = User
+        fields = (
+            'username', 'email', 'first_name', 'last_name', 'password'
+        )
+        field_order = ['username', 'first_name', 'last_name', 'email']
 
 
 class UserProfileForm(forms.ModelForm):
@@ -15,6 +27,9 @@ class UserProfileForm(forms.ModelForm):
         """
         super().__init__(*args, **kwargs)
         placeholders = {
+            'default_title': 'Title',
+            'default_first_name': 'First Name',
+            'default_last_name': 'Last Name',
             'default_phone_number': 'Phone Number',
             'default_postcode': 'Postal Code',
             'default_town_or_city': 'Town or City',

@@ -225,6 +225,13 @@
     <!-- completed direction buttons -->
     <div class="row">
         <div class="col-12 text-center">
+            {% if from_profile %}
+            <span>
+                <a href="{% url 'profile' %}" class="btn-secondary btn btn-lg mx-2 my-3 text-uppercase">
+                    Back to my Profile
+                </a>
+            </span>
+            {% else %}
             <span>
                 <a href="{% url 'home' %}" class="btn-secondary btn btn-lg mx-2 my-3 text-uppercase">
                     Return to home
@@ -235,6 +242,7 @@
                     Return to the store
                 </a>
             </span>
+            {% endif %}
         </div>
     </div>
 </div>
