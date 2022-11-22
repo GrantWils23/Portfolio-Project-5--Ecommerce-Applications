@@ -16,7 +16,6 @@ class EditUserProfileForm(UserChangeForm):
 
 class UserProfileForm(forms.ModelForm):
     class Meta:
-
         model = UserProfile
         exclude = ('user',)
 
@@ -27,9 +26,6 @@ class UserProfileForm(forms.ModelForm):
         """
         super().__init__(*args, **kwargs)
         placeholders = {
-            'default_title': 'Title',
-            'default_first_name': 'First Name',
-            'default_last_name': 'Last Name',
             'default_phone_number': 'Phone Number',
             'default_postcode': 'Postal Code',
             'default_town_or_city': 'Town or City',
