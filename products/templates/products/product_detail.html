@@ -22,8 +22,15 @@
                 <p class="mb-0 text-left text-white font-weight-bold"><strong>£{{ product.price }}</strong></p>
                 {% if product.category %}
                 <p class="small mt-1 mb-0">
-                    <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
-                        <i class="fas fa-tag mr-1"></i>{{product.category.friendly_name}}
+                    <a class="page-link-success text-decoration-none green-on-hov" href="{% url 'products' %}?category={{ product.category.name }}">
+                        <i class="fas fa-tag mr-1"></i> {{product.category.friendly_name}}
+                    </a>
+                </p>
+                {% endif %}
+                {% if product.brand %}
+                <p class="small mt-1 mb-0">
+                    <a class="page-link-success text-decoration-none green-on-hov" href="{% url 'products' %}?brand={{ product.brand.name }}">
+                        <i class="far fa-bookmark"></i> {{product.brand.friendly_name}}
                     </a>
                 </p>
                 {% endif %}
@@ -38,12 +45,17 @@
                 {% if request.user.is_superuser %}
                 <br>
                 <small class="ml-3">
-                    <a class="text-decoration-none" href="{% url 'edit_product' product.id %}">Edit</a> |
-                    <span type="button" class="text-danger" data-bs-toggle="modal" data-bs-target="#deleteModal{{product.id}}">Delete</span>
+                    <a class="text-decoration-none blue-on-hov" href="{% url 'edit_product' product.id %}">Edit</a> |
+                    <span type="button" class="text-danger red-on-hov" data-bs-toggle="modal" data-bs-target="#deleteModal{{product.id}}">Delete</span>
                 </small>
                 {% endif %}
                 <br>
-                <a class=" text-secondary text-decoration-none" href=""><small class="text-end"> add to wishlist <i class="fas fa-plus text-success"></i></small></a>
+                <!-- WISHLIST -->
+                {% if not in_wishlist %}
+                <span class="btn btn-lg rounded-1 py-3"><a class=" page-link-success green-on-hov text-decoration-none" href="{% url 'user_wishlist' product.id %}">Add to wishlist <i class="fas fa-plus"></i></a></span>
+                {% else %}
+                <span class="btn btn-lg rounded-1  py-3"><a class=" page-link-danger red-on-hov text-decoration-none" href="{% url 'user_wishlist' product.id %}">Remove from wishlist <i class="fas fa-minus"></i></a></span>
+                {% endif %}
                 <!--return with wishlist functionality-->
                 <!-- basket-buttons -->
                 <form class="form" action="{% url 'add_to_basket' product.id %}" method="POST">

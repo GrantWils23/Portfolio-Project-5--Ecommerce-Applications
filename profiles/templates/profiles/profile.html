@@ -27,59 +27,112 @@
 
 <!-- Product Title -->
 
-<div class="container tertiary-font">
+<div class="container text-muted tertiary-font">
     <!-- row-1 -->
-    <div class="row justify-content-center">
+    <div class="row justify-content-center scrollable h-50">
         <div class="col-12 col-lg-6">
             <div class="col-12 mb-4">
-                <h5 class="text-success"><i>{{ request.user }}</i></h5>
+                <h3 class="text-success"><i>{{ request.user }}</i> <i class="fas fa-user"></i></h3>
                 <p> if you would like to update your your name and username, please follow this link below:</p>
                 <a class="my-1 page-link-success" href="{% url 'edit_user_profile' %}">Update My account details</a>
             </div>
-            <p class="text-muted">Default Delivery Information</p>
+            <h3 class="text-muted">Default Delivery Information <i class="fas fa-address-card"></i></i></h3>
             <form action="{% url 'profile' %}" method="POST" class="mt-3" id="profile-update-form">
                 {% csrf_token %}
                 {{ form|crispy }}
                 <button class="btn btn-success text-uppercase">Update information</button>
             </form>
         </div>
-        <div class="col-12 col-lg-6">
-            <p class="text-muted">Order History</p>
-            <div class="order-history table-responsive">
-                <table class="table table-sm table-borderless border-success border-top rounded-1 text-white">
-                    <thead>
-                        <tr>
-                            <th>Order Number</th>
-                            <th>Date</th>
-                            <th>Items</th>
-                            <th>Order Total</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        {% for order in orders %}
-                        <tr>
-                            <td>
-                                <a class="page-link-success" href="{% url 'order_history' order.order_number %}" title="{{ order.order_number }}">{{ order.order_number|truncatechars:6 }}</a>
-                            </td>
-                            <td>{{ order.date }}</td>
-                            <td>
-                                <ul class="list-unstyled">
-                                    {% for item in order.lineitems.all %}
-                                    <li class="small">
-                                        {{ item.product.name }} x {{ item.quantity }}
-                                    </li>
-                                    {% endfor %}
-                                </ul>
-                            </td>
-                            <td>{{ order.grand_total }}</td>
-                        </tr>
+        <div class="col-12 col-lg-6 g-1 px-5">
+            <h3 class="text-success">Orders <i class="fas fa-receipt"></i></h3>
+            <div class="row p-1 overflow-auto scrollable rounded-1 border border-success" style="max-height:200px;">
+                <p class="text-muted">Order History</p>
+                <div class="order-history table-responsive">
+                    <table class="table table-sm table-borderless border-success border-top rounded-1 text-muted">
+                        <thead>
+                            <tr>
+                                <th>Order Number</th>
+                                <th>Date</th>
+                                <th>Items</th>
+                                <th>Order Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for order in orders %}
+                            <tr>
+                                <td>
+                                    <a class="page-link-success" href="{% url 'order_history' order.order_number %}" title="{{ order.order_number }}">{{ order.order_number|truncatechars:6 }}</a>
+                                </td>
+                                <td>{{ order.date }}</td>
+                                <td>
+                                    <ul class="list-unstyled">
+                                        {% for item in order.lineitems.all %}
+                                        <li class="small">
+                                            {{ item.product.name }} x {{ item.quantity }}
+                                        </li>
+                                        {% endfor %}
+                                    </ul>
+                                </td>
+                                <td>{{ order.grand_total }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="row p-2">
+                <div class="col-12 col-md-6">
+                    <h3 class=" mt-1 mb-0 text-success">My WishList <i class="fas fa-thumbs-up"></i></h3>
+                    <span class="text-muted"><i>Manage my wish list</i></span>
+                </div>
+            </div>
+            <div class="row border row rounded-1 border border-success overflow-auto">
+                <div class="" style="height:275px;">
+                    <div class="row p-1">
+                        {% for product in products %}
+                        <div class="row p-1">
+                            <div class="bg-none border-secondary p-2">
+                                <div class="row ps-5">
+                                    <div class="col-3 my-1">
+                                        <a href="{% url 'product_detail' product.id %}" class="my-0 page-link-success">
+                                            {% if product.image %}
+                                            <img class="w-100" src="{{ product.image.url }}" alt="{{ product.name }}">
+                                            {% else %}
+                                            <img class="w-100" src="{{ MEDIA }}/noimage.png" alt="{{ product.name }}">
+                                            {% endif %}
+                                        </a>
+                                    </div>
+                                    <div class="col-9">
+                                        <span><a href="{% url 'product_detail' product.id %}" class="my-0 page-link-muted">{{ product.name }}</a></span>
+                                        <br>
+                                        <a class="small page-link-success text-decoration-none green-on-hov" href="{% url 'products' %}?category={{ product.category.name }}">
+                                            <i class="fas fa-tag mr-1"></i> <i>{{product.category.friendly_name}}</i>
+                                        </a>
+                                        <br>
+                                        <a class="small page-link-success text-decoration-none green-on-hov" href="{% url 'products' %}?brand={{ product.brand.name }}">
+                                            <i class="far fa-bookmark"></i> <i>{{product.brand.friendly_name}}</i>
+                                        </a>
+                                        <br>
+                                        {% if product.rating %}
+                                        <span><i class="fas fa-star mr-1"></i> {{ product.rating }}/ 5</span>
+                                        {% else %}
+                                        <span class="text-muted">No Rating</span>
+                                        {% endif %}
+                                        <br>
+                                        <span>£{{ product.price }}</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="m-1 border-secondary">
                         {% endfor %}
-                    </tbody>
-                </table>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
+
 <div class="pushdown-small"></div>
 
 {% endblock %}

@@ -7,13 +7,13 @@
 <div class="container">
     <div class="container">
         <div class="row">
-            <h2 class="display-4 text-center my-5">Store Managment | {{ request.user }}</h2>
+            <h2 class="border-bottom border-secondary display-4 text-center my-5">Store Managment | {{ request.user }}</h2>
         </div>
     </div>
     <div class="row tertiary-font">
-        <div class="col-12 col-md-7 border-secondary border">
+        <div class="col-12 col-md-7 border-secondary rounded-1 border">
             <div class="row my-4">
-                <h2 class="py-2 text-secondary"><i>Product Managment: </i><i class="fas fa-barcode"></i></h2>
+                <h2 class="ms-2 py-2 text-success"><i>Product Managment: </i><i class="fas fa-barcode"></i></h2>
                 <br>
                 <div class="flex-inline">
                     <a href="{% url 'add_product' %}" class="ms-3 m-1 btn btn-secondary">Add Product</a>
@@ -23,17 +23,17 @@
                 </div>
             </div>
             <div class="row my-4">
-                <h2 class="py-2 text-secondary"><i>Orders: </i><i class="fas fa-clipboard-list"></i></h2>
+                <h3 class="ms-2 py-2 text-success">Orders <i class="fas fa-receipt"></i></h3>
                 <br>
                 <span><a href="" class="ms-3 btn btn-secondary">View Orders</a></span>
             </div>
             <div class="row my-4">
-                <h2 class="py-2 text-secondary"><i>Paint Work Enquiries: </i><i class="fas fa-spray-can"></i></h2>
+                <h2 class="ms-2 py-2 text-success"><i>Paint Work Enquiries: </i><i class="fas fa-spray-can"></i></h2>
                 <br>
                 <span><a href="" class="ms-3 btn btn-secondary">View Paint Requests</a></span>
             </div>
             <div class="row my-4">
-                <h2 class="py-2 text-secondary"><i>Tech Work Enquiries: </i><i class="fa fa-gears"></i></h2>
+                <h2 class="ms-2 py-2 text-success"><i>Tech Work Enquiries: </i><i class="fa fa-gears"></i></h2>
                 <br>
                 <span><a href="" class="ms-3 btn btn-secondary">View Tech Requests</a></span>
             </div>

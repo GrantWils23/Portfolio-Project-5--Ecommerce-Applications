@@ -75,8 +75,15 @@
                                 <p class="mb-0 text-left text-black font-weight-bold"><strong>£{{ product.price }}</strong></p>
                                 {% if product.category %}
                                 <p class="small mt-1 mb-0">
-                                    <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
-                                        <i class="fas fa-tag mr-1"></i>{{product.category.friendly_name}}
+                                    <a class="page-link-success text-decoration-none green-on-hov" href="{% url 'products' %}?category={{ product.category.name }}">
+                                        <i class="fas fa-tag mr-1"></i> {{product.category.friendly_name}}
+                                    </a>
+                                </p>
+                                {% endif %}
+                                {% if product.brand %}
+                                <p class="small mt-1 mb-0">
+                                    <a class="page-link-success text-decoration-none green-on-hov" href="{% url 'products' %}?brand={{ product.brand.name }}">
+                                        <i class="far fa-bookmark"></i> {{product.brand.friendly_name}}
                                     </a>
                                 </p>
                                 {% endif %}
@@ -91,12 +98,11 @@
                                 {% if request.user.is_superuser %}
                                 <br>
                                 <small class="ml-3">
-                                    <a class="text-decoration-none" href="{% url 'edit_product' product.id %}">Edit</a> |
-                                    <span type="button" class="text-danger" data-bs-toggle="modal" data-bs-target="#deleteModal{{product.id}}">Delete</span>
+                                    <a class="text-decoration-none blue-on-hov" href="{% url 'edit_product' product.id %}">Edit</a> |
+                                    <span type="button" class="text-danger red-on-hov" data-bs-toggle="modal" data-bs-target="#deleteModal{{product.id}}">Delete</span>
                                 </small>
                                 {% endif %}
                                 <br>
-                                <small class="text-end"> add to wishlist <a class=" text-success text-decoration-none" href=""><i class="fas fa-plus"></i></a></small>
                             </div>
                         </div>
                     </div>

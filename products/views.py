@@ -5,6 +5,7 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 
+from profiles.models import UserProfile
 from .models import Product, Category, Brand
 from .forms import ProductForm, CategoryForm, BrandForm
 
@@ -94,11 +95,17 @@ def all_products(request):
 
 def product_detail(request, product_id):
     """ A view that shows the individual product information """
-
+    userprofile = request.GET.get('user')
+    product = get_object_or_404(Product, pk=product_id)
+    in_wishlist = False
+    # if product.users_wishlist.filter(userprofile.id).exists():
+    if product.users_wishlist.filter(id=request.user.id).exists():
+        in_wishlist = True
     product = get_object_or_404(Product, pk=product_id)
 
     context = {
         'product': product,
+        'in_wishlist': in_wishlist,
     }
 
     return render(request, 'products/product_detail.html', context)

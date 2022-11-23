@@ -104,6 +104,22 @@ nav {
     box-shadow: 0 0 10px #198754;
 }
 
+.red-on-hov:hover {
+    text-shadow: 0 0 10px #dc3545;
+}
+
+.red-on-hov-bg:hover {
+    box-shadow: 0 0 10px #dc3545;
+}
+
+.blue-on-hov:hover {
+    text-shadow: 0 0 10px #0d6efd;
+}
+
+.blue-on-hov-bg:hover {
+    box-shadow: 0 0 10px #0d6efd;
+}
+
 /* --------------- animations ----------------- */
 
 .animate {
@@ -533,7 +549,7 @@ nav {
     }
 }
 
-/* -------- Pagination CSS --------- */
+/* -------- Pagination & Links CSS --------- */
 
 .page-link-success {
     color: #198754;
@@ -541,6 +557,22 @@ nav {
 
 .page-link-success:hover {
     color: #13613d;
+}
+
+.page-link-danger {
+    color: #dc3545;
+}
+
+.page-link-danger:hover {
+    color: #961824;
+}
+
+.page-link-muted {
+    color: #6c757d;
+}
+
+.page-link-muted:hover {
+    color: #58595a;
 }
 
 .fs-pag {

@@ -1,20 +1,25 @@
 from django.shortcuts import render, get_object_or_404, redirect, reverse
+from django.http import HttpResponseRedirect, HttpResponse
 from django.contrib.auth.models import User
 from django.contrib.auth.forms import PasswordChangeForm
 from django.contrib.auth import update_session_auth_hash
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 
+from django.urls import resolve
+
 from .models import UserProfile
 from .forms import UserProfileForm, EditUserProfileForm
 
 from checkout.models import Order
+from products.models import Product
 
 
 @login_required
 def profile(request):
     """ Display the User's profile """
     profile = get_object_or_404(UserProfile, user=request.user)
+    products = Product.objects.filter(users_wishlist=profile)
 
     if request.method == 'POST':
         form = UserProfileForm(request.POST, instance=profile)
@@ -33,6 +38,7 @@ def profile(request):
         'form': form,
         'orders': orders,
         'on_profile_page': True,
+        'products': products,
     }
 
     return render(request, template, context)
@@ -86,3 +92,22 @@ def ChangePassword(request):
         form = PasswordChangeForm(user=request.user)
         args = {'form': form}
         return render(request, 'profiles/change_password.html', args)
+
+
+#  ##### --------------- wishlist ---------------- ######
+
+
+@login_required
+def add_to_wishlist(request, product_id):
+    pk = request.GET.get('product_id')
+    # pk = product_id
+    product = get_object_or_404(Product, pk=product_id)
+    if product.users_wishlist.filter(id=request.user.id).exists():
+        product.users_wishlist.remove(request.user.id)
+        messages.warning(request, f'{product.name} Removed from your wishlist')
+    else:
+        product.users_wishlist.add(request.user.id)
+        messages.success(request, f'{product.name} added to your wishlist')
+    # return HttpResponseRedirect(request.META["HTTP_REFERER"])
+    return redirect(reverse('product_detail', args=[product.id]))
+    # return HttpResponseRedirect(reverse('product_detail', args=[product_id]))
