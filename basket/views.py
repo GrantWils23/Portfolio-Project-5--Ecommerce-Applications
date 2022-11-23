@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect, reverse
 from django.shortcuts import HttpResponse, get_object_or_404
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 
 from products.models import Product
 from .models import DeliveryMethod
@@ -105,8 +106,13 @@ def remove_from_basket(request, item_id):
         return HttpResponse(status=500)
 
 
+@login_required
 def add_delivery_method(request):
     """ Add a delivery to the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
     if request.method == 'POST':
         form = DeliveryMethodForm(request.POST, request.FILES)
         if form.is_valid():
@@ -128,8 +134,13 @@ def add_delivery_method(request):
     return render(request, template, context)
 
 
+@login_required
 def edit_delivery_method(request, delivery_method_id):
     """ Edit a product to the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
     deliverymethod = get_object_or_404(DeliveryMethod, pk=delivery_method_id)
     if request.method == 'POST':
         form = DeliveryMethodForm(
@@ -155,8 +166,13 @@ def edit_delivery_method(request, delivery_method_id):
     return render(request, template, context)
 
 
+@login_required
 def delete_delivery_method(request, delivry_method_id):
     """ Delete a delivery method from the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
     deliverymethod = get_object_or_404(DeliveryMethod, pk=delivery_method_id)
     deliverymethod.delete()
     messages.success(request, 'Delivery Method Deleted!')

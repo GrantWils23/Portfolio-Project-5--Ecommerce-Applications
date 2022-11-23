@@ -1,6 +1,7 @@
 from django.shortcuts import render, redirect, reverse, get_object_or_404
 from django.core.paginator import Paginator
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 
@@ -103,8 +104,13 @@ def product_detail(request, product_id):
     return render(request, 'products/product_detail.html', context)
 
 
+@login_required
 def add_product(request):
     """ Add a product to the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES)
         if form.is_valid():
@@ -124,8 +130,13 @@ def add_product(request):
     return render(request, template, context)
 
 
+@login_required
 def edit_product(request, product_id):
     """ Edit a product to the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
     product = get_object_or_404(Product, pk=product_id)
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES, instance=product)
@@ -148,16 +159,26 @@ def edit_product(request, product_id):
     return render(request, template, context)
 
 
+@login_required
 def delete_product(request, product_id):
     """ Delete a product from the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
     product = get_object_or_404(Product, pk=product_id)
     product.delete()
     messages.success(request, 'Product Deleted!')
     return redirect(reverse('products'))
 
 
+@login_required
 def add_brand(request):
     """ Add a brand to the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
     if request.method == 'POST':
         form = BrandForm(request.POST, request.FILES)
         if form.is_valid():
@@ -177,8 +198,13 @@ def add_brand(request):
     return render(request, template, context)
 
 
+@login_required
 def edit_brand(request, brand_id):
     """ Edit a product to the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
     brand = get_object_or_404(Brand, pk=brand_id)
     if request.method == 'POST':
         form = BrandForm(request.POST, request.FILES, instance=brand)
@@ -201,16 +227,26 @@ def edit_brand(request, brand_id):
     return render(request, template, context)
 
 
+@login_required
 def delete_brand(request, brand_id):
     """ Delete a brand from the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
     brand = get_object_or_404(Brand, pk=brand_id)
     brand.delete()
     messages.success(request, 'Brand Deleted!')
     return redirect(reverse('admin_controls'))
 
 
+@login_required
 def add_category(request):
     """ Add a category to the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
     if request.method == 'POST':
         form = CategoryForm(request.POST, request.FILES)
         if form.is_valid():
@@ -230,7 +266,12 @@ def add_category(request):
     return render(request, template, context)
 
 
+@login_required
 def edit_category(request, category_id):
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
     """ Edit a product to the store """
     category = get_object_or_404(Category, pk=category_id)
     if request.method == 'POST':
@@ -254,8 +295,13 @@ def edit_category(request, category_id):
     return render(request, template, context)
 
 
+@login_required
 def delete_category(request, category_id):
     """ Delete a category from the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
     category = get_object_or_404(Category, pk=category_id)
     category.delete()
     messages.success(request, 'Category Deleted!')

@@ -3,6 +3,7 @@ from django.contrib.auth.models import User
 from django.contrib.auth.forms import PasswordChangeForm
 from django.contrib.auth import update_session_auth_hash
 from django.contrib import messages
+from django.contrib.auth.decorators import login_required
 
 from .models import UserProfile
 from .forms import UserProfileForm, EditUserProfileForm
@@ -10,6 +11,7 @@ from .forms import UserProfileForm, EditUserProfileForm
 from checkout.models import Order
 
 
+@login_required
 def profile(request):
     """ Display the User's profile """
     profile = get_object_or_404(UserProfile, user=request.user)
@@ -53,6 +55,7 @@ def order_history(request, order_number):
     return render(request, template, context)
 
 
+@login_required
 def EditUserProfile(request):
     if request.method == 'POST':
         form = EditUserProfileForm(request.POST, instance=request.user)
@@ -67,6 +70,7 @@ def EditUserProfile(request):
         return render(request, 'profiles/edit_profile.html', args)
 
 
+@login_required
 def ChangePassword(request):
     if request.method == 'POST':
         form = PasswordChangeForm(data=request.POST, user=request.user)
