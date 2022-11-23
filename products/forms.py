@@ -19,3 +19,17 @@ class ProductForm(forms.ModelForm):
         self.fields['brand'].choices = b_friendly_names
         for field_name, field in self.fields.items():
             field.widget.attrs['class'] = 'text-secondary'
+
+
+class CategoryForm(forms.ModelForm):
+    
+    class Meta:
+        model = Category
+        fields = "__all__"
+
+
+class BrandForm(forms.ModelForm):
+    
+    class Meta:
+        model = Brand
+        fields = "__all__"

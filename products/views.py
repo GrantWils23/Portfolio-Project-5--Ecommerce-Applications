@@ -5,7 +5,7 @@ from django.db.models import Q
 from django.db.models.functions import Lower
 
 from .models import Product, Category, Brand
-from .forms import ProductForm
+from .forms import ProductForm, CategoryForm, BrandForm
 
 
 def all_products(request):
@@ -119,6 +119,120 @@ def add_product(request):
     template = 'products/add_product.html'
     context = {
         'form': form,
+    }
+
+    return render(request, template, context)
+
+
+def edit_product(request, product_id):
+    """ Edit a product to the store """
+    product = get_object_or_404(Product, pk=product_id)
+    if request.method == 'POST':
+        form = ProductForm(request.POST, request.FILES, instance=product)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully Updated Product!')
+            return redirect(reverse('product_detail', args=[product.id]))
+        else:
+            messages.error(request, 'Failed to update product. Please ensure the form is valid.')
+    else:
+        form = ProductForm(instance=product)
+        messages.info(request, f'You are editing {product.name}')
+
+    template = 'products/edit_product.html'
+    context = {
+        'form': form,
+        'product': product,
+    }
+
+    return render(request, template, context)
+
+
+def add_brand(request):
+    """ Add a brand to the store """
+    if request.method == 'POST':
+        form = BrandForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully Added new brand!')
+            return redirect(reverse('add_brand'))
+        else:
+            messages.error(request, 'Failed to add brand, Please ensure the form is valid.')
+    else:
+        form = BrandForm()
+
+    template = 'products/add_brand.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
+
+
+def edit_brand(request, brand_id):
+    """ Edit a product to the store """
+    brand = get_object_or_404(Brand, pk=brand_id)
+    if request.method == 'POST':
+        form = BrandForm(request.POST, request.FILES, instance=brand)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully Updated Brand!')
+            return redirect(reverse('admin_controls'))
+        else:
+            messages.error(request, 'Failed to update brand. Please ensure the form is valid.')
+    else:
+        form = BrandForm(instance=brand)
+        messages.info(request, f'You are editing {brand.friendly_name}')
+
+    template = 'products/edit_brand.html'
+    context = {
+        'form': form,
+        'brand': brand,
+    }
+
+    return render(request, template, context)
+
+
+def add_category(request):
+    """ Add a category to the store """
+    if request.method == 'POST':
+        form = CategoryForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully Added new catrgory!')
+            return redirect(reverse('add_category'))
+        else:
+            messages.error(request, 'Failed to add category, Please ensure the form is valid.')
+    else:
+        form = CategoryForm()
+
+    template = 'products/add_category.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
+
+
+def edit_category(request, category_id):
+    """ Edit a product to the store """
+    category = get_object_or_404(Category, pk=category_id)
+    if request.method == 'POST':
+        form = CategoryForm(request.POST, request.FILES, instance=category)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully Updated Category!')
+            return redirect(reverse('admin_controls'))
+        else:
+            messages.error(request, 'Failed to update category. Please ensure the form is valid.')
+    else:
+        form = CategoryForm(instance=category)
+        messages.info(request, f'You are editing {category.friendly_name}')
+
+    template = 'products/edit_category.html'
+    context = {
+        'form': form,
+        'category': category,
     }
 
     return render(request, template, context)

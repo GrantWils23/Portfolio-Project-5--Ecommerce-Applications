@@ -4,6 +4,7 @@ from django.contrib import messages
 
 from products.models import Product
 from .models import DeliveryMethod
+from .forms import DeliveryMethodForm
 from checkout.forms import OrderForm, DeliveryForm
 
 
@@ -102,3 +103,53 @@ def remove_from_basket(request, item_id):
     except Exception as e:
         messages.error(request, f'Error removing item: {e}')
         return HttpResponse(status=500)
+
+
+def add_delivery_method(request):
+    """ Add a delivery to the store """
+    if request.method == 'POST':
+        form = DeliveryMethodForm(request.POST, request.FILES)
+        if form.is_valid():
+            form.save()
+            messages.success(
+                request, 'Successfully Added new delivery method!')
+            return redirect(reverse('add_delivery_method'))
+        else:
+            messages.error(
+                request, 'Failed to add delivery method, Please ensure the form is valid.')
+    else:
+        form = DeliveryMethodForm()
+
+    template = 'basket/add_delivery_method.html'
+    context = {
+        'form': form,
+    }
+
+    return render(request, template, context)
+
+
+def edit_delivery_method(request, delivery_method_id):
+    """ Edit a product to the store """
+    deliverymethod = get_object_or_404(DeliveryMethod, pk=delivery_method_id)
+    if request.method == 'POST':
+        form = DeliveryMethodForm(
+            request.POST, request.FILES, instance=deliverymethod)
+        if form.is_valid():
+            form.save()
+            messages.success(request, 'Successfully Updated Delivery!')
+            return redirect(reverse('admin_controls'))
+        else:
+            messages.error(
+                request, 'Failed to update delivery. Please ensure the form is valid.')
+    else:
+        form = DeliveryMethodForm(instance=deliverymethod)
+        messages.info(
+            request, f'You are editing {deliverymethod.friendly_name}')
+
+    template = 'basket/edit_delivery_method.html'
+    context = {
+        'form': form,
+        'deliverymethod': deliverymethod,
+    }
+
+    return render(request, template, context)

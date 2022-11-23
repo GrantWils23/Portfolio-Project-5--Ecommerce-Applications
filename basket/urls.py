@@ -23,4 +23,8 @@ urlpatterns = [
     path('adjust/<item_id>/', views.adjust_basket, name='adjust_basket'),
     path('remove/<item_id>/', views.remove_from_basket,
          name='remove_from_basket'),
+    path('add_delivery_method/', views.add_delivery_method,
+         name='add_delivery_method'),
+    path('edit_delivery_method/<int:delivery_method_id>/',
+         views.edit_delivery_method, name='edit_delivery_method'),
 ]
