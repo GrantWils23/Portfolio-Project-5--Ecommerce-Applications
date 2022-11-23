@@ -29,4 +29,10 @@ urlpatterns = [
          views.edit_brand, name='edit_brand'),
     path('edit_category/<int:category_id>/',
          views.edit_category, name='edit_category'),
+    path('delete_product/<int:product_id>/',
+         views.delete_product, name='delete_product'),
+    path('delete_brand/<int:brand_id>/',
+         views.delete_brand, name='delete_brand'),
+    path('delete_category/<int:category_id>/',
+         views.delete_category, name='delete_category'),
 ]

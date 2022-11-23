@@ -27,4 +27,6 @@ urlpatterns = [
          name='add_delivery_method'),
     path('edit_delivery_method/<int:delivery_method_id>/',
          views.edit_delivery_method, name='edit_delivery_method'),
+    path('delete_delivery_method/<int:delivery_method_id>/',
+         views.delete_delivery_method, name='delete_delivery_method'),
 ]

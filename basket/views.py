@@ -153,3 +153,11 @@ def edit_delivery_method(request, delivery_method_id):
     }
 
     return render(request, template, context)
+
+
+def delete_delivery_method(request, delivry_method_id):
+    """ Delete a delivery method from the store """
+    deliverymethod = get_object_or_404(DeliveryMethod, pk=delivery_method_id)
+    deliverymethod.delete()
+    messages.success(request, 'Delivery Method Deleted!')
+    return redirect(reverse('admin_controls'))

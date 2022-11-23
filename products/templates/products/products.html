@@ -91,8 +91,8 @@
                                 {% if request.user.is_superuser %}
                                 <br>
                                 <small class="ml-3">
-                                    <a href="{% url 'edit_product' product.id %}">Edit</a> |
-                                    <a class="text-danger" href="#">Delete</a>
+                                    <a class="text-decoration-none" href="{% url 'edit_product' product.id %}">Edit</a> |
+                                    <span type="button" class="text-danger" data-bs-toggle="modal" data-bs-target="#deleteModal{{product.id}}">Delete</span>
                                 </small>
                                 {% endif %}
                                 <br>
@@ -149,6 +149,9 @@
 
 
 <div class="footer-pushdown"></div>
+
+{% include 'includes/delete_modal.html' %}
+
 
 {% endblock %}
 
