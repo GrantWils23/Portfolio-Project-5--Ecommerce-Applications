@@ -90,4 +90,3 @@ def delete_order(request, order_id):
     order.delete()
     messages.success(request, 'Order Deleted!')
     return redirect(reverse('admin_view_orders'))
-

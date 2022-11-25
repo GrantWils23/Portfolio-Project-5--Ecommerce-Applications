@@ -3,6 +3,7 @@ from django.forms.widgets import TextInput
 
 from checkout.models import Order
 
+
 class OrdersFilter(django_filters.FilterSet):
     date__gt = django_filters.DateFilter(field_name='date', lookup_expr 
     ='gte', label='Start Date', widget=TextInput(attrs={'placeholder': 'yyyy-mm-dd'}))
@@ -16,4 +17,4 @@ class OrdersFilter(django_filters.FilterSet):
                   'email': ['exact'],
                   'date': ['gt', 'lt'],
                   'order_number': ['icontains'],
-        }
+                  }
