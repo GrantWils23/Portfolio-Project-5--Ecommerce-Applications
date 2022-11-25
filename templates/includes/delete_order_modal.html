@@ -1,0 +1,20 @@
+{% for order in orders_filter.qs %}
+<!-- Delete Modal -->
+<div class="modal fade" id="deleteModal{{order.id}}" tabindex="-1" aria-labelledby="deleteModal{{order.id}}Label" aria-hidden="true">
+    <div class="modal-dialog tertiary-font">
+        <div class="modal-content bg-secondary">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="DeleteModal{{order.id}}Label"><strong>Warning</strong></h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>You are about to delete the following Order: {{ order }}. Once you delete it, the order is gone forever?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
+                <button type="button" class="btn btn-danger"><a class="text-white text-decoration-none" href="{% url 'delete_order' order.id %}">Delete</a></button>
+            </div>
+        </div>
+    </div>
+</div>
+{% endfor %}

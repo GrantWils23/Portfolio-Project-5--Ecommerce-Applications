@@ -100,7 +100,6 @@ def ChangePassword(request):
 @login_required
 def add_to_wishlist(request, product_id):
     pk = request.GET.get('product_id')
-    # pk = product_id
     product = get_object_or_404(Product, pk=product_id)
     if product.users_wishlist.filter(id=request.user.id).exists():
         product.users_wishlist.remove(request.user.id)
@@ -108,6 +107,4 @@ def add_to_wishlist(request, product_id):
     else:
         product.users_wishlist.add(request.user.id)
         messages.success(request, f'{product.name} added to your wishlist')
-    # return HttpResponseRedirect(request.META["HTTP_REFERER"])
     return redirect(reverse('product_detail', args=[product.id]))
-    # return HttpResponseRedirect(reverse('product_detail', args=[product_id]))

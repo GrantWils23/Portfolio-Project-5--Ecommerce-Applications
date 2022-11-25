@@ -17,15 +17,15 @@
                 <br>
                 <div class="flex-inline">
                     <a href="{% url 'add_product' %}" class="ms-3 m-1 btn btn-secondary">Add Product</a>
-                    <a href="{% url 'add_category' %}" class="m-1 btn btn-secondary">Add Category</a>
-                    <a href="{% url 'add_brand' %}" class="m-1 btn btn-secondary">Add Brand</a>
-                    <a href="{% url 'add_delivery_method' %}" class="m-1 btn btn-secondary">Add Delivery Method</a>
+                    <a href="{% url 'add_category' %}" class="ms-3 m-1 btn btn-secondary">Add Category</a>
+                    <a href="{% url 'add_brand' %}" class="ms-3 m-1 btn btn-secondary">Add Brand</a>
+                    <a href="{% url 'add_delivery_method' %}" class="ms-3 m-1 btn btn-secondary">Add Delivery Method</a>
                 </div>
             </div>
             <div class="row my-4">
-                <h3 class="ms-2 py-2 text-success">Orders <i class="fas fa-receipt"></i></h3>
+                <h3 class="ms-2 py-2 text-success">Orders: <i class="fas fa-receipt"></i></h3>
                 <br>
-                <span><a href="" class="ms-3 btn btn-secondary">View Orders</a></span>
+                <span><a href="{% url 'admin_view_orders' %}" class="ms-3 btn btn-secondary">View Orders</a></span>
             </div>
             <div class="row my-4">
                 <h2 class="ms-2 py-2 text-success"><i>Paint Work Enquiries: </i><i class="fas fa-spray-can"></i></h2>

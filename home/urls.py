@@ -26,4 +26,11 @@ urlpatterns = [
     path('sitemap/', views.sitemap_page, name='sitemap'),
     path('about_us/', views.about_us, name='about_us'),
     path('admin_controls/', views.admin_controls, name='admin_controls'),
+    path('admin_controls/view_orders/', views.admin_view_orders,
+         name='admin_view_orders'),
+    path('admin_controls/view_order/<int:order_id>',
+         views.admin_view_specific_order,
+         name='admin_view_specific_order'),
+    path('admin_controls/view_orders/delete/<int:order_id>',
+         views.delete_order, name='delete_order'),
 ]

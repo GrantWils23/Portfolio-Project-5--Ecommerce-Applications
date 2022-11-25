@@ -1,0 +1,114 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
+{% endblock %}
+
+{% block page_header %}
+<!-- Page Header-->
+<div class="container">
+    <div class="row g-0">
+        <div class="col-12 justify-content-center">
+            <h2 class="display-3 text-center mt-5 mb-1 logo-font">Orders</h2>
+        </div>
+        <div class="container-fluid justify-content-center w-75">
+            <hr>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
+
+{% block content %}
+
+<div class="pushdown-small"></div>
+
+<!-- Checkout Success Title -->
+<div class="container tertiary-font">
+    <div class="row">
+        <div class="col-10 col-lg-3">
+            <form action>
+                {{ orders_filter.form|crispy }}
+                <button class="btn btn-success my-1">Submit Filter</button>
+                <a href="{% url 'admin_view_orders' %}" class="btn btn-danger my-1">Clear Filter</a>
+            </form>
+        </div>
+
+        <div class="col-12 col-lg-9 tertiary-font ">
+            <div class="row p-1 overflow-auto scrollable rounded-1 border border-success" style="max-height:600px;">
+                <p class=" text-muted">Order History</p>
+
+                <div class="order-history table-responsive">
+                    <table class="table table-sm table-borderless border-success border-top rounded-1 text-muted">
+                        <thead>
+                            <tr>
+                                <th>Order Number</th>
+                                <th>Date</th>
+                                <th>Items</th>
+                                <th>Order Total</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for order in orders_filter.qs %}
+                            <tr>
+                                <td>
+                                    <a class="page-link-success" href="{% url 'admin_view_specific_order' order.id %}" title="{{ order.order_number }}">{{ order.order_number|truncatechars:6 }}</a>
+                                </td>
+                                <td>{{ order.date }}</td>
+                                <td>
+                                    <ul class="list-unstyled">
+                                        {% for item in order.lineitems.all %}
+                                        <li class="small">
+                                            {{ item.product.name }} x {{ item.quantity }}
+                                        </li>
+                                        {% endfor %}
+                                    </ul>
+                                </td>
+                                <td>{{ order.grand_total }}</td>
+                                <td> <span type="button" class="text-danger red-on-hov" data-bs-toggle="modal" data-bs-target="#deleteModal{{order.id}}">Delete</span></td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="pushdown-small"></div>
+
+
+    <div class="pushdown-small"></div>
+
+    <!-- completed direction buttons -->
+    <div class="row">
+        <div class="col-12 text-center">
+            {% if from_profile %}
+            <span>
+                <a href="{% url 'admin_control' %}" class="btn-secondary btn btn-lg mx-2 my-3 text-uppercase">
+                    Back to my Profile
+                </a>
+            </span>
+            {% else %}
+            <span>
+                <a href="{% url 'home' %}" class="btn-secondary btn btn-lg mx-2 my-3 text-uppercase">
+                    Return to home
+                </a>
+            </span>
+            {% endif %}
+        </div>
+    </div>
+</div>
+<div class="pushdown-small"></div>
+<div class="pushdown-small"></div>
+
+
+{% include 'includes/delete_order_modal.html' %}
+
+
+
+{% endblock %}

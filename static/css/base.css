@@ -688,4 +688,8 @@ nav {
     .product-card {
         margin: 20px;
     }
+
+    .d-block-special {
+        visibility: collapse;
+    }
 }

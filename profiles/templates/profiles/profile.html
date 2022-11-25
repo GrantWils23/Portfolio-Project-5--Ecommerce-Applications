@@ -8,7 +8,7 @@
 
 {% block page_header %}
 <!-- Page Header-->
-<div class="container-fluid">
+<div class="container">
     <div class="row g-0">
         <div class="col-12 justify-content-center">
             <h2 class="display-3 text-center mt-5 mb-1 logo-font">My Account</h2>
@@ -29,7 +29,7 @@
 
 <div class="container text-muted tertiary-font">
     <!-- row-1 -->
-    <div class="row justify-content-center scrollable h-50">
+    <div class="row g-0 justify-content-center scrollable h-50">
         <div class="col-12 col-lg-6">
             <div class="col-12 mb-4">
                 <h3 class="text-success"><i>{{ request.user }}</i> <i class="fas fa-user"></i></h3>
@@ -43,13 +43,13 @@
                 <button class="btn btn-success text-uppercase">Update information</button>
             </form>
         </div>
-        <div class="col-12 col-lg-6 g-1 px-5">
-            <h3 class="text-success">Orders <i class="fas fa-receipt"></i></h3>
+        <div class="col-12 col-lg-6 px-2 px-sm-5">
+            <h3 class="text-success my-3">Orders <i class="fas fa-receipt"></i></h3>
             <div class="row p-1 overflow-auto scrollable rounded-1 border border-success" style="max-height:200px;">
                 <p class="text-muted">Order History</p>
                 <div class="order-history table-responsive">
                     <table class="table table-sm table-borderless border-success border-top rounded-1 text-muted">
-                        <thead>
+                        <thead class="small">
                             <tr>
                                 <th>Order Number</th>
                                 <th>Date</th>
@@ -92,8 +92,8 @@
                         {% for product in products %}
                         <div class="row p-1">
                             <div class="bg-none border-secondary p-2">
-                                <div class="row ps-5">
-                                    <div class="col-3 my-1">
+                                <div class="row ps-1">
+                                    <div class="col-4 my-1">
                                         <a href="{% url 'product_detail' product.id %}" class="my-0 page-link-success">
                                             {% if product.image %}
                                             <img class="w-100" src="{{ product.image.url }}" alt="{{ product.name }}">
@@ -102,7 +102,7 @@
                                             {% endif %}
                                         </a>
                                     </div>
-                                    <div class="col-9">
+                                    <div class="col-8">
                                         <span><a href="{% url 'product_detail' product.id %}" class="my-0 page-link-muted">{{ product.name }}</a></span>
                                         <br>
                                         <a class="small page-link-success text-decoration-none green-on-hov" href="{% url 'products' %}?category={{ product.category.name }}">
