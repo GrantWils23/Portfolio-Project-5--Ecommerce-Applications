@@ -1,0 +1,61 @@
+[{
+    "model": "services.weaponsystem",
+    "pk": 1,
+    "fields": {
+        "name": "Sidearm",
+        "friendly_name": "Pistol",
+        "base_price": "40.00",
+        "image_url": null,
+        "image": "pistol_BpcRxr9.png"
+    }
+}, {
+    "model": "services.weaponsystem",
+    "pk": 2,
+    "fields": {
+        "name": "Submachine gun",
+        "friendly_name": "SMG",
+        "base_price": "50.00",
+        "image_url": null,
+        "image": "submachine.png"
+    }
+}, {
+    "model": "services.weaponsystem",
+    "pk": 3,
+    "fields": {
+        "name": "Assult Rifle",
+        "friendly_name": "Carbine",
+        "base_price": "60.00",
+        "image_url": null,
+        "image": ""
+    }
+}, {
+    "model": "services.weaponsystem",
+    "pk": 4,
+    "fields": {
+        "name": "Shotgun",
+        "friendly_name": "Shotgun",
+        "base_price": "60.00",
+        "image_url": null,
+        "image": "shotgun.png"
+    }
+}, {
+    "model": "services.weaponsystem",
+    "pk": 5,
+    "fields": {
+        "name": "Sniper Rifle",
+        "friendly_name": "Sniper",
+        "base_price": "70.00",
+        "image_url": null,
+        "image": "sniper-rifle-2.png"
+    }
+}, {
+    "model": "services.weaponsystem",
+    "pk": 6,
+    "fields": {
+        "name": "Light Machine Gun",
+        "friendly_name": "LMG",
+        "base_price": "70.00",
+        "image_url": null,
+        "image": "machine-gun.png"
+    }
+}]
