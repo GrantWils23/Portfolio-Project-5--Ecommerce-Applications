@@ -25,7 +25,7 @@ def cache_checkout_data(request):
             'basket': json.dumps(request.session.get('basket', {})),
             'save_info': request.POST.get('save_info'),
             'username': request.user,
-            'delivery': request.session.get('delivery_id'),
+            'delivery_id': request.session.get('delivery_id'),
         })
         return HttpResponse(status=200)
     except Exception as e:
@@ -107,8 +107,6 @@ def checkout(request):
             amount=stripe_total,
             currency=settings.STRIPE_CURRENCY,
         )
-        
-        print(intent)
 
         if request.user.is_authenticated:
             try:

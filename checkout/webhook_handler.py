@@ -6,9 +6,11 @@ from django.conf import settings
 from .models import Order, OrderLineItem
 from products.models import Product
 from profiles.models import UserProfile
+from basket.models import DeliveryMethod
 
 import json
 import time
+
 
 
 class StripeWH_Handler:
@@ -49,9 +51,12 @@ class StripeWH_Handler:
         pid = intent.id
         basket = intent.metadata.basket
         save_info = intent.metadata.save_info
+        delivery_session_id = intent.metadata.delivery_id
+        print('value of delivery', delivery_session_id)
 
         billing_details = intent.charges.data[0].billing_details
         shipping_details = intent.shipping
+        # delivery = str(DeliveryMethod(pk=delivery_session_id))
         grand_total = round(intent.charges.data[0].amount / 100, 2)
 
         # Clean data in the shipping details
@@ -75,6 +80,7 @@ class StripeWH_Handler:
                 profile.save()
 
         order_exists = False
+        print('order exists', order_exists)
         attempt = 1
         while attempt <= 5:
             try:
@@ -93,11 +99,13 @@ class StripeWH_Handler:
                     stripe_pid=pid,
                 )
                 order_exists = True
+                print('order exists', order_exists)
                 break
 
             except Order.DoesNotExist:
                 attempt += 1
                 time.sleep(1)
+        print('order exists', order_exists)
         if order_exists:
             self._send_confirmation_email(order)
             return HttpResponse(
@@ -117,6 +125,7 @@ class StripeWH_Handler:
                     street_address1=shipping_details.address.line1,
                     street_address2=shipping_details.address.line2,
                     county=shipping_details.address.state,
+                    # delivery=DeliveryMethod(pk=delivery_session_id),
                     original_basket=basket,
                     stripe_pid=pid,
                     )
@@ -128,6 +137,7 @@ class StripeWH_Handler:
                         quantity=quantity,
                     )
                     order_line_item.save()
+                    print('value of delivery', delivery)
             except Exception as e:
                 if order:
                     order.delete()
