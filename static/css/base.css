@@ -693,3 +693,40 @@ nav {
         visibility: collapse;
     }
 }
+
+
+/* ---------- radio buttons --------- */
+
+.radio-bar {
+    margin: 10px;
+}
+
+.radio-bar input[type="radio"] {
+    opacity: 75%;
+    color: #198754;
+    accent-color: #198754;
+    /* display: none; */
+}
+
+.radio-bar label {
+    position: relative;
+    display: inline-block;
+    padding: 10px 10px;
+    font-size: 16px;
+    border-radius: 4px;
+}
+
+.radio-bar label:hover {
+    background-color: #198754e0;
+    box-shadow: 0 0 20px #198754;
+}
+
+.radio-bar input[type="radio"]:focus+label {
+    border: 2px dashed #444;
+}
+
+.radio-bar input[type="radio"]:checked+label {
+    background-color: #bfb;
+    color: #198754;
+    border-color: #4c4;
+}

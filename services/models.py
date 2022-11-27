@@ -19,6 +19,9 @@ class WeaponSystem(models.Model):
     def __str__(self):
         return self.name
 
+    def get_friendly_name(self):
+        return self.friendly_name
+
 
 class WeaponPlatform(models.Model):
     """ gas, electric, gas """
@@ -32,6 +35,9 @@ class WeaponPlatform(models.Model):
     def __str__(self):
         return self.name
 
+    def get_friendly_name(self):
+        return self.friendly_name
+
 
 class CamoPattern(models.Model):
     """ range of camo patterns """
@@ -44,6 +50,9 @@ class CamoPattern(models.Model):
 
     def __str__(self):
         return self.name
+
+    def get_friendly_name(self):
+        return self.friendly_name
 
 
 class PaintService(models.Model):

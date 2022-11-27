@@ -125,8 +125,8 @@
                             <li><a class="dropdown-item" href="{% url 'products' %}?category=Patches">Patches</a></li>
                         </ul>
                     </li>
-                    <a class="nav-link" href="#">Paint Services</a> <!-- come back to later -->
-                    <a class="nav-link" href="#">Tech Services</a> <!-- come back to later -->
+                    <a class="nav-link" href="{% url 'paint_services' %}">Paint Services</a>
+                    <a class="nav-link" href="{% url 'tech_services' %}">Tech Services</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -135,9 +135,9 @@
                         <ul class="dropdown-menu dropdown-menu-dark">
                             {% if request.user.is_authenticated %}
                             {% if request.user.is_superuser %}
-                            <li><a class="dropdown-item" href="{% url 'admin_controls' %}">Store Management</a></li> <!-- come back to later -->
+                            <li><a class="dropdown-item" href="{% url 'admin_controls' %}">Store Management</a></li>
                             {% endif %}
-                            <li><a class="dropdown-item" href="{% url 'profile' %}">User Profile</a></li> <!-- come back to later -->
+                            <li><a class="dropdown-item" href="{% url 'profile' %}">User Profile</a></li>
                             <li>
                                 <hr class="dropdown-divider">
                             </li>

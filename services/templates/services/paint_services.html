@@ -1,0 +1,114 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block page_header %}
+<!-- Page Header-->
+<div class="container-fluid">
+    <div class="row g-0">
+        <div class="col-12 justify-content-center">
+            <h2 class="display-3 text-center mt-5 mb-1 logo-font">Paint Services</h2>
+        </div>
+        <div class="container-fluid justify-content-center w-75">
+            <hr>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
+
+{% block content %}
+
+
+<!-- Product Title -->
+
+<div class="container tertiary-font">
+    <!-- row-1 -->
+    <div class="col-12 px-5 py-1">
+        <div class="row">
+            <div class="col-12">
+                <hr>
+                <h2 class="text-success">Submit your Enquiry:</h2>
+            </div>
+        </div>
+        <div class="row">
+            <!-- <div class="col-12 col-sm-6 col-md-4 col-lg-3"> -->
+            <form method="POST" action="{% url 'paint_services' %}" id="tech-service-form" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form.full_name | as_crispy_field }}
+                {{ form.email | as_crispy_field }}
+                {{ form.phone_number | as_crispy_field }}
+                <!-- {{ form.camo_pattern | as_crispy_field }} -->
+                <fieldset>
+                    <legend>{{ form.camo_pattern.label }}</legend>
+                    <div class="col-12 text-center justify-content-center radio-bar m-1">
+                        {% for camo in camo_pattern %}
+                        <label for="for=id_camo_pattern_{{camo.id}}">
+                            <!-- <div class="radio"> -->
+                            <div class="text-center nav-link contact-icons inline-flex green-on-hov m-3">
+                                {{ camo.friendly_name }}
+
+
+                                <input id="camo_pattern_{{camo.id}}" name="camo_pattern" type="radio" value="{{camo.id}}" required>
+                                <div style="height:100px; width:100px;">
+                                    {% if camo.image %}
+                                    <img class="card-img-top" src="{{ camo.image.url }}" alt="{{ camo.name }}">
+                                    {% else %}
+                                    <img class="card-img-top" src="{{ MEDIA }}/noimage.png" alt="{{ camo.name }}">
+                                    {% endif %}
+                                </div>
+                            </div>
+                            <!-- </div> -->
+                        </label>
+                        {% endfor %}
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>{{ form.weapon_system.label }}</legend>
+                    <div class="col-12 text-center justify-content-center radio-bar m-1">
+                        {% for weapon in weapon_sys %}
+                        <label for="for=id_weapon_system_{{weapon.id}}">
+                            <!-- <div class="radio"> -->
+                            <div class="text-center nav-link contact-icons inline-flex green-on-hov m-3">
+                                {{ weapon.friendly_name }}
+
+
+                                <input id="weapon_system_{{weapon.id}}" name="weapon_system" type="radio" value="{{weapon.id}}" required>
+                                <div style="height:100px; width:100px;">
+                                    {% if weapon.image %}
+                                    <img class="card-img-top" src="{{ weapon.image.url }}" alt="{{ weapon.name }}">
+                                    {% else %}
+                                    <img class="card-img-top" src="{{ MEDIA }}/noimage.png" alt="{{ weapon.name }}">
+                                    {% endif %}
+                                </div>
+                            </div>
+                            <!-- </div> -->
+                        </label>
+                        {% endfor %}
+                    </div>
+                </fieldset>
+                {{ form.additional_info | as_crispy_field }}
+                {{ form.image | as_crispy_field }}
+                <button type="submit" class="btn btn-success m-2" value="Add Product">Submit</button>
+                <span><a href="{% url 'services' %}" class="btn btn-secondary m-2">Back to Services</a></span>
+            </form>
+        </div>
+    </div>
+    <!-- row-1 end -->
+</div>
+<div class="pushdown-small"></div>
+
+{% endblock %}
+
+{% block postloadjs %}
+{{ block.super }}
+<script type="text/javascript">
+    //    $('.btt-link').click(function(e) {
+    //       window.scrollTo(0, 0)
+    //    })
+</script>
+
+
+
+{% endblock %}
