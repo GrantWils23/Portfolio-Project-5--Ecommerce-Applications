@@ -2,7 +2,7 @@ Hello {{ quote.full_name }}.
 
 This is a confirmation email of your recent Enquiry regarding a Paint Service on your weapon:
 
-Reference Number: PS00{{ quote.quote_number }}
+Reference Number: PS00-{{ quote.quote_number }}
 Date Sent: {{ quote.date }}
 
 We have it on our system that you are interested in us working on your {{quote.weapon_system}} and the paint method you have choosen is {{quote.camo_pattern}}.

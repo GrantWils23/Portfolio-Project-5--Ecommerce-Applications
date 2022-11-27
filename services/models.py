@@ -94,6 +94,13 @@ class TechService(models.Model):
                                       on_delete=models.SET_NULL, related_name='ws')
     additional_info = models.TextField(max_length=7000, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
+    base_estimate = models.DecimalField(
+        max_digits=10, decimal_places=2, null=False, default=0)
 
     def __str__(self):
-        return f'Tech Service'
+        return f"paint service"
+
+    def calculate_estimate(self):
+        """ return estimate price for admin """
+        self.base_estimate = self.weapon_platform.base_price + self.weapon_system.base_price
+        self.save()

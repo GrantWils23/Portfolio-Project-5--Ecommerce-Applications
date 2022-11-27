@@ -11,7 +11,7 @@
 <div class="container">
     <div class="row g-0">
         <div class="col-12 justify-content-center">
-            <h2 class="display-3 text-center mt-5 mb-1 logo-font">Paint Service Quotes</h2>
+            <h2 class="display-3 text-center mt-5 mb-1 logo-font">Tech Service Quotes</h2>
         </div>
         <div class="container-fluid justify-content-center w-75">
             <hr>
@@ -47,8 +47,8 @@
                             <tr>
                                 <th>Quote Number</th>
                                 <th>Date</th>
-                                <th>Camo</th>
-                                <th>Weapon</th>
+                                <th>Platform</th>
+                                <th>System</th>
                                 <th>Est. Price</th>
                                 <th></th>
                             </tr>
@@ -57,11 +57,11 @@
                             {% for quote in quotes_filter.qs %}
                             <tr>
                                 <td>
-                                    <a class="page-link-success" href="{% url 'admin_view_paintjob_details' quote.quote_number %}" title="{{ quote.quote_number }}"> PS00-{{ quote.quote_number }}</a>
+                                    <a class="page-link-success" href="{% url 'admin_view_techjob_details' quote.quote_number %}" title="{{ quote.quote_number }}"> TS00-{{ quote.quote_number }}</a>
                                 </td>
                                 <td>{{quote.date }}</td>
                                 <td>
-                                    {{ quote.camo_pattern }}
+                                    {{ quote.weapon_platform }}
                                 </td>
                                 <td>
                                     {{ quote.weapon_system }}
@@ -102,7 +102,7 @@
 <div class="pushdown-small"></div>
 
 
-{% include 'includes/delete_paint_quote_modal.html' %}
+{% include 'includes/delete_tech_quote_modal.html' %}
 
 
 

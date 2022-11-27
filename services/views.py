@@ -73,6 +73,8 @@ def tech_services(request):
         }
         form = TechServiceForm(form_data, request.FILES)
         if form.is_valid():
+            techservice = form.save(commit=False)
+            TechService.calculate_estimate(techservice)
             techservice = form.save()
             messages.success(
                 request, 'Succcess, your form has been submitted, an email shall be sent to you shortly')
