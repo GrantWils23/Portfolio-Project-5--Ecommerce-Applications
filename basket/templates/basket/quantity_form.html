@@ -1,0 +1,23 @@
+<!-- Quantity controller -->
+<form class="form update-form" action="{% url 'adjust_basket' item.item_id %}" method="POST">
+    <!-- return to the action call -->
+    {% csrf_token %}
+    <div class="form-group">
+        <div class="input-group">
+            <div class="input-group-prepend">
+                <button class="decrement-qty btn btn-sm btn-secondary rounded-0" data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}">
+                    <i class="fas fa-minus fa-sm"></i>
+                </button>
+            </div>
+            <input class="form-control form-control-sm qty_input" type="number" name="quantity" value="{{ item.quantity }}" min="1" max="99" data-item_id="{{ item.item_id }}" id="id_qty_{{ item.item_id }}">
+            <div class="input-group-append">
+                <button class="increment-qty btn btn-sm btn-secondary rounded-0" data-item_id="{{ item.item_id }}" id="increment-qty_{{ item.item_id }}">
+                    <i class="fas fa-plus fa-sm"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+</form>
+<a class="update-link btn btn-success boarder-1 m-1 opacity-75 text-decoration-none"><small>Update</small></a>
+<a class="remove-item btn btn-danger boarder-1 m-1 opacity-75 text-decoration-none float-end" id="remove_{{ item.item_id }}"><small>Remove</small></a>
+<!-- Quantity controller end -->

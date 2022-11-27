@@ -69,7 +69,7 @@ def tech_services(request):
             'phone_number': request.POST['phone_number'],
             'weapon_platform': request.POST['weapon_platform'],
             'weapon_system': request.POST['weapon_system'],
-            'adiitional_info': request.POST['additional_info'],
+            'additional_info': request.POST['additional_info'],
         }
         form = TechServiceForm(form_data, request.FILES)
         if form.is_valid():
@@ -116,7 +116,7 @@ def paint_services(request):
             'phone_number': request.POST['phone_number'],
             'camo_pattern': request.POST['camo_pattern'],
             'weapon_system': request.POST['weapon_system'],
-            'adiitional_info': request.POST['additional_info'],
+            'additional_info': request.POST['additional_info'],
         }
 
         form = PaintServiceForm(form_data, request.FILES)

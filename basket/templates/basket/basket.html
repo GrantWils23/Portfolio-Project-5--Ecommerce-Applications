@@ -102,14 +102,14 @@
                     </tr>
                     <!-- Delivery Method Form End -->
                     <tr>
-                        <td colspan="5" class="pt-2 text-right">
+                        <td colspan="5" class="pt-2">
                             <h6><strong>Basket Total: £{{ total|floatformat:2 }}</strong></h6>
                             <h6>Delivery: £{{ deliveryfee|floatformat:2 }}</h6>
                             <h4 class="mt-4"><strong>Grand Total: £{{ grand_total|floatformat:2 }}</strong></h4>
                         </td>
                     </tr>
                     <tr>
-                        <td colspan="5" class="text-right">
+                        <td colspan="5">
                             <a href="{% url 'products' %}" class="btn btn-secondary rounded-1 btn-lg m-1">
                                 <span class="icon">
                                     <i class="fas fa-chevron-left"></i>
