@@ -87,19 +87,16 @@
     <!-- completed direction buttons -->
     <div class="row">
         <div class="col-12 text-center">
-            {% if from_profile %}
             <span>
-                <a href="{% url 'admin_control' %}" class="btn-secondary btn btn-lg mx-2 my-3 text-uppercase">
-                    Back to my Profile
+                <a href="{% url 'admin_controls' %}" class="btn-success btn btn-lg mx-2 my-3 text-uppercase">
+                    Back to Admin
                 </a>
             </span>
-            {% else %}
             <span>
                 <a href="{% url 'home' %}" class="btn-secondary btn btn-lg mx-2 my-3 text-uppercase">
                     Return to home
                 </a>
             </span>
-            {% endif %}
         </div>
     </div>
 </div>

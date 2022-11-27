@@ -1,0 +1,204 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
+{% endblock %}
+
+{% block page_header %}
+<!-- Page Header-->
+
+<div class="container-fluid mt-3">
+    <div class="row g-0">
+        <div class="col-12 justify-content-center">
+            <h2 class="display-3 text-center mt-5 mb-1 logo-font text-break">PaintJob Reference PS00-{{ quote.quote_number|truncatechars:6 }} {% if quote.user_profile %}: {{ quote.user_profile }} {% endif %}</h2>
+        </div>
+        <div class="container-fluid justify-content-center w-75">
+            <hr>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
+
+{% block content %}
+
+<div class="pushdown-small"></div>
+<div class="container tertiary-font">
+    <!-- order summary -->
+    <div class="row justify-content-center mb-3">
+        <div class="col-12 col-lg-6">
+            <div class="order-confirmation-wrapper p-2 border rounded-1 border-secondary">
+                <!--  row 1 -->
+                <div class="row">
+                    <div class="col mb-1">
+                        <h5 class="text-success">Quote Info:</h5>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <p class="mb-0 font-weight-bold">Quote Ref Number:</p>
+                    </div>
+                    <div class="col-12 col-md-8 text-md-end">
+                        <p class="mb-0 text-break">{{ quote.quote_number }}</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <p class="mb-0 font-weight-bold">Quote Recieved on:</p>
+                    </div>
+                    <div class="col-12 col-md-8 text-md-end">
+                        <p class="mb-0">{{ quote.date }}</p>
+                    </div>
+                </div>
+
+
+                <!--  row 2 -->
+                <div class="row">
+                    <div class="col my-1">
+                        <h5 class="text-success">Quote Client Details:</h5>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <p class="mb-0 font-weight-bold">Full Name</p>
+                    </div>
+                    <div class="col-12 col-md-8 text-md-end">
+                        <p class="mb-0">{{ quote.full_name }}</p>
+                    </div>
+                </div>
+
+
+                {% if quote.user_profile != None %}
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <p class="mb-0 font-weight-bold">User</p>
+                    </div>
+                    <div class="col-12 col-md-8 text-md-end">
+                        <p class="mb-0">{{ quote.user_profile }}</p>
+                    </div>
+                </div>
+                {% endif %}
+
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <p class="mb-0 font-weight-bold">Email</p>
+                    </div>
+                    <div class="col-12 col-md-8 text-md-end">
+                        <p class="mb-0">{{ quote.email }}</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <p class="mb-0 font-weight-bold">Telephone No</p>
+                    </div>
+                    <div class="col-12 col-md-8 text-md-end">
+                        <p class="mb-0">{{ quote.phone_number }}</p>
+                    </div>
+                </div>
+
+                <!--  row 4 -->
+                <div class="row">
+                    <div class="col my-1">
+                        <h5 class="text-success">Job Details:</h5>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <p class="mb-0 font-weight-bold">Camo Pattern</p>
+                    </div>
+                    <div class="col-12 col-md-8 text-md-end">
+                        <p class="mb-0">{{ quote.camo_pattern.name }}</p>
+                    </div>
+                    <div class="col-12 col-md-8 text-md-end">
+                        <div style="height:200px; width:200px;">
+                            {% if quote.camo_pattern.image %}
+                            <img class="card-img-top" src="{{ quote.camo_pattern.image.url }}" alt="{{ quote.camo_pattern.name }}">
+                            {% else %}
+                            <img class="card-img-top" src="{{ MEDIA }}/noimage.png" alt="{{ quote.camo_pattern.name }}">
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div class="col-12 text-md-end">
+                        <p class="mb-0 text-secondary">+ £{{ quote.camo_pattern.base_price }}</p>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <p class="mb-0 font-weight-bold">Weapon System</p>
+                    </div>
+                    <div class="col-12 col-md-8 text-md-end">
+                        <p class="mb-0">£{{ quote.weapon_system.name }}</p>
+                    </div>
+                    <div class="col-12 col-md-8 text-md-end">
+                        <div style="height:200px; width:200px;">
+                            {% if quote.weapon_system.image %}
+                            <img class="card-img-top" src="{{ quote.weapon_system.image.url }}" alt="{{ quote.weapon_system.name }}">
+                            {% else %}
+                            <img class="card-img-top" src="{{ MEDIA }}/noimage.png" alt="{{ quote.weapon_system.name }}">
+                            {% endif %}
+                        </div>
+                    </div>
+                    <div class="col-12 text-md-end">
+                        <p class="mb-0 text-secondary">+ £{{ quote.weapon_system.base_price }}</p>
+                    </div>
+                </div>
+
+                {% if quote.image %}
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <p class="mb-0 font-weight-bold">Image</p>
+                    </div>
+                    <div class="col-12 col-md-8 text-md-end">
+                        <div style="max-width:200px;">
+                            <img class="card-img-top" src="{{ quote.image.url }}" alt="client supplied image">
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+                {% if quote.additional_info %}
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <p class="mb-0 font-weight-bold">Additional Info</p>
+                    </div>
+                    <div class="col-12 col-md-8 text-md-end m-2 p-1 bg-white">
+                        <p class="mb-0">£{{ quote.additional_info }}</p>
+                    </div>
+                </div>
+                {% endif %}
+                <div class="row">
+                    <div class="col-12 col-md-4">
+                        <p class="mb-0 font-weight-bold">Estimate Price:</p>
+                    </div>
+                    <div class="col-12 col-md-8 text-md-end">
+                        <p class="mb-0 text-success"><strong>≈ £{{ quote.base_estimate }}</strong></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- completed direction buttons -->
+    <div class="row">
+        <div class="col-12 text-center">
+            <span>
+                <a href="{% url 'admin_view_paint_quotes' %}" class="btn-success btn btn-lg mx-2 my-3 text-uppercase">
+                    Back to Paint Quotes
+                </a>
+            </span>
+        </div>
+    </div>
+</div>
+<div class="pushdown-small"></div>
+<div class="pushdown-small"></div>
+
+{% endblock %}

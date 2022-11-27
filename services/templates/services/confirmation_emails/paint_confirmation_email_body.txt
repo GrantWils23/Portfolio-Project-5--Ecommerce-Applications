@@ -1,0 +1,23 @@
+Hello {{ quote.full_name }}.
+
+This is a confirmation email of your recent Enquiry regarding a Paint Service on your weapon:
+
+Reference Number: PS00{{ quote.quote_number }}
+Date Sent: {{ quote.date }}
+
+We have it on our system that you are interested in us working on your {{quote.weapon_system}} and the paint method you have choosen is {{quote.camo_pattern}}.
+
+We will evaluate the work required on the information supplied and we will contact you with a price.
+
+We've got your phone number on file as {{ quote.phone_number }}.
+
+If any of these details are incorrect, then please contact and let us know, as this may effect the overall price.
+
+If you have any questions, feel free to contact us at {{ contact_email }} or call us on 0207 434 3113.
+
+Thank you for your order!
+
+Sincerley,
+
+
+The Airsoft Workshop Team

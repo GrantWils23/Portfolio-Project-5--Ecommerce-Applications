@@ -4,9 +4,10 @@ from django.contrib.auth.models import User
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 
-from .filters import OrdersFilter
+from .filters import OrdersFilter, PaintQuoteFilter, TechQuoteFilter
 
 from checkout.models import Order
+from services.models import CamoPattern, PaintService, TechService
 
 # Create your views here.
 
@@ -53,7 +54,7 @@ def admin_controls(request):
 
 @login_required
 def admin_view_orders(request):
-    """ return a list of all bookings to the admin """
+    """ return a list of all orders to the admin """
     orders = Order.objects.all()
     orders_filter = OrdersFilter(request.GET, queryset=orders)
     template = 'home/admin_orders_list.html'
@@ -90,3 +91,50 @@ def delete_order(request, order_id):
     order.delete()
     messages.success(request, 'Order Deleted!')
     return redirect(reverse('admin_view_orders'))
+
+
+# ///////////////////////////////////////////////////////////////////////////////
+
+
+@login_required
+def admin_view_paint_quotes(request):
+    """ return a list of all quotes to the admin """
+    quotes = PaintService.objects.all()
+    quotes_filter = PaintQuoteFilter(request.GET, queryset=quotes)
+    template = 'home/paint_job_quotes.html'
+    context = {
+        'quotes_filter': quotes_filter,
+    }
+    return render(request, template, context)
+
+
+@login_required
+def admin_view_paintjob(request, quote_number):
+    """ return a specific quote for the admin to view """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
+    quote = get_object_or_404(PaintService, quote_number=quote_number)
+
+    template = 'home/paint_job_detail.html'
+    context = {
+        'quote': quote,
+    }
+    return render(request, template, context)
+
+
+@login_required
+def delete_paint_quote(request, quote_number):
+    """ Delete a paint quote from the store """
+    if not request.user.is_superuser:
+        messages.error(request, 'Sorry, only store owners can do that.')
+        return redirect(reverse('home'))
+
+    quote = get_object_or_404(Order, quote_number=quote_number)
+    quote.delete()
+    messages.success(request, 'Quote Deleted!')
+    return redirect(reverse('admin_view_orders'))
+
+
+# //////////////////////////////////////////////////////////////////////////

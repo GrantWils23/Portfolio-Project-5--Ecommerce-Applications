@@ -33,4 +33,11 @@ urlpatterns = [
          name='admin_view_specific_order'),
     path('admin_controls/view_orders/delete/<int:order_id>',
          views.delete_order, name='delete_order'),
+    path('admin_controls/view_paint_quotes/', views.admin_view_paint_quotes,
+         name='admin_view_paint_quotes'),
+    path('admin_controls/view_paintjob/<int:quote_number>',
+         views.admin_view_paintjob,
+         name='admin_view_paintjob_details'),
+    path('admin_controls/view_orders/delete/<int:quote_number>',
+         views.delete_order, name='delete_paint_quote'),
 ]

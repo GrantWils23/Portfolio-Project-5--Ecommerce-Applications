@@ -1,7 +1,6 @@
 import uuid
 from django.db import models
 from django.db.models import Sum
-
 from phonenumber_field.modelfields import PhoneNumberField
 
 from profiles.models import UserProfile
@@ -56,7 +55,7 @@ class CamoPattern(models.Model):
 
 
 class PaintService(models.Model):
-    quote_number = models.CharField(max_length=10, null=False, editable=False,)
+    quote_number = models.BigAutoField(primary_key=True)
     user_profile = models.ForeignKey(UserProfile, on_delete=models.SET_NULL,
                                      null=True, blank=True, related_name='paintquote')
     full_name = models.CharField(max_length=50, null=False, blank=False)
@@ -69,23 +68,20 @@ class PaintService(models.Model):
                                       on_delete=models.SET_NULL, related_name='weapon_sys')
     additional_info = models.TextField(max_length=7000, null=True, blank=True)
     image = models.ImageField(null=True, blank=True)
+    base_estimate = models.DecimalField(
+        max_digits=10, decimal_places=2, null=False, default=0)
 
     def __str__(self):
         return f"paint service"
 
-    def _generate_quote_number(self):
-        """
-        Generate a random, unique order number using UUID
-        """
-        return uuid.uuid4().hex.upper()
-
-    def __estimate_price__(self):
+    def calculate_estimate(self):
         """ return estimate price for admin """
-        return f'{self.camo_pattern.base_price + self.weapon_system.base_price}'
+        self.base_estimate = self.camo_pattern.base_price + self.weapon_system.base_price
+        self.save()
 
 
 class TechService(models.Model):
-    quote_number = models.CharField(max_length=6, null=False, editable=False,)
+    quote_number = models.BigAutoField(primary_key=True)
     user_profile = models.ForeignKey(UserProfile, on_delete=models.SET_NULL,
                                      null=True, blank=True, related_name='techquote')
     full_name = models.CharField(max_length=50, null=False, blank=False)
@@ -101,9 +97,3 @@ class TechService(models.Model):
 
     def __str__(self):
         return f'Tech Service'
-
-    def _generate_order_number(self):
-        """
-        Generate a random, unique order number using UUID
-        """
-        return uuid.uuid4().hex.upper()

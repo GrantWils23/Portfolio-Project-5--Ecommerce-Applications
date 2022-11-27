@@ -48,16 +48,16 @@
                             <!-- <div class="radio"> -->
                             <div class="text-center nav-link contact-icons inline-flex green-on-hov m-3">
                                 {{ camo.friendly_name }}
-
-
                                 <input id="camo_pattern_{{camo.id}}" name="camo_pattern" type="radio" value="{{camo.id}}" required>
-                                <div style="height:100px; width:100px;">
-                                    {% if camo.image %}
-                                    <img class="card-img-top" src="{{ camo.image.url }}" alt="{{ camo.name }}">
-                                    {% else %}
-                                    <img class="card-img-top" src="{{ MEDIA }}/noimage.png" alt="{{ camo.name }}">
-                                    {% endif %}
-                                </div>
+                                <span class="justify-content-center">
+                                    <div style="height:100px; width:100px;">
+                                        {% if camo.image %}
+                                        <img class="card-img-top" src="{{ camo.image.url }}" alt="{{ camo.name }}">
+                                        {% else %}
+                                        <img class="card-img-top" src="{{ MEDIA }}/noimage.png" alt="{{ camo.name }}">
+                                        {% endif %}
+                                    </div>
+                                </span>
                             </div>
                             <!-- </div> -->
                         </label>

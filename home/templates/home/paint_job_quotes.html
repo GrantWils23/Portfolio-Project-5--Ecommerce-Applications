@@ -1,0 +1,107 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
+{% endblock %}
+
+{% block page_header %}
+<!-- Page Header-->
+<div class="container">
+    <div class="row g-0">
+        <div class="col-12 justify-content-center">
+            <h2 class="display-3 text-center mt-5 mb-1 logo-font">Paint Service Quotes</h2>
+        </div>
+        <div class="container-fluid justify-content-center w-75">
+            <hr>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
+
+{% block content %}
+
+<div class="pushdown-small"></div>
+
+<!-- Checkout Success Title -->
+<div class="container tertiary-font">
+    <div class="row">
+        <div class="col-10 col-lg-3">
+            <form action>
+                {{ quotes_filter.form|crispy }}
+                <button class="btn btn-success my-1">Submit Filter</button>
+                <a href="{% url 'admin_view_paint_quotes' %}" class="btn btn-danger my-1">Clear Filter</a>
+            </form>
+        </div>
+
+        <div class="col-12 col-lg-9 tertiary-font ">
+            <div class="row p-1 overflow-auto scrollable rounded-1 border border-success" style="max-height:600px;">
+                <p class=" text-muted">Order History</p>
+
+                <div class="order-history table-responsive">
+                    <table class="table table-sm table-borderless border-success border-top rounded-1 text-muted">
+                        <thead>
+                            <tr>
+                                <th>Quote Number</th>
+                                <th>Date</th>
+                                <th>Details</th>
+                                <th>Est. Price</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for quote in quotes_filter.qs %}
+                            <tr>
+                                <td>
+                                    <a class="page-link-success" href="{% url 'admin_view_paintjob_details' quote.quote_number %}" title="{{ quote.quote_number }}"> PS00-{{ quote.quote_number }}</a>
+                                </td>
+                                <td>{{quote.date }}</td>
+                                <td>
+                                    <li class="small">
+                                        {{ quote.weapon_system }} {{ quote.camo_pattern }}
+                                    </li>
+                                </td>
+                                <td>£{{ quote.base_estimate }} </td>
+                                <td> <span type="button" class="text-danger red-on-hov" data-bs-toggle="modal" data-bs-target="#deleteModal{{quote.quote_number}}">Delete</span></td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="pushdown-small"></div>
+
+
+    <div class="pushdown-small"></div>
+
+    <!-- completed direction buttons -->
+    <div class="row">
+        <div class="col-12 text-center">
+            <span>
+                <a href="{% url 'admin_controls' %}" class="btn-success btn btn-lg mx-2 my-3 text-uppercase">
+                    Back to Admin
+                </a>
+            </span>
+            <span>
+                <a href="{% url 'home' %}" class="btn-secondary btn btn-lg mx-2 my-3 text-uppercase">
+                    Return to home
+                </a>
+            </span>
+        </div>
+    </div>
+</div>
+<div class="pushdown-small"></div>
+<div class="pushdown-small"></div>
+
+
+{% include 'includes/delete_paint_quote_modal.html' %}
+
+
+
+{% endblock %}
