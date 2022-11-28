@@ -51,8 +51,6 @@ class StripeWH_Handler:
         pid = intent.id
         basket = intent.metadata.basket
         save_info = intent.metadata.save_info
-        delivery_session_id = intent.metadata.delivery_id
-        print('value of delivery', delivery_session_id)
 
         billing_details = intent.charges.data[0].billing_details
         shipping_details = intent.shipping
@@ -83,6 +81,7 @@ class StripeWH_Handler:
         print('order exists', order_exists)
         attempt = 1
         while attempt <= 5:
+            print('attempt to find order', attempt)
             try:
                 order = Order.objects.get(
                     full_name__iexact=shipping_details.name,
@@ -125,7 +124,7 @@ class StripeWH_Handler:
                     street_address1=shipping_details.address.line1,
                     street_address2=shipping_details.address.line2,
                     county=shipping_details.address.state,
-                    # delivery=DeliveryMethod(pk=delivery_session_id),
+                    # delivery=DeliveryMethod.full_clean(self),
                     original_basket=basket,
                     stripe_pid=pid,
                     )
@@ -137,7 +136,7 @@ class StripeWH_Handler:
                         quantity=quantity,
                     )
                     order_line_item.save()
-                    print('value of delivery', delivery)
+                    print('value of delivery', order.delivery.cost)
             except Exception as e:
                 if order:
                     order.delete()
