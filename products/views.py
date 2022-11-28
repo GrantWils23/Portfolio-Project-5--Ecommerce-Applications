@@ -66,10 +66,14 @@ def all_products(request):
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
-                messages.error(request, "You didn't enter any search criteria!")
+                messages.error(request, "You didn't enter any\
+                    search criteria!")
                 return redirect(reverse('products'))
 
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
+            query_name = Q(name__icontains=query)
+            query_description = Q(description__icontains=query)
+            
+            queries = query_name | query_description
             products = products.filter(queries)
             paginator = Paginator(products, 12)
             page_number = request.GET.get('page')
@@ -95,10 +99,9 @@ def all_products(request):
 
 def product_detail(request, product_id):
     """ A view that shows the individual product information """
-    userprofile = request.GET.get('user')
+
     product = get_object_or_404(Product, pk=product_id)
     in_wishlist = False
-    # if product.users_wishlist.filter(userprofile.id).exists():
     if product.users_wishlist.filter(id=request.user.id).exists():
         in_wishlist = True
     product = get_object_or_404(Product, pk=product_id)
@@ -125,7 +128,8 @@ def add_product(request):
             messages.success(request, 'Successfully Added new product!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to add product, Please ensure the form is valid.')
+            messages.error(request, 'Failed to add product,\
+                Please ensure the form is valid.')
     else:
         form = ProductForm()
 
@@ -152,7 +156,8 @@ def edit_product(request, product_id):
             messages.success(request, 'Successfully Updated Product!')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'Failed to update product. Please ensure the form is valid.')
+            messages.error(request, 'Failed to update product.\
+                Please ensure the form is valid.')
     else:
         form = ProductForm(instance=product)
         messages.info(request, f'You are editing {product.name}')
@@ -193,7 +198,8 @@ def add_brand(request):
             messages.success(request, 'Successfully Added new brand!')
             return redirect(reverse('add_brand'))
         else:
-            messages.error(request, 'Failed to add brand, Please ensure the form is valid.')
+            messages.error(request, 'Failed to add brand,\
+                Please ensure the form is valid.')
     else:
         form = BrandForm()
 
@@ -220,7 +226,8 @@ def edit_brand(request, brand_id):
             messages.success(request, 'Successfully Updated Brand!')
             return redirect(reverse('admin_controls'))
         else:
-            messages.error(request, 'Failed to update brand. Please ensure the form is valid.')
+            messages.error(request, 'Failed to update brand.\
+                Please ensure the form is valid.')
     else:
         form = BrandForm(instance=brand)
         messages.info(request, f'You are editing {brand.friendly_name}')
@@ -261,7 +268,8 @@ def add_category(request):
             messages.success(request, 'Successfully Added new catrgory!')
             return redirect(reverse('add_category'))
         else:
-            messages.error(request, 'Failed to add category, Please ensure the form is valid.')
+            messages.error(request, 'Failed to add category,\
+                Please ensure the form is valid.')
     else:
         form = CategoryForm()
 
@@ -288,7 +296,8 @@ def edit_category(request, category_id):
             messages.success(request, 'Successfully Updated Category!')
             return redirect(reverse('admin_controls'))
         else:
-            messages.error(request, 'Failed to update category. Please ensure the form is valid.')
+            messages.error(request, 'Failed to update category.\
+                Please ensure the form is valid.')
     else:
         form = CategoryForm(instance=category)
         messages.info(request, f'You are editing {category.friendly_name}')

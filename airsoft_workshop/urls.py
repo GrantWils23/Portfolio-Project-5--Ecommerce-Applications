@@ -17,6 +17,7 @@ from django.contrib import admin
 from django.urls import path, include
 from django.conf import settings
 from django.conf.urls.static import static
+from .views import handler400, handler403, handler404, handler500
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -28,3 +29,8 @@ urlpatterns = [
     path('profile/', include('profiles.urls')),
     path('service_options/', include('services.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+
+handler400 = 'airsoft_workshop.views.handler400'
+handler403 = 'airsoft_workshop.views.handler403'
+handler404 = 'airsoft_workshop.views.handler404'
+handler500 = 'airsoft_workshop.views.handler500'

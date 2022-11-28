@@ -1,1 +1,51 @@
-[{"model": "services.weaponplatform", "pk": 1, "fields": {"name": "Electric Non Blowback", "friendly_name": "Electric (NBB)", "base_price": "40.00", "image_url": null, "image": "gears.png"}}, {"model": "services.weaponplatform", "pk": 2, "fields": {"name": "Electric Blowback", "friendly_name": "Electric (EBB)", "base_price": "50.00", "image_url": null, "image": "engineering.png"}}, {"model": "services.weaponplatform", "pk": 3, "fields": {"name": "Gas", "friendly_name": "Gas", "base_price": "40.00", "image_url": null, "image": "gas-cylinder.png"}}, {"model": "services.weaponplatform", "pk": 4, "fields": {"name": "High Pressure Air", "friendly_name": "HPA", "base_price": "60.00", "image_url": null, "image": "gas-bottle.png"}}, {"model": "services.weaponplatform", "pk": 5, "fields": {"name": "Spring", "friendly_name": "Spring", "base_price": "40.00", "image_url": null, "image": "spring.png"}}]
+[{
+    "model": "services.weaponplatform",
+    "pk": 1,
+    "fields": {
+        "name": "Electric Non Blowback",
+        "friendly_name": "Electric (NBB)",
+        "base_price": "40.00",
+        "image_url": null,
+        "image": "cogwheel.png"
+    }
+}, {
+    "model": "services.weaponplatform",
+    "pk": 2,
+    "fields": {
+        "name": "Electric Blowback",
+        "friendly_name": "Electric (EBB)",
+        "base_price": "50.00",
+        "image_url": null,
+        "image": "engineering.png"
+    }
+}, {
+    "model": "services.weaponplatform",
+    "pk": 3,
+    "fields": {
+        "name": "Gas",
+        "friendly_name": "Gas",
+        "base_price": "40.00",
+        "image_url": null,
+        "image": "gas-cylinder.png"
+    }
+}, {
+    "model": "services.weaponplatform",
+    "pk": 4,
+    "fields": {
+        "name": "High Pressure Air",
+        "friendly_name": "HPA",
+        "base_price": "60.00",
+        "image_url": null,
+        "image": "gas-bottle.png"
+    }
+}, {
+    "model": "services.weaponplatform",
+    "pk": 5,
+    "fields": {
+        "name": "Spring",
+        "friendly_name": "Spring",
+        "base_price": "40.00",
+        "image_url": null,
+        "image": "spring.png"
+    }
+}]

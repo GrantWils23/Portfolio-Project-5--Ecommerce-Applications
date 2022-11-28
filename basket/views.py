@@ -6,7 +6,7 @@ from django.contrib.auth.decorators import login_required
 from products.models import Product
 from .models import DeliveryMethod
 from .forms import DeliveryMethodForm
-from checkout.forms import OrderForm, DeliveryForm
+from checkout.forms import OrderForm
 
 
 def view_basket(request):
@@ -14,7 +14,6 @@ def view_basket(request):
 
     if request.method == 'POST':
         orderform = OrderForm(request.POST)
-        # create an instance of delivery (this is the 'delivery' field from the order form which is the foreign key to the deliverymethod)
         delivery = request.POST.get("delivery")
         if delivery == '1':
             d = DeliveryMethod.objects.get(id=1)
@@ -22,7 +21,6 @@ def view_basket(request):
             d = DeliveryMethod.objects.get(id=2)
         elif delivery == '3':
             d = DeliveryMethod.objects.get(id=3)
-        # see if i can manipulate this back to just the model and edit it in context.py
         request.session['deliveryfee'] = str(d.cost)
         request.session['delivery_id'] = str(d.pk)
         messages.success(request, f' {d.friendly_name}'
@@ -89,7 +87,6 @@ def remove_from_basket(request, item_id):
     try:
         product = get_object_or_404(Product, pk=item_id)
         basket = request.session.get('basket', {})
-
         # shopping basket reset back to standard shipping
         delivery = request.session.get('delivery')
         if len(basket) == 1:
@@ -122,7 +119,8 @@ def add_delivery_method(request):
             return redirect(reverse('add_delivery_method'))
         else:
             messages.error(
-                request, 'Failed to add delivery method, Please ensure the form is valid.')
+                request, 'Failed to add delivery method, \
+                    Please ensure the form is valid.')
     else:
         form = DeliveryMethodForm()
 
@@ -151,7 +149,8 @@ def edit_delivery_method(request, delivery_method_id):
             return redirect(reverse('admin_controls'))
         else:
             messages.error(
-                request, 'Failed to update delivery. Please ensure the form is valid.')
+                request, 'Failed to update delivery.\
+                    Please ensure the form is valid.')
     else:
         form = DeliveryMethodForm(instance=deliverymethod)
         messages.info(
@@ -167,7 +166,7 @@ def edit_delivery_method(request, delivery_method_id):
 
 
 @login_required
-def delete_delivery_method(request, delivry_method_id):
+def delete_delivery_method(request, delivery_method_id):
     """ Delete a delivery method from the store """
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')

@@ -2,14 +2,22 @@ import django_filters
 from django.forms.widgets import TextInput
 
 from checkout.models import Order
-from services.models import CamoPattern, PaintService, TechService
+from services.models import PaintService, TechService
 
 
 class OrdersFilter(django_filters.FilterSet):
-    date__gt = django_filters.DateFilter(field_name='date', lookup_expr 
-    ='gte', label='Start Date', widget=TextInput(attrs={'placeholder': 'yyyy-mm-dd'}))
-    date__lt = django_filters.DateFilter(field_name='date', lookup_expr 
-    = 'lte', label='End Date', widget=TextInput(attrs={'placeholder': 'yyyy-mm-dd'}))
+    date__gt = django_filters.DateFilter(field_name='date',
+                                         lookup_expr='gte',
+                                         label='Start Date',
+                                         widget=TextInput(attrs={
+                                             'placeholder': 'yyyy-mm-dd'
+                                             }))
+    date__lt = django_filters.DateFilter(field_name='date',
+                                         lookup_expr='lte',
+                                         label='End Date',
+                                         widget=TextInput(attrs={
+                                             'placeholder': 'yyyy-mm-dd'
+                                             }))
 
     class Meta:
         model = Order
@@ -22,10 +30,18 @@ class OrdersFilter(django_filters.FilterSet):
 
 
 class PaintQuoteFilter(django_filters.FilterSet):
-    date__gt = django_filters.DateFilter(field_name='date', lookup_expr 
-    ='gte', label='Start Date', widget=TextInput(attrs={'placeholder': 'yyyy-mm-dd'}))
-    date__lt = django_filters.DateFilter(field_name='date', lookup_expr 
-    = 'lte', label='End Date', widget=TextInput(attrs={'placeholder': 'yyyy-mm-dd'}))
+    date__gt = django_filters.DateFilter(field_name='date',
+                                         lookup_expr='gte',
+                                         label='Start Date',
+                                         widget=TextInput(attrs={
+                                             'placeholder': 'yyyy-mm-dd'
+                                             }))
+    date__lt = django_filters.DateFilter(field_name='date',
+                                         lookup_expr='lte',
+                                         label='End Date',
+                                         widget=TextInput(attrs={
+                                             'placeholder': 'yyyy-mm-dd'
+                                             }))
 
     class Meta:
         model = PaintService
@@ -38,10 +54,18 @@ class PaintQuoteFilter(django_filters.FilterSet):
 
 
 class TechQuoteFilter(django_filters.FilterSet):
-    date__gt = django_filters.DateFilter(field_name='date', lookup_expr 
-    ='gte', label='Start Date', widget=TextInput(attrs={'placeholder': 'yyyy-mm-dd'}))
-    date__lt = django_filters.DateFilter(field_name='date', lookup_expr 
-    = 'lte', label='End Date', widget=TextInput(attrs={'placeholder': 'yyyy-mm-dd'}))
+    date__gt = django_filters.DateFilter(field_name='date',
+                                         lookup_expr='gte',
+                                         label='Start Date',
+                                         widget=TextInput(attrs={
+                                             'placeholder': 'yyyy-mm-dd'
+                                             }))
+    date__lt = django_filters.DateFilter(field_name='date',
+                                         lookup_expr='lte',
+                                         label='End Date',
+                                         widget=TextInput(attrs={
+                                             'placeholder': 'yyyy-mm-dd'
+                                             }))
 
     class Meta:
         model = TechService

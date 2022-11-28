@@ -61,7 +61,6 @@ class PaintServiceAdmin(admin.ModelAdmin):
     search_fields = ['quote_number', 'full_name']
 
 
-
 admin.site.register(WeaponSystem, WeaponSystemAdmin)
 admin.site.register(WeaponPlatform, WeaponPlatformAdmin)
 admin.site.register(CamoPattern, CamoPatternAdmin)

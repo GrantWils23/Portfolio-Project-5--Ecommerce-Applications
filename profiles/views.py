@@ -1,12 +1,9 @@
 from django.shortcuts import render, get_object_or_404, redirect, reverse
-from django.http import HttpResponseRedirect, HttpResponse
-from django.contrib.auth.models import User
+from django.contrib.auth.models import User  #
 from django.contrib.auth.forms import PasswordChangeForm
 from django.contrib.auth import update_session_auth_hash
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-
-from django.urls import resolve
 
 from .models import UserProfile
 from .forms import UserProfileForm, EditUserProfileForm
@@ -27,7 +24,8 @@ def profile(request):
             form.save()
             messages.success(request, 'Profile updated successfully')
         else:
-            messages.error(request, 'Update failed. Please ensure the form is valid.')
+            messages.error(request, 'Update failed. Please \
+                ensure the form is valid.')
     else:
         form = UserProfileForm(instance=profile)
 
@@ -99,7 +97,6 @@ def ChangePassword(request):
 
 @login_required
 def add_to_wishlist(request, product_id):
-    pk = request.GET.get('product_id')
     product = get_object_or_404(Product, pk=product_id)
     if product.users_wishlist.filter(id=request.user.id).exists():
         product.users_wishlist.remove(request.user.id)

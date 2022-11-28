@@ -1,7 +1,5 @@
-from django.shortcuts import render, redirect, reverse, get_object_or_404
+from django.shortcuts import render, redirect, reverse
 from django.contrib import messages
-from django.contrib.auth.decorators import login_required
-from django.db.models.functions import Lower
 from django.template.loader import render_to_string
 from django.conf import settings
 from django.core.mail import send_mail
@@ -10,7 +8,7 @@ from .models import TechService, PaintService
 from .models import WeaponPlatform, WeaponSystem, CamoPattern
 from .forms import TechServiceForm, PaintServiceForm
 
-from profiles.models import UserProfile
+from profiles.models import UserProfile  #
 
 
 # Create your views here.
@@ -77,7 +75,8 @@ def tech_services(request):
             TechService.calculate_estimate(techservice)
             techservice = form.save()
             messages.success(
-                request, 'Succcess, your form has been submitted, an email shall be sent to you shortly')
+                request, 'Succcess, your form has been submitted, \
+                    an email shall be sent to you shortly')
             send_tech_confirmation_email(techservice)
             return redirect(reverse('thank_you'))
         else:
@@ -101,13 +100,15 @@ def paint_services(request):
     camo_pattern = CamoPattern.objects.all()
     weapon_sys = WeaponSystem.objects.all()
     profile = None
+    print('before', profile)
     if request.user.is_authenticated:
         profile = UserProfile.objects.get(user=request.user)
         # Attach the user's profile to the quote
         user_profile = profile
+        print('After if authenticated', profile)
     else:
         profile = None
-    print(profile)
+        print('after if not autheticated', profile)
     if request.method == 'POST':
         form_data = {
             'user_profile': profile,
@@ -125,7 +126,8 @@ def paint_services(request):
             PaintService.calculate_estimate(paintservice)
             paintservice = form.save()
             messages.success(
-                request, 'Succcess, your form has been submitted, an email shall be sent to you shortly')
+                request, 'Succcess, your form has been submitted, an \
+                    email shall be sent to you shortly')
             send_paint_confirmation_email(paintservice)
             return redirect(reverse('thank_you'))
         else:

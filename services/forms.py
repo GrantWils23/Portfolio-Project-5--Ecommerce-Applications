@@ -1,5 +1,4 @@
 from django import forms
-from .models import WeaponSystem, WeaponPlatform, CamoPattern
 from .models import PaintService, TechService
 
 

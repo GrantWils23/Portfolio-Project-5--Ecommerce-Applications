@@ -1,5 +1,4 @@
 from django.shortcuts import render, get_object_or_404, redirect, reverse
-from django.http import HttpResponseRedirect, HttpResponse
 from django.contrib.auth.models import User
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
@@ -7,7 +6,7 @@ from django.contrib.auth.decorators import login_required
 from .filters import OrdersFilter, PaintQuoteFilter, TechQuoteFilter
 
 from checkout.models import Order
-from services.models import CamoPattern, PaintService, TechService
+from services.models import PaintService, TechService
 
 # Create your views here.
 
@@ -178,6 +177,3 @@ def delete_tech_quote(request, quote_number):
     quote.delete()
     messages.success(request, 'Quote Deleted!')
     return redirect(reverse('admin_view_orders'))
-
-
-# //////////////////////////////////////////////////////////////////////////

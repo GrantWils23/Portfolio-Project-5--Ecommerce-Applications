@@ -22,14 +22,14 @@ class ProductForm(forms.ModelForm):
 
 
 class CategoryForm(forms.ModelForm):
-    
+
     class Meta:
         model = Category
         fields = "__all__"
 
 
 class BrandForm(forms.ModelForm):
-    
+
     class Meta:
         model = Brand
         fields = "__all__"

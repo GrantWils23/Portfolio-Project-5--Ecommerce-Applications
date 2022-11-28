@@ -1,10 +1,7 @@
 from decimal import Decimal
-from django.conf import settings
 from django.shortcuts import get_object_or_404
 from products.models import Product
 from .models import DeliveryMethod
-from checkout.models import Order
-from checkout.forms import OrderForm
 
 
 def basket_contents(request):

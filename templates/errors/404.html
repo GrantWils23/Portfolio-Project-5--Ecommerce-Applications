@@ -1,0 +1,51 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<!-- Page Header-->
+<div class="container-fluid">
+    <div class="row g-0">
+        <div class="col-12 justify-content-center">
+            <h2 class="display-3 text-center mt-5 mb-1 logo-font">Error: 404</h2>
+        </div>
+        <div class="container-fluid justify-content-center w-75">
+            <hr>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+
+
+{% block content %}
+{% load static %}
+
+
+<!-- Product Title -->
+
+<div class="container tertiary-font">
+    <!-- row-1 -->
+    <div class="pushdown-small"></div>
+
+    <div class="col-12 px-5 py-1">
+        <div class="row">
+            <div class="col-12 text-center">
+                <hr>
+                <h2 class="text-success">The server cannot find the requested resource</h2>
+            </div>
+        </div>
+        <div class="pushdown-small"></div>
+
+        <div class="row">
+            <div class="col-12  justify-content-center text-center">
+                <span><a href="{% url 'home' %}" class="btn btn-secondary m-2">Back to Home</a></span>
+            </div>
+        </div>
+    </div>
+    <div class="pushdown-small"></div>
+    <div class="pushdown-small"></div>
+    <!-- row-1 end -->
+</div>
+<div class="pushdown-small"></div>
+
+{% endblock %}
