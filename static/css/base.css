@@ -33,7 +33,6 @@ body {
 }
 
 .tertiary-font {
-    /* font-family: 'Judson', serif; */
     font-family: 'GFS Didot', serif;
 }
 
@@ -291,7 +290,7 @@ nav {
     }
 }
 
-@media (max-width: 283px) {
+@media (max-width: 300px) {
     .homepage-main-btn {
         font-size: 1.65rem;
     }

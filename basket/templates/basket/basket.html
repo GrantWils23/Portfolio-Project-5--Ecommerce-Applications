@@ -129,13 +129,24 @@
             </div>
             <div class="pushdown-small"></div>
             {% else %}
-            <p class="lead mb-5">Your Basket is Empty</p>
-            <a href="{% url 'products' %}" class="btn btn-success rounded-1 btn-lg">
-                Keep Shopping
-            </a>
+            <div class="pushdown-small"></div>
+            <div class="pushdown-small"></div>
+            <p class="lead mb-5 text-center">Your Basket is Empty</p>
+            <div class="pushdown-small"></div>
+            <div class="container">
+                <div class="row">
+                    <span class="text-center">
+                        <a href="{% url 'products' %}" class="btn btn-success rounded-1 btn-lg">
+                            Keep Shopping
+                        </a>
+                    </span>
+                </div>
+            </div>
+            <div class="pushdown-small"></div>
+            <div class="pushdown-small"></div>
+            <div class="pushdown-small"></div>
             {% endif %}
         </div>
-        <div class="pushdown-small"></div>
     </div>
     <!-- row-2 end -->
 </div>
