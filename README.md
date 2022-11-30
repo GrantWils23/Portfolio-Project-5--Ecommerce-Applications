@@ -654,7 +654,9 @@ Now we have gotten this far, we need to make sure the database URL is ready to r
 ``` import os ```
 ``` import dj_database_url ```
 4) Then scroll down to <strong>DATABASES</strong> and update the following code so the original test database that is connected to sqlite3 is temporarily commented out and we can now connect our ElephantSQL database to the project. (as per the picture below)
+
 ![image](https://user-images.githubusercontent.com/72948843/204847520-afc8b35b-ee37-4c9d-ac43-8728e802271d.png)
+
 <strong> IMPORTANT! </strong>
 DO NOT COMMIT at this point as this will expose your ElephantSQL database link on Github. This is just a temporary measure to prepare our database for migration. It will be removed shortly.
 
@@ -662,7 +664,9 @@ DO NOT COMMIT at this point as this will expose your ElephantSQL database link o
 ``` python3 manage.py showmigrations ```
 
 6) If you are, a list of all migrations shall appear but all unchecked.
+
 ![image](https://user-images.githubusercontent.com/72948843/204854308-76088d49-f4c1-4054-b2a3-cd168737f4ec.png)
+
 7) Now migrate the database models over to the new database.
  ``` python3 manage.py migrate ```
 8) Now the migrations are complte we need to install all fixtures... The products model requires both categories and brands to be set first as they are dependant on this due to the model of products. Follow the order below to successfully load all fixtures that this project requires to get you started.
@@ -676,11 +680,14 @@ DO NOT COMMIT at this point as this will expose your ElephantSQL database link o
 9) Now create a superuser for your new database
 ``` python3 manage.py createsuperuser ```
 10) Now with that complete, we can now unstage step 4, being sure to restore our sqlite3 database as the primary database and removing the ElephantSQL database. Doing this now just prevents us accidentally exposing the database URL for all to see in our repository.
+
 ![image](https://user-images.githubusercontent.com/72948843/204858073-459ec562-d225-4c71-b2c7-0cf226f55334.png)
+
 (head over to the database in your elephantSQL file to make sure the migrations were successful)
 
 
 The next step needed is to avoid posting environmental variables on github and to do this we have to ammend our code in settings. So firstly we need to write an if statement to check if that when our app is running on Heroku where the database URL environment variable will be defined. We connect to Postgres and otherwise, we connect to SQLite.
+
 ![image](https://user-images.githubusercontent.com/72948843/204858447-0a7b3dfd-8040-40a6-8c8a-5bc85ec63dd3.png)
 
 Also we need to install <strong>gunicorn</strong>
@@ -688,18 +695,46 @@ Also we need to install <strong>gunicorn</strong>
 Then freeze this into our requirements.txt
 ``` pip freeze > requirments.txt ```
 With that complete, we can create a <strong>Procfile</strong> as the base level in our directory. Inside the file we want Heroku to create a web dyno and gunicorn will host it.
+
 ![image](https://user-images.githubusercontent.com/72948843/204861086-f1d89b76-690a-4e9d-b030-c4de41acc455.png)
+
 You can find wsgi_application for your app in the settings.py file
+
 (![image](https://user-images.githubusercontent.com/72948843/204861226-bc6958ba-6725-4279-9a89-54c771045cab.png))
 
 Next login to heroku in the terminal:
+
 ![image](https://user-images.githubusercontent.com/72948843/204874022-6bac6a23-8ee7-4ad2-acd4-17552d70dd39.png)(I used the command with -i on the end in gitpod)
+
 Once logged in, run the line below, this ensures that we disable collecting static files.
 ``` heroku config:set DISABLE_COLLECTSTATIC=1 --app airsoft-workshop ```
+
 ![image](https://user-images.githubusercontent.com/72948843/204874624-089d5fa5-9bf8-45f7-99ff-d10f02e06cc6.png)
 
 Next I went to settings.py and added it to our heroku app too the allowed hosts.
+
 ![image](https://user-images.githubusercontent.com/72948843/204875408-ebd62a84-775e-4746-a550-e3d1994ca4e5.png)
+
+Now we can add, commmit and push the code to GitHub,
+``` git add . ``` 
+``` git add . ``` 
+``` git add . ``` 
+ and after push to heroku too:
+``` git push heroku main ```
+
+![image](https://user-images.githubusercontent.com/72948843/204877276-cbf3160e-4ffe-4748-98ee-b4a0622a3934.png)
+
+This appeared because i created the app in the heroku website and not the Heroku CLI, so instead run this command below: 
+``` heroku git:remote -a airsoft-workshop ```
+
+![image](https://user-images.githubusercontent.com/72948843/204877848-a28dfe64-d737-4025-be1c-d2ace64d913c.png)
+
+with that now set, run the push to heroku again and it will start to build.
+
+![image](https://user-images.githubusercontent.com/72948843/204880735-bda666ab-c898-41e5-b1b9-23145c52c656.png)
+
+This error occured due to how heroku 22 stack builds and it no longer supports python version 3.8... So to overcome this, in the requirements.txt file on the backports.zoneinfo add the following line of code... 
+<!-- ------------------------------------------------------------------------------------------------------------------------------------- -->
 
 
 Now go back to VSCode and create a new file called <b><i>env.py</i></b> if it has not already been created. <b>Make sure you add it to your '.gitignore' file</b>. copy the code below. This is nothing new, its just the same config vars from the heroku app and we need them inside our env.py file. make sure to add <b>your</b> config var values inside.
