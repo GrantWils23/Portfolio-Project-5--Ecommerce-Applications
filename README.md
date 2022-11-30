@@ -534,7 +534,7 @@ Follow this link to the documentation created for <a href="https://github.com/Gr
 <li><a href="https://drawsql.app/" target="_blank"> DrawSQL </a> - An online app used to create the database schema.</li>
 <li><a href="https://color.a11y.com/" target="_blank">A11y</a> - An online accessibility validator that checks the colour of the background against the text.</li>
 <li><a href="https://stripe.com/gb" target="_blank">stripe</a> - A secure payment app used to recieve payments.</li>
-
+<li><a href="https://miniwebtool.com/django-secret-key-generator/">MiniWebTools</a> - Used to create a random Django secret key for my project in Heroku</li>
 <br>
 
 [Back to Top](<#contents>)
@@ -734,6 +734,24 @@ with that now set, run the push to heroku again and it will start to build.
 ![image](https://user-images.githubusercontent.com/72948843/204880735-bda666ab-c898-41e5-b1b9-23145c52c656.png)
 
 This error occured due to how heroku 22 stack builds and it no longer supports python version 3.8... So to overcome this, in the requirements.txt file on the backports.zoneinfo add the following line of code... 
+
+![image](https://user-images.githubusercontent.com/72948843/204885019-a3657f57-6aa2-498e-9c51-b1177634868f.png)
+
+With that completed, and now deployed, the site works but without the static files. the 
+
+![image](https://user-images.githubusercontent.com/72948843/204884317-8f773f8a-19d4-4175-b302-7fe283c11d3d.png)
+
+Now I moved on to setting up Heroku to deploy automatically when code is committed and pushed to GitHub. to do this, go over to Heroku and within the app, go to deploy and link your GitHub repository to Heroku
+
+![image](https://user-images.githubusercontent.com/72948843/204883925-669ef101-1bd3-4366-aa1b-556ec2f2c425.png).
+
+Click 'Connect'
+
+Now I added a new Secret Key for the project in the Heroku config vars (in the settings page).
+
+![image](https://user-images.githubusercontent.com/72948843/204886753-b3f52d73-9433-4364-830a-8bb34b706025.png)
+
+
 <!-- ------------------------------------------------------------------------------------------------------------------------------------- -->
 
 
