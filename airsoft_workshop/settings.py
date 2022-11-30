@@ -11,6 +11,7 @@ https://docs.djangoproject.com/en/4.1/ref/settings/
 """
 
 import os
+import dj_database_url
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -26,7 +27,7 @@ SECRET_KEY = 'django-insecure-sdvbno20mltkbp%&t1v@a4-0*@z&_$h%l38u2@iiet$=_6ft1z
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost']
+ALLOWED_HOSTS = ['airsoft-workshop.herokuapp.com', '127.0.0.1', 'localhost']
 
 # CSRF_TRUSTED_ORIGINS = ['https://8000-grantwils23-portfoliopr-7o2kyngu7uz.ws-eu74.gitpod.io']
 # CSRF_TRUSTED_ORIGINS = ['https://8000-grantwils23-portfoliopr-7o2kyngu7uz.ws-eu75.gitpod.io']
@@ -127,12 +128,17 @@ MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'
 # Database
 # https://docs.djangoproject.com/en/4.1/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+if 'DATABASE_URL' in os.environ:
+    DATABASES = {
+        'default': dj_database_url.parse(os.environ.get('DATABASE_URL')),
     }
-}
+else:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.sqlite3',
+            'NAME': BASE_DIR / 'db.sqlite3',
+        }
+    }
 
 
 # Password validation
