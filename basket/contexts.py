@@ -5,11 +5,10 @@ from .models import DeliveryMethod
 
 
 def basket_contents(request):
-    delmeth = DeliveryMethod.objects.get(pk=1)  # default shipping method
     basket_items = []
     total = 0
     product_count = 0
-    delivery = request.session.get('deliveryfee', delmeth.cost)
+    delivery = request.session.get('deliveryfee', 3.5)
     basket = request.session.get('basket', {})
     grand_total = 0
     delivery_id = request.session.get('delivery_id')

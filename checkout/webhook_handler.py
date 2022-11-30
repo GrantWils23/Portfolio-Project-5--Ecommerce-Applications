@@ -6,7 +6,6 @@ from django.conf import settings
 from .models import Order, OrderLineItem
 from products.models import Product
 from profiles.models import UserProfile
-# from basket.models import DeliveryMethod
 
 import json
 import time
@@ -53,7 +52,6 @@ class StripeWH_Handler:
 
         billing_details = intent.charges.data[0].billing_details
         shipping_details = intent.shipping
-        # delivery = str(DeliveryMethod(pk=delivery_session_id))
         grand_total = round(intent.charges.data[0].amount / 100, 2)
 
         # Clean data in the shipping details
@@ -122,7 +120,6 @@ class StripeWH_Handler:
                     street_address1=shipping_details.address.line1,
                     street_address2=shipping_details.address.line2,
                     county=shipping_details.address.state,
-                    # delivery=DeliveryMethod.full_clean(self),
                     original_basket=basket,
                     stripe_pid=pid,
                     )

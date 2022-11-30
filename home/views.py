@@ -53,7 +53,7 @@ def admin_controls(request):
 @login_required
 def admin_view_orders(request):
     """ return a list of all orders to the admin """
-    orders = Order.objects.all()
+    orders = Order.objects.all().order_by("-date")
     orders_filter = OrdersFilter(request.GET, queryset=orders)
     template = 'home/admin_orders_list.html'
     context = {
@@ -97,7 +97,7 @@ def delete_order(request, order_id):
 @login_required
 def admin_view_paint_quotes(request):
     """ return a list of all paint quotes to the admin """
-    quotes = PaintService.objects.all()
+    quotes = PaintService.objects.all().order_by("-date")
     quotes_filter = PaintQuoteFilter(request.GET, queryset=quotes)
     template = 'home/paint_job_quotes.html'
     context = {
@@ -140,7 +140,7 @@ def delete_paint_quote(request, quote_number):
 @login_required
 def admin_view_tech_quotes(request):
     """ return a list of all tech quotes to the admin """
-    quotes = TechService.objects.all()
+    quotes = TechService.objects.all().order_by("-date")
     quotes_filter = TechQuoteFilter(request.GET, queryset=quotes)
     template = 'home/tech_job_quotes.html'
     context = {
