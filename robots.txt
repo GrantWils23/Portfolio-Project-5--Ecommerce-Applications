@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /accounts/
+Disallow: /proifle/
+disallow: /basket/
+Sitemap: https://airsoft-workshop.herokuapp.com/sitemap.xml
