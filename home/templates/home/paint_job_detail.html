@@ -122,7 +122,7 @@
                             {% if quote.camo_pattern.image %}
                             <img class="card-img-top" src="{{ quote.camo_pattern.image.url }}" alt="{{ quote.camo_pattern.name }}">
                             {% else %}
-                            <img class="card-img-top" src="{{ MEDIA }}/noimage.png" alt="{{ quote.camo_pattern.name }}">
+                            <img class="card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="{{ quote.camo_pattern.name }}">
                             {% endif %}
                         </div>
                     </div>
@@ -143,7 +143,7 @@
                             {% if quote.weapon_system.image %}
                             <img class="card-img-top" src="{{ quote.weapon_system.image.url }}" alt="{{ quote.weapon_system.name }}">
                             {% else %}
-                            <img class="card-img-top" src="{{ MEDIA }}/noimage.png" alt="{{ quote.weapon_system.name }}">
+                            <img class="card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="{{ quote.weapon_system.name }}">
                             {% endif %}
                         </div>
                     </div>
