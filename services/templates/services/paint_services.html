@@ -52,7 +52,7 @@
                                 <span class="justify-content-center">
                                     <div style="height:100px; width:100px;">
                                         {% if camo.image %}
-                                        <img class="card-img-top" src="{{ camo.image.url }}" alt="{{ camo.name }}">
+                                        <img class="card-img-top" src="{{ MEDIA_URL }}{{ camo.image }}" alt="{{ camo.name }}">
                                         {% else %}
                                         <img class="card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="{{ camo.name }}">
                                         {% endif %}
@@ -77,7 +77,7 @@
                                 <input id="weapon_system_{{weapon.id}}" name="weapon_system" type="radio" value="{{weapon.id}}" required>
                                 <div style="height:100px; width:100px;">
                                     {% if weapon.image %}
-                                    <img class="card-img-top" src="{{ weapon.image.url }}" alt="{{ weapon.name }}">
+                                    <img class="card-img-top" src="{{ MEDIA_URL }}{{ weapon.image }}" alt="{{ weapon.name }}">
                                     {% else %}
                                     <img class="card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="{{ weapon.name }}">
                                     {% endif %}

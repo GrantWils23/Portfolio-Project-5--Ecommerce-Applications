@@ -104,7 +104,7 @@
             <div class="card product-card m-sm-5">
                 <div class="img-container">
                     {% if product.image %}
-                    <img class="card-img-top" src="{{ product.image.url }}" alt="{{ product.name }}">
+                    <img class="card-img-top" src="{{ MEDIA_URL }}{{ product.image }}" alt="{{ product.name }}">
                     {% else %}
                     <img class="card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                     {% endif %}

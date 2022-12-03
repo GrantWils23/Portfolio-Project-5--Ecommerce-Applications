@@ -53,7 +53,7 @@
                                     <input id="weapon_platform_{{plat.id}}" name="weapon_platform" type="radio" value="{{plat.id}}" required>
                                     <div style="height:100px; width:100px;">
                                         {% if plat.image %}
-                                        <img class="card-img-top" src="{{ plat.image.url }}" alt="{{ plat.name }}">
+                                        <img class="card-img-top" src="{{ MEDIA_URL }}{{ plat.image }}" alt="{{ plat.name }}">
                                         {% else %}
                                         <img class="card-img-top" src="{{ MEDIA_URL }}/noimage.png" alt="{{ plat.name }}">
                                         {% endif %}
@@ -77,7 +77,7 @@
                                     <input id="weapon_system_{{weapon.id}}" name="weapon_system" type="radio" value="{{weapon.id}}" required>
                                     <div style="height:100px; width:100px;">
                                         {% if weapon.image %}
-                                        <img class="card-img-top" src="{{ weapon.image.url }}" alt="{{ weapon.name }}">
+                                        <img class="card-img-top" src="{{ MEDIA_URL }}{{ weapon.image }}" alt="{{ weapon.name }}">
                                         {% else %}
                                         <img class="card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="{{ weapon.name }}">
                                         {% endif %}

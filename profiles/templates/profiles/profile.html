@@ -96,7 +96,7 @@
                                     <div class="col-4 my-1">
                                         <a href="{% url 'product_detail' product.id %}" class="my-0 page-link-success">
                                             {% if product.image %}
-                                            <img class="w-100" src="{{ product.image.url }}" alt="{{ product.name }}">
+                                            <img class="w-100" src="{{ MEDIA_URL }}{{ product.image }}" alt="{{ product.name }}">
                                             {% else %}
                                             <img class="w-100" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
                                             {% endif %}
