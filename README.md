@@ -493,11 +493,57 @@ Follow this link to the documentation created for <a href="https://github.com/Gr
 <br>
 
 ## Web Marketing
+* [Social Media Marketing](<#social-media-marketing>)
+* [Allauth Functionality](<#email-marketing>)
 
-<!-- add -->
+[Back to Top](<#contents>)
+
+### Social Media Marketing
+
+As part of the company's approach to increase brand awareness, web marketing is an important part of the companies brand presence. Airsoft is a very close community sport and word of mouth goes a long way to generating brand confidence. Using web organic marketing techniques
+
+To create the page.. you need to log in and create a new page.
+
+![image](https://user-images.githubusercontent.com/72948843/205505248-1960a1b9-f2dc-4a72-9fab-0780e1b03187.png)
+
+Next, we need to add more information about our company including the website, address, telephone number and opening times.
+
+![image](https://user-images.githubusercontent.com/72948843/205505886-5d8e70a3-a821-4a86-af1d-0f1cd0d3d908.png)
+
+Next, to comply with facebooks strict compliances in regards to advertizing firearms, even though they are not real, i have opted to change the background picturee something less intimidating. the image chosen is of a firing range, which ties in with one of the three themes of the company. The "Tech Service" side, whereby once a RIF is repaired, it would be checked down range to check how it performs post works.
+
+![image](https://user-images.githubusercontent.com/72948843/205507503-9a739639-9557-412c-b123-ff232093d2c2.png)
+
+Moving forward, you can choose to connect whatsapp to the page, but I skipped this part. after that you can choose to invite friends to the website. I started by inviting people who i know would be interested in this ecommerce store.
+
+![image](https://user-images.githubusercontent.com/72948843/205507882-403d7f6e-706c-4376-bac2-fd76edf83752.png)
+
+Finally, the last step is to inform the users to stay informed regarding information from this page. I selected both options and finalised my Facebook page.
+
+![image](https://user-images.githubusercontent.com/72948843/205508019-2bdb44e0-0e27-45e1-95cc-d5f4078f890e.png)
+
+Now with that done, the page is complete... a popup will appear and you can take a tour on how to create a post...
+
+![image](https://user-images.githubusercontent.com/72948843/205508246-90640bba-22d4-46e4-8519-59bff054ef75.png)
+
+Below you can see the first post created for the Airsoft Workshop!
+
+![image](https://user-images.githubusercontent.com/72948843/205509133-056403c2-2ad0-4ecf-874a-f03c44e45bb8.png)
+
+lastly but not least, we need to add the pages to the facebook links within our website, so anywhere with an ```<a></a> ``` tag linked to facebook needs our Facebook page link added directly to it.
+
+![image](https://user-images.githubusercontent.com/72948843/205509648-7574c2ad-e703-4f5a-93fc-19ccd36739e8.png)
+
+[Back to Top](<#web-marketing>)
+
+<hr>
+
+### Email Marketing
+
+Next We want to take advantage of email marketing to boost brand awareness of the company. To do this we use mailchimp.
 
 <!-- Display in form of a picture from the PDF within Excel file i created -->
-[Back to Top](<#contents>)
+[Back to Top](<#web-marketing>)
 
 
 ## Technologies Used
@@ -535,6 +581,11 @@ Follow this link to the documentation created for <a href="https://github.com/Gr
 <li><a href="https://color.a11y.com/" target="_blank">A11y</a> - An online accessibility validator that checks the colour of the background against the text.</li>
 <li><a href="https://stripe.com/gb" target="_blank">stripe</a> - A secure payment app used to recieve payments.</li>
 <li><a href="https://miniwebtool.com/django-secret-key-generator/">MiniWebTools</a> - Used to create a random Django secret key for my project in Heroku</li>
+<li><a href="https://temp-mail.org/">Temp-Mail</a> - A Handy tool that was used to create fake accounts to perform checks on email functionality during the deployed development stage.</li>
+<li><a href="https://www.xml-sitemaps.com/">XML-sitemaps</a> - A free sitemap generator the sitemap for my the website</li>
+<li><a href="https://www.privacypolicygenerator.info/">Privacy Policy Generator</a> - A free privacy-policy generator that I used for the deployed heroku website</li>
+<li><a href="https://www.facebook.com/">Facebook</a> - I used Facebook to create an online marketing presence to advertise the company on to Facebook users who follow the Companies activities and who are interested in airsoft.</li>
+<li><a href="https://mailchimp.com/">Mailchimp</a> - Mailchimp is a email marketing device, used to help generate business by getting people to signup to newsletters and get information regarding the companies latest offers</li>
 <br>
 
 [Back to Top](<#contents>)
@@ -547,34 +598,40 @@ Follow this link to the documentation created for <a href="https://github.com/Gr
 <ul>
     <li><a href="https://pypi.org/project/asgiref/" target="_blank">asgiref</a> -  Reference ASGI adapters and channel layers.</li>
     <li><a href="https://pypi.org/project/backports.zoneinfo/" target="_blank">backport.zoneinfo</a> - The module used to implement the IANA time zone database in the python standard libary.</li>
+    <li><a href="https://pypi.org/project/Babel/" target="_blank">Babel</a> - A collection of tools for internationalizing Python applications.</li>
+    <li><a href="https://pypi.org/project/boto3/" target="_blank">boto3</a> - Boto3 is the Amazon Web Services (AWS) Software Development Kit (SDK) for Python, which allows Python developers to write software that makes use of services like Amazon S3 and Amazon EC2..</li>
+    <li><a href="https://pypi.org/project/botocore/" target="_blank">botocore</a> - A low-level interface to a growing number of Amazon Web Services. The botocore package is the foundation for the AWS CLI as well as boto3.</li>
+    <li><a href="" target="_blank">crispy-bootstrap5</a> - A collection of tools for internationalizing Python applications.</li>
     <!-- <li><a href="https://pypi.org/project/click8/" target="_blank">click</a> - A python package to help write command line interfaces with as little code as necessary.</li> -->
     <!-- <li><a href="https://pypi.org/project/coverage/" target="_blank">coverage</a> -  A python package that helps determine test coverage.</li> -->
-    <!-- <li><a href="https://pypi.org/project/dj-database-url/" target="_blank">dj-database-url</a> - This utility package allows the user to utilize the "DATABASE_URL" environmental variable to configure the Django App.</li> -->
-    <li><a href="https://pypi.org/project/dj3-cloudinary-storage/" target="_blank">dj3-cloudinary-storage</a> -  This package allows django to facilitate integration with Cloudinary by implementing Django Storage API.</li>
+    <li><a href="https://pypi.org/project/dj-database-url/" target="_blank">dj-database-url</a> - This utility package allows the user to utilize the "DATABASE_URL" environmental variable to configure the Django App.</li>
     <li><a href="https://pypi.org/project/Django/" target="_blank">Django</a> - A high-level Python web framework that encourages rapid development and clean, pragmatic design.</li>
     <li><a href="https://pypi.org/project/django-allauth/" target="_blank">django-allauth</a> - Integrated set of Django applications addressing authentication, registration, account management as well as 3rd party (social) account authentication.</li>
-    <li><a href="https://pypi.org/project/django-filters/" target="_blank">django-filters</a> -Django package that provides querying functionality on a list in the view. A really powerful and useful tool.</li>
+    <li><a href="https://pypi.org/project/django-countries/" target="_blank">django-countries</a> - A Django library that provides a country field out the box which is user friendly.</li>
     <li><a href="https://pypi.org/project/django-crispy-forms/" target="_blank">django-crispy-forms</a> -Build programmatic reusable layouts out of components, having full control of the rendered HTML without writing HTML in templates.</li>
     <li><a href="https://pypi.org/project/django-filter/" target="_blank">django-filter</a> - Django-filter is a reusable Django application for allowing users to filter querysets dynamically.</li>
     <li><a href="https://pypi.org/project/django-phonenumber-field/" target="_blank">django-phonenumber-field</a> - A Django library which interfaces with python-phonenumbers to validate, pretty print and convert phone numbers.</li>
-    <li><a href="https://pypi.org/project/django-countries/" target="_blank">django-countries</a> - A Django library that provides a country field out the box which is user friendly.</li>
-    <li><a href="https://pypi.org/project/docstring-parser/" target="_blank">docstring-parser</a> - Parse Python docstrings in rest, Google and Numpydoc format.</li>
+    <li><a href="https://pypi.org/project/django-storages/" target="_blank">django-storages</a> - django-storages is a project to provide a variety of storage backends in a single library.</li>
+    <li><a href="https://pypi.org/project/docutils/" target="_blank">docutils</a> - Docutils is a modular system for processing documentation into useful formats, such as HTML, XML, and LaTeX. For input Docutils supports reStructuredText, an easy-to-read, what-you-see-is-what-you-get plaintext markup syntax.</li>
     <li><a href="https://pypi.org/project/gunicorn/" target="_blank">gunicorn</a> - Gunicorn ‘Green Unicorn’ is a Python WSGI HTTP Server for UNIX.</li>
-    <li><a href="https://pypi.org/project/iniconfig/" target="_blank">iniconfig</a> - Iniconfig is a small and simple INI-file parser module having a unique set of features.</li>
+    <li><a href="https://pypi.org/project/jmespath/" target="_blank">jmespath</a> - JMESPath (pronounced “james path”) allows you to declaratively specify how to extract elements from a JSON document.</li>
     <li><a href="https://pypi.org/project/oauthlib/" target="_blank">oauthlib</a> - A generic, spec-compliant, thorough implementation of the OAuth request-signing logic.</li>
-    <li><a href="https://pypi.org/project/phonenumbers/" target="_blank">phonenumbers</a> - Python version of Google's common library for parsing, formatting, storing and validating international phone numbers.</li>
-    <li><a href="https://pypi.org/project/pluggy/" target="_blank">pluggy</a> - Plugin and hook calling mechanisms for python.</li>
+    <li><a href="https://pypi.org/project/phonenumberslite/" target="_blank">phonenumberslite</a> - This is a Python port of Google's libphonenumber library It supports Python 2.5-2.7 and Python 3.x (in the same codebase, with no 2to3 conversion needed)</li>
+    <li><a href="https://pypi.org/project/Pillow/" target="_blank">Pillow</a> - Pillow is the friendly PIL fork by Alex Clark and Contributors. PIL is the Python Imaging Library by Fredrik Lundh and Contributors. As of 2019, Pillow development is supported by Tidelift.</li>
     <li><a href="https://pypi.org/project/psycopg/" target="_blank">psycopg2</a> - PostgreSQL database adapter for Python.</li>
-    <li><a href="https://pypi.org/project/py3/" target="_blank">py</a> - This is a dummy package.</li>
     <li><a href="https://pypi.org/project/PyJWT/" target="_blank">pyJWT</a> - JSON Web Token implementation in Python.</li>
-    <li><a href="https://pypi.org/project/pylint-django/" target="_blank">pylint-django</a> - A Pylint plugin to help Pylint understand the Django web framework.</li>
+    <li><a href="https://pypi.org/project/stripe/" target="_blank">stripe</a> - A secure payment app.</li>
+    <li><a href="https://pypi.org/project/python-dateutil/" target="_blank">python-dateutil</a> - The dateutil module provides powerful extensions to the standard datetime module, available in Python.</li>
     <li><a href="https://pypi.org/project/pylint-plugin-utils/" target="_blank">pylint_plugin-utils</a> - Utilities and helpers for writing Pylint plugins.</li>
-    <li><a href="https://pypi.org/project/pytest/" target="_blank">pytest</a> - A simple, powerful testing package in python.</li>
+    <!-- <li><a href="https://pypi.org/project/pytest/" target="_blank">pytest</a> - A simple, powerful testing package in python.</li> -->
     <li><a href="https://pypi.org/project/python-openid3/" target="_blank">python3-openid</a> - OpenID support for servers and consumers. Python 3 support fork.</li>
     <li><a href="https://pypi.org/project/pytz/" target="_blank">pytz</a> - World timezone definitions, modern and historical.</li>
+    <li><a href="https://pypi.org/project/s3transfer/" target="_blank">s3transfer</a> - S3transfer is a Python library for managing Amazon S3 transfers. This project is maintained and published by Amazon Web Services.</li>
     <li><a href="https://pypi.org/project/requests-oauthlib/" target="_blank">request-oauthlib</a> - OAuthlib authentication support for Requests.</li>
     <li><a href="https://pypi.org/project/sqlparse/" target="_blank">sqlparse</a> - A non-validating SQL parser.</li>
-    <li><a href="https://pypi.org/project/stripe/" target="_blank">stripe</a> - A secure payment app.</li>
+    <li><a href="https://pypi.org/project/stripe/" target="_blank">stripe</a> - A Python library for Stripe’s API.</li>
+    <li><a href="https://pypi.org/project/urllib3/" target="_blank">urllib3</a> - urllib3 is a powerful, user-friendly HTTP client for Python. Much of the Python ecosystem already uses urllib3 and you should too. urllib3 brings many critical features that are missing from the Python standard libraries:</li>
+
 </ul>
 
 <br>
@@ -594,7 +651,6 @@ Follow this link to the documentation created for <a href="https://github.com/Gr
 
 ## Creating a Database
 <p> for this part, I used <a href="https://www.elephantsql.com/" target="_blank">ElephantSQL</a> as it is a wonderful free service to use as long as our database is not too large. To set this up, please follow the steps below:</p>
-
 
 1) Sign Up and make an account. (You will need to povide some card details but that will not be charged providing you dont exceed any limits).
 ![image](https://user-images.githubusercontent.com/72948843/204639943-93638333-43cd-453f-ae02-48f1ac6cccc3.png)
@@ -640,9 +696,6 @@ The page will load to the overview Heroku app page. Click on 'settings'. Once in
 
 ![image](https://user-images.githubusercontent.com/72948843/204660599-f0e42c6c-de21-4e46-81f5-28f3d082f8c6.png)
 
-<!-- --------------------------------------------------------------------- -->
-<!-- CONTINUE TOMORROW from here -->
-<!-- --------------------------------------------------------------------- -->
 
 Now we have gotten this far, we need to make sure the database URL is ready to receive the new ElephantSQL database. For this we need to install two new packages from pip into the project:
 
@@ -737,7 +790,7 @@ This error occured due to how heroku 22 stack builds and it no longer supports p
 
 ![image](https://user-images.githubusercontent.com/72948843/204885019-a3657f57-6aa2-498e-9c51-b1177634868f.png)
 
-With that completed, and now deployed, the site works but without the static files. the 
+With that completed, and now deployed, the site works but without the static files. the....
 
 ![image](https://user-images.githubusercontent.com/72948843/204884317-8f773f8a-19d4-4175-b302-7fe283c11d3d.png)
 
@@ -753,11 +806,15 @@ Now I added a new Secret Key for the project in the Heroku config vars (in the s
 
 
 <!-- ------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------- -->
+<!-- CONTINUE TOMORROW from here -->
+<!-- --------------------------------------------------------------------- -->
+
 
 
 Now go back to VSCode and create a new file called <b><i>env.py</i></b> if it has not already been created. <b>Make sure you add it to your '.gitignore' file</b>. copy the code below. This is nothing new, its just the same config vars from the heroku app and we need them inside our env.py file. make sure to add <b>your</b> config var values inside.
 
-![image](https://user-images.githubusercontent.com/72948843/182257529-09ce9e5d-9ba7-410c-a745-25c86e6506aa.png)
+![image](https://user-images.githubusercontent.com/72948843/205462075-424412b9-a0d6-4915-a195-e42f1ce1960a.png)
 
 Inside settings.py, search for the line that says "from pathlib import Path" and then insert the code below:
 
@@ -771,81 +828,107 @@ Set <b>DEBUG = 'DEVELOPMENT' in os.environ</b> This allows you to have Debug set
 
 ![image](https://user-images.githubusercontent.com/72948843/182258392-dcce5dac-62ea-48fc-a9d0-35e9b5a7d956.png)
 
-Whilst working in development, we want to keep the PostgreSQL for deployment. So, running the code below allows us to have two databases. SQLite for local development and the PostgreSQL database for the deployed application.
+Whilst working in development, we want to keep the ElephantSQL for deployment. So, running the code below allows us to have two databases. SQLite for local development and the ElephantSQL database for the deployed application.
 
-![image](https://user-images.githubusercontent.com/72948843/182259041-4743cadc-e401-44ab-a440-4d64c40305b3.png)
+![image](https://user-images.githubusercontent.com/72948843/205462193-c7fd414f-4f1e-42ea-a492-f3a3b2deb0f1.png)
 
-Next we need to add cloudinary application to the INSTALL_APPS in settings.py: <b>The order of the  apps in this list is important, copy as below.</b>
+Next we need to add a place to store our media and static files for the application... follow the steps in the pdf files below to setup a AMAZON WEB SERVICES bucket to host these files...
 
-![image](https://user-images.githubusercontent.com/72948843/182259381-0c8589cd-e570-4679-982d-b6c7dfef087f.png) 
- 
-Then we need to go to STATIC_URL = '/static/' in the settings file and copy the code below... this tells django to use Cloudinary to store media and static files
- 
+<!-- create tidy versions of aws setups as pdfs to put in assets -->
+<!-- ------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------- -->
+<!-- CONTINUE TOMORROW the pdfs -->
+<!-- --------------------------------------------------------------------- -->
+<ol>
+<li>Setting up a S3 Bucket: <a href="" taret="_blank">AWS-S3-Bucket setup</a></li>
+<li>Setting up the IAM controls: <a href="" taret="_blank">AWS-IAM setup</a></li>
+</ol>
 
-![image](https://user-images.githubusercontent.com/72948843/182259693-72cd2070-895d-4473-8576-26819495480c.png)
+Django to S3...
 
-After that we can add the code for the Templates into the settings.py copy the code below:
+We now need to install boto3 and django-storages...
 
-![image](https://user-images.githubusercontent.com/72948843/182259902-c01aef57-3de8-4d13-a3e2-0fed1f491249.png)
+``` pip install boto3 ```
+``` pip install django-storages ```
 
-Next add your allowed hosts to ALLOWED_HOSTS. You will need to add ```'127.0.0.1'``` to your local host list to allow you to open it locally, as well as ```'localhost'``` and ```'bebeauty-deployment-process.herokuapp.com'```
+Upon successfully downloading the pip packages freeze a copy of the requirements.txt file
+``` pip freeze > requirements.txt ```
+and then add it to the settings.py file of the app...
 
-![image](https://user-images.githubusercontent.com/72948843/182463546-97ee9b7e-072b-41ac-bbc4-81557fe9dd5f.png)
+![image](https://user-images.githubusercontent.com/72948843/205462317-d8a6959c-df10-489a-8348-54b175eb6936.png)
 
-Now inside the top level directory we need to two new folders and one new file:
+With that done, we need to write some code to allow us to use the AWS bucket we created... the code is as follows:
 
-#### STATIC
-<li>Add a static file that will hold your images, and css folders and anything else. i.e. js files and/or favicons.</li>
+![image](https://user-images.githubusercontent.com/72948843/205462422-a7081814-a78d-4bc9-97ab-6eb49272a975.png)
 
-<br>
+We need to also remove ``` DISABLE_COLLECTSTATIC = 1 ``` inside the heroku settings config vars so when it next deploys it can search for the static and media files.
 
-#### TEMPLATES
-<li>Next add the templates folder where the project will keep all the HTML files that will will be used to build the webiste.</li>
+Next create a new file called ``` custom_storages.py ``` at the base level.
 
-<br>
+![image](https://user-images.githubusercontent.com/72948843/205463479-28c70918-ee70-489e-9699-fc594f7fa109.png)
 
-#### PROCFILE
-Once those files are completed, we need to add a Procfile for the website to work. So again, from the top level directory, we need to add a Procfile and within the file write the command... ``` web: gunicorn 'APP_NAME'.wsgi ``` within the file. This allows the file to run your in Heroku.
+Copy the code below into the custom_storages.py file
 
-(My Example from BeBeauty)
-![image](https://user-images.githubusercontent.com/72948843/182356833-bbfa158f-942b-4538-b78c-0b72edfcc6a1.png)
+![image](https://user-images.githubusercontent.com/72948843/205463525-3c54cb10-78db-4f17-936a-0b4b8fc4ce95.png)
 
+Now make sure the variables are added to your heroku apps config vars. add commit and push the files... it will now load and you can see the css static files are working but the media files dont.
 
-If you are unsure what your app name is, you can find it and the resources page of your heroku app page, just look at the exmaple below if you are not sure...
+The next thing we need to do is add our media files from the media folder into the S3 bucket... This will allow us to then see the images... follow the steps in the pdf below:
 
-![image](https://user-images.githubusercontent.com/72948843/182356444-15549040-be85-465d-bb7d-da5616823a00.png)
+<!-- ------------------------------------------------------------------------------------------------------------------------------------- -->
+<!-- --------------------------------------------------------------------- -->
+<!-- CONTINUE TOMORROW the pdf for chaching media files -->
+<!-- --------------------------------------------------------------------- -->
 
-Once completed, make sure you save all the files and then type the following lines:
+- <a href="">chaching media files</a>
 
-* ```git add .```
-* ```git commit -m "deployment commit"```
-* ```git push```
-<br>
-Then the final step is to deploy your application, if you wish to deploy using the Heroku CLI follow the lines of code below:
+Lastly we need to get stripe working...
 
-* ```heroku login```
-* ```heroku git:remote -a APP_NAME```
-* ```git push heroku main```
-<br>
-Alternatively, if you wish to do it from within the Heroku website and through github, follow the steps below:
+add the stripe public and secret keys to the config vars in the heroku apps settings:
+![9@ClippedImage](https://user-images.githubusercontent.com/72948843/205464196-13411659-465c-4c9e-ab83-d5dd07208ff5.png)
 
-1) Within your Heroku app, click on the deploy tag.
-2) On the deployment section in the middle, select GitHub.
-3) Once you log in to github through Heroku, you should get a search menu appear.
-4) Search for the repository within your Github account for the app you will create and then hit the "Connect" button.
-<br>
-![image](https://user-images.githubusercontent.com/72948843/182438506-65c4d13a-29dd-492c-a710-452fa1fe8110.png)
+Lastly we need to create a new endpoint for the webhook to work and add its STRIPE_WH_SECRET to the heorku's config var.
 
-5) Once connected, you will be presented with two methods to deploy the website, Automatic and Manual Deployment. Choose whichever one is more conventient for you.
-<br>
-![image](https://user-images.githubusercontent.com/72948843/182439770-36dba819-d629-477a-a8f0-dd1a61eeb2c0.png)
+add a new endpoint...
+![5@ClippedImage](https://user-images.githubusercontent.com/72948843/205464355-713bf3bc-db51-4638-8f0f-7595460a262b.png)
+
+now add the new signing secret to the heroku settings config vars.
+![8@ClippedImage](https://user-images.githubusercontent.com/72948843/205464495-11354d66-aec8-4556-8a5f-415c21efeee5.png)
 
 [Back to Top](<#contents>)
 
 (Side Note: When the app is deployed, Debug has to be set to False! this is for security reasons as it can expose sensative data.)
+
+[Back to Top](<#contents>)
+
+### Setting the email service
+
+The last part that needs setting up is the django emails. Two variables are required... ```['EMAIL_HOST_USER']``` and ```['EMAIL_HOST_PASSWORD']```.
+
+![image](https://user-images.githubusercontent.com/72948843/205464839-789fde98-24b9-4274-bba8-c424eba2e8c5.png)
+
+ I found a really useful tutorial by "Toumi Abderrahmane" on how to set up googlemail sync up to send emails with django in deployment. please click on this link below.
+
+<a href="https://dev.to/abderrahmanemustapha/how-to-send-email-with-django-and-gmail-in-production-the-right-way-24ab" target="_blank">how to send email with django and gmail</a>
 <br>
 
-### Cloning and setting up of this project
+Within the env.py file, at the bottom two lines, you have to insert you email address and password, just look below:
+
+![image](https://user-images.githubusercontent.com/72948843/205464909-c9a511b4-64b6-43a0-bb7b-72c3a3fccb62.png)
+
+Now add these variables to the Heroku's settings config vars.
+
+![image](https://user-images.githubusercontent.com/72948843/205465018-bb55c2d1-8f96-4374-893b-537b26c664ba.png)
+
+Now with this done, you can now send emails in development and deployment.
+
+(Note the code at the bottom of the Development Django Email Settings, this runs in the command line, check here to see if the emails send during development.)
+
+[Back to Top](<#contents>)
+
+<br>
+
+# Cloning and setting up of this project
 <hr>
 
 
@@ -933,26 +1016,6 @@ This command will only work if you use your local database within the deployment
 This project has installed inside it a python package called [*Coverage*]. This app is useful as it gives you comprehensive reports on how much of your project has been tested. To get a coverage report, run the following command in the terminal: ```coverage report``` and this will output a tabled list of the results from the report. The report gives you an idea of what areas perhaps require more testing and gives you a score on how your tests perform.
 
 <br>
-
-### Setting the email service
-
-There is one part of the project that hasn't been explained in the above. I have set up the app to send emails and to do this I created at the bottom of settings.py. What we have here are two two config vars that we need to add to your env.py file. The ```['EMAIL_HOST_USER']``` and ```['EMAIL_HOST_PASSWORD']```. 
-
-![image](https://user-images.githubusercontent.com/72948843/182680072-b77a00e2-2c0b-4c93-a2bf-1a7f24f56a12.png)
-
- I found a really useful tutorial by "Toumi Abderrahmane" on how to set up googlemail sync up to send emails with django in deployment. please click on this link below.
-
-<a href="https://dev.to/abderrahmanemustapha/how-to-send-email-with-django-and-gmail-in-production-the-right-way-24ab" target="_blank">how to send email with django and gmail</a>
-<br>
-
-Within the env.py file, at the bottom two lines, you have to insert you email address and password, just look below:
-
-![image](https://user-images.githubusercontent.com/72948843/182467606-e6d25616-caf0-4b54-8bcf-abf559771028.png)
-
-Now with this done, you can now send emails in development and deployment.
- (Note there is a code at the bottom of the Development Django Email Settings, run this in the command line to check your emails send.)
-
-[Back to Top](<#contents>)
 
 ## Credits
 
