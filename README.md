@@ -534,15 +534,50 @@ lastly but not least, we need to add the pages to the facebook links within our 
 
 ![image](https://user-images.githubusercontent.com/72948843/205509648-7574c2ad-e703-4f5a-93fc-19ccd36739e8.png)
 
+To generate a larger awareness of our social media presence, I added a larger link to our facebook page so that it attracts the eye of any visiting site users.
+
+![image](https://user-images.githubusercontent.com/72948843/205509961-8ea9e613-b7a0-483f-a166-55eca4607033.png)
+
 [Back to Top](<#web-marketing>)
 
 <hr>
 
 ### Email Marketing
 
-Next We want to take advantage of email marketing to boost brand awareness of the company. To do this we use mailchimp.
+Next We want to take advantage of email marketing to boost brand awareness of the company. To do this, I used mailchimp. so firstly i created an account and once that has been set up I can show below how Email marketing was employed in this website.
+
+click on the create button on the left of the dropdown menu.
+
+![image](https://user-images.githubusercontent.com/72948843/205510647-f0950de2-73c3-4dbd-b016-623dbe033793.png)
+
+first in the menu you will see a list of options... click on the email link in the menu.
+
+![image](https://user-images.githubusercontent.com/72948843/205510697-07b56f52-914a-4f6f-9d7f-ae849650c1cc.png)
+
+now for Airsoft Workshop, I have already designed my footer in mind with a place to have an embedded sign up form... so I will select the embedded form option of the three.
+
+![image](https://user-images.githubusercontent.com/72948843/205510574-f25b8f0e-2f21-47b8-9463-bce73ce20c3e.png)
+
+with the first step, it gives us a list of options of what we wish to add to this embedded form. I only want the email address, so i just progressed to the next step.
+
+![image](https://user-images.githubusercontent.com/72948843/205511032-3390eff6-3b40-4556-ba5d-f110f52ff0c8.png)
+
+Now the form is ready... I can copy this code and add it to the footer of our website. it contains some javascript so we will need to add this code in the js script tags in the base.html of our website too.
+
+![image](https://user-images.githubusercontent.com/72948843/205511156-21778c5f-f331-40f2-a5bd-cb1cbde92766.png)
+
+with this code, you can now implement it and style it how you wish, after some CSS alterations this is how my final embedded form looks...
+
+![image](https://user-images.githubusercontent.com/72948843/205519068-0048a022-0d26-4673-b0b9-ec4a382b2970.png)
+
+just a quick check to see if it worked... I'll go to Mailchimp and check if my test email address went through...
+
+![image](https://user-images.githubusercontent.com/72948843/205519366-662230c5-f455-4ec2-a379-214333979960.png)
+
+Yes, success. After sending a fake email via the form, I can see the email address has been added to my list of contacts. From here, as the business grows and more people sign up, Airsoft Workshop can target the interested potential customers with special offers or newsletters to try and grab their attention and encourage sales.
 
 <!-- Display in form of a picture from the PDF within Excel file i created -->
+
 [Back to Top](<#web-marketing>)
 
 
