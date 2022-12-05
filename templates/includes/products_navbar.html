@@ -6,7 +6,7 @@
     <div class="collapse" id="productNavbar">
         <ul class="navbar-nav mr-auto">
             <li class="md-device-products-link text-secondary p-1">
-                Refine By: <a class="nav-link clear-all-link" href="{% url 'products' %}">clear all x</span></a>
+                Refine By: <a class="nav-link clear-all-link" href="{% url 'products' %}">clear all x</a>
             </li>
             <li class="nav-item">
                 <a class="md-device-products-link p-0" href="{% url 'products' %}">All Products</a>
@@ -50,14 +50,14 @@
         <div class="container">
             <div class="row">
                 <div class="col-5 g-0 text-start">
-                    <li class="list-unstyled text-secondary pt-3">Refine by:</li>
+                    <div class="list-unstyled text-secondary pt-3">Refine by:</div>
                 </div>
                 <div class="col-7 g-0 text-end">
-                    <li class="list-unstyled text-secondary pt-3"><a class="clear-all-link" href="{% url 'products' %}">clear all x</a></li>
+                    <div class="list-unstyled text-secondary pt-3"><a class="clear-all-link" href="{% url 'products' %}">clear all x</a></div>
                 </div>
             </div>
         </div>
-        <div id="productsNavbar" class="">
+        <div id="productsNavbar">
             <ul class=" navbar-nav list-unstyled">
                 <li><a class="navbar-item side-navbar-link" href="{% url 'products' %}">All Products</a></li>
                 <li><a class="side-navbar-link" href="{% url 'products' %}?category=Batteries">Batteries</a></li>
@@ -66,10 +66,10 @@
                 <li><a class="side-navbar-link" href="{% url 'products' %}?category=Patches">Patches</a></li>
                 <!-- Brand dropdown to go here -->
                 <li class="nav-item dropdown">
-                    <a class="side-navbar-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    <a class="side-navbar-link dropdown-toggle" id="navbarDropdown2" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                         Filter by Brand
                     </a>
-                    <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdown">
+                    <ul class="dropdown-menu text-center" aria-labelledby="navbarDropdown2">
                         {% for brand in current_brands %}
                         <li><a class="dropdown-item" href="{% url 'products' %}?brand={{ brand.name }}">{{ brand.friendly_name }}</a></li>
                         {% endfor %}

@@ -44,11 +44,11 @@ HTML Validation Image... Below are the results of the Validation of the code tha
 
 ### Paint Services HTML Validation
 
+![image](https://user-images.githubusercontent.com/72948843/205752534-96813364-dde5-465d-afd4-7c68b391a00e.png)
 
+### Tech Services HTML Validation
 
-### Paint Services HTML Validation
-
-
+![image](https://user-images.githubusercontent.com/72948843/205752657-0a1655ba-ecd4-437d-b352-4ba78b792b5a.png)
 
 
 [Back to Top](<#contents>)

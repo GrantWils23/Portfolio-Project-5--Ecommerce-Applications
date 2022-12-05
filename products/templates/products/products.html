@@ -120,7 +120,7 @@
         <div class="row g-0 justify-content-center logo-font">
             <!--Pagination code-->
             <div class="pagination fs-pag col-12 justify-content-center mt-2">
-                <span class="page-item border-1 rounded-1 text-decoration-none ">
+                <div class="page-item border-1 rounded-1 text-decoration-none ">
                     {% if page_obj.has_previous %}
                     <a class="page-link-success text-decoration-none" href="?page=1{% if search_term %}&q={{ search_term }}{% endif %}{% if selected_category %}&category={{ selected_category}}{% endif %}{% if selected_brand %}&brand={{ selected_brand }}{% endif %}{% if sort %}&sort={{ sort }}{% endif %}{% if direction %}&direction={{ direction }}{% endif %}"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
                     <a class="page-link-success text-decoration-none" href="?page={{ page_obj.previous_page_number }}{% if search_term %}&q={{ search_term }}{% endif %}{% if selected_category %}&category={{ selected_category}}{% endif %}{% if selected_brand %}&brand={{ selected_brand }}{% endif %}{% if sort %}&sort={{ sort }}{% endif %}{% if direction %}&direction={{ direction }}{% endif %}">back</a>
@@ -132,22 +132,21 @@
 
                     {% for i in page_obj.paginator.page_range %}
                     {% if page_obj.number == i %}
-                    <span><a class="text-secondary text-decoration-none">&nbsp{{ i }}</span>
+                    <span><a class="text-secondary text-decoration-none">&nbsp;{{ i }}</a></span>
                     {% elif i > page_obj.number|add:'-3' and i < page_obj.number|add:'3' %}
-                    <span><a class="page-link-success text-decoration-none" href="?page={{ i }}{% if search_term %}&q={{ search_term }}{% endif %}{% if selected_category %}&category={{ selected_category}}{% endif %}{% if selected_brand %}&brand={{ selected_brand }}{% endif %}{% if sort %}&sort={{ sort }}{% endif %}{% if direction %}&direction={{ direction }}{% endif %}">&nbsp{{ i }}</a></span>
+                    <span><a class="page-link-success text-decoration-none" href="?page={{ i }}{% if search_term %}&q={{ search_term }}{% endif %}{% if selected_category %}&category={{ selected_category}}{% endif %}{% if selected_brand %}&brand={{ selected_brand }}{% endif %}{% if sort %}&sort={{ sort }}{% endif %}{% if direction %}&direction={{ direction }}{% endif %}">&nbsp;{{ i }}</a></span>
                     {% endif %}
                     {% endfor %}
 
                     {% if page_obj.paginator.num_pages > page_obj.number|add:'2' %}
-                    <a class="page-link-success text-decoration-none" href="?page={{ page_obj.number|add:'3' }}{% if search_term %}&q={{ search_term }}{% endif %}{% if selected_category %}&category={{ selected_category}}{% endif %}{% if selected_brand %}&brand={{ selected_brand }}{% endif %}{% if sort %}&sort={{ sort }}{% endif %}{% if direction %}&direction={{ direction }}{% endif %}">&nbsp&hellip;</a>
+                    <a class="page-link-success text-decoration-none" href="?page={{ page_obj.number|add:'3' }}{% if search_term %}&q={{ search_term }}{% endif %}{% if selected_category %}&category={{ selected_category}}{% endif %}{% if selected_brand %}&brand={{ selected_brand }}{% endif %}{% if sort %}&sort={{ sort }}{% endif %}{% if direction %}&direction={{ direction }}{% endif %}">&nbsp;&hellip;</a>
                     {% endif %}
 
                     {% if page_obj.has_next %}
-                    <!-- <a class="page-link-success text-decoration-none" href="?page={{ page_obj.next_page_number }}">&nbsp next</a> -->
-                    <a class="page-link-success text-decoration-none" href="?page={{ page_obj.next_page_number }}{% if search_term %}&q={{ search_term }}{% endif %}{% if selected_category %}&category={{ selected_category}}{% endif %}{% if selected_brand %}&brand={{ selected_brand }}{% endif %}{% if sort %}&sort={{ sort }}{% endif %}{% if direction %}&direction={{ direction }}{% endif %}">&nbsp next</a>
-                    <a class="page-link-success text-decoration-none" href="?page={{ page_obj.paginator.num_pages }}{% if search_term %}&q={{ search_term }}{% endif %}{% if selected_category %}&category={{ selected_category}}{% endif %}{% if selected_brand %}&brand={{ selected_brand }}{% endif %}{% if sort %}&sort={{ sort }}{% endif %}{% if direction %}&direction={{ direction }}{% endif %}">&nbsp<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                    <a class="page-link-success text-decoration-none" href="?page={{ page_obj.next_page_number }}{% if search_term %}&q={{ search_term }}{% endif %}{% if selected_category %}&category={{ selected_category}}{% endif %}{% if selected_brand %}&brand={{ selected_brand }}{% endif %}{% if sort %}&sort={{ sort }}{% endif %}{% if direction %}&direction={{ direction }}{% endif %}">&nbsp; next</a>
+                    <a class="page-link-success text-decoration-none" href="?page={{ page_obj.paginator.num_pages }}{% if search_term %}&q={{ search_term }}{% endif %}{% if selected_category %}&category={{ selected_category}}{% endif %}{% if selected_brand %}&brand={{ selected_brand }}{% endif %}{% if sort %}&sort={{ sort }}{% endif %}{% if direction %}&direction={{ direction }}{% endif %}">&nbsp;<i class="fa fa-chevron-right" aria-hidden="true"></i></a>
                     {% endif %}
-                </span>
+                </div>
             </div>
         </div>
     </div>
@@ -163,13 +162,13 @@
 
 {% block postloadjs %}
 {{ block.super }}
-<script type="text/javascript">
+<script>
     $('.btt-link').click(function(e) {
         window.scrollTo(0, 0)
     })
 </script>
 
-<script type="text/javascript">
+<script>
     $('#sort-selector').change(function() {
         var selector = $(this);
         var currentUrl = new URL(window.location);
