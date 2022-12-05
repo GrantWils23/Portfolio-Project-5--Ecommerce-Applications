@@ -81,7 +81,8 @@
                     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
                         <span class="header-btn-colour">
                             <i class="fas fa-solid fa-bars"></i>
-                            <p class="m-0">menu</p>
+                            <br>
+                            menu
                         </span>
                     </button>
                 </div>
@@ -187,14 +188,14 @@
     {% endblock %}
 
     {% block postloadjs %}
-    <script type="text/javascript">
+    <script>
         $(document).ready(function() {
             $(".toast").toast('show');
         });
     </script>
     <!-- Mailchimp javascript -->
-    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
-    <script type='text/javascript'>
+    <script src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+    <script>
         (function($) {
             window.fnames = new Array();
             window.ftypes = new Array();
