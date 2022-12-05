@@ -40,7 +40,7 @@
                     <legend>{{ form.camo_pattern.label }}</legend>
                     <div class="col-12 text-center justify-content-center radio-bar m-1">
                         {% for camo in camo_pattern %}
-                        <label for="for=id_camo_pattern_{{camo.id}}" class="text-center nav-link contact-icons inline-flex green-on-hov m-3">
+                        <label for="id_camo_pattern_{{camo.id}}" class="text-center nav-link contact-icons inline-flex green-on-hov m-3">
                             {{ camo.friendly_name }}
                             <input id="id_camo_pattern_{{camo.id}}" name="camo_pattern" type="radio" value="{{camo.id}}" required>
                             <br>
@@ -57,7 +57,7 @@
                     <legend>{{ form.weapon_system.label }}</legend>
                     <div class="col-12 text-center justify-content-center radio-bar m-1">
                         {% for weapon in weapon_sys %}
-                        <label for="for=id_weapon_system_{{weapon.id}}" class="text-center nav-link contact-icons inline-flex green-on-hov m-3">
+                        <label for="id_weapon_system_{{weapon.id}}" class="text-center nav-link contact-icons inline-flex green-on-hov m-3">
                             {{ weapon.friendly_name }}
                             <input id="id_weapon_system_{{weapon.id}}" name="weapon_system" type="radio" value="{{weapon.id}}" required>
                             <br>

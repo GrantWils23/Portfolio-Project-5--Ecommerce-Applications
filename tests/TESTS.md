@@ -36,8 +36,17 @@ HTML Validation Image... Below are the results of the Validation of the code tha
 <p>My HTML Code was directly inputted into the validator from the URI and the results have been recorded below. </p>
 
 ### Home HTML Validation
+
 ![image](https://user-images.githubusercontent.com/72948843/205744028-443aa29b-4b4c-4c0e-ae43-e616f515bf1e.png)
 ### Services Page HTML Validation
+
+![image](https://user-images.githubusercontent.com/72948843/205750877-595645b0-44e9-4dd0-b6ff-363ed6d3469d.png)
+
+### Paint Services HTML Validation
+
+
+
+### Paint Services HTML Validation
 
 
 

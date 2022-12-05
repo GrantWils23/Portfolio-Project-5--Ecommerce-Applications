@@ -38,7 +38,7 @@
                         <legend>{{ form.weapon_platform.label }}</legend>
                         <div class="col-12 text-center justify-content-center radio-bar m-1">
                             {% for plat in weapon_plat %}
-                            <label for="for=id_weapon_platform_{{plat.id}}" class="text-center nav-link contact-icons inline-flex green-on-hov m-3">
+                            <label for="id_weapon_platform_{{plat.id}}" class="text-center nav-link contact-icons inline-flex green-on-hov m-3">
                                 {{ plat.friendly_name }}
                                 <input id="id_weapon_platform_{{plat.id}}" name="weapon_platform" type="radio" value="{{plat.id}}" required>
                                 <br>
@@ -55,7 +55,7 @@
                         <legend>{{ form.weapon_system.label }}</legend>
                         <div class="col-12 text-center justify-content-center radio-bar m-1">
                             {% for weapon in weapon_sys %}
-                            <label for="for=id_weapon_system_{{weapon.id}}" class="text-center nav-link contact-icons inline-flex green-on-hov m-3">
+                            <label for="id_weapon_system_{{weapon.id}}" class="text-center nav-link contact-icons inline-flex green-on-hov m-3">
                                 {{ weapon.friendly_name }}
                                 <input id="id_weapon_system_{{weapon.id}}" name="weapon_system" type="radio" value="{{weapon.id}}" required>
                                 <br>
