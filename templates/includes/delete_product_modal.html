@@ -1,10 +1,10 @@
 {% for product in page_obj %}
 <!-- Delete Modal -->
-<div class="modal fade" id="deleteModal{{product.id}}" tabindex="-1" aria-labelledby="deleteModal{{product.id}}Label" aria-hidden="true">
+<div class="modal fade" id="DeleteProductModal{{product.id}}" tabindex="-1" aria-labelledby="DeleteProductModal{{product.id}}Label" aria-hidden="true">
     <div class="modal-dialog tertiary-font">
         <div class="modal-content bg-secondary">
             <div class="modal-header">
-                <h1 class="modal-title fs-5" id="DeleteModal{{product.id}}Label"><strong>Warning</strong></h1>
+                <h1 class="modal-title fs-5" id="DeleteProductModal{{product.id}}Label"><strong>Warning</strong></h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">

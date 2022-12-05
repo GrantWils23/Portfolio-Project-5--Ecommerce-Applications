@@ -46,7 +46,7 @@
                 <br>
                 <small class="ml-3">
                     <a class="text-decoration-none blue-on-hov" href="{% url 'edit_product' product.id %}">Edit</a> |
-                    <span type="button" class="text-danger red-on-hov" data-bs-toggle="modal" data-bs-target="#deleteModal{{product.id}}">Delete</span>
+                    <span type="button" class="text-danger red-on-hov" data-bs-toggle="modal" data-bs-target="#DeleteProductModal{{product.id}}">Delete</span>
                 </small>
                 {% endif %}
                 <br>
@@ -119,11 +119,11 @@
 <div class="pushdown-small"></div>
 
 <!-- Delete Modal -->
-<div class="modal fade" id="deleteModal{{product.id}}" tabindex="-1" aria-labelledby="deleteModal{{product.id}}Label" aria-hidden="true">
+<div class="modal fade" id="DeleteProductModal{{product.id}}" tabindex="-1" aria-labelledby="DeleteProductModal{{product.id}}Label" aria-hidden="true">
     <div class="modal-dialog tertiary-font">
         <div class="modal-content bg-secondary">
             <div class="modal-header">
-                <h1 class="modal-title fs-5" id="DeleteModal{{product.id}}Label"><strong>Warning</strong></h1>
+                <h1 class="modal-title fs-5" id="DeleteProductModal{{product.id}}Label"><strong>Warning</strong></h1>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
@@ -131,7 +131,7 @@
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancel</button>
-                <button type="button" class="btn btn-danger"><a class="text-white text-decoration-none" href="{% url 'delete_product' product.id %}">Delete</a></button>
+                <a class="btn btn-danger text-white text-decoration-none" href="{% url 'delete_product' product.id %}">Delete</a>
             </div>
         </div>
     </div>
