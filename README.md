@@ -396,20 +396,23 @@ The website boasts a user profile panel and registered users have access to a mu
 The Admin Controls are where the store owner has additional functionality outside a normal registered user. here the admin has control on product management. This can be navigated to via the offscreen canvas dropdown menu and via the footer, for easy of access. The admin views contains a tracking orders system where they can check orders placed and form submissions regarding the requested paint jobs and tech works. also the admin can add more products and related product details. Also additional new delivery methods can be added to the store, if the store admin wishes to add at a later date.
 
 - Admin Control Panel
-![image](https://user-images.githubusercontent.com/72948843/204616495-2764ccf1-5a08-471a-b08c-11a07279fe7d.png)
+
+![image](https://user-images.githubusercontent.com/72948843/205621092-b00d59d5-67b6-43cb-92aa-e8541d9ddac2.png)
 <br>
 
 - Admin orders display
+
 ![image](https://user-images.githubusercontent.com/72948843/204621052-41277821-7a00-49d1-9cf0-6d5bf49cf755.png)
 <br>
 
 - Admin Paint Quotes display
+
 ![image](https://user-images.githubusercontent.com/72948843/204622361-d970b22a-8088-45fb-ba77-3f23334b2c49.png)
 <br>
 
 - Add products page
 
-![image](https://user-images.githubusercontent.com/72948843/204622145-ac8ee072-a751-41c5-8b9d-8506dba066a8.png)
+![image](https://user-images.githubusercontent.com/72948843/205621285-95b28285-86e7-419c-9242-21a2e9846142.png)
 <br>
 
 - Delete pop-up alert
