@@ -5,12 +5,13 @@
 
 <p>The Idea for this website came from my hobby. I am an airsofter and it is my biggest passion outside work. I got really envolved in the sport and have always looked at the idea of working more closely within the airsoft community and would like to provide a unique, bespoke service that offers spray painting, camoflaging of Realistic Imitation Firearms (RIFs). When i speak with fellow airsofters they always would like a way to stand out from the crowd and have unique equipment and that is where the airsoft workshop comes into play. from selling consumables and to offering high-end services such as maintainance and repairs.</p>
 
-click here to go to the deployed website: <a href="https://airsoft-workshop.herokuapp.com/" target="_blank"><b><i>"Airsoft Workshop"</i></b></a> 
+click here to go to the deployed website: <a href="https://airsoft-workshop.herokuapp.com/" target="_blank"><b><i>"Airsoft Workshop"</i></b></a>
 <!-- Change HREF HERE -->
 <br><br>
 
-<!-- Image tags here... examples below of old tag -->
-<!-- ![image](https://user-images.githubusercontent.com/72948843/181935137-008ff294-97f7-412c-96a5-cb3f4b4dd023.png) -->
+![image](https://user-images.githubusercontent.com/72948843/205629357-1a4f2095-590a-47c1-b1c9-f8f89eba4c2f.png)
+
+<br>
 
 # Contents
 
