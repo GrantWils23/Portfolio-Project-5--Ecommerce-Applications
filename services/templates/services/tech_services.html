@@ -3,7 +3,6 @@
 
 
 {% block page_header %}
-<!-- Page Header-->
 <div class="container-fluid">
     <div class="row g-0">
         <div class="col-12 justify-content-center">
@@ -20,11 +19,7 @@
 
 {% block content %}
 
-
-<!-- Product Title -->
-
 <div class="container tertiary-font">
-    <!-- row-1 -->
     <div class="col-12 px-5 py-1">
         <div class="row">
             <div class="col-12">
@@ -33,7 +28,6 @@
             </div>
         </div>
         <div class="row">
-            <!-- <div class="col-12 col-sm-6 col-md-4 col-lg-3"> -->
             <div class="col-12">
                 <form method="POST" action="{% url 'tech_services' %}" id="tech-service-form" enctype="multipart/form-data">
                     {% csrf_token %}
@@ -44,22 +38,15 @@
                         <legend>{{ form.weapon_platform.label }}</legend>
                         <div class="col-12 text-center justify-content-center radio-bar m-1">
                             {% for plat in weapon_plat %}
-                            <label for="for=id_weapon_platform_{{plat.id}}">
-                                <!-- <div class="radio"> -->
-                                <div class="text-center nav-link contact-icons inline-flex green-on-hov m-3">
-                                    {{ plat.friendly_name }}
-
-
-                                    <input id="weapon_platform_{{plat.id}}" name="weapon_platform" type="radio" value="{{plat.id}}" required>
-                                    <div style="height:100px; width:100px;">
-                                        {% if plat.image %}
-                                        <img class="card-img-top" src="{{ MEDIA_URL }}{{ plat.image }}" alt="{{ plat.name }}">
-                                        {% else %}
-                                        <img class="card-img-top" src="{{ MEDIA_URL }}/noimage.png" alt="{{ plat.name }}">
-                                        {% endif %}
-                                    </div>
-                                </div>
-                                <!-- </div> -->
+                            <label for="for=id_weapon_platform_{{plat.id}}" class="text-center nav-link contact-icons inline-flex green-on-hov m-3">
+                                {{ plat.friendly_name }}
+                                <input id="id_weapon_platform_{{plat.id}}" name="weapon_platform" type="radio" value="{{plat.id}}" required>
+                                <br>
+                                {% if plat.image %}
+                                <img class="card-img-top" src="{{ MEDIA_URL }}{{ plat.image }}" alt="{{ plat.name }}" style="height:100px; width:100px;">
+                                {% else %}
+                                <img class="card-img-top" src="{{ MEDIA_URL }}/noimage.png" alt="{{ plat.name }}" style="height:100px; width:100px;">
+                                {% endif %}
                             </label>
                             {% endfor %}
                         </div>
@@ -68,22 +55,15 @@
                         <legend>{{ form.weapon_system.label }}</legend>
                         <div class="col-12 text-center justify-content-center radio-bar m-1">
                             {% for weapon in weapon_sys %}
-                            <label for="for=id_weapon_system_{{weapon.id}}">
-                                <!-- <div class="radio"> -->
-                                <div class="text-center nav-link contact-icons inline-flex green-on-hov m-3">
-                                    {{ weapon.friendly_name }}
-
-
-                                    <input id="weapon_system_{{weapon.id}}" name="weapon_system" type="radio" value="{{weapon.id}}" required>
-                                    <div style="height:100px; width:100px;">
-                                        {% if weapon.image %}
-                                        <img class="card-img-top" src="{{ MEDIA_URL }}{{ weapon.image }}" alt="{{ weapon.name }}">
-                                        {% else %}
-                                        <img class="card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="{{ weapon.name }}">
-                                        {% endif %}
-                                    </div>
-                                </div>
-                                <!-- </div> -->
+                            <label for="for=id_weapon_system_{{weapon.id}}" class="text-center nav-link contact-icons inline-flex green-on-hov m-3">
+                                {{ weapon.friendly_name }}
+                                <input id="id_weapon_system_{{weapon.id}}" name="weapon_system" type="radio" value="{{weapon.id}}" required>
+                                <br>
+                                {% if weapon.image %}
+                                <img class="card-img-top" src="{{ MEDIA_URL }}{{ weapon.image }}" alt="{{ weapon.name }}" style="height:100px; width:100px;">
+                                {% else %}
+                                <img class="card-img-top" src="{{ MEDIA_URL }}noimage.png" alt="{{ weapon.name }}" style="height:100px; width:100px;">
+                                {% endif %}
                             </label>
                             {% endfor %}
                         </div>
@@ -94,10 +74,8 @@
                     <span><a href="{% url 'services' %}" class="btn btn-secondary m-2">Back to Services</a></span>
                 </form>
             </div>
-            <!-- </div> -->
         </div>
     </div>
-    <!-- row-1 end -->
 </div>
 <div class="pushdown-small"></div>
 
