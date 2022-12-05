@@ -320,7 +320,7 @@ The radio buttons in the form have images attached to them help. The images are 
 ## Checkout
 <br>
 <!-- Add later more content -->
-The checkout view informs the user of all the criteria required to complete the purchase, along with a small recap window of what the user is ordering. 
+The checkout view informs the user of all the criteria required to complete the purchase, along with a small recap window of what the user is ordering.
 
 Upon completion of an order, a confirmation email and are redirected to a success page where you can review your purchase and are prompted to head back into the store.
 
@@ -431,22 +431,29 @@ The Admin Controls are where the store owner has additional functionality outsid
 <br>
 <br>
 
-
 ## Input Validation and checking
 <!-- template from old project, change accordingly -->
 Validation of the form is implemented by checking before the document is submitted is valid to submit. This is achieved by multiple methods:
 <ul>
-    <li>To validate the phone number being entered into the form, django-phonenumber-field was used. It checks the input to see if it is a valid phone number and returns an error message if it is not valid upon submission.</li>
+    <li>To validate the phone number being entered into the form, django-phonenumber-field was used. It checks the input to see if it is a valid phone number and returns an error message if it is not valid upon submission. This inbuild validation was used on the profile, tech and paint services models but not the Order Model.
+    </li>
     <li>To validate the country field, django-countries were used. It checks whether the data entered into the field is entered correctly.</li>
 </ul>
+Using all the inbuild form validations helped create quick clean code without having to write many custom form validations.
 
-Incorrect data validation
+Incorrect data validations:
+
 ![image](https://user-images.githubusercontent.com/72948843/204623185-83b4fec9-9590-434b-8782-075cbe5569e8.png)
+![image](https://user-images.githubusercontent.com/72948843/205713769-ea7e0e52-2adc-48ba-8c2e-cc125b4a0796.png)
+![image](https://user-images.githubusercontent.com/72948843/205713826-c36fcd4c-f741-4a4e-850c-3e0318dc3e7b.png)
+![image](https://user-images.githubusercontent.com/72948843/205713921-76eb0997-1774-4abf-af88-26a52235a379.png)
 
-Incorrect card details validation
+Incorrect card details validation:
+
 ![image](https://user-images.githubusercontent.com/72948843/204623529-64001769-df3a-4572-a7a5-6842e1315073.png)
 
-Missing field upon submitting validation
+Missing field upon submitting validation:
+
 ![image](https://user-images.githubusercontent.com/72948843/204623756-90d46dae-ab10-4f8c-9967-9b8235ceedc6.png)
 
 [Back to Top](<#contents>)

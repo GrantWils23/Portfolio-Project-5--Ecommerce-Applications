@@ -29,7 +29,7 @@ To test my project, I have completed several test procedures and from a wide arr
 
 ## Code Validation
 
-<p>BeBeauty has been validated by using online validation tools W3C HTML Validator, W3C CSS Validator, JSHint JavaScript Validator and the PEP8 Online Validator.
+<p>Airsoft Workshop has been validated by using online validation tools W3C HTML Validator, W3C CSS Validator, JSHint JavaScript Validator and the PEP8 Online Validator.
 HTML Validation Image... Below are the results of the Validation of the code that I passed through the validator. </p>
 
 ### HTML Validation
@@ -530,11 +530,8 @@ Validation of the form is implemented by checking before the document is submitt
 ## Bugs
 
 ### Solved Bugs
-<ul>
-    <li>I had found a bug whereby if I booked an appointment on the same day as someone else has already done with the same time slot, I would get multiple bookings that match and it would not be possible for the Beautician to attend both and would require manual checking.
-    To get over this problem, I put a constraint into the database stating that a booking cannot be placed if the booking requested with these parameters already exists. </li>
-    <li> A bug was found in the admin booking view which was when the submit button was hit, a 500 error handler popped up. I resolved the issue by changing the form to take in a new form model and template which gave the admin greater control of the booking.</li>
-</ul>
+I had found a bug whereby if a user placed an order as a unregistered user, the code in my webhookhandler.py would not be able to find the order that was generated at the checkout view. This in turn created a double booking in the database, one for the frist correct order that had the right value charged by stripe, the second order will be the incorrect order with the wrong order information being inserted into the order with incorrect information regarding the grand total paid and shipping method cost changing and then the customer getting the wrong information was sent to them on the email.<br><br>After lots of time spent trying to find the fault for this, I had found that it was the django-phonenumber-field used in the model that was causing the problem. during the order process, it would not validate correctly, the order would be created before the forms self-validation would take place and it would cause the site to crash. Therefore decided to remove this from the order model and just keep it in the user profile form. That way, if the user sets up their profile first the form will validate the number here and it will be correct when the saved data gets used at checkout. if the user updates the profile, if for ever reason the telephone number is wrong, the form will prompt the user to make sure it is a valid telephone number.
+
 
 [Back to Top](<#contents>)
 <br>
