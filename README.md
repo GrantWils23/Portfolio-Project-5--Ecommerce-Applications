@@ -5,7 +5,7 @@
 
 <p>The Idea for this website came from my hobby. I am an airsofter and it is my biggest passion outside work. I got really envolved in the sport and have always looked at the idea of working more closely within the airsoft community and would like to provide a unique, bespoke service that offers spray painting, camoflaging of Realistic Imitation Firearms (RIFs). When i speak with fellow airsofters they always would like a way to stand out from the crowd and have unique equipment and that is where the airsoft workshop comes into play. from selling consumables and to offering high-end services such as maintainance and repairs.</p>
 
-click here to go to the deployed website: <a href="" target="_blank"><b><i>"The Airsoft Workshop"</i></b></a> 
+click here to go to the deployed website: <a href="https://airsoft-workshop.herokuapp.com/" target="_blank"><b><i>"Airsoft Workshop"</i></b></a> 
 <!-- Change HREF HERE -->
 <br><br>
 
@@ -878,8 +878,8 @@ Next we need to add a place to store our media and static files for the applicat
 <!-- CONTINUE TOMORROW the pdfs -->
 <!-- --------------------------------------------------------------------- -->
 <ol>
-<li>Setting up a S3 Bucket: <a href="" taret="_blank">AWS-S3-Bucket setup</a></li>
-<li>Setting up the IAM controls: <a href="" taret="_blank">AWS-IAM setup</a></li>
+<li>Setting up a S3 Bucket: <a href="https://github.com/GrantWils23/Portfolio-Project-5--Ecommerce-Applications/blob/main/assets/aws-s3-bucket-services-setup.pdf" taret="_blank">AWS-S3-Bucket setup</a></li>
+<li>Setting up the IAM controls: <a href="https://github.com/GrantWils23/Portfolio-Project-5--Ecommerce-Applications/blob/main/assets/aws-iam-setup.pdf" taret="_blank">AWS-IAM setup</a></li>
 </ol>
 
 Django to S3...
@@ -913,12 +913,7 @@ Now make sure the variables are added to your heroku apps config vars. add commi
 
 The next thing we need to do is add our media files from the media folder into the S3 bucket... This will allow us to then see the images... follow the steps in the pdf below:
 
-<!-- ------------------------------------------------------------------------------------------------------------------------------------- -->
-<!-- --------------------------------------------------------------------- -->
-<!-- CONTINUE TOMORROW the pdf for chaching media files -->
-<!-- --------------------------------------------------------------------- -->
-
-- <a href="">chaching media files</a>
+- <a href="https://github.com/GrantWils23/Portfolio-Project-5--Ecommerce-Applications/blob/main/assets/caching-media-files.pdf" taret="_blank">>chaching media files</a>
 
 Lastly we need to get stripe working...
 
