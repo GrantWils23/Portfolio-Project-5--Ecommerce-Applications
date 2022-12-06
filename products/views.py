@@ -5,7 +5,6 @@ from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.db.models.functions import Lower
 
-from profiles.models import UserProfile
 from .models import Product, Category, Brand
 from .forms import ProductForm, CategoryForm, BrandForm
 
@@ -73,7 +72,7 @@ def all_products(request):
 
             query_name = Q(name__icontains=query)
             query_description = Q(description__icontains=query)
-            
+
             queries = query_name | query_description
             products = products.filter(queries)
             paginator = Paginator(products, 12)

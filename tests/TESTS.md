@@ -1,7 +1,6 @@
-TEMPLATE FROM LAST PROJECT - update along the way
+<h1>TEMPLATE FROM LAST PROJECT - update along the way</h1>
 
 # Testing
-
 
 To test my project, I have completed several test procedures and from a wide array of different tests. It is important to test as much of the code as possible. So please scroll down and read the various testing procedures and how I solved some problems with bugs in my code.
 
@@ -29,11 +28,12 @@ To test my project, I have completed several test procedures and from a wide arr
 
 # Code Validation
 
-<p>Airsoft Workshop has been validated by using online validation tools W3C HTML Validator, W3C CSS Validator, JSHint JavaScript Validator and the PEP8 Online Validator.
-HTML Validation Image... Below are the results of the Validation of the code that I passed through the validator. </p>
+Airsoft Workshop has been validated by using online validation tools W3C HTML Validator, W3C CSS Validator, JSHint JavaScript Validator and the PEP8 Online Validator.
+HTML Validation Image... Below are the results of the Validation of the code that I passed through the validator.
 
 ## HTML Validation
-<p>My HTML Code was directly inputted into the validator from the URI and the results have been recorded below. </p>
+
+My HTML Code was directly inputted into the validator from the URI and the results have been recorded below.
 
 ### Home HTML Validation
 
@@ -200,19 +200,24 @@ Due to the way the card payment element is created from the stripe, it creates m
 <br>
 
 ## CSS Validation
-<p>My CSS Code was directly inputted into the validator and passed with 0 errors. </p>
+
+My CSS Code was directly inputted into the validator and passed with 0 errors.
 
 ### Base.CSS Validation
 
+![image](https://user-images.githubusercontent.com/72948843/205928333-0fc14daf-d6db-4b25-b279-cc6431c8c491.png)
 
 ### Checkout.CSS Validation
+
 ![image](https://user-images.githubusercontent.com/72948843/205923295-5c3ce408-c335-405c-93c6-fcc0a24fb34a.png)
 
 [Back to Top](<#contents>)
+
 <br>
 
 ### JS Validation
-<p>The JS Code in my program is attached directly into the HTML as the code sample is so small, I considered it to not be worth putting it directly in an assets folder". My JS Code was directly inputted into the validator and returned all clear. The result of the test is recorded below:</p>
+
+The JS Code in my program is attached directly into the HTML as the code sample is so small, I considered it to not be worth putting it directly in an assets folder". My JS Code was directly inputted into the validator and returned all clear. The result of the test is recorded below:
 
 ![image](https://user-images.githubusercontent.com/72948843/182032469-c206f3c8-5da3-40fd-b249-2f21a02e4e3b.png)
 
@@ -220,46 +225,14 @@ Due to the way the card payment element is created from the stripe, it creates m
 <br>
 
 ### Python Validation
-<p>My Python Code was directly inputted into the validator and checked for errors. The results of the python validations are inputted below:</p>
+
+My Python Code was directly checked for errors inside the terminal using the command ``` python3 -m flake8 ```. 
+
 
 ### PEP* Validator (bebeauty/urls.py)
+
 ![image](https://user-images.githubusercontent.com/72948843/182028023-0e2a53bb-713a-447e-acd6-15c3cf93e23f.png)
 
-### PEP8 Validator (booking/admin.py)
-![image](https://user-images.githubusercontent.com/72948843/182024181-12402a6d-fdd6-4c14-8b7d-235b4e1457a5.png)
-
-### PEP8 Validator (booking/app.py)
-![image](https://user-images.githubusercontent.com/72948843/182024441-d9cfdc1e-a01e-4ad8-91d2-1c8bf5b08544.png)
-
-### PEP8 Validator (booking/filters.py)
-![image](https://user-images.githubusercontent.com/72948843/182024529-7d18b539-56d3-4490-8a14-3bb9320727d6.png)
-
-### PEP8 Validator (booking/forms.py)
-![image](https://user-images.githubusercontent.com/72948843/182027783-a6b856b7-9547-4427-80ec-aa0b8e347a13.png)
-
-### PEP8 Validator (booking/models.py)
-![image](https://user-images.githubusercontent.com/72948843/182029799-eab2029d-023a-4ddf-9604-3abaaafad1dd.png)
-
-### PEP8 Validator (booking/tests.py)
-![image](https://user-images.githubusercontent.com/72948843/182031319-b7b1dfa7-ff64-467b-b05f-1a5053f9295a.png)
-
-### PEP8 Validator (booking/views.py)
-![image](https://user-images.githubusercontent.com/72948843/182029726-bc9d50c8-f3b2-4663-9128-935b1430dee7.png)
-
-### PEP8 Validator (treatment/admin.py)
-![image](https://user-images.githubusercontent.com/72948843/182031408-f4f677e8-8511-44dd-9b57-09d12ee61b6a.png)
-
-### PEP8 Validator (treatment/apps.py)
-![image](https://user-images.githubusercontent.com/72948843/182031472-651e7e3d-d6fd-47c8-b1d9-b6d097ddf3a7.png)
-
-### PEP8 Validator (treatment/models.py)
-![image](https://user-images.githubusercontent.com/72948843/182031594-50750d42-a116-47dd-9ca8-1d9e13c19f57.png)
-
-### PEP8 Validator (treatment/tests.py)
-![image](https://user-images.githubusercontent.com/72948843/182031639-9d816990-a1d3-4a29-85f2-326539a8054c.png)
-
-### PEP8 Validator (treatment/views.py)
-![image](https://user-images.githubusercontent.com/72948843/182031697-e8fe192b-758e-4cbd-a074-f87b15017984.png)
 
 [Back to Top](<#contents>)
 <br>

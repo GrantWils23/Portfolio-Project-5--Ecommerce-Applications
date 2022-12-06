@@ -1,5 +1,4 @@
 from django.db import models
-from django.db.models import Sum
 from phonenumber_field.modelfields import PhoneNumberField
 
 from profiles.models import UserProfile
@@ -74,7 +73,7 @@ class PaintService(models.Model):
         max_digits=10, decimal_places=2, null=False, default=0)
 
     def __str__(self):
-        return (f"paint service")
+        return "Paint service"
 
     def calculate_estimate(self):
         """ return estimate price for admin """
@@ -105,7 +104,7 @@ class TechService(models.Model):
         max_digits=10, decimal_places=2, null=False, default=0)
 
     def __str__(self):
-        return f"paint service"
+        return "Tech service"
 
     def calculate_estimate(self):
         """ return estimate price for admin """

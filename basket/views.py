@@ -88,7 +88,6 @@ def remove_from_basket(request, item_id):
         product = get_object_or_404(Product, pk=item_id)
         basket = request.session.get('basket', {})
         # shopping basket reset back to standard shipping
-        delivery = request.session.get('delivery')
         if len(basket) == 1:
             request.session['delivery'] = str(3.50)
 

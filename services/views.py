@@ -54,8 +54,6 @@ def tech_services(request):
     profile = None
     if request.user.is_authenticated:
         profile = UserProfile.objects.get(user=request.user)
-        # Attach the user's profile to the quote
-        user_profile = profile
     else:
         profile = None
     print(profile)
@@ -103,8 +101,6 @@ def paint_services(request):
     print('before', profile)
     if request.user.is_authenticated:
         profile = UserProfile.objects.get(user=request.user)
-        # Attach the user's profile to the quote
-        user_profile = profile
         print('After if authenticated', profile)
     else:
         profile = None
