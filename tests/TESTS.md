@@ -199,10 +199,14 @@ Due to the way the card payment element is created from the stripe, it creates m
 [Back to Top](<#contents>)
 <br>
 
-### CSS Validation
+## CSS Validation
 <p>My CSS Code was directly inputted into the validator and passed with 0 errors. </p>
 
-![image](https://user-images.githubusercontent.com/72948843/182002563-5666610b-5862-496d-97ff-4e43759cc50d.png)
+### Base.CSS Validation
+
+
+### Checkout.CSS Validation
+![image](https://user-images.githubusercontent.com/72948843/205923295-5c3ce408-c335-405c-93c6-fcc0a24fb34a.png)
 
 [Back to Top](<#contents>)
 <br>

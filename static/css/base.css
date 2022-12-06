@@ -431,7 +431,6 @@ nav {
 .clear-all-link {
     text-decoration: none;
     padding: 6px 5px 6px 10px;
-    justify-content: baseline;
     font-size: 1rem;
     color: #6C757D;
     display: inline;

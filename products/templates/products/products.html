@@ -41,8 +41,8 @@
                     <!-- Category Filter Results -->
                     <div class="col-12 col-md-6 order-md-first">
                         <p class="text-muted mx-5 text-center text-sm-center text-md-start h5">
-                            {% if search_term or current_categories or current_sorting != 'None_None' %}
-                            <span><a class="product-filterdown-link" href="{% url 'products' %}">Products Home</a> {% for c in current_categories %} > <a class=" product-filterdown-link" href="{{ request.path }}?category={{ c.name }}">{{ c.friendly_name }}</a> {% endfor %} | </span>
+                            {% if search_term or current_categories or current_sorting != 'None_None' or selected_brand %}
+                            <span><a class="product-filterdown-link" href="{% url 'products' %}">Products Home</a> {% for c in current_categories %} > <a class=" product-filterdown-link" href="{{ request.path }}?category={{ c.name }}">{{ c.friendly_name }}</a> {% endfor %}{% if selected_brand %} > <a class=" product-filterdown-link" href="{{ request.path }}?brand={{ selected_brand }}">{{ selected_brand }}</a>{% endif %} | </span>
                             {% endif %}
                             {{ products|length }} Products{% if search_term %} found for <strong>"{{ search_term }}"</strong>{% endif %}
                         </p>

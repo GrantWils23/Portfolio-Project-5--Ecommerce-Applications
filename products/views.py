@@ -53,6 +53,7 @@ def all_products(request):
             paginator = Paginator(products, 12)
             page_number = request.GET.get('page')
             page_obj = paginator.get_page(page_number)
+            categories = Category.objects.filter(name__in=categories)
 
         if 'brand' in request.GET:
             brands = request.GET['brand'].split(',')
