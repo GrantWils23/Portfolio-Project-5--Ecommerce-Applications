@@ -217,9 +217,25 @@ My CSS Code was directly inputted into the validator and passed with 0 errors.
 
 ### JS Validation
 
-The JS Code in my program is attached directly into the HTML as the code sample is so small, I considered it to not be worth putting it directly in an assets folder". My JS Code was directly inputted into the validator and returned all clear. The result of the test is recorded below:
+The JS Code in my program appears across multiple files in the app, I have multiple script tags located at the bottom of many HTML templates in this project. I also had two dedicated javascript files, one located in a static folder in the checkout app, and the other in the profiles app. The checkout app contains the code for Stripe to work which is the only dedicated file that uses a lot of JS. The profiles javascript contains the code to use the countries field which is referenced across two pages in the website. To run checks on my code, I passed the code through JSHint which is a code validator for JS. In the product app, one of the javascript code was written in a HTML page. The results for the validations were also recorded.
 
-![image](https://user-images.githubusercontent.com/72948843/182032469-c206f3c8-5da3-40fd-b249-2f21a02e4e3b.png)
+Below I have recorded the results of my Javascript validations:
+
+* Checkout / stripe_elements.js JavaScript
+
+![image](https://user![image](https://user-images.githubusercontent.com/72948843/205941873-00980434-a11b-4bb1-bcf6-146dee65b090.png)
+
+* Profile / countryfield.js JavaScript
+
+![image](https://user-images.githubusercontent.com/72948843/205944883-4c534e6a-19ad-4995-947d-b5f30f357604.png)
+
+* Basket / basket.html JavaScript
+
+![image](https://user-images.githubusercontent.com/72948843/205946374-40e6a2bb-247e-40be-8554-995212ce953c.png)
+
+* Product / quantity_input_script.html
+
+![image](https://user-images.githubusercontent.com/72948843/205947913-f74f62c3-ee20-4d77-bfff-72eece8be004.png)
 
 [Back to Top](<#contents>)
 <br>
@@ -228,6 +244,8 @@ The JS Code in my program is attached directly into the HTML as the code sample 
 
 My Python Code was directly checked for errors inside the terminal using the command ``` python3 -m flake8 ```. 
 
+<!-- First image of testing -->
+![image](https://user-images.githubusercontent.com/72948843/205940759-63322ebd-bc3d-4940-a7c6-ef777d710a2a.png)
 
 ### PEP* Validator (bebeauty/urls.py)
 
