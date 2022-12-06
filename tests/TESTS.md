@@ -65,38 +65,135 @@ HTML Validation Image... Below are the results of the Validation of the code tha
 
 ### Basket Page HTML Validation
 
+![image](https://user-images.githubusercontent.com/72948843/205879868-5ddfe062-45a8-449f-813c-f7003a705dec.png)
+
+### Checkout Page HTML Validation
+
+This was validated using manual input from the local gitpod window, as the direct URI would not work due to the nature of the checkout page.
+
+Due to the way the card payment element is created from the stripe, it creates multiple errors during the test, so I omitted the stripe element from the test procedure.
+
+![image](https://user-images.githubusercontent.com/72948843/205897146-adb258c5-7719-499b-a98e-20c4a985fedf.png)
+
+### Checkout Success Page HTML Validation
+
+![image](https://user-images.githubusercontent.com/72948843/205898442-bb53a07a-6541-4ef6-b611-d3d215bcafee.png)
+
 ### About Us Page HTML Validation
+
+![image](https://user-images.githubusercontent.com/72948843/205880330-342b275b-2887-471a-914b-25a887817aac.png)
 
 ### Contact Us Page HTML Validation
 
+![image](https://user-images.githubusercontent.com/72948843/205880549-d486d3e7-659b-45d8-98e4-e637fe7dec8c.png)
+
 ### FAQs Page HTML Validation
+
+![image](https://user-images.githubusercontent.com/72948843/205880760-7d950f58-7d36-4a28-94e7-63f3f52fb24c.png)
 
 ### Privacy Policy Page HTML Validation
 
+![image](https://user-images.githubusercontent.com/72948843/205881060-3a903db0-3c9f-45e2-872c-e73512958283.png)
+
 ### Sitemap Page HTML Validation
+
+![image](https://user-images.githubusercontent.com/72948843/205881353-9f83983a-8684-44c2-a475-ec5c2f172afc.png)
 
 ### Admin Controls Page HTML Validation
 
-<!-- ----------------- -->
+![image](https://user-images.githubusercontent.com/72948843/205881531-18d3d312-d484-4c17-81bc-092bdcaa4c59.png)
+
 ### Add Product Page HTML Validation
+
+![image](https://user-images.githubusercontent.com/72948843/205876704-cac482bf-50d6-4a26-a5af-28dd239ea801.png)
 
 ### Edit Product Page HTML Validation
 
+![image](https://user-images.githubusercontent.com/72948843/205879273-3e5b09b3-7e2d-43e8-9cfa-7929253396c5.png)
 
 ### Add Brand Page HTML Validation
 
+![image](https://user-images.githubusercontent.com/72948843/205882900-cce92d8d-53b0-42fb-b615-1379fdefb3f5.png)
+
 ### Edit Brand Page HTML Validation
 
+![image](https://user-images.githubusercontent.com/72948843/205883282-95e0c164-839d-494f-a0b7-a1057de084a9.png)
 
 ### Add Category Page HTML Validation
 
+![image](https://user-images.githubusercontent.com/72948843/205881814-2351264f-0265-4e8f-abc5-668f8a5f0cac.png)
+
 ### Edit Category Page HTML Validation
 
+![image](https://user-images.githubusercontent.com/72948843/205882622-becad10a-780b-4e46-b725-856afcab3079.png)
 
 ### Add Delivery_Method Page HTML Validation
 
+![image](https://user-images.githubusercontent.com/72948843/205883725-ca013fde-8189-4d4a-a18c-037c80abbc08.png)
+
 ### Edit Delivery_Method Page HTML Validation
 
+![image](https://user-images.githubusercontent.com/72948843/205884093-29986583-5a40-46da-bbb7-365107b8f958.png)
+
+### Profile Page HTML Validation
+
+![image](https://user-images.githubusercontent.com/72948843/205886436-5947c7b0-7731-4a5f-a514-a75ef764b956.png)
+
+### Edit Profile Page HTML Validation
+
+![image](https://user-images.githubusercontent.com/72948843/205886749-5c37fe49-0cd5-45ff-a73d-a6c0411d8e1b.png)
+
+### Change Password Profile Page HTML Validation
+
+![image](https://user-images.githubusercontent.com/72948843/205886915-e68e196f-902a-45dd-a73e-bc9590bb39cb.png)
+
+### Previous Order History Page HTML Validation
+
+![image](https://user-images.githubusercontent.com/72948843/205891400-725d994a-75d8-4b18-a7e7-d23eaecb1f1f.png)
+
+### Admin View Orders Page HTML Validation
+
+![image](https://user-images.githubusercontent.com/72948843/205899235-cd1fc4d8-0055-41ce-b80f-4e593bbde30e.png)
+
+### Admin View Specific Order Page HTML Validation
+
+![image](https://user-images.githubusercontent.com/72948843/205898765-41ac7a9e-2f89-45cd-aa5a-445a284c51d1.png)
+
+### Admin View Paint Quotes Page HTML Validation
+
+![image](https://user-images.githubusercontent.com/72948843/205899595-dd058d4a-4b86-43c4-b87c-d2ea7a2c0d0d.png)
+
+### Admin View Specific Paint Quote Page HTML Validation
+
+![image](https://user-images.githubusercontent.com/72948843/205899942-fafa4c20-0866-45e4-8f75-f6cc0e90455c.png)
+
+### Admin View Tech Quotes Page HTML Validation
+
+![image](https://user-images.githubusercontent.com/72948843/205900673-fe2ab80a-b56e-4f25-b5fd-97ea7e145ad6.png)
+
+### Admin View Specific Tech Quote Page HTML Validation
+
+![image](https://user-images.githubusercontent.com/72948843/205900468-bb7b8b9d-b270-42ef-b85a-06fae96b71ea.png)
+
+### Login Page HTML Validation
+
+![image](https://user-images.githubusercontent.com/72948843/205902738-a0846a31-2bfd-4505-9bf3-769e6f250751.png)
+
+### Register Page HTML Validation
+
+![image](https://user-images.githubusercontent.com/72948843/205901757-78036e5b-fe98-40a3-a14c-00e8eb77dbf0.png)
+
+### Confirm Email Page HTML Validation
+
+![image](https://user-images.githubusercontent.com/72948843/205901974-4d49d2ee-64a2-4d2b-8841-e43afaa41324.png)
+
+### Verify Email Page HTML Validation
+
+![image](https://user-images.githubusercontent.com/72948843/205902126-db08b3d4-1c45-429a-bf95-0fb5aff6d8d1.png)
+
+### Logout Page HTML Validation
+
+![image](https://user-images.githubusercontent.com/72948843/205901066-556e0129-7481-41d5-b62c-598bc54bfe0e.png)
 
 
 [Back to Top](<#contents>)

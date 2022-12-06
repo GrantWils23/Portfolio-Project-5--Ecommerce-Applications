@@ -10,19 +10,19 @@
             <hr>
             <br>
             <ul>
-                <li><a class="page-link-success" target="_blank" href="{% url 'home' %}" title="home">Home</a></li>
-                <li><a class="page-link-success" target="_blank" href="{% url 'services' %}" title="services">Services</a></li>
-                <li><a class="page-link-success" target="_blank" href="{% url 'products' %}" title="store">Store</a></li>
-                <li><a class="page-link-success" target="_blank" href="{% url 'paint_services' %}" title="paint_services">Paint Services</a></li>
-                <li><a class="page-link-success" target="_blank" href="{% url 'tech_services' %}" title="tech_services">Tech Services</a></li>
-                <li><a class="page-link-success" target="_blank" href="{% url 'about_us' %}" title="about_us">About Us</a></li>
-                <li><a class="page-link-success" target="_blank" href="{% url 'contact_us' %}" title="contact_us">Contact Us</a></li>
-                <li><a class="page-link-success" target="_blank" href="{% url 'faqs' %}" title="faqs">FAQs</a></li>
-                <li><a class="page-link-success" target="_blank" href="{% url 'privacy_policy' %}" title="privacy_policy">Privacy Policy</a></li>
-                <li><a class="page-link-success" target="_blank" href="{% url 'sitemap' %}" title="sitemap">Sitemap</a></li>
-                <li><a class="page-link-success" target="_blank" href="{% url 'profile' %}" title="user_profile">User Profile</a></li>
+                <li><a class="page-link-success" href="{% url 'home' %}" title="home">Home</a></li>
+                <li><a class="page-link-success" href="{% url 'services' %}" title="services">Services</a></li>
+                <li><a class="page-link-success" href="{% url 'products' %}" title="store">Store</a></li>
+                <li><a class="page-link-success" href="{% url 'paint_services' %}" title="paint_services">Paint Services</a></li>
+                <li><a class="page-link-success" href="{% url 'tech_services' %}" title="tech_services">Tech Services</a></li>
+                <li><a class="page-link-success" href="{% url 'about_us' %}" title="about_us">About Us</a></li>
+                <li><a class="page-link-success" href="{% url 'contact_us' %}" title="contact_us">Contact Us</a></li>
+                <li><a class="page-link-success" href="{% url 'faqs' %}" title="faqs">FAQs</a></li>
+                <li><a class="page-link-success" href="{% url 'privacy_policy' %}" title="privacy_policy">Privacy Policy</a></li>
+                <li><a class="page-link-success" href="{% url 'sitemap' %}" title="sitemap">Sitemap</a></li>
+                <li><a class="page-link-success" href="{% url 'profile' %}" title="user_profile">User Profile</a></li>
                 {% if request.user.is_superuser %}
-                <li><a class="page-link-success" target="_blank" href="{% url 'admin_controls' %}" title="admin_controls">Store Managment</a></li>
+                <li><a class="page-link-success" href="{% url 'admin_controls' %}" title="admin_controls">Store Managment</a></li>
                 {% endif %}
             </ul>
         </div>
