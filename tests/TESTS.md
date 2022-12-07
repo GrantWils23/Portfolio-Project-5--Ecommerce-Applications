@@ -312,7 +312,7 @@ To check the production levels against its performance, I used the Lighthouse te
 
 * Store page - PC view
 
-![image](https://user-images.githubusercontent.com/72948843/206162258-726070cc-2bc3-4469-9e93-dc808fb9e7e6.png)
+![image](https://user-images.githubusercontent.com/72948843/206163587-e6055f9a-59e8-41f1-babd-a20da6ef3048.png)
 
 * Store page - mobile view
 
@@ -330,173 +330,275 @@ To check the production levels against its performance, I used the Lighthouse te
 
 <!--  -->
 
-<li>SignOut page BeBeauty url - PC view</li>
+* Basket page - PC view
 
-![image](https://user-images.githubusercontent.com/72948843/181985377-f53a8308-73e5-481e-a1d9-84d4d5b7e325.png)
+![image](https://user-images.githubusercontent.com/72948843/206180539-65d70399-0208-4345-8deb-8f10c9ce8bbd.png)
 
-<li>SignOut page BeBeauty url - responsive view</li>
+* Basket page - mobile view
 
-![image](https://user-images.githubusercontent.com/72948843/181984587-f5d7caa4-a798-4080-a01e-b56c1b6e88ce.png)
-
-<!--  -->
-
-<li>Admin Booking page BeBeauty url - PC view</li>
-
-![image](https://user-images.githubusercontent.com/72948843/181993584-7603e985-356c-47c8-9f8e-ecdbc0a0298a.png)
-
-<li>Admin Booking page BeBeauty url - responsive view</li>
-
-![image](https://user-images.githubusercontent.com/72948843/181994335-203621aa-d5cc-43d0-af53-0212947b51f2.png)
+![image](https://user-images.githubusercontent.com/72948843/206181288-ead2fb29-60fd-4d77-9959-9af58b93aa23.png)
 
 <!--  -->
 
-<li>Admin Edit Booking page BeBeauty url - PC view</li>
+* Checkout page - PC view
 
-![image](https://user-images.githubusercontent.com/72948843/181994444-2d5907f7-e062-4d09-bc7e-25e78907a485.png)
+![image](https://user-images.githubusercontent.com/72948843/206181915-16cf01d4-72c5-4c95-acba-b35328c52bea.png)
 
-<li>Admin Edit Booking page BeBeauty url - responsive view</li>
+* Checkout page - mobile view
 
-![image](https://user-images.githubusercontent.com/72948843/181994456-e58e8c0d-58ff-4b75-b628-f62a20e57719.png)
-
-<!--  -->
-
-<li>Admin Cancel Booking page BeBeauty url - PC view</li>
-
-![image](https://user-images.githubusercontent.com/72948843/181994515-987ff67d-a3a4-403c-b7e6-07486183d3a5.png)
-
-<li>Admin Cancel Booking page BeBeauty url - responsive view</li>
-
-![image](https://user-images.githubusercontent.com/72948843/181995122-bcea69b1-bc8d-4f8e-920f-8ffd865c371e.png)
+![image](https://user-images.githubusercontent.com/72948843/206181690-c8b44c7f-5c9a-4507-93e5-439f49081f23.png)
 
 <!--  -->
 
-<li>Admin Delete Booking page BeBeauty url - PC view</li>
+* Checkout success page - PC view
 
-![image](https://user-images.githubusercontent.com/72948843/181995155-f2fe3e8f-8c30-4ead-8172-26a78080b697.png)
+![image](https://user-images.githubusercontent.com/72948843/206182230-6f9da288-2f82-4116-b566-b20aef61a2b0.png)
 
-<li>Admin Delete Booking page BeBeauty url - responsive view</li>
+* Checkout success page - mobile view
 
-![image](https://user-images.githubusercontent.com/72948843/181995164-fcc0f14b-c3fd-4eb9-90fb-711841242484.png)
-
-<!--  -->
-
-<li>Admin planner page BeBeauty url - PC view</li>
-
-![image](https://user-images.githubusercontent.com/72948843/181996930-3ab6c197-9dd2-47a6-95cf-1da7eb6d6202.png)
-
-<li>Admin planer page BeBeauty url - responsive view</li>
-
-![image](https://user-images.githubusercontent.com/72948843/181996978-b52ba0df-e7e5-445e-8e97-764509589530.png)
+![image](https://user-images.githubusercontent.com/72948843/206182577-edbbd8a4-21c0-485b-b735-4ab618dbc293.png)
 
 <!--  -->
 
-<li>Admin planner filter/today page BeBeauty url - PC view</li>
+* Profiles page - PC view
 
-![image](https://user-images.githubusercontent.com/72948843/181997008-8b035c87-ae05-44ca-abd9-8680144ad056.png)
+![image](https://user-images.githubusercontent.com/72948843/206183006-f44c4fcc-1627-4a40-85cc-931b1673db79.png)
 
-<li>Admin planner filter/today page BeBeauty url - responsive view</li>
+* Profiles page - mobile view
 
-![image](https://user-images.githubusercontent.com/72948843/181997034-862d28ca-cbcf-4403-a4f9-e83973df0d0a.png)
+![image](https://user-images.githubusercontent.com/72948843/206182815-70690084-7fbd-4e88-8240-6d90ee79dc05.png)
 
-<!--  -->
+<!--   -->
 
-<li>Admin planner filter next 7 days page BeBeauty url - PC view</li>
+* Update profile page - PC view
 
-![image](https://user-images.githubusercontent.com/72948843/181997104-70af8427-37fe-4d20-a48f-3f62df1d4637.png)
+![image](https://user-images.githubusercontent.com/72948843/206239673-c6db2d3f-08d2-4b7b-bcb5-b4b4e9bb6588.png)
 
-<li>Admin planner filter next 7 days page BeBeauty url - responsive view</li>
+* Update profiles page - mobile view
 
-![image](https://user-images.githubusercontent.com/72948843/181997289-9138408a-1da4-417d-a333-a7b2a3119516.png)
-
-<!--  -->
-
-<li>Admin planner filter last 7 days page BeBeauty url - PC view</li>
-
-![image](https://user-images.githubusercontent.com/72948843/181997057-20561585-bad8-43d1-9435-d8dd10235f98.png)
-
-<li>Admin planner filter last 7 days page BeBeauty url - responsive view</li>
-
-![image](https://user-images.githubusercontent.com/72948843/181997072-e5ef3515-3767-4851-9407-76fc5f97f811.png)
+![image](https://user-images.githubusercontent.com/72948843/206240876-5e4453f8-9512-439a-b76a-00be9bd284ba.png)
 
 <!--  -->
 
-<li>Admin planner filter this month page BeBeauty url - PC view</li>
+* Update password page - PC view
 
-![image](https://user-images.githubusercontent.com/72948843/182001110-323577a6-8dd8-4db2-a011-fd2f1b0498c1.png)
+![image](https://user-images.githubusercontent.com/72948843/206242254-78f6080c-e55f-43f1-b53f-68d7908d5cae.png)
 
-<li>Admin planner filter this month page BeBeauty url - responsive view</li>
+* Update password page - mobile view
 
-![image](https://user-images.githubusercontent.com/72948843/182001654-b2e1b5e4-3cb5-4cb4-af7a-7ce6e48055f4.png)
-
-<!--  -->
-
-<li>Admin planner filter this year page BeBeauty url - PC view</li>
-
-![image](https://user-images.githubusercontent.com/72948843/182001674-8510ef69-b0b2-46c6-ad3f-ff1c4e78051c.png)
-
-<li>Admin planner filter this year page BeBeauty url - responsive view</li>
-
-![image](https://user-images.githubusercontent.com/72948843/182001703-809f33b7-c1fa-40dd-ae69-6d870915f0d4.png)
+![image](https://user-images.githubusercontent.com/72948843/206242765-5a742426-4c67-4213-bd45-d967676e554e.png)
 
 <!--  -->
 
-<li>Add Booking BeBeauty url - PC view</li>
+* Contact Us page - PC view
 
-![image](https://user-images.githubusercontent.com/72948843/182001770-cef5a625-64c3-4dee-8fe0-da88512c25e1.png)
+![image](https://user-images.githubusercontent.com/72948843/206243384-5fd3a4b0-0d25-466c-a0fa-07a861685e24.png)
 
-<li>Add Booking BeBeauty url - responsive view</li>
+* Contact Us page - mobile view
 
-![image](https://user-images.githubusercontent.com/72948843/182001789-8e5d6119-75f9-4fbe-94b9-f5bc54ee7c6e.png)
-
-<!--  -->
-
-<li>Edit Booking BeBeauty url - PC view</li>
-
-![image](https://user-images.githubusercontent.com/72948843/182001858-43eab3fa-f3fe-4dc6-a22a-6abc14be468f.png)
-
-<li>Edit Booking BeBeauty url - responsive view</li>
-
-![image](https://user-images.githubusercontent.com/72948843/182001876-1638fef0-c37c-4c71-a277-f2d726e1eff7.png)
+![image](https://user-images.githubusercontent.com/72948843/206243034-66e89de7-3131-491d-97a0-28a66228d34b.png)
 
 <!--  -->
 
-<li>Cancel Booking BeBeauty url - PC view</li>
+* About Us page - PC view
 
-![image](https://user-images.githubusercontent.com/72948843/182001901-703f0c64-aaa9-43c7-84a3-3a3d26ac6df0.png)
+![image](https://user-images.githubusercontent.com/72948843/206243672-a0bf4776-5e1c-4826-9d54-2b20e5bd702a.png)
 
-<li>Cancel Booking BeBeauty url - responsive view</li>
+* About Us page - mobile view
 
-![image](https://user-images.githubusercontent.com/72948843/182001924-9aa5f227-5736-448d-9e0a-85c5f98e7b1a.png)
-
-<!--  -->
-
-<li>Delete Booking BeBeauty url - PC view</li>
-
-![image](https://user-images.githubusercontent.com/72948843/182001946-cedb9cc2-f0f6-4ec8-aeb0-66ad23625282.png)
-
-<li>Delete Booking BeBeauty url - responsive view</li>
-
-![image](https://user-images.githubusercontent.com/72948843/182001978-315af9db-5a1b-4305-95e6-a6e7c9ef82f7.png)
+![image](https://user-images.githubusercontent.com/72948843/206244047-7136f54c-d09c-4d13-90b5-da26a73a1c05.png)
 
 <!--  -->
 
-<li>Bookings List BeBeauty url - PC view</li>
+* FAQs page - PC view
 
-![image](https://user-images.githubusercontent.com/72948843/182001998-537c56c6-0cce-4b63-b6d0-a0dffa73dcfc.png)
+![image](https://user-images.githubusercontent.com/72948843/206244606-18ad5109-bb62-4888-9115-7c18fcaacea5.png)
 
-<li>Bookings List BeBeauty url - responsive view</li>
+* FAQs page - mobile view
 
-![image](https://user-images.githubusercontent.com/72948843/182002013-1977feed-254c-4a0c-a7d5-62d184d0bdd1.png)
+![image](https://user-images.githubusercontent.com/72948843/206244356-113347fe-80fd-449f-858d-0aef0d854f6e.png)
 
 <!--  -->
 
-<li>Booking Details BeBeauty url - PC view</li>
+* Privacy Policy page - PC view
 
-![image](https://user-images.githubusercontent.com/72948843/182002035-9cc5f429-e0f0-4161-ab07-583078f3a19e.png)
+![image](https://user-images.githubusercontent.com/72948843/206246237-a1cd61bc-f2ae-42bc-9161-f9a2c88386da.png)
 
-<li>Booking Details BeBeauty url - responsive view</li>
+* Privacy Policy page - mobile view
 
-![image](https://user-images.githubusercontent.com/72948843/182002065-f4d5e5f8-1bd0-4a52-9cf3-ab06b0220962.png)
+![image](https://user-images.githubusercontent.com/72948843/206246522-2e252c82-5376-42dd-b559-f4856e337a62.png)
+
+<!--  -->
+
+* Sitemap page - PC view
+
+![image](https://user-images.githubusercontent.com/72948843/206246890-74b430e6-a999-4423-981a-a00946efa41b.png)
+
+* Sitemap page - mobile view
+
+![image](https://user-images.githubusercontent.com/72948843/206247133-dcdb500f-b669-473e-b3c1-eb55685a59a5.png)
+
+<!--  -->
+
+* Store Management page - PC view
+
+![image](https://user-images.githubusercontent.com/72948843/206247826-d660b17d-3539-438b-883b-957eba3fd00d.png)
+
+* Store Management page - mobile view
+
+![image](https://user-images.githubusercontent.com/72948843/206247481-2f3116b3-808c-4e03-8296-5e1df4276a1d.png)
+
+<!--  -->
+
+* Add Product page - PC view
+
+![image](https://user-images.githubusercontent.com/72948843/206248456-44891107-f766-4cac-a339-1eecb8912341.png)
+
+* Add Porduct page - mobile view
+
+![image](https://user-images.githubusercontent.com/72948843/206248751-25f20003-b1ed-4e93-9ecf-d719549b01ac.png)
+
+<!--  -->
+
+* Edit Product page - PC view
+
+![image](https://user-images.githubusercontent.com/72948843/206253501-d8001ace-4d1c-4e76-9441-b2d3cce10091.png)
+
+* Edit Porduct page - mobile view
+
+![image](https://user-images.githubusercontent.com/72948843/206254309-202b1ed2-bf7b-4e12-bb47-816f9e308795.png)
+
+<!--////////////////////////////////////////////////////////////////////////  -->
+
+* Add Brand page - PC view
+
+![image](https://user-images.githubusercontent.com/72948843/206258616-6335f035-3510-44ba-840c-331ae59885a8.png)
+
+* Add Brand page - mobile view
+
+![image](https://user-images.githubusercontent.com/72948843/206257509-e4ecb1fe-b6aa-40c9-bd68-9b4b43bfb863.png)
+
+<!--  -->
+
+* Edit Brand page - PC view
+
+![image](https://user-images.githubusercontent.com/72948843/206259291-0620ef6e-16bf-4701-b016-bc482bc96d16.png)
+
+* Edit Brand page - mobile view
+
+![image](https://user-images.githubusercontent.com/72948843/206259716-cede9c29-5986-4c73-b308-4d7bec80f223.png)
+
+<!--  -->
+
+* Add Category page - PC view
+
+![image](https://user-images.githubusercontent.com/72948843/206260003-8904fa89-49e4-44c4-8e55-bfb179a06a7e.png)
+
+* Add Category page - mobile view
+
+![image](https://user-images.githubusercontent.com/72948843/206260167-15d09bfd-8398-4322-b3db-152594177218.png)
+
+<!--  -->
+
+* Edit Category page - PC view
+
+![image](https://user-images.githubusercontent.com/72948843/206260446-891bafcb-e05f-420a-94d3-f0942c88752c.png)
+
+* Edit Category page - mobile view
+
+![image](https://user-images.githubusercontent.com/72948843/206260641-676d6f8b-c16c-4c75-9510-80a4261dbf81.png)
+
+<!--  -->
+
+* Add Delivery Method page - PC view
+
+![image](https://user-images.githubusercontent.com/72948843/206260838-0e9d5bf0-2dbe-457f-8ab2-220fe61479b0.png)
+
+* Add Delivery Method page - mobile view
+
+![image](https://user-images.githubusercontent.com/72948843/206261000-ccc9dd4d-7bae-4ae0-8b27-7ce4a24c6f17.png)
+
+<!-- -->
+
+* Edit Delivery Method page - PC view
+
+![image](https://user-images.githubusercontent.com/72948843/206261366-050fb818-b0e6-490d-ad5f-c67cb023cf49.png)
+
+* Edit Delivery Method page - mobile view
+
+![image](https://user-images.githubusercontent.com/72948843/206261513-1b163e78-d2f3-4e61-a692-d4695c47477b.png)
+
+<!-- -->
+
+* Admin View Orders page - PC view
+
+![image](https://user-images.githubusercontent.com/72948843/206262044-8cb10a54-3ded-4d98-8e69-22f53852ff0c.png)
+
+* Admin View Orders page - mobile view
+
+![image](https://user-images.githubusercontent.com/72948843/206262193-b43ff32b-9efe-4618-9262-789efc4d9def.png)
+
+<!-- -->
+
+* Admin View Specific Order page - PC view
+
+![image](https://user-images.githubusercontent.com/72948843/206262387-3ca6d04c-98e0-4e23-a704-c0a0fcdb0eca.png)
+
+* Admin View Specific Order - mobile view
+
+![image](https://user-images.githubusercontent.com/72948843/206262582-ae20b40f-7e31-4931-8bb4-588ca6926ebf.png)
+
+<!-- -->
+
+* Admin View Paint Requests page - PC view
+
+![image](https://user-images.githubusercontent.com/72948843/206263404-230a7273-a9d3-49e6-8f16-2ef9a2370afa.png)
+
+* Admin View Paint Requests page - mobile view
+
+![image](https://user-images.githubusercontent.com/72948843/206264151-270d4ae2-fcec-49a7-a2ea-4445e73a14d6.png)
+
+<!-- -->
+
+* Admin View Specific Paint Request page - PC view
+
+![image](https://user-images.githubusercontent.com/72948843/206248456-44891107-f766-4cac-a339-1eecb8912341.png)
+
+* Admin View Specific Paint Request page - mobile view
+
+![image](https://user-images.githubusercontent.com/72948843/206248751-25f20003-b1ed-4e93-9ecf-d719549b01ac.png)
+
+<!-- -->
+
+* Add Delivery Method page - PC view
+
+![image](https://user-images.githubusercontent.com/72948843/206248456-44891107-f766-4cac-a339-1eecb8912341.png)
+
+* Edit Delivery Method page - mobile view
+
+![image](https://user-images.githubusercontent.com/72948843/206248751-25f20003-b1ed-4e93-9ecf-d719549b01ac.png)
+
+<!-- -->
+
+* Add Delivery Method page - PC view
+
+![image](https://user-images.githubusercontent.com/72948843/206248456-44891107-f766-4cac-a339-1eecb8912341.png)
+
+* Edit Delivery Method page - mobile view
+
+![image](https://user-images.githubusercontent.com/72948843/206248751-25f20003-b1ed-4e93-9ecf-d719549b01ac.png)
+
+<!-- -->
+
+* Add Delivery Method page - PC view
+
+![image](https://user-images.githubusercontent.com/72948843/206248456-44891107-f766-4cac-a339-1eecb8912341.png)
+
+* Edit Delivery Method page - mobile view
+
+![image](https://user-images.githubusercontent.com/72948843/206248751-25f20003-b1ed-4e93-9ecf-d719549b01ac.png)
+
+<!-- -->
 
 </ul>
 <br>
