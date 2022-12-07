@@ -258,75 +258,75 @@ I am happy with flake8 report as the vast majority of these errors reported are 
 
 ## Lighthouse Testing
 
-<p>To check the production levels against its performance, I used the Lighthouse testing facilities in the chrome development tools. Below are the results on how the pages performed in both Desktop and a responsive view.</p>
-<ul>
-<li>Home page - PC view</li>
+To check the production levels against its performance, I used the Lighthouse testing facilities in the chrome development tools. Below are the results on how the pages performed in both Desktop and a responsive view.
+
+* Home page - PC view
 
 ![image](https://user-images.githubusercontent.com/72948843/206146892-ab82eca0-11c5-4d78-876b-58b1c2380705.png)
 
-<li>Home page - mobile view</li>
+* Home page - mobile view
 
 ![image](https://user-images.githubusercontent.com/72948843/206150009-129a7a9c-f9ad-4c1e-93b3-7179058393a9.png)
 
 <!--  -->
 
-<li>Services page - PC view</li>
+* Services page - PC view
 
-![image](https://user-images.githubusercontent.com/72948843/181950867-8804762e-9910-4ffb-86b9-f98be859942a.png)
+![image](https://user-images.githubusercontent.com/72948843/206159904-a0400ac5-71a6-44c3-b2b5-4dd3d3bdb86d.png)
 
-<li>Services page - mobile view</li>
+* Services page - mobile view
 
-![image](https://user-images.githubusercontent.com/72948843/181952437-429dd851-51b6-4dad-86ed-466ab8d4d81a.png)
-
-<!--  -->
-
-<li>Prices page BeBeauty url - PC view</li>
-
-![image](https://user-images.githubusercontent.com/72948843/181954813-4f2ab473-19ec-4ddd-9711-78fc84531170.png)
-
-<li>Prices page BeBeauty url - responsive view</li>
-
-![image](https://user-images.githubusercontent.com/72948843/181979384-59fd4ac2-3e92-43fc-abe8-061bd5b79c78.png)
+![image](https://user-images.githubusercontent.com/72948843/206159677-2a85a894-085d-4db5-8161-c3611cfcdd5f.png)
 
 <!--  -->
 
-<li>Gallery page BeBeauty url - PC view</li>
+* Paint Services Quote page - PC view
 
-![image](https://user-images.githubusercontent.com/72948843/181942515-c5a4edfa-1507-4169-b71f-98aea0702175.png)
+![image](https://user-images.githubusercontent.com/72948843/206161123-1facaf75-2790-4f88-8d71-9973c2266317.png)
 
-<li>Gallery page BeBeauty url - responsive view</li>
+* Paint Services Quote page - mobile view
 
-![image](https://user-images.githubusercontent.com/72948843/181941066-eea2464d-0a57-4fed-9caa-0f08e289d5b1.png)
-
-<!--  -->
-
-<li>Contact page BeBeauty url - PC view</li>
-
-![image](https://user-images.githubusercontent.com/72948843/181969177-edc84091-0df2-409d-b70f-d8464787f4b7.png)
-
-<li>Contact page BeBeauty url - responsive view</li>
-
-![image](https://user-images.githubusercontent.com/72948843/181971978-758e1a0c-e99d-49ba-885d-1a4e551e67a5.png)
+![image](https://user-images.githubusercontent.com/72948843/206160945-d1154fe4-0332-4245-8b74-507e0f435b1c.png)
 
 <!--  -->
 
-<li>SignUp page BeBeauty url - PC view</li>
+* Tech Services Quote page - PC view
 
-![image](https://user-images.githubusercontent.com/72948843/181966978-1470b331-7476-461a-973d-706d5f94ecdc.png)
+![image](https://user-images.githubusercontent.com/72948843/206161630-89c6bd7b-ae74-4884-b513-075d053d7c52.png)
 
-<li>SignUp page BeBeauty url - responsive view</li>
+* Tech Services Quote page - mobile view
 
-![image](https://user-images.githubusercontent.com/72948843/181965779-6181b6db-2b62-4b14-bdb8-0fc4e33555ea.png)
+![image](https://user-images.githubusercontent.com/72948843/206161465-5acdc978-61d9-428f-be53-816be37c4aea.png)
 
 <!--  -->
 
-<li>SignIn page BeBeauty url - PC view</li>
+* Thank You Services Note page - PC view
 
-![image](https://user-images.githubusercontent.com/72948843/181976459-f6dd76c3-c806-401c-b917-81b86b3593b7.png)
+![image](https://user-images.githubusercontent.com/72948843/206162258-726070cc-2bc3-4469-9e93-dc808fb9e7e6.png)
 
-<li>SignIn page BeBeauty url - responsive view</li>
+* Thank You Services Note page - mobile view
 
-![image](https://user-images.githubusercontent.com/72948843/181974745-3c419c79-d0e2-4030-a18a-99cc873921f8.png)
+![image](https://user-images.githubusercontent.com/72948843/206161465-5acdc978-61d9-428f-be53-816be37c4aea.png)
+
+<!--  -->
+
+* Store page - PC view
+
+![image](https://user-images.githubusercontent.com/72948843/206162258-726070cc-2bc3-4469-9e93-dc808fb9e7e6.png)
+
+* Store page - mobile view
+
+![image](https://user-images.githubusercontent.com/72948843/206162937-7d403411-af44-4e5f-9add-097ebb547e41.png)
+
+<!--  -->
+
+* Product Detail page - PC view
+
+![image](https://user-images.githubusercontent.com/72948843/206162258-726070cc-2bc3-4469-9e93-dc808fb9e7e6.png)
+
+* Product Detail page - mobile view
+
+![image](https://user-images.githubusercontent.com/72948843/206161465-5acdc978-61d9-428f-be53-816be37c4aea.png)
 
 <!--  -->
 

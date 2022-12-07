@@ -27,7 +27,7 @@
 
 <!-- Product Title -->
 
-<div class="container text-muted tertiary-font">
+<div class="container tertiary-font">
     <!-- row-1 -->
     <div class="row g-0 justify-content-center scrollable h-50">
         <div class="col-12 col-lg-6">
@@ -36,7 +36,7 @@
                 <p> if you would like to update your your name and username, please follow this link below:</p>
                 <a class="my-1 page-link-success" href="{% url 'edit_user_profile' %}">Update My account details</a>
             </div>
-            <h3 class="text-muted">Default Delivery Information <i class="fas fa-address-card"></i></i></h3>
+            <h3>Default Delivery Information <i class="fas fa-address-card"></i></i></h3>
             <form action="{% url 'profile' %}" method="POST" class="mt-3" id="profile-update-form">
                 {% csrf_token %}
                 {{ form|crispy }}
@@ -46,9 +46,9 @@
         <div class="col-12 col-lg-6 px-2 px-sm-5">
             <h3 class="text-success my-3">Orders <i class="fas fa-receipt"></i></h3>
             <div class="row p-1 overflow-auto scrollable rounded-1 border border-success" style="max-height:200px;">
-                <p class="text-muted">Order History</p>
+                <p>Order History</p>
                 <div class="order-history table-responsive">
-                    <table class="table table-sm table-borderless border-success border-top rounded-1 text-muted">
+                    <table class="table table-sm table-borderless border-success border-top rounded-1 table-text">
                         <thead class="small">
                             <tr>
                                 <th>Order Number</th>
@@ -83,7 +83,7 @@
             <div class="row p-2">
                 <div class="col-12 col-md-6">
                     <h3 class=" mt-1 mb-0 text-success">My WishList <i class="fas fa-thumbs-up"></i></h3>
-                    <span class="text-muted"><i>Manage my wish list</i></span>
+                    <span><i>Manage my wish list</i></span>
                 </div>
             </div>
             <div class="row border row rounded-1 border border-success overflow-auto">
@@ -103,7 +103,7 @@
                                         </a>
                                     </div>
                                     <div class="col-8">
-                                        <span><a href="{% url 'product_detail' product.id %}" class="my-0 page-link-muted">{{ product.name }}</a></span>
+                                        <span><a href="{% url 'product_detail' product.id %}" class="my-0 table-text page-link-muted">{{ product.name }}</a></span>
                                         <br>
                                         <a class="small page-link-success text-decoration-none green-on-hov" href="{% url 'products' %}?category={{ product.category.name }}">
                                             <i class="fas fa-tag mr-1"></i> <i>{{product.category.friendly_name}}</i>

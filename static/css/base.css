@@ -427,7 +427,7 @@ nav {
     padding: 6px 5px 6px 10px;
     text-decoration: none;
     font-size: 1.2rem;
-    color: #818181;
+    color: #9c9a9a;
     display: block;
 }
 
@@ -438,7 +438,7 @@ nav {
 
 .md-device-products-link {
     text-decoration: none;
-    color: #6C757D;
+    color: #818181;
 }
 
 .md-device-products-link:hover,
@@ -450,7 +450,7 @@ nav {
     text-decoration: none;
     padding: 6px 5px 6px 10px;
     font-size: 1rem;
-    color: #6C757D;
+    color: #818181;
     display: inline;
 }
 
@@ -481,7 +481,7 @@ nav {
 
 .product-filterdown-link {
     text-decoration: none;
-    color: #6C757D;
+    color: #818181;
 }
 
 .product-filterdown-link:hover,
@@ -555,6 +555,10 @@ nav {
     }
 }
 
+.table-text {
+    color: #9c9a9a;
+}
+
 /* -------- Pagination & Links CSS --------- */
 
 .page-link-success {
@@ -574,11 +578,12 @@ nav {
 }
 
 .page-link-muted {
-    color: #6c757d;
+    color: #9c9a9a;
+    ;
 }
 
 .page-link-muted:hover {
-    color: #58595a;
+    color: #c9c9c9;
 }
 
 .fs-pag {

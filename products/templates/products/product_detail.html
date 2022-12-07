@@ -13,12 +13,12 @@
     <div class="row g-0 justify-content-center p-1 m-1">
 
         <div class="col-md-6 col-lg-4 offset-md-4 offset-lg-2 order-last order-sm-last order-md-last order-lg-first">
-            <div class="card-text p-2 text-secondary">
+            <div class="card-text p-2">
                 <h1 class="mb-5 display-6">{{ product.name }}</h1>
                 <hr>
                 <p>{{ product.description }}</p>
             </div>
-            <div class="card-footer text-secondary p-2 text-left">
+            <div class="card-footer p-2 text-left">
                 <p class="mb-0 text-left text-white font-weight-bold"><strong>£{{ product.price }}</strong></p>
                 {% if product.category %}
                 <p class="small mt-1 mb-0">
@@ -35,7 +35,7 @@
                 </p>
                 {% endif %}
                 {% if product.rating %}
-                <small class="text-muted">
+                <small>
                     <i class="fas fa-star mr-1"></i>
                     {{ product.rating }}
                     / 5</small>
@@ -66,15 +66,15 @@
                             <div class="form-group w-75">
                                 <div class="input-group input-group-{{ product.id }}">
                                     <div class="input-group-prepend">
-                                        <button class="decrement-qty btn btn-secondary rounded-0 decrement-qty_{{ product.id }}" data-item_id="{{ product.id }}">
+                                        <button class="decrement-qty btn btn-secondary rounded-0 decrement-qty_{{ product.id }}" data-item_id="{{ product.id }}" aria-label="decrease quantity of item label">
                                             <span class="icon">
                                                 <i class="fas fa-minus"></i>
                                             </span>
                                         </button>
                                     </div>
-                                    <input class="form-control qty_input p-1 text-center id_qty_{{ product.id }}" type="number" name="quantity" value="1" min="1" max="99" data-item_id="{{ product.id }}" required>
+                                    <input class="form-control qty_input p-1 text-center id_qty_{{ product.id }}" type="number" name="quantity" value="1" min="1" max="99" data-item_id="{{ product.id }}" required aria-labelledby="add specified quantity to basket label">
                                     <div class="input-group-append">
-                                        <button class="increment-qty btn btn-secondary rounded-0 increment-qty_{{ product.id }}" data-item_id="{{ product.id }}">
+                                        <button class="increment-qty btn btn-secondary rounded-0 increment-qty_{{ product.id }}" data-item_id="{{ product.id }}" aria-label="increase quantity of item label">
                                             <span class="icon">
                                                 <i class="fas fa-plus"></i>
                                             </span>
