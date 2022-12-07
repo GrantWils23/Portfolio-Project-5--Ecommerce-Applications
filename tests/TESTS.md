@@ -260,21 +260,21 @@ I am happy with flake8 report as the vast majority of these errors reported are 
 
 <p>To check the production levels against its performance, I used the Lighthouse testing facilities in the chrome development tools. Below are the results on how the pages performed in both Desktop and a responsive view.</p>
 <ul>
-<li>Home page BeBeauty url - PC view</li>
+<li>Home page - PC view</li>
 
-![image](https://user-images.githubusercontent.com/72948843/181924994-d13567fc-2331-427d-8d37-001717ba0760.png)
+![image](https://user-images.githubusercontent.com/72948843/206146892-ab82eca0-11c5-4d78-876b-58b1c2380705.png)
 
-<li>Home page BeBeauty url - responsive view</li>
+<li>Home page - mobile view</li>
 
-![image](https://user-images.githubusercontent.com/72948843/181945988-e1a33a91-ecc4-4905-be83-1b52f4b9ec20.png)
+![image](https://user-images.githubusercontent.com/72948843/206150009-129a7a9c-f9ad-4c1e-93b3-7179058393a9.png)
 
 <!--  -->
 
-<li>Services page BeBeauty url - PC view</li>
+<li>Services page - PC view</li>
 
 ![image](https://user-images.githubusercontent.com/72948843/181950867-8804762e-9910-4ffb-86b9-f98be859942a.png)
 
-<li>Services page BeBeauty url - responsive view</li>
+<li>Services page - mobile view</li>
 
 ![image](https://user-images.githubusercontent.com/72948843/181952437-429dd851-51b6-4dad-86ed-466ab8d4d81a.png)
 
