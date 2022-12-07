@@ -9,7 +9,7 @@
                     <i class="fas fa-minus fa-sm"></i>
                 </button>
             </div>
-            <input class="form-control form-control-sm qty_input id_qty_{{ item.item_id }}" type="number" name="quantity" value="{{ item.quantity }}" min="1" max="99" data-item_id="{{ item.item_id }}" required aria-labelledby="add specified quantity to basket label">
+            <input class="form-control form-control-sm qty_input id_qty_{{ item.item_id }}" type="number" name="quantity" value="{{ item.quantity }}" min="1" max="99" data-item_id="{{ item.item_id }}" required aria-label="add specified quantity to basket label">
             <div class="input-group-append">
                 <button class="increment-qty btn btn-sm btn-secondary rounded-0 increment-qty_{{ item.item_id }}" data-item_id="{{ item.item_id }}" aria-label="increase quantity of item label">
                     <i class="fas fa-plus fa-sm"></i>
@@ -17,8 +17,8 @@
             </div>
         </div>
     </div>
-    <input type="submit" class="btn btn-sm btn-success rounded-1 mt-1 opacity-75" value="Update">
+    <input type="submit" class="btn btn-sm btn-success rounded-1 mt-1" value="Update">
     <input type="hidden" name="redirect_url" value="{{ request.path }}">
-    <a class="remove-item btn btn-sm btn-danger m-1 opacity-75 text-decoration-none float-end" id="remove_{{ item.item_id }}">Remove</a>
+    <a class="remove-item btn btn-sm btn-danger m-1 text-decoration-none float-end" id="remove_{{ item.item_id }}">Remove</a>
 </form>
 <!-- Quantity controller end -->

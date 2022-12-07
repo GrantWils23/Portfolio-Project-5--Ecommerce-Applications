@@ -103,7 +103,7 @@
                                         </a>
                                     </div>
                                     <div class="col-8">
-                                        <span><a href="{% url 'product_detail' product.id %}" class="my-0 table-text page-link-muted">{{ product.name }}</a></span>
+                                        <span><a href="{% url 'product_detail' product.id %}" class="my-0 page-link-muted">{{ product.name }}</a></span>
                                         <br>
                                         <a class="small page-link-success text-decoration-none green-on-hov" href="{% url 'products' %}?category={{ product.category.name }}">
                                             <i class="fas fa-tag mr-1"></i> <i>{{product.category.friendly_name}}</i>

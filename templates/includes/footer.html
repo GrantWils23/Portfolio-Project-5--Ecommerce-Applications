@@ -4,22 +4,22 @@
         <div class="container py-4">
             <div class="row">
                 <div class="col-6 col-md-2 mb-3">
-                    <h5><a href="{% url 'home' %}" class="nav-link">Home</a></h5>
+                    <h5><a href="{% url 'home' %}" class="nav-link page-link-muted">Home</a></h5>
                     <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="{% url 'services' %}" class="nav-link p-0 text-muted">Services</a></li>
-                        <li class="nav-item mb-2"><a href="{% url 'products' %}" class="nav-link p-0 text-muted">Store</a></li>
-                        <li class="nav-item mb-2"><a href="{% url 'paint_services' %}" class="nav-link p-0 text-muted">Paint Services</a></li>
-                        <li class="nav-item mb-2"><a href="{% url 'tech_services' %}" class="nav-link p-0 text-muted">Tech Services</a></li>
+                        <li class="nav-item mb-1"><a href="{% url 'services' %}" class="page-link-muted p-0 text-decoration-none">Services</a></li>
+                        <li class="nav-item mb-1"><a href="{% url 'products' %}" class="page-link-muted p-0 text-decoration-none">Store</a></li>
+                        <li class="nav-item mb-1"><a href="{% url 'paint_services' %}" class="page-link-muted p-0 text-decoration-none">Paint Services</a></li>
+                        <li class="nav-item mb-1"><a href="{% url 'tech_services' %}" class="page-link-muted p-0 text-decoration-none">Tech Services</a></li>
                     </ul>
                 </div>
 
                 <div class="col-6 col-md-2 mb-3">
-                    <h5><a href="{% url 'about_us' %}" class="nav-link">About Us</a></h5>
+                    <h5><a href="{% url 'about_us' %}" class="nav-link page-link-muted">About Us</a></h5>
                     <ul class="nav flex-column">
-                        <li class="nav-item mb-2"><a href="{% url 'contact_us' %}" class="nav-link p-0 text-muted">Contact Us</a></li>
-                        <li class="nav-item mb-2"><a href="{% url 'faqs' %}" class="nav-link p-0 text-muted">FAQs</a></li>
-                        <li class="nav-item mb-2"><a href="{% url 'privacy_policy' %}" class="nav-link p-0 text-muted">Privacy Policy</a></li> <!-- to do later -->
-                        <li class="nav-item mb-2"><a href="{% url 'sitemap' %}" class="nav-link p-0 text-muted">Sitemap</a></li> <!-- to do later -->
+                        <li class="nav-item mb-1"><a href="{% url 'contact_us' %}" class="page-link-muted p-0 text-decoration-none">Contact Us</a></li>
+                        <li class="nav-item mb-1"><a href="{% url 'faqs' %}" class="page-link-muted p-0 text-decoration-none">FAQs</a></li>
+                        <li class="nav-item mb-1"><a href="{% url 'privacy_policy' %}" class="page-link-muted p-0 text-decoration-none">Privacy Policy</a></li> <!-- to do later -->
+                        <li class="nav-item mb-1"><a href="{% url 'sitemap' %}" class="page-link-muted p-0 text-decoration-none">Sitemap</a></li> <!-- to do later -->
                     </ul>
                 </div>
 
@@ -32,13 +32,13 @@
                         <ul class="nav flex-column">
                             {% if request.user.is_authenticated %}
                             {% if request.user.is_superuser %}
-                            <li class="nav-item nb-2"><a class="nav-link p-0 text-muted" href="{% url 'admin_controls' %}">Store Managment</a></li> <!-- come back to later -->
+                            <li class="nav-item mb-1"><a class="page-link-muted p-0 text-decoration-none" href="{% url 'admin_controls' %}">Store Managment</a></li> <!-- come back to later -->
                             {% endif %}
-                            <li class="nav-item nb-2"><a class="nav-link p-0 text-muted" href="{% url 'profile' %}">User Profile</a></li>
-                            <li class="nav-item nb-2"><a class="nav-link p-0 text-muted" href="{% url 'account_logout' %}">Log out</a></li>
+                            <li class="nav-item mb-1"><a class="page-link-muted p-0 text-decoration-none" href="{% url 'profile' %}">User Profile</a></li>
+                            <li class="nav-item mb-1"><a class="page-link-muted p-0 text-decoration-none" href="{% url 'account_logout' %}">Log out</a></li>
                             {% else %}
-                            <li class="nav-item nb-2"><a class="nav-link p-0 text-muted" href="{% url 'account_signup' %}">Register</a></li>
-                            <li class="nav-item nb-2"><a class="nav-link p-0 text-muted" href="{% url 'account_login' %}">Log in</a></li>
+                            <li class="nav-item mb-1"><a class="page-link-muted p-0 text-decoration-none" href="{% url 'account_signup' %}">Register</a></li>
+                            <li class="nav-item mb-1"><a class="page-link-muted p-0 text-decoration-none" href="{% url 'account_login' %}">Log in</a></li>
                             {% endif %}
                         </ul>
                     </div>
