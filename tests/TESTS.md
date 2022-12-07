@@ -240,17 +240,18 @@ Below I have recorded the results of my Javascript validations:
 [Back to Top](<#contents>)
 <br>
 
-### Python Validation
+## Python Validation
 
-My Python Code was directly checked for errors inside the terminal using the command ``` python3 -m flake8 ```. 
+My Python Code was directly checked for errors inside the terminal using the command ``` python3 -m flake8 ```.
+I am happy with flake8 report as the vast majority of these errors reported are lines to long on auto generated files, and changing these could harm the files for migrations, so i opted to leave these alone. The remaining files that have been flagged with errors are import errors not being tracked, where a import cannot be found unless tests are running. 
 
-<!-- First image of testing -->
-![image](https://user-images.githubusercontent.com/72948843/205940759-63322ebd-bc3d-4940-a7c6-ef777d710a2a.png)
+### PEP* Validator using Flake8
 
-### PEP* Validator (bebeauty/urls.py)
+![image](https://user-images.githubusercontent.com/72948843/206061147-4a059c2d-1026-48d3-91d5-fdff6bcf07c6.png)
 
-![image](https://user-images.githubusercontent.com/72948843/182028023-0e2a53bb-713a-447e-acd6-15c3cf93e23f.png)
+![image](https://user-images.githubusercontent.com/72948843/206062334-d66b5f33-3253-48b6-b74b-95d189049d1a.png)
 
+![image](https://user-images.githubusercontent.com/72948843/206062513-dea0c561-03c7-44cb-b43c-3b9d193c5f14.png)
 
 [Back to Top](<#contents>)
 <br>
@@ -627,29 +628,28 @@ My Python Code was directly checked for errors inside the terminal using the com
 
 Validation of the form is implemented by checking before the document is submitted is valid to submit. This is achieved by multiple methods
 
-<ul>
-    <li>To validate the phonenumber being entered into the form, django-phonenumber-field was used. It checks the input to see if it is a valid phonenumber and returns an error message if it is not valid upon submission</li>
-    <li>To validate the date of which a booking can be made, within the form.py is code to check that the date of which the form is greater than the date the booking is being made. If the booking is in today or before, the form is not valid and is returned to be resubmitted. </li>
-</ul>
+
+<!-- * To validate the phonenumber being entered into the form, django-phonenumber-field was used. It checks the input to see if it is a valid phonenumber and returns an error message if it is not valid upon submission
+* To validate the date of which a booking can be made, within the form.py is code to check that the date of which the form is greater than the date the booking is being made. If the booking is in today or before, the form is not valid and is returned to be resubmitted. -->
 
 ![image](https://user-images.githubusercontent.com/72948843/178716912-c029e08e-f0ac-465c-b7a8-6b1ff8a945ff.png)
 
-<ul>
-    <li>Validation of the Bookings that cannot coexist was implemented by making a constraint within the database and when such appointment already exists with the parameters of appointment_date and appointment_slot is met, then the code throws an error and addresses the user to pick another day or time for the appointment. (This was a bug I solved)</li>
-</ul>
+<!-- * *Validation of the Bookings that cannot coexist was implemented by making a constraint within the database and when such appointment already exists with the parameters of appointment_date and appointment_slot is met, then the code throws an error and addresses the user to pick another day or time for the appointment. (This was a bug I solved) -->
 
 ![image](https://user-images.githubusercontent.com/72948843/178721734-56da133c-8ff3-4175-8040-db75e741501f.png)
 
 [Back to Top](<#contents>)
 
 ## Automated Testing
-<p>To check the code, I ran <a href="https://pypi.org/project/coverage/" target="_blank">Coverage</a> (A Third party package) to check how well my Automated tests performed. The report came back with a 73% coverage, the biggest areas that would require more comprehensive tests are the booking/views.py and the booking/forms.py. On a whole, The tests I have written have performed well but ideally greater coverage would be preferential.</p>
-<li>I ran 27 tests with a 73% coverage.</li>
+
+To check the code, I ran <a href="https://pypi.org/project/coverage/" target="_blank">Coverage</a> (A Third party package) to check how well my Automated tests performed
+<li>I created and ran 9 tests, with coverage report of 43% statments tested to 57% missed.</li>
 <li>To run these tests, you need to run the command <i>"python3 manage.py test"</i> in the terminal.</li>
 
-![image](https://user-images.githubusercontent.com/72948843/182039419-792b0105-9a87-4a81-b8ad-8a29db2e70e3.png)
-![image](https://user-images.githubusercontent.com/72948843/182039899-bcd7aac5-8b76-4c8e-a0f9-63cb5ad4719f.png)
+![image](https://user-images.githubusercontent.com/72948843/206062848-5cdda1b1-3b4d-4984-bf8a-830d82c549d7.png)
+![image](https://user-images.githubusercontent.com/72948843/206063262-7222dcb4-9d9b-4e4b-8d06-2c3eea1de224.png)
 
+Ideally with more time I would like to imporve this figure so that it is at least 70% but with a lack of time, and the majority of testing done being manual, it is something that I definitely would look to improve, going forward.
 
 [Back to Top](<#contents>)
 <br>

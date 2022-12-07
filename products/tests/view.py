@@ -1,17 +1,14 @@
 from django.test import TestCase, Client
 from django.urls import reverse
+
 from products.models import Product, Category, Brand
 
-from basket.models import DeliveryMethod
 
-
-class TestViews(TestCase):
+class TestProductViews(TestCase):
 
     def setUp(self):
         self.client = Client()
-        self.delmeth = DeliveryMethod.objects.create(
-            name="test-delmeth", cost=1.5, friendly_name="test-del"
-            )
+
         self.brand = Brand.objects.create(
             name='brand',
             friendly_name='brand',
@@ -21,6 +18,7 @@ class TestViews(TestCase):
             friendly_name='cat',
         )
         self.product = Product.objects.create(
+            id=1,
             name='item',
             category=self.category,
             brand=self.brand,
@@ -30,8 +28,15 @@ class TestViews(TestCase):
             rating=5,
         )
 
-    def test_view_basket_GET(self):
-        response = self.client.get(reverse('view_basket'))
+    def test_view_all_products_GET(self):
+        response = self.client.get(reverse('products'))
 
         self.assertEquals(response.status_code, 200)
-        self.assertTemplateUsed(response, 'basket/basket.html')
+        self.assertTemplateUsed(response, 'products/products.html')
+
+    def test_view_product_detail_GET(self):
+        response = self.client.get(
+            reverse('product_detail', args=[self.product.pk]))
+
+        self.assertEquals(response.status_code, 200)
+        self.assertTemplateUsed(response, 'products/product_detail.html')

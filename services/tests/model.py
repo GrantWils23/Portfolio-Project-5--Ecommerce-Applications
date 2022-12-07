@@ -6,7 +6,6 @@ from services.models import (
     TechService,
     PaintService,
 )
-from profiles.models import UserProfile, User
 
 
 class TestServiceModels(TestCase):
