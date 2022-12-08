@@ -458,7 +458,7 @@ To check the production levels against its performance, I used the Lighthouse te
 
 ![image](https://user-images.githubusercontent.com/72948843/206254309-202b1ed2-bf7b-4e12-bb47-816f9e308795.png)
 
-<!--////////////////////////////////////////////////////////////////////////  -->
+<!--  -->
 
 * Add Brand page - PC view
 
@@ -593,9 +593,6 @@ I did try incognito mode to see if it would improve the performance of the mobil
 I am really happy with these results as they demonstrate that the website passed a lot of the criteria of a high-standard app.
 
 [Back to Top](<#contents>)
-<br>
-
-<!-- continue from here -->
 
 ## Accessibility Testing
 
@@ -623,11 +620,19 @@ To do my Responsive checks of the page, I done manual checks to ensure the page 
 
 ## User Story Tests
 
-### EPIC 1 (VIEWING AND NAVIGATION)
+The User Stories have been organised into epics:
+
+* [EPIC 1 - Viewing and Navigation](<#epic-1-viewing-and-navigation>)
+* [EPIC 2 - Registration and User Accounts](<#epic-2-registration-and-user-accounts>)
+* [EPIC 3 - Sorting and Searching](<#epic-3-sorting-and-searching>)
+* [EPIC 4 - Purchasing and Checkout](<#epic-4-purchasing-and-checkout>)
+* [EPIC 5 - Admin Controls](<#epic-5-admin-controls>)
+
+### EPIC 1 VIEWING AND NAVIGATION
 
 #### User Story 1
 
-As a shopper, i can view a list of products i wish to purchase.
+As a shopper, I can view a list of products i wish to purchase.
    This user can browse the products in a list of products in the store and click on a selected item and add it to the basket.
 
 #### User Story 2
@@ -642,8 +647,206 @@ As a shopper, I can quickly identify categories and brands, so that I can find p
 
 #### User Story 4
 
-As a shopper, I can Easily View the total of what I am about to purchase, so that I can avoid spending too much money.
-   
+As a shopper, I can easily view the total of what I am about to purchase, so that I can avoid spending too much money.
+   The box next to the menu button in the top right corner provides feedback of a total sum of items in your basket. when an item is added to a basket the pop up toast also appears with a sum totaling up the total of your basket.
+
+#### User Story 40
+
+As a shopper, I can view the paint and tech services they offer, so that I can make an informed decision on whether I like the company enough that I would send my RIF to them for works.
+   In the services page, the user can read about the services on offer. From all the details in contact us and about us pages in the site, the user can build a connection with the company as he can see that it is a genuiene and trusted site with experience in tech and paint services. The user can navigate to Airsoft Workshops facebook page which can be followed and company updates are posted here. The user can see new posts of projects they are working on.
+
+#### User Story 5
+
+As a shopper, I can easily fill in a form to get a quote for a paint or tech service form, so that I can get a quote for how much the work I want done will cost.
+   The User can easily fill out a tech services form or a paint services form if they like the look of the company. The form is very clear to read and the visual icons on the radio buttons give the shopper a clear understanding of what the are selecting rather than just a standard form. This gives the shopper more confidence with what they are looking at before they submit a form.
+
+[Back to User Stories Testing](<#user-story-tests>)
+
+### EPIC 2 REGISTRATION AND USER ACCOUNTS
+
+#### User Story 6
+
+As a site user, I can easily register for an account, so that I can have a personal account and be able to view my profile.
+   The user can click on the menu button and register for an account by clicking on the "register" link. The user also can acheive this by clicking on the link in the footer. The links takes you to the signup page and from here you can quickly sign up for an account. all you need to do is supply a password, username and email and once submitted, the last step required is to confirm your registration by replying to the confirm email address sent to the users personal email
+
+#### User Story 7
+
+As a site user, I am able to easily login and logout, so that I can access my personal account information.
+   The user can click on the links in the offcanvas menu or the footer to log in and log out of the website. Once logged in the user has a new option appear in the menu and footer called "my Profile" the user can click on it to get access to their profile data.
+
+#### User Story 8
+
+As a site user, I am able to recover my password in case I forget it, so that I can regain access to my account.
+   The User can click on the sign in button and if they have forgot their password, they can click on the link at the bottom of the sign in page and it will send them an email. When they receive the email they get a link to create a new password for their website. The user can also change their password if they are logged in too. if they go to their profile and update their profile, there is a link at the bottom of the page where they can update their password to something new.
+
+#### User Story 9
+
+As a site user, I want to receive an email confirmation after registering, so that I can view my acccount registration was successful.
+   The user recieves an email upon successfully completing their registration. They can log in and go to the website and open their profile page.
+
+#### User Story 10
+
+As a site user, I can a personalized user profile, so that I can view my personal order history, and order confirmations and save key payment information.
+   When logged in the user can click on their profile in the menu and it will redirect them to their personalized information. from here they can view their wishlist, order history and they can update their default delivery information.
+
+#### User Story 29
+
+As a registed user, I want to be able to save products to a wishlist, so that I can save items that I like to purchase later.
+   When the user scrolls through the website and clicks on an item they like, from inside the view, the user then can click on the add to wishlist. The link toggles to "remove from wishlist" upon successfully adding the item to your wishlist. a popup appears confirming the item was successfully added to the users wishlist. To view the items in the users wishlist, the user then just needs to head over to the user profile and from there inside the view items in their wishlist.
+
+[Back to User Stories Testing](<#user-story-tests>)
+
+### EPIC 3 SORTING AND SEARCHING
+
+#### User Story 11
+
+As a shopper, I want to be able to sort the list of available products, so that I can easily identify the best-rated, best-priced and categorically sorted products.
+   The user can sort the list of products by clicking on the sort box in the top right corner and selecting an item within the selector box. On clicking the field selected in the dropdown box. list of products are sorted in the order specified.
+
+#### User Story 12
+
+As a shopper, I can sort a specific category or brand of products, so that I can find the best-priced, or best-rated products in a specific brand or category, or sort the products in that brand or category by name.
+   The user can click on a category and brand, from the side menu bar and then sort it by the value selected in the sort box.
+
+#### User Story 13
+
+As a shopper, I can sort the list of available products, so that I can find the best-priced or best rated products across brands and categories.
+   The user can select a category or brand from the products search bar and then sort that current list by selecting a sorting method and then select box.
+
+#### User Story 14
+
+As a shopper, I can search for a product by name or description, so that I can find a specific product I would like to purchase.
+   There is a search box in the main off canvas menu that searches products in the store and redirects you to the store with results on what you have searched for. Also in the products view the user can see a search form in the products navbar to perform the same task. If nothing is entered and the form is submitted, the view redirects with an error message informing the user the search was empty.
+
+#### User Story 15
+
+As a shopper, I can easily see what I've searched for and the number of resutls, so that I can quickly decide on whether the product I want is available.
+   The shopper can see at the top of the products page, information regarding the numbers of products returned in the view with details on what parameters were submitted in the search.
+
+[Back to User Stories Testing](<#user-story-tests>)
+
+### EPIC 4 PURCHASING AND CHECKOUT
+
+#### User Story 16
+
+As a Shopper, I can select the quantity of a product when purchasing it, so that I ensure I don't accidentally select the wrong product or quantity.
+   In the product_details view, there is an input number box which you can click on to specify the number of a specific product you want to add to the basket.
+
+#### User Story 17
+
+As a shopper, I can view items in my bag to be purchased, so that I can identifythe total cost of my purchase and all items I will recieve.
+   Once the user is happy with his basket, they can click on the basket in the top right corner and it will take the user view items in their basket.
+
+### User Story 18
+
+As a shopper, I can adjust the number of individual items in my bag, so that I can easily make changes to my purchases before I checkout.
+   In the basket view, you can edit the quantity in the basket to either add or minus the ammount in the shoppers basket and hitting update. You can also remove the item completely from the order by selecting remove on the item specified.
+
+#### User Story 19
+
+As a shopper, I can easily enter my payment information, so that I can checkout quickly with no hasssles.
+   In the basket view the user has to select a delivery payment method before moving on the checkout form, if one is not selected, the default standard shipping is selected. The user then has to hit the checkout button and inside the checkout form the user can fill in the payment method hassle free, the form validates itself and if the form is incorrect the form and/or the stripe card payment box will provide information what is required to successfully complete an order.
+
+#### User Story 20
+
+As a shopper, I can fill out my personal and payment information safely and securely, so that I can confidently provide the needed information to make a purchase.
+   The form is labelled clearly, so it is easy to read what details are needed to fill out complete the purchase. If the user is signed up, they can click the save info button if they dont have any default delivery information to populate the form. On a return purchase the form will be already populated with the necessary details to complete the order, just a card number will be needed to complete the purchase.
+
+#### User Story 21
+
+As a shopper, I can view an order confirmation after checkout, so that I can veriy that I haven't made any mistakes.
+   Upon completing an order, the completed order is rendered in the page with all the details that were used to complete the payments.
+
+#### User Story 22
+
+As a shopper, I can Recieve an email confirmation after checking out, I can keep the confirmation of what I have purchased for my records.
+   Once an order has been placed, The order automatically sends an email with the order details inside it with the price and delivery method, address and contact information inside. along with the products purchased.
+
+#### User Story 28
+
+As a shopper, I can get a confirmation email that my quote for the services selected was received, so that I have peace of mind that they have my request.
+   A thank you page appears upon successful submission of the quote request and an email is sent with the information of the form submitted. If any of it is incorrect, they should get in contact with the shop immediately.
+
+[Back to User Stories Testing](<#user-story-tests>)
+
+### EPIC 5 ADMIN CONTROLS
+
+#### User Story 23
+
+As a store owner, I can add a product, so that I can add a new items to my store.
+   The Store owner can go to the store admin view and select the "add new product" button. It opens a form that allows the user to add a new product to the store. The form validates itself, so if the form is correct the new product will be added to the store. Only a superuser has access to this view.
+
+#### User Story 24
+
+As a store owner, I can edit/update a product, so that I can change the product price, descriptions,images and other product criteria.
+   The store owner can navigate to a either the products or product_details view and only store owners can see an edit button under the product in the view. When the store owner clicks on it, the store owner is redirected to the form with the data of the item to be updated. Only a superuser has access to this view.
+
+#### User Story 25
+
+As a store owner, I can delete a product, so that I can remove items no longer for sale.
+   The store owner can navigate to a either the products or product_details view and only store owners can see a delete button under the product in the view. When the store owner clicks on it, the store owner gets a modal pop up asking the user to confirm if they want to go ahead and delete the product selected. This prevents the store owner from accidentally deleting a product they didn't mean to. Only a superuser has access to this view.
+
+#### User Story 26
+
+As a store owner, I can view bookings of project that comes in, so that I can manage my workload with and view what jobs have come in for painting and tech services.
+   The store owner can navigate to the admin control and select between the view paint and tech requests buttons to view a list of orders, latest quotes are ordered by date and posted at the top of the list. Only a superuser has access to this view.
+
+#### User Story 27
+
+As a store owner, I can notify a customer of the status of their paint or tech service quote, So that they have peace of mind that the quote is in the system.
+   The quote request placed by a interested party, will receive an email from the store to let the potential customer that their quote is in the system and will be looked and responded to as soon as possible. Only a superuser has access to this view.
+
+#### User Story 30
+
+As a store owner, I can view specific orders in the system, so that I can monitor and keep track of orders quickly.
+   The store order can select and find a specific order from the list of orders in Admin Orders view, that are stored in the database. Only a superuser has access to this view.
+
+#### User Story 31
+
+As a store owner, I can add a new brand, so that I can add a new brand to the store.
+   The Store owner can go to the store admin view and select the "add new brand" button. It opens a form that allows the user to add a new brand to the store. The form validates itself, so if the form is correct the new brand will be added to the store. Only a superuser has access to this view.
+
+#### User Story 32
+
+As a store owner, I can edit/update a brand, so that I can change the brand name if necessary.
+   The store owner can manually type in the edit_brand URL to change the brand details without having to go to Django admin URL to edit the fields. Only a superuser has access to this view.
+
+#### User Story 33
+
+As a store owner, I can delete a brand, so that I can remove a brand that is no longer in the store.
+   The store owner can manually type in the delete_brand URL to delete the brand without having to go to Django admin URL to delete brand. Only a superuser can use this view. Only a superuser has access to this view.
+
+#### User Story 34
+
+As a store owner, I can add a new category, so that I can add a new category to the store.
+   The Store owner can go to the store admin view and select the "add new category" button. It opens a form that allows the user to add a new category to the store. The form validates itself, so if the form is correct the new category will be added to the store. Only a superuser has access to this view.
+
+#### User Story 35
+
+As a store owner, I can edit/update a category, so that I can change the category name if necessary.
+   The store owner can manually type in the edit_category URL to change the category details without having to go to Django admin URL to edit the fields. Only a superuser has access to this view.
+
+#### User Story 36
+
+As a store owner, I can delete a category, so that I can remove a category that is no longer in the store.
+      The store owner can manually type in the delete_category URL to delete the category without having to go to Django admin URL to delete category. Only a superuser has access to this view.
+
+#### User Story 37
+
+As a store owner, I can add a new delivery method, so that I can add a new delivery method to the store.
+   The Store owner can go to the store admin view and select the "add new delivery method" button. It opens a form that allows the user to add a new delivery method to the store. The form validates itself, so if the form is correct the new delivery method will be added to the store. Only a superuser has access to this view.
+
+#### User Story 38
+
+As a store owner, I can edit/update a delivery method, so that I can change the delivery method name if necessary.
+   The store owner can manually type in the edit_delivery_method URL to change the delivery method details without having to go to Django admin URL to edit the fields. Only a superuser has access to this view.
+
+#### User Story 39
+
+As a store owner, I can delete a delivery method, so that I can remove a delivery method that is no longer in the store.
+   The store owner can manually type in the delete_delivery_method_ URL to delete the delivery method without having to go to Django admin URL to delete the delivery method. Only a superuser has access to this view.
+
+[Back to User Stories Testing](<#user-story-tests>)
 
 [Back to Top](<#contents>)
 
@@ -701,7 +904,7 @@ To check the code, I ran <a href="https://pypi.org/project/coverage/" target="_b
 ![image](https://user-images.githubusercontent.com/72948843/206062848-5cdda1b1-3b4d-4984-bf8a-830d82c549d7.png)
 ![image](https://user-images.githubusercontent.com/72948843/206063262-7222dcb4-9d9b-4e4b-8d06-2c3eea1de224.png)
 
-Ideally with more time I would like to imporve this figure so that it is at least 70% but with a lack of time, and the majority of testing done being manual, it is something that I definitely would look to improve, going forward.
+Ideally, with more time, I would like to improve this figure so that it is at least 70% but with a lack of time and the majority of testing done manually (recorded in a section above), it is something that I definitely would look to improve, going forward.
 
 [Back to Top](<#contents>)
 
