@@ -53,6 +53,20 @@ footer {
     position: relative;
 }
 
+/* ------------ dead_space_footer_resolver ------------ */
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+}
+
+/* ----------------------------------------------- */
+
 .footer-pushdown {
     height: 250px;
 }

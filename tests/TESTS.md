@@ -626,110 +626,38 @@ I used a website called <a href="https://color.a11y.com/" target="_blank">A11y</
 
 ## Responsive Testing
 
-I used a website called <a href="https://responsivedesignchecker.com/" target="_blank">responsive design checker</a> to check the responsive nature of the website and it passed in all screen aspect ratios
+To do my Responsive checks of the page, I done manual checks to ensure the page responsed well at different aspect ratios: mt results are recorded in a spreadsheet below:
 
-![image](https://user-images.githubusercontent.com/72948843/182042392-7e49e776-7f57-4695-847d-965f06390a87.png)
-<br>
+![image](https://user-images.githubusercontent.com/72948843/206443633-59f0466b-294e-4245-8ece-483819aed3ac.png)
 
 [Back to Top](<#contents>)
 <br>
 
 ## User Story Tests
 
-<h3>As a Site User I can Navigate to the gallery to see previous work so that I can make an informed decision on whether I like the beautician's work or not</h3>
-   <li>while navigating the website, the user can click on the nav bar and then click on the gallery link, to view the work of the beautician's</li> 
-   <li>within the gallery, the user can have a button at the bottom of the page to prompt the user into making a booking and a return to the top. </li> 
-   <li>...</li>
-
-<h3>As a Site User I can browse the front page so that I can select different parts of the website I wish to view</h3>
-   <li>At the top of the webpage, the nav bar has an interactive nav menu. It contains links for the price listing of the treatments, a contact details page, view the services details page, the gallery and Sign in and Sign up.  </li> 
-   <li>The site user and admin when signed in both have different views of the nav bar, the user can view their bookings in the My bookings link, while the admin has access to an admin planner view. </li> 
-   <li>The nav-bar sits at the top of the site and is the same throughout the whole website making it easy for the user to get familiar with the website</li> 
-
-<h3>As Site Admin I can Create a new booking on behalf of a guest or registered user manually so that a booking is stored on the database</h3>
-   <li>The Admin has to be logged in to be able to create the booking. </li>
-   <li>The Admin can add a booking from within all the same places that there is a booking button on the website. When clicked, it redirects you to the booking form. </li>
-   <li>The Admin has their own page, which is the admin planner, in there at the bottom of the page there is another booking button which when clicked redirects you to the booking form. </li>
-   <li>An email is sent upon completion regarding the status of the booking. </li>
-
-<h3>As Site Admin I can Read all the bookings stored on the database so that I can manage and plan my day and workload</h3>
-   <li>The Admin has the view the booking by going to the admin planner. In there is a list of all the bookings displayed on a table. </li>
-   <li>To the left in this table is a booking number link, which opens a booking modal related to the booking where you have a detailed view of the booking. </li>
-   <li>This modal has buttons placed at the bottom to the functions, edit, cancel, and delete the booking. </li>
-
-<h3>As Site Admin I can Edit a booking on behalf of a guest or registered user manually so that the edited booking is stored in the database</h3>
-   <li>Once within the admin planner, you can find the booking you wish to look for by using the filter and searching for it. </li>
-   <li>Click on the booking you are interested in, and you are redirected to a modal where there is a button to edit the booking. </li>
-   <li>This button will redirect you to the booking form with the data of the existing booking, the user then can change the data to whatever is required, (form permitting) and the data is saved to the database. </li>
-   <li>An email is sent upon completion regarding the changes to the booking. </li>
-
-<h3>As Site Admin I can Delete a new booking on behalf of a guest or a registered user manually so that the booking is removed from the database</h3>
-   <li>Once within the admin planner, you can find the booking you wish to look for by using the filter and searching for it. </li>
-   <li>Click on the booking you are interested in, and you are redirected to a modal where there is a button to cancel the booking. </li>
-   <li>This button redirects you to the booking cancel form where it will ask you if are you sure you wish to cancel the booking. </li>
-   <li>Click 'Cancel' to cancel the booking or return to not go through with the cancellation. </li>
-   <li>Upon cancelling the booking, the status of the appointment is moved from ok to cancelled and the booking is no longer to be completed. </li>
-   <li>Upon successfully cancelling the booking an email is sent to the client to inform them of the cancellation of the booking. </li>
-
-<h3>As Site Admin I can Create, Read, Edit, and Delete bookings so that I can manage my work schedule</h3>
-   <li>The Admin has access to the admin planner which contains a booking button for the user to create a new booking for someone. </li> 
-   <li>Within the admin planner view, the user can edit, cancel and delete bookings, this is achieved by clicking on the booking reference within the populated list view. </li> 
-
-<h3>As a Site User I can make an appointment with the beautician so that I will have a make-up session on the date I Choose</h3>
-   <li>On all pages apart form the contact page, the user has a button featured at the bottom of each page and can click on it to make a booking.</li> 
-   <li>This button will take you to a booking form, where the user can make a booking for an appointment that suits them. </li> 
-   <li>Once the form is submitted, if any errors are detected whilst entering the form, the form is returned back to the user to alter the alerted fields before submitting the form.</li>
-   <li>once the booking is made, it returns to the booking details view and alerts the user with a confirmation message that appears and disappears</li>
-
-<h3>As a Site User I can edit my bookings so that they change to a better time/date that suits me</h3>
-   <li>Within the users my booking view, the user has access to a button directly attached to list of bookings on the right or directly within the booking details page itself at the bottom of the box</li>
-   <li>The button takes you back to the booking form with the existing details, where you can see the current details. After altering the fields to what the user wishes, the user can submit the form, providing the details entered are correct. If any errors are detected whilst entering the form, the form is returned to the user to alter the alerted fields before submitting the form. </li>
-   <li>once the booking is made, it returns to the booking details view and alerts the user with a confirmation message that appears and disappears</li>
-
-<h3>As a Site User I can cancel a booking so that I no longer must go to the appointment that is not required</h3>
-    <li>Within the users my booking view, the user has access to a button directly attached to list of bookings on the right or directly within the booking details page itself at the bottom of the box</li>
-   <li>The button takes you to a cancel booking view where the booking is cancelled upon request. The user is asked the question if they are sure they wish to cancel the booking</li> 
-   <li>Once the booking is cancelled the booking then becomes an un-editable object, which only the admin has overriding access to delete the booking. </li> 
-
-<!---->
-<h3>As a Site User I get confirmation upon successfully creating a new booking.</h3>
-   <li>Upon any submission of data to the database, there will be a notice informing you of the success of the users’ actions</li>
-   <li>This makes the user aware that whatever data was requested was successful</li>
-
-<h3>As a Site User I get confirmation of my booking being edited was successful, and deletion of appointments</h3>
-   <li>Upon any submission of data to the database, there will be a notice informing you of the success of the users’ actions. </li>
-   <li>This makes the user aware that whatever data was requested was successful. </li>
-
-<h3>As a Site User I get confirmation that when I request my booking to be cancelled, it was successful. </h3>
-   <li>Upon any submission of data to the database, there will be a notice informing you of the success of the users’ actions</li>
-   <li>This makes the user aware that whatever data was requested was successful</li>
-<!---->
-
-<h3>As a Site User I can Register an Account so that I can view all my bookings</h3>
-   <li>The User has to Sign up to create a booking, this is achieved by creating an account. A Sign up at the top in the nav bar, and upon signing up, the user then can click on the 'My Bookings' link. </li> 
-   <li>The user who is logged in has their name generated next to the top of the 'My Bookings' page to alert the user that they are signed in, next to the sign out link</li> 
-
-<h3>As a Admin/User I can receive emails regarding bookings made, alter and cancel so that I can manage all my bookings</h3>
-   <li>When a user makes a booking or alters it by any means. The user is sent an email upon the submission of the booking, the client receives a confirmation email stating the details of the booking. </li>
-   <li>A copy of any is also forwarded to the admin user, so that they can monitor the status of the bookings in real time without having to sign into the app and search what are the status of the booking’s day by day</li> 
-
-<h3>As a User I can contact the company with any queries I may have so that my concerns are answered</h3>
-    <li>The user has two options within the website to contact the company</li>
-    <li>Within the nav bar, at the very top in the middle is a telephone number in which to call the company</li>
-    <li>Next to the telephone number is the email address which is another quick way to get into contact with the staff</li>
-    <li>There is a contact page within the nav bar which directs you to a page with a larger array of details of how to get into contact with the company. </li>
-    <li>Alternative means to contact include a fax number and a link to the company’s social accounts where you can contact via Facebook, Instagram, and Twitter. (Educational purposes only - no real links to bebeauty exist) </li>
+As a User I can contact the company with any queries I may have so that my concerns are answered
+    The user has two options within the website to contact the company
+    Within the nav bar, at the very top in the middle is a telephone number in which to call the company
+    Next to the telephone number is the email address which is another quick way to get into contact with the staff
+    There is a contact page within the nav bar which directs you to a page with a larger array of details of how to get into contact with the company.
+    Alternative means to contact include a fax number and a link to the company’s social accounts where you can contact via Facebook, Instagram, and Twitter. (Educational purposes only - no real links to bebeauty exist)
 
 [Back to Top](<#contents>)
 <br>
 
 ## Manual Testing
-<p>following the above User Story Tests, those tests coincide with the manual testing procedures of the website. A lot of the features above where check through manual testing to ensure a great user experience. Below is a list of the some of the features manually tested. </p>
 
-![image](https://user-images.githubusercontent.com/72948843/182045459-f03705c8-8c91-4199-ae7d-56b8e90963c5.png)
-![image](https://user-images.githubusercontent.com/72948843/182045518-21d8f059-d60c-4a84-9728-d35f75a5b568.png)
-![image](https://user-images.githubusercontent.com/72948843/182045529-c30443b5-9f9b-4cdf-932f-9fbfc3ae7d44.png)
-![image](https://user-images.githubusercontent.com/72948843/182045600-685994d0-e382-4fe2-b116-e80d2b7d0945.png)
+following the above User Story Tests, those tests coincide with the manual testing procedures of the website. A lot of the features above where check through manual testing to ensure a great user experience. Below is a list of the some of the features manually tested.
+
+![image](https://user-images.githubusercontent.com/72948843/206440175-9b024cc7-471f-4e5d-885e-010d64d24224.png)
+![image](https://user-images.githubusercontent.com/72948843/206440548-5f02a36e-42ed-4e87-a5a3-83064b249d32.png)
+![image](https://user-images.githubusercontent.com/72948843/206440632-3cb5bfae-2164-4991-9020-76f1d4ee9ba7.png)
+![image](https://user-images.githubusercontent.com/72948843/206441539-7795fd13-3236-4dd2-92f1-876f0bb08697.png)
+![image](https://user-images.githubusercontent.com/72948843/206441655-cff2be78-3858-4793-a384-14b9a3298f32.png)
+![image](https://user-images.githubusercontent.com/72948843/206441751-621e9e6a-97d2-4860-9262-2a68bad505f0.png)
+![image](https://user-images.githubusercontent.com/72948843/206441891-1200249b-45da-4040-b34f-648639374f85.png)
+![image](https://user-images.githubusercontent.com/72948843/206441963-a91fb7b2-65af-4f89-acee-2a9ddfa813b8.png)
+![image](https://user-images.githubusercontent.com/72948843/206442056-54c925b3-e4f6-4ee8-b27d-7c65bd344e86.png)
 
 [Back to Top](<#contents>)
 <br>
@@ -742,11 +670,10 @@ Validation of the form is implemented by checking before the document is submitt
 <!-- * To validate the phonenumber being entered into the form, django-phonenumber-field was used. It checks the input to see if it is a valid phonenumber and returns an error message if it is not valid upon submission
 * To validate the date of which a booking can be made, within the form.py is code to check that the date of which the form is greater than the date the booking is being made. If the booking is in today or before, the form is not valid and is returned to be resubmitted. -->
 
-![image](https://user-images.githubusercontent.com/72948843/178716912-c029e08e-f0ac-465c-b7a8-6b1ff8a945ff.png)
 
 <!-- * *Validation of the Bookings that cannot coexist was implemented by making a constraint within the database and when such appointment already exists with the parameters of appointment_date and appointment_slot is met, then the code throws an error and addresses the user to pick another day or time for the appointment. (This was a bug I solved) -->
 
-![image](https://user-images.githubusercontent.com/72948843/178721734-56da133c-8ff3-4175-8040-db75e741501f.png)
+
 
 [Back to Top](<#contents>)
 
@@ -767,24 +694,28 @@ Ideally with more time I would like to imporve this figure so that it is at leas
 ## Bugs
 
 ### Solved Bugs
-I had found a bug whereby if a user placed an order as a unregistered user, the code in my webhookhandler.py would not be able to find the order that was generated at the checkout view. This in turn created a double booking in the database, one for the frist correct order that had the right value charged by stripe, the second order will be the incorrect order with the wrong order information being inserted into the order with incorrect information regarding the grand total paid and shipping method cost changing and then the customer getting the wrong information was sent to them on the email.<br><br>After lots of time spent trying to find the fault for this, I had found that it was the django-phonenumber-field used in the model that was causing the problem. during the order process, it would not validate correctly, the order would be created before the forms self-validation would take place and it would cause the site to crash. Therefore decided to remove this from the order model and just keep it in the user profile form. That way, if the user sets up their profile first the form will validate the number here and it will be correct when the saved data gets used at checkout. if the user updates the profile, if for ever reason the telephone number is wrong, the form will prompt the user to make sure it is a valid telephone number.
 
+I had found a bug whereby if a user placed an order as a unregistered user, the code in my webhookhandler.py would not be able to find the order that was generated at the checkout view. This in turn created a double booking in the database, one for the frist correct order that had the right value charged by stripe, the second order will be the incorrect order with the wrong order information being inserted into the order with incorrect information regarding the grand total paid and shipping method cost changing and then the customer getting the wrong information was sent to them on the email.
+
+After lots of time spent trying to find the fault for this, I had found that it was the django-phonenumber-field used in the model that was causing the problem. during the order process, it would not validate correctly, the order would be created before the forms self-validation would take place and it would cause the site to crash. Therefore decided to remove this from the order model and just keep it in the user profile form. That way, if the user sets up their profile first the form will validate the number here and it will be correct when the saved data gets used at checkout. if the user updates the profile, if for ever reason the telephone number is wrong, the form will prompt the user to make sure it is a valid telephone number.
 
 [Back to Top](<#contents>)
 <br>
 
 ### Unsolved Bugs
-<p>There are no unfixed bugs found on the project.</p>
+
+There are no unfixed bugs found on the project.
 
 [Back to Top](<#contents>)
 <br>
 
 ### Browser Compatibility
-<p>The Website was manually tested in different browsers to check the responsive nature of the website and no errors were found during these tests.</p>
-<li>Google Chrome</li>
-<li>Microsoft Edge</li>
-<li>Safari</li>
-<li>Samsung Internet<li>
+
+The Website was manually tested in different browsers to check the responsive nature of the website and no errors were found during these tests.
+* Google Chrome
+* Microsoft Edge
+* Safari
+* Samsung Internet
 
 [Back to Top](<#contents>)
 <br>
