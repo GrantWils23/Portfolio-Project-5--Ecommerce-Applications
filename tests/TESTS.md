@@ -1,32 +1,28 @@
-<h1>TEMPLATE FROM LAST PROJECT - update along the way</h1>
-
 # Testing
 
 To test my project, I have completed several test procedures and from a wide array of different tests. It is important to test as much of the code as possible. So please scroll down and read the various testing procedures and how I solved some problems with bugs in my code.
 
-### Contents
+## Contents
 
 * [**Testing**](<#testing>)
-    * [Code Validation](<#code-validation>)
-    * [HTML Validation](<#html-validation>)
-    * [CSS Validation](<#css-validation>)
-    * [JS Validation](<#js-validation>)
-    * [Python Validation](<#python-validation>)
-    * [Lighthouse Testing](<#lighthouse-testing>)
-    * [Accessibility Testing](<#accessability-testing>)
-    * [Responsive Testing](<#responsive-testing>)
-    * [User Story Tests](<#user-story-tests>)
-    * [Manual Testing](<#manual-testing>)
-    * [Validation Testing](<#validation-testing>)
-    * [Automated Testing](<#automated-testing>)
-    * [Browser Compatibility](<#browser-compatibility>)
+  * [Code Validation](<#code-validation>)
+  * [HTML Validation](<#html-validation>)
+  * [CSS Validation](<#css-validation>)
+  * [JS Validation](<#js-validation>)
+  * [Python Validation](<#python-validation>)
+  * [Lighthouse Testing](<#lighthouse-testing>)
+  * [Accessibility Testing](<#accessibility-testing>)
+  * [Responsive Testing](<#responsive-testing>)
+  * [User Story Tests](<#user-story-tests>)
+  * [Manual Testing](<#manual-testing>)
+  * [Validation Testing](<#validation-testing>)
+  * [Automated Testing](<#automated-testing>)
+  * [Browser Compatibility](<#browser-compatibility>)
 * [**Bugs**](<#bugs>)
-    * [Solved Bugs](<#solved-bugs>)
-    * [Unsolved Bugs](<#unsolved-bugs>)
+  * [Solved Bugs](<#solved-bugs>)
+  * [Unsolved Bugs](<#unsolved-bugs>)
 
-<hr>
-
-# Code Validation
+## Code Validation
 
 Airsoft Workshop has been validated by using online validation tools W3C HTML Validator, W3C CSS Validator, JSHint JavaScript Validator and the PEP8 Online Validator.
 HTML Validation Image... Below are the results of the Validation of the code that I passed through the validator.
@@ -195,9 +191,7 @@ Due to the way the card payment element is created from the stripe, it creates m
 
 ![image](https://user-images.githubusercontent.com/72948843/205901066-556e0129-7481-41d5-b62c-598bc54bfe0e.png)
 
-
 [Back to Top](<#contents>)
-<br>
 
 ## CSS Validation
 
@@ -212,8 +206,6 @@ My CSS Code was directly inputted into the validator and passed with 0 errors.
 ![image](https://user-images.githubusercontent.com/72948843/205923295-5c3ce408-c335-405c-93c6-fcc0a24fb34a.png)
 
 [Back to Top](<#contents>)
-
-<br>
 
 ### JS Validation
 
@@ -238,7 +230,6 @@ Below I have recorded the results of my Javascript validations:
 ![image](https://user-images.githubusercontent.com/72948843/205947913-f74f62c3-ee20-4d77-bfff-72eece8be004.png)
 
 [Back to Top](<#contents>)
-<br>
 
 ## Python Validation
 
@@ -254,7 +245,6 @@ I am happy with flake8 report as the vast majority of these errors reported are 
 ![image](https://user-images.githubusercontent.com/72948843/206062513-dea0c561-03c7-44cb-b43c-3b9d193c5f14.png)
 
 [Back to Top](<#contents>)
-<br>
 
 ## Lighthouse Testing
 
@@ -598,9 +588,9 @@ There was one concern with the performance running at a lower performance accros
 
 ![image](https://user-images.githubusercontent.com/72948843/206273403-457bb0d4-7741-4597-96bb-4855ca468abe.png)
 
-I did try incognito mode to see if it would improve the performance of the mobile view and unfortunately, it did not. With my chrome extensions setup perfectly how I require it, I and not having access to another chrome pc, I decided to just check the performance manually. The deployed app performs well in real life tests, and is documented in a section further down in this file.
+I did try incognito mode to see if it would improve the performance of the mobile view and unfortunately, it did not. With my chrome extensions setup perfectly how I require it, I and not having access to another chrome pc, I decided to just check the performance manually. The deployed app performs well in real-life tests and is documented in a section further down in this file.
 
-I am really happy with these results as they demonstrate that the website passed a lot of the criteria of a high standard app.
+I am really happy with these results as they demonstrate that the website passed a lot of the criteria of a high-standard app.
 
 [Back to Top](<#contents>)
 <br>
@@ -622,16 +612,14 @@ I used a website called <a href="https://color.a11y.com/" target="_blank">A11y</
  The website passes, with some noted fails. The logo font is an important part of the brand image, but fails its contrast ration on smaller text. Due to the size of were these items are, they don't pose much of an issue as the font never reduces to an unreadable that the aspect ratio is going to be a problem. With these results, I am happy moving forward in my testing knowing that the website accessibility rating is high.
 
 [Back to Top](<#contents>)
-<br>
 
 ## Responsive Testing
 
-To do my Responsive checks of the page, I done manual checks to ensure the page responsed well at different aspect ratios: mt results are recorded in a spreadsheet below:
+To do my Responsive checks of the page, I done manual checks to ensure the page responsed well at different aspect ratios. during this test i found that my footer was moving up the page and generating deadspace beneath it which was not pretty and gave a poor user experience... I made some css changes to fix this issue so now the footer alwatys sits on the bottom of the page. The results following the corrections are recorded in a spreadsheet below:
 
 ![image](https://user-images.githubusercontent.com/72948843/206443633-59f0466b-294e-4245-8ece-483819aed3ac.png)
 
 [Back to Top](<#contents>)
-<br>
 
 ## User Story Tests
 
@@ -643,7 +631,6 @@ As a User I can contact the company with any queries I may have so that my conce
     Alternative means to contact include a fax number and a link to the company’s social accounts where you can contact via Facebook, Instagram, and Twitter. (Educational purposes only - no real links to bebeauty exist)
 
 [Back to Top](<#contents>)
-<br>
 
 ## Manual Testing
 
@@ -660,28 +647,41 @@ following the above User Story Tests, those tests coincide with the manual testi
 ![image](https://user-images.githubusercontent.com/72948843/206442056-54c925b3-e4f6-4ee8-b27d-7c65bd344e86.png)
 
 [Back to Top](<#contents>)
-<br>
 
-## Input Validation and checking
+## Validation Testing
 
-Validation of the form is implemented by checking before the document is submitted is valid to submit. This is achieved by multiple methods
+### Validation checks
 
+Validation of the form is implemented by checking before the document is submitted is valid to submit. This is achieved by multiple methods:
 
-<!-- * To validate the phonenumber being entered into the form, django-phonenumber-field was used. It checks the input to see if it is a valid phonenumber and returns an error message if it is not valid upon submission
-* To validate the date of which a booking can be made, within the form.py is code to check that the date of which the form is greater than the date the booking is being made. If the booking is in today or before, the form is not valid and is returned to be resubmitted. -->
+* To validate the phone number being entered into the form, django-phonenumber-field was used. It checks the input to see if it is a valid phone number and returns an error message if it is not valid upon submission. This inbuild validation was used on the profile, tech and paint services models but not the Order Model.
+* To validate the country field, django-countries were used. It checks whether the data entered into the field is entered correctly.
 
+Using all the inbuild form validations helped create quick clean code without having to write many custom form validations.
 
-<!-- * *Validation of the Bookings that cannot coexist was implemented by making a constraint within the database and when such appointment already exists with the parameters of appointment_date and appointment_slot is met, then the code throws an error and addresses the user to pick another day or time for the appointment. (This was a bug I solved) -->
+Incorrect data validations:
 
+![image](https://user-images.githubusercontent.com/72948843/204623185-83b4fec9-9590-434b-8782-075cbe5569e8.png)
+![image](https://user-images.githubusercontent.com/72948843/205713769-ea7e0e52-2adc-48ba-8c2e-cc125b4a0796.png)
+![image](https://user-images.githubusercontent.com/72948843/205713826-c36fcd4c-f741-4a4e-850c-3e0318dc3e7b.png)
+![image](https://user-images.githubusercontent.com/72948843/205713921-76eb0997-1774-4abf-af88-26a52235a379.png)
 
+Incorrect card details validation:
+
+![image](https://user-images.githubusercontent.com/72948843/204623529-64001769-df3a-4572-a7a5-6842e1315073.png)
+
+Missing field upon submitting validation:
+
+![image](https://user-images.githubusercontent.com/72948843/204623756-90d46dae-ab10-4f8c-9967-9b8235ceedc6.png)
 
 [Back to Top](<#contents>)
 
 ## Automated Testing
 
 To check the code, I ran <a href="https://pypi.org/project/coverage/" target="_blank">Coverage</a> (A Third party package) to check how well my Automated tests performed
-<li>I created and ran 9 tests, with coverage report of 43% statments tested to 57% missed.</li>
-<li>To run these tests, you need to run the command <i>"python3 manage.py test"</i> in the terminal.</li>
+
+* I created and ran 9 tests, with coverage report of 43% statments tested to 57% missed.
+* To run these tests, you need to run the command <i>"python3 manage.py test"</i> in the terminal.
 
 ![image](https://user-images.githubusercontent.com/72948843/206062848-5cdda1b1-3b4d-4984-bf8a-830d82c549d7.png)
 ![image](https://user-images.githubusercontent.com/72948843/206063262-7222dcb4-9d9b-4e4b-8d06-2c3eea1de224.png)
@@ -689,7 +689,6 @@ To check the code, I ran <a href="https://pypi.org/project/coverage/" target="_b
 Ideally with more time I would like to imporve this figure so that it is at least 70% but with a lack of time, and the majority of testing done being manual, it is something that I definitely would look to improve, going forward.
 
 [Back to Top](<#contents>)
-<br>
 
 ## Bugs
 
@@ -700,22 +699,20 @@ I had found a bug whereby if a user placed an order as a unregistered user, the 
 After lots of time spent trying to find the fault for this, I had found that it was the django-phonenumber-field used in the model that was causing the problem. during the order process, it would not validate correctly, the order would be created before the forms self-validation would take place and it would cause the site to crash. Therefore decided to remove this from the order model and just keep it in the user profile form. That way, if the user sets up their profile first the form will validate the number here and it will be correct when the saved data gets used at checkout. if the user updates the profile, if for ever reason the telephone number is wrong, the form will prompt the user to make sure it is a valid telephone number.
 
 [Back to Top](<#contents>)
-<br>
 
 ### Unsolved Bugs
 
 There are no unfixed bugs found on the project.
 
 [Back to Top](<#contents>)
-<br>
 
 ### Browser Compatibility
 
 The Website was manually tested in different browsers to check the responsive nature of the website and no errors were found during these tests.
+
 * Google Chrome
 * Microsoft Edge
 * Safari
 * Samsung Internet
 
 [Back to Top](<#contents>)
-<br>
