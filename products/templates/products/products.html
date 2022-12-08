@@ -23,7 +23,7 @@
                     <!-- product-sort-bar -->
                     <div class="col-12 col-md-6 my-auto order-md-last d-flex justify-content-center justify-content-md-end">
                         <div class="mx-5 w-sm-50 w-md-75 pr-3">
-                            <select id="sort-selector" class="rounded-0 border border-{% if current_sorting != 'None_None' %}info{% else %}black{% endif %} h5">
+                            <select id="sort-selector" class="rounded-1 border border-4 border-{% if current_sorting != 'None_None' %}success{% else %}black{% endif %} h5">
                                 <option value="reset" {% if current_sorting == 'None_None' %}selected{% endif %}>Sort by...</option>
                                 <option value="price_asc" {% if current_sorting == 'price_asc' %}selected{% endif %}>Price (low to high)</option>
                                 <option value="price_desc" {% if current_sorting == 'price_desc' %}selected{% endif %}>Price (high to low)</option>
@@ -98,7 +98,7 @@
                                 <br>
                                 <small class="ml-3">
                                     <a class="text-decoration-none blue-on-hov" href="{% url 'edit_product' product.id %}">Edit</a> |
-                                    <span type="button" class="text-danger red-on-hov" data-bs-toggle="modal" data-bs-target="#deleteModal{{product.id}}">Delete</span>
+                                    <span type="button" class="text-danger red-on-hov" data-bs-toggle="modal" data-bs-target="#DeleteProductModal{{product.id}}">Delete</span>
                                 </small>
                                 {% endif %}
                                 <br>

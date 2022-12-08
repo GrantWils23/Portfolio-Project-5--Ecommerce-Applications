@@ -1,19 +1,17 @@
+
+# Portfolio_Project_5 --- Ecommerce Project
+
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-<h1>Portfolio_Project_5 --- Ecommerce Project</h1>
-<h1>The Airsoft Workshop</h1>
+## Airsoft Workshop
 
-<p>The Idea for this website came from my hobby. I am an airsofter and it is my biggest passion outside work. I got really envolved in the sport and have always looked at the idea of working more closely within the airsoft community and would like to provide a unique, bespoke service that offers spray painting, camoflaging of Realistic Imitation Firearms (RIFs). When i speak with fellow airsofters they always would like a way to stand out from the crowd and have unique equipment and that is where the airsoft workshop comes into play. from selling consumables and to offering high-end services such as maintainance and repairs.</p>
+The Idea for this website came from my hobby. I am an airsofter and it is my biggest passion outside work. I got really envolved in the sport and have always looked at the idea of working more closely within the airsoft community and would like to provide a unique, bespoke service that offers spray painting, camoflauging of Realistic Imitation Firearms (RIFs). When i speak with fellow airsofters they always would like a way to stand out from the crowd and have unique equipment and that is where the airsoft workshop comes into play. from selling consumables and to offering high-end services such as maintainance and repairs.
 
 click here to go to the deployed website: <a href="https://airsoft-workshop.herokuapp.com/" target="_blank"><b><i>"Airsoft Workshop"</i></b></a>
-<!-- Change HREF HERE -->
-<br><br>
 
 ![image](https://user-images.githubusercontent.com/72948843/205629357-1a4f2095-590a-47c1-b1c9-f8f89eba4c2f.png)
 
-<br>
-
-# Contents
+## Contents
 
 * [**User Experience UX**](<#user-experience-ux>)
   * [User Stories](<#user-stories>)
@@ -101,7 +99,7 @@ Navigating around the site is easy due to the simple layout. here below is the b
 * Product Management (includes search filters and add views)
 * Products
 * Product Details
-* Bag
+* Basket
 * Checkout
 * About Us
 * Contact Us
@@ -196,60 +194,53 @@ The tertiary font...
 * The offcanvas menu has link to the homepage, to the services page and then links to all the individual service links, along with the account dropdown menu with all related field options contained within.
 * The logo is clickable with a link back to the home page for enhanced UX.
 
-
 ![image](https://user-images.githubusercontent.com/72948843/200792615-30d89016-b13e-4193-a272-af9e689ca7cf.png)
-<i>Navbar menu - smaller aspect ratio devices</i>
+Navbar menu - smaller aspect ratio devices
 
 ![image](https://user-images.githubusercontent.com/72948843/200794557-5d6fc4d2-cff6-4396-aa50-9433cb7a38e7.png)
-<i>Off Canvas Dropdown menu</i>
+Off Canvas Dropdown menu
 
 ![image](https://user-images.githubusercontent.com/72948843/200793688-14d6f2c0-57e5-43a7-9b9c-f30ed583b5b8.png)
-<i>Store sub category options</i>
+Store sub category options
 
 ![image](https://user-images.githubusercontent.com/72948843/200795018-60aed44b-8229-41df-a1f0-ad74e9f97c1c.png)
-<i>Account Dropdown menu - Superuser View</i>
+Account Dropdown menu - Superuser View
 
 [Back to Existing Features](<#existing-features>)
-<br>
 
 ## Allauth Functionality
 <!-- example text from pervious project, change accordingly -->
-- The allauth functionality allows the generation of user profiles which helps customers create a profile that they can save and have records of their orders in their account. This has been intergrated within the airsoft workshop to give the user the ability to signin, signout, register.
+The allauth functionality allows the generation of user profiles which helps customers create a profile that they can save and have records of their orders in their account. This has been intergrated within the airsoft workshop to give the user the ability to signin, signout, register.
 
-![image](https://user-images.githubusercontent.com/72948843/200797736-de2a378e-5bca-4fd7-a2c5-8e64563b5541.png)
-<i>Sign in</i>
+![image](https://user-images.githubusercontent.com/72948843/206473481-7d031c57-5999-48d3-b06d-057f26b33d01.png)
+Sign in
 
-![image](https://user-images.githubusercontent.com/72948843/200797938-24af6e58-4d31-4ec6-b0e5-9c46956c8c91.png)
-<i>Sign Up</i>
+![image](https://user-images.githubusercontent.com/72948843/206473839-692214fa-fbac-4c27-87fc-5eb744667b99.png)
+Sign Up
 
-![image](https://user-images.githubusercontent.com/72948843/200798310-00f5843d-3883-4b8f-89cd-511e2953a7c0.png)
-<i>Sign Out</i>
-<br>
+![image](https://user-images.githubusercontent.com/72948843/206474024-b2687e53-1275-42d1-a63c-56b837484b73.png)
+Sign Out
+
 
 [Back to Existing Features](<#existing-features>)
-<br>
-<br>
 
 ## Services Page
-The services page is designed to give the users a brief insight into the services of what the company offers its clients with a description of the beautician’s experience and really is where you get a feel for the company and the professional nature of it. The page is designed to be eye-catching and give the user a well-rounded experience as they view what company has to offer. The cards have a green shadow appear around them when the cursor enters a card to focus your view on the card the user are reading helping to boost the users UX.
- 
-![image](https://user-images.githubusercontent.com/72948843/200798942-5810353e-1a85-45bc-bb6b-deb8c7594b5d.png)
-<i>Services page on a large view device</i>
 
+The services page is designed to give the users a brief insight into the services of what the company offers its clients with a description of the beautician’s experience and really is where you get a feel for the company and the professional nature of it. The page is designed to be eye-catching and give the user a well-rounded experience as they view what company has to offer. The cards have a green shadow appear around them when the cursor enters a card to focus your view on the card the user are reading helping to boost the users UX.
+
+![image](https://user-images.githubusercontent.com/72948843/200798942-5810353e-1a85-45bc-bb6b-deb8c7594b5d.png)
+Services page on a large view device
 
 ![image](https://user-images.githubusercontent.com/72948843/200799508-1c5b11b1-2eb0-4190-91e8-e08138a090c4.png)
-<i>Services page on a small view device</i>
+Services page on a small view device
 
 ![image](https://user-images.githubusercontent.com/72948843/204614385-066b085d-0cdc-432c-91d2-3530e2f20fa3.png)
-<li>Services page modal</li>
-
+Services page modal
 
 [Back to Existing Features](<#existing-features>)
-<br>
 
 ## Tech Services
 
-<br>
 The Tech services page is user friendly and is very clear to read, Its high contrast background on the hover over the radio select buttons images make a great visual indicator to on hovered items, which enhances the user's experience on the page.
 
 ![image](https://user-images.githubusercontent.com/72948843/204584418-08a60b02-d0a1-4eaf-95b1-9524ddd4db33.png)
@@ -257,12 +248,8 @@ The Tech services page is user friendly and is very clear to read, Its high cont
 <!-- Add later more content -->
 
 [Back to Existing Features](<#existing-features>)
-<br>
-
 
 ## Paint Services
-
-<br>
 
 The Paint services page is user friendly and is very clear to read, Its high contrast background on the hover over the radio select buttons images make a great visual indicator to on hovered items, which enhances the user's experience on the page.
 
@@ -273,11 +260,33 @@ The radio buttons in the form have images attached to them help. The images are 
 <!-- Add later more content -->
 
 [Back to Existing Features](<#existing-features>)
-<br>
 
 ## Store
 
-![image](https://user-images.githubusercontent.com/72948843/204611307-f5b40c2b-ffde-4414-9c7e-3a5b2e89d196.png)
+The store hosts multiple features to make shopping more comfortable for the user. There is a "Sort By" box in the top right that allows the user to sort the products in an order the user wishes.
+
+![image](https://user-images.githubusercontent.com/72948843/206476831-82a3ae88-d33f-4866-849c-76da7fffcca6.png)
+
+There are some useful page filters to help the user filter by brands and categories in the side menu bar. This gives the user more control on specifically filtering down the prodcuts to a particular brand they may like or by a general category they are interested in.
+
+![image](https://user-images.githubusercontent.com/72948843/206477143-dca8879d-b355-43f5-88b9-bfef9dd888e2.png)
+![image](https://user-images.githubusercontent.com/72948843/206477569-0d64d4fd-16eb-4a14-a1be-e8450c15877d.png)
+![image](https://user-images.githubusercontent.com/72948843/206481077-7fe7decf-ebbd-43ac-af03-78cdb5c7a5e6.png)
+
+There is a search box, with which a user can search for specific keyword and the result of the seatch will be displayed back to the user what they have in store that matches the criteria of the search in the product name or product description.
+![image](https://user-images.githubusercontent.com/72948843/206478170-8acf1797-10fc-4de1-9567-4e76e3f7cc4f.png)
+![image](https://user-images.githubusercontent.com/72948843/206478390-85295d77-f859-435d-9de7-9af401c7f8e4.png)
+
+There is a return to top button located at the bottom of the view that is fixed and when pressed it takes you to the top of the page.
+
+![image](https://user-images.githubusercontent.com/72948843/206478718-a468748d-56c4-47e0-8075-d503bac5c230.png)
+
+The site uses page pagination to make viewing by products a more organised process, rather than just rendering all the products on one page which is long winded and messy, this gives the user more control on the view and doesn't overwhelm them.
+![image](https://user-images.githubusercontent.com/72948843/206479420-32ad6aca-b7f0-43ef-982f-14c0be16732b.png)
+
+Overall Page View:
+
+![image](https://user-images.githubusercontent.com/72948843/206479665-4f7f7d34-833a-4011-9125-bec2f3ce2b76.png)
 
 * Desktop View
 
@@ -287,7 +296,6 @@ The radio buttons in the form have images attached to them help. The images are 
 
 ## Basket
 
-<br>
 <!-- Add later more content -->
 
 ![image](https://user-images.githubusercontent.com/72948843/204585310-78828b14-fb87-4131-82de-3ae474475491.png)
@@ -299,12 +307,9 @@ The radio buttons in the form have images attached to them help. The images are 
 * Mobile view
 
 [Back to Existing Features](<#existing-features>)
-<br>
-
 
 ## Checkout
 
-<br>
 <!-- Add later more content -->
 The checkout view informs the user of all the criteria required to complete the purchase, along with a small recap window of what the user is ordering.
 
@@ -319,7 +324,6 @@ Upon completion of an order, a confirmation email and are redirected to a succes
 * Checkout Success
 
 [Back to Existing Features](<#existing-features>)
-<br>
 
 ## Footer
 
@@ -335,7 +339,6 @@ Footer on a large view device
 Footer on a small view device
 
 [Back to Existing Features](<#existing-features>)
-<br>
 
 ## Toast and Messages
 
@@ -358,7 +361,6 @@ The toast and messaging system gives really helpful feedback to the user in real
 * error
 
 [Back to Existing Features](<#existing-features>)
-<br>
 
 ## Wishlist and User Profile
 
@@ -371,8 +373,6 @@ The website boasts a user profile panel and registered users have access to a mu
 ![image](https://user-images.githubusercontent.com/72948843/204587086-70982166-ce19-4e3b-982b-74656b72faa0.png)
 
 [Back to Existing Features](<#existing-features>)
-<br>
-
 
 ## Admin Controls
 
@@ -436,6 +436,13 @@ To do this, I brainstormed criteria based on the three key unique selling points
 ![image](https://user-images.githubusercontent.com/72948843/206468148-eb7aab44-b9cd-43a7-ba1b-d32cfda59fd9.png)
 
 Also a link to the file in assets: <a href="https://github.com/GrantWils23/Portfolio-Project-5--Ecommerce-Applications/blob/main/assets/seo-research-documentation.pdf" target="_blank"><b><i>" keyword research"</i></b></a>.
+
+Also part of SEO requires a sitemap.xml file and a robots.txt file these were created and added to the base level of the project.
+
+![image](https://user-images.githubusercontent.com/72948843/206470095-c99c80fc-02e2-446a-b4a4-f63907ec0eec.png)
+
+To generate the sitemap.xml file, I used a website called <a href="https://www.xml-sitemaps.com/" target="_blank">XML Sitemaps</a> which is a free tool that scrolls your website and generates a report on your website of page impportance. This file helps boost the site's trustworthiness.
+
 
 <!--  -->
 
