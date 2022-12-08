@@ -226,13 +226,16 @@ Sign Out
 
 ## Services Page
 
-The services page is designed to give the users a brief insight into the services of what the company offers its clients with a description of the beautician’s experience and really is where you get a feel for the company and the professional nature of it. The page is designed to be eye-catching and give the user a well-rounded experience as they view what company has to offer. The cards have a green shadow appear around them when the cursor enters a card to focus your view on the card the user are reading helping to boost the users UX.
+The services page is designed to give the users a brief insight into the services of what the company offers its clients with a description of the beautician’s experience and really is where you get a feel for the company and the professional nature of it. The page is designed to be eye-catching and give the user a well-rounded experience as they view what company has to offer. The cards have a green shadow appear around them when the cursor enters a card to focus your view on the card the user are reading helping to boost the user's UX.
 
 ![image](https://user-images.githubusercontent.com/72948843/200798942-5810353e-1a85-45bc-bb6b-deb8c7594b5d.png)
-Services page on a large view device
+Services page on a large-view device
 
 ![image](https://user-images.githubusercontent.com/72948843/200799508-1c5b11b1-2eb0-4190-91e8-e08138a090c4.png)
 Services page on a small view device
+
+![image](https://user-images.githubusercontent.com/72948843/206483907-c73bc433-8fc1-4297-bc63-aba123ed9b16.png)
+On hover with a cursor the cards light up with a background glow to draw the users attention
 
 ![image](https://user-images.githubusercontent.com/72948843/204614385-066b085d-0cdc-432c-91d2-3530e2f20fa3.png)
 Services page modal
@@ -267,21 +270,23 @@ The store hosts multiple features to make shopping more comfortable for the user
 
 ![image](https://user-images.githubusercontent.com/72948843/206476831-82a3ae88-d33f-4866-849c-76da7fffcca6.png)
 
-There are some useful page filters to help the user filter by brands and categories in the side menu bar. This gives the user more control on specifically filtering down the prodcuts to a particular brand they may like or by a general category they are interested in.
+There are some useful page filters to help the user filter by brands and categories in the side menu bar. This gives the user more control on specifically filtering down the prodcuts to a particular brand they may like or by a general category they are interested in. At the top of the side navbar there is a clear all button that resets any filters or search criteria that hovers red when you are ontop of it.
 
 ![image](https://user-images.githubusercontent.com/72948843/206477143-dca8879d-b355-43f5-88b9-bfef9dd888e2.png)
 ![image](https://user-images.githubusercontent.com/72948843/206477569-0d64d4fd-16eb-4a14-a1be-e8450c15877d.png)
 ![image](https://user-images.githubusercontent.com/72948843/206481077-7fe7decf-ebbd-43ac-af03-78cdb5c7a5e6.png)
 
 There is a search box, with which a user can search for specific keyword and the result of the seatch will be displayed back to the user what they have in store that matches the criteria of the search in the product name or product description.
+
 ![image](https://user-images.githubusercontent.com/72948843/206478170-8acf1797-10fc-4de1-9567-4e76e3f7cc4f.png)
 ![image](https://user-images.githubusercontent.com/72948843/206478390-85295d77-f859-435d-9de7-9af401c7f8e4.png)
 
-There is a return to top button located at the bottom of the view that is fixed and when pressed it takes you to the top of the page.
+There is a return to top button located at the bottom of the view that is fixed and when pressed it takes you to the top of the page. This helps the user browse the site quickly and not waste time scrolling back past items they are not interested in.
 
 ![image](https://user-images.githubusercontent.com/72948843/206478718-a468748d-56c4-47e0-8075-d503bac5c230.png)
 
 The site uses page pagination to make viewing by products a more organised process, rather than just rendering all the products on one page which is long winded and messy, this gives the user more control on the view and doesn't overwhelm them.
+
 ![image](https://user-images.githubusercontent.com/72948843/206479420-32ad6aca-b7f0-43ef-982f-14c0be16732b.png)
 
 Overall Page View:
@@ -291,6 +296,7 @@ Overall Page View:
 * Desktop View
 
 ![image](https://user-images.githubusercontent.com/72948843/204613256-9ce42b07-3566-4cfd-9d26-594fb0ee9c5d.png)
+![image](https://user-images.githubusercontent.com/72948843/206483657-0851d7ee-64eb-4b16-a080-38c1385959f0.png)
 
 * Mobile View
 
@@ -442,9 +448,6 @@ Also part of SEO requires a sitemap.xml file and a robots.txt file these were cr
 ![image](https://user-images.githubusercontent.com/72948843/206470095-c99c80fc-02e2-446a-b4a4-f63907ec0eec.png)
 
 To generate the sitemap.xml file, I used a website called <a href="https://www.xml-sitemaps.com/" target="_blank">XML Sitemaps</a> which is a free tool that scrolls your website and generates a report on your website of page impportance. This file helps boost the site's trustworthiness.
-
-
-<!--  -->
 
 [Back to Top](<#contents>)
 
@@ -614,13 +617,11 @@ The libraries used in this project are located in the requirements.txt file and 
 * <a href="https://pypi.org/project/stripe/" target="_blank">stripe</a> - A Python library for Stripe’s API.
 * <a href="https://pypi.org/project/urllib3/" target="_blank">urllib3</a> - urllib3 is a powerful, user-friendly HTTP client for Python. Much of the Python ecosystem already uses urllib3 and you should too. urllib3 brings many critical features that are missing from the Python standard libraries.
 
-
 [Back to Top](<#contents>)
-# Deployment
 
-<!-- Update as I go -->
+## Deployment
 
-## Creating a Database
+### Creating a Database
 
 For this part, I used <a href="https://www.elephantsql.com/" target="_blank">ElephantSQL</a> as it is a wonderful free service to use as long as our database is not too large. To set this up, please follow the steps below:</p>
 
@@ -643,9 +644,9 @@ For this part, I used <a href="https://www.elephantsql.com/" target="_blank">Ele
 6) Select your new database and it will take you to the panel where you can now see a link to your database's new URL. Copy this URL and you can now assign this to your environmental variables in either your env.py file or in Heroku as ```DATSBASE_URL```
 ![image](https://user-images.githubusercontent.com/72948843/204643640-946d6324-456b-4d8a-bdeb-234062ddfcb9.png)
 
-## Deployment of the project
+### Deployment of the project
 
-### Deployment to Heroku
+#### Deployment to Heroku
 
 To deploy the site is a labour intensive process. follow the steps below for a stress free deployment:
 
@@ -658,8 +659,6 @@ Once the page loads, it asks you to put in an app name and your preferred region
 ![image](https://user-images.githubusercontent.com/72948843/204659727-963cd991-3895-4c72-a4e4-9c920679791b.png)
 
 The page will load to the overview Heroku app page. Click on 'settings'. Once inside settings, scroll down to the project settings and click 'Reveal Config Vars'. Add the following config vars to the project:
-
-<br>
 
 ![image](https://user-images.githubusercontent.com/72948843/204660599-f0e42c6c-de21-4e46-81f5-28f3d082f8c6.png)
 
@@ -872,16 +871,11 @@ Now with this done, you can now send emails in development and deployment.
 
 [Back to Top](<#contents>)
 
-<br>
-
-# Cloning of the project
-
-<hr>
+### Cloning of the project
 
 To create a local clone of the project, follow the steps below:
 
 * In the GitHub repository, under the repository name there is a code tab., click on the 'code' tab. and select either HTTPS or CSS link to copy the code. I will use HTTPS:
-
 
 ![image](https://user-images.githubusercontent.com/72948843/182441657-b4116d59-ee58-4a4d-9826-2119bd34d7a8.png)
 * In the clone tab, click the HTTPS tab. Within this section, click on the clipboard icon and copy the URL supplied for the repository.
@@ -891,26 +885,24 @@ To create a local clone of the project, follow the steps below:
 1. ```"git clone HTTPS or SSH link``` - This will clone the project to your computer
 2. ```cd name of project``` - This will cd (change directoy) into your project
 3. ```code .``` - This will launch your project in VSCode
-<br>
+
 ![image](https://user-images.githubusercontent.com/72948843/182444495-9a5f9b21-e7e2-4a99-b055-937a7232470e.png)
 
 Now you need to setup and initialize a virtual environment for the project. follow the steps below to setup a virtual environment if you haven't done so before.
 
 ```$ pip install virtualenv```
-<br>
+
 (Step.1) Test your installation was successful:
 
 ```$ python3 -m virtualenv -- version```
-<br>
+
 (Step.2) Then create the virtual environment using virtualenv
 
 ```$ python3 -m virtualenv myenv```
-<br>
 
 ![image](https://user-images.githubusercontent.com/72948843/182444824-9bafb75a-cae4-4cef-b00b-d22d9a619336.png)
-<br>
+
 (Step.3) After creating the virtual environment, you need to activate it. <b><i>We need to activate the virtual environment every time you will work on the project!</i></b>. This can be achieved by using the following command:
-<br>
 
 * ``` $ source virtualenv_name/bin/activate ``` - [For Mac] 
 * ``` $ source virtualenv_name/Scripts/activate ``` - [For Windows]  (as in my example below):
@@ -928,8 +920,7 @@ Once you are in the virtual environment, the terminal will have it appear in bra
 NOTE: To deactivate the virtual environment just type ```deactivate``` into the terminal (like in the image below).
 
 ![image](https://user-images.githubusercontent.com/72948843/182445800-b322a679-751f-4ad3-af36-416b91451d23.png)
-<br>
-<hr>
+
 Now within the virtual environment, we now need to install the project requirements to run the project. in the virtual environment terminal, type in the following command:
 
 ```pip3 install -r requirements.txt```
@@ -962,23 +953,21 @@ This command will only work if you use your local database within the deployment
 
 This project has installed inside it a python package called [*Coverage*]. This app is useful as it gives you comprehensive reports on how much of your project has been tested. To get a coverage report, run the following command in the terminal: ```coverage report``` and this will output a tabled list of the results from the report. The report gives you an idea of what areas perhaps require more testing and gives you a score on how your tests perform.
 
-<br>
-
 ## Credits
 
-<p>Building the website was a very hard process but very rewarding. I would like to mention below some credits to my project:</p>
-<ul>
-    <li>I used Bootstrap a lot when building this website. I mentioned a link to the website in the above technologies used section.</li>
-    <li>Django documentation was used a lot during the build of the website to make sense of how to build the MVT. The documention is very thorough and explains a lot of things clearly. When I had a problem, I could read their docs with a large degree of success</li>
-    <li>I also used <a href="https://stackoverflow.com/" target="_blank">Stacker Overflow</a> to help me when I had problems as there was a lot of times people had the same problems as I and I could lean on some of these questions for help.</li>
-</ul>
-<br>
+Building the website was a very hard process but very rewarding. I would like to mention below some credits to my project:
+
+* I used Bootstrap a lot when building this website. I mentioned a link to the website in the above technologies used section.
+* Django documentation was used a lot during the build of the website to make sense of how to build the MVT. The documention is very thorough and explains a lot of things clearly. When I had a problem, I could read their docs with a large degree of success
+* I also used <a href="https://stackoverflow.com/" target="_blank">Stacker Overflow</a> to help me when I had problems as there was a lot of times people had the same problems as I and I could lean on some of these questions for help.
+* There were some fantastic youtube videos that I watched along the way to boost my understanding of how powerful Django is.
+* pip documentation aslo came in handy on learning how to use certain packages and what is required to set them up.
 
 [Back to Top](<#contents>)
 
 ## Acknowledgements
 
-<p>This project is my 4th Portfolio Project, as part of <a href="https://codeinstitute.net/" target="_blank">Code Institute's</a> Full Stack Software Developer (e-Commerce) Diploma.</p> A Big thank you to Precious Ijege (my mentor) for his help and expertise pushing me to right better code. Another thank you to the Slack community as well and Daniel_C_5p_lead (Daniel Callaghan) for his help as he always found the time to reply anytime I had a problem, he always tried to help. Also thank you to the tutors at Code Institute Alex and Oisin who helped me when I lost my way. There experience and help really got my through the tough patches.
+This project is my 5th and Final Portfolio Project, as part of <a href="https://codeinstitute.net/" target="_blank">Code Institute's</a> Full Stack Software Developer (e-Commerce) Diploma.</p> A Big thank you to Precious Ijege (my mentor) for his help and expertise pushing me to right better code. Another thank you to the Slack community for posting really useful content. Some of their questions were problems that I had, so it was useful to know people were experiencing the same difficulties as me. Also thank you to the tutors at Code Institute who are all fantastic. they helped me in some difficult times and a special thanks to Ed who helped explain queries and how I can use it within creating page pagination.
 <br>
 <br>
 Grant Wilsmore, 2022

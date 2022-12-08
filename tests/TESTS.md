@@ -623,12 +623,27 @@ To do my Responsive checks of the page, I done manual checks to ensure the page 
 
 ## User Story Tests
 
-As a User I can contact the company with any queries I may have so that my concerns are answered
-    The user has two options within the website to contact the company
-    Within the nav bar, at the very top in the middle is a telephone number in which to call the company
-    Next to the telephone number is the email address which is another quick way to get into contact with the staff
-    There is a contact page within the nav bar which directs you to a page with a larger array of details of how to get into contact with the company.
-    Alternative means to contact include a fax number and a link to the company’s social accounts where you can contact via Facebook, Instagram, and Twitter. (Educational purposes only - no real links to bebeauty exist)
+### EPIC 1 (VIEWING AND NAVIGATION)
+
+#### User Story 1
+
+As a shopper, i can view a list of products i wish to purchase.
+   This user can browse the products in a list of products in the store and click on a selected item and add it to the basket.
+
+#### User Story 2
+
+As a shopper, I am able to view and individual product, so that I can identify the price, descritpion, product rating and product image.
+   This is achieved when the user clicks on the image in the card from the products view, it takes them into the product detail page. Here the user can see the description along with the price rating and image.
+
+#### User Story 3
+
+As a shopper, I can quickly identify categories and brands, so that I can find products by a general category or brand.
+   under each product there is a little tags stating the brand and category of the item. When you click on the tag, it acts a tag to search products by the tag selected.
+
+#### User Story 4
+
+As a shopper, I can Easily View the total of what I am about to purchase, so that I can avoid spending too much money.
+   
 
 [Back to Top](<#contents>)
 
