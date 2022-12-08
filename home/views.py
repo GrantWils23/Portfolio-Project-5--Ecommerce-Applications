@@ -7,8 +7,6 @@ from .filters import OrdersFilter, PaintQuoteFilter, TechQuoteFilter
 from checkout.models import Order
 from services.models import PaintService, TechService
 
-# Create your views here.
-
 
 def index(request):
     """ A view to return the index page """
@@ -45,14 +43,23 @@ def about_us(request):
     return render(request, 'home/about_us.html')
 
 
+@login_required
 def admin_controls(request):
     """ A view that returns the admin controls panel """
+    if not request.user.is_superuser:
+        messages.error(request,
+                       'Sorry, only store owners have access to that view.')
+        return redirect(reverse('home'))
     return render(request, 'home/admin_controls.html')
 
 
 @login_required
 def admin_view_orders(request):
     """ return a list of all orders to the admin """
+    if not request.user.is_superuser:
+        messages.error(request,
+                       'Sorry, only store owners have access to that view.')
+        return redirect(reverse('home'))
     orders = Order.objects.all().order_by("-date")
     orders_filter = OrdersFilter(request.GET, queryset=orders)
     template = 'home/admin_orders_list.html'
@@ -97,6 +104,10 @@ def delete_order(request, order_id):
 @login_required
 def admin_view_paint_quotes(request):
     """ return a list of all paint quotes to the admin """
+    if not request.user.is_superuser:
+        messages.error(request,
+                       'Sorry, only store owners have access to that view.')
+        return redirect(reverse('home'))
     quotes = PaintService.objects.all().order_by("-date")
     quotes_filter = PaintQuoteFilter(request.GET, queryset=quotes)
     template = 'home/paint_job_quotes.html'
@@ -140,6 +151,10 @@ def delete_paint_quote(request, quote_number):
 @login_required
 def admin_view_tech_quotes(request):
     """ return a list of all tech quotes to the admin """
+    if not request.user.is_superuser:
+        messages.error(request,
+                       'Sorry, only store owners have access to that view.')
+        return redirect(reverse('home'))
     quotes = TechService.objects.all().order_by("-date")
     quotes_filter = TechQuoteFilter(request.GET, queryset=quotes)
     template = 'home/tech_job_quotes.html'

@@ -562,63 +562,71 @@ To check the production levels against its performance, I used the Lighthouse te
 
 * Admin View Specific Paint Request page - PC view
 
-![image](https://user-images.githubusercontent.com/72948843/206248456-44891107-f766-4cac-a339-1eecb8912341.png)
+![image](https://user-images.githubusercontent.com/72948843/206266968-9b2c8195-d269-4570-b4a5-ce228159c9fc.png)
 
 * Admin View Specific Paint Request page - mobile view
 
-![image](https://user-images.githubusercontent.com/72948843/206248751-25f20003-b1ed-4e93-9ecf-d719549b01ac.png)
+![image](https://user-images.githubusercontent.com/72948843/206267125-79dbf220-90e7-4a93-a8ea-85a43b39230f.png)
 
 <!-- -->
 
-* Add Delivery Method page - PC view
+* Admin View Tech Requests page - PC view
 
-![image](https://user-images.githubusercontent.com/72948843/206248456-44891107-f766-4cac-a339-1eecb8912341.png)
+![image](https://user-images.githubusercontent.com/72948843/206268169-ddfb54b7-7d3b-4b15-9d89-aef1f5668538.png)
 
-* Edit Delivery Method page - mobile view
+* Admin View Tech Requests page - mobile view
 
-![image](https://user-images.githubusercontent.com/72948843/206248751-25f20003-b1ed-4e93-9ecf-d719549b01ac.png)
-
-<!-- -->
-
-* Add Delivery Method page - PC view
-
-![image](https://user-images.githubusercontent.com/72948843/206248456-44891107-f766-4cac-a339-1eecb8912341.png)
-
-* Edit Delivery Method page - mobile view
-
-![image](https://user-images.githubusercontent.com/72948843/206248751-25f20003-b1ed-4e93-9ecf-d719549b01ac.png)
+![image](https://user-images.githubusercontent.com/72948843/206268780-8aa178d1-e6aa-4d2d-b980-eece1bebae3c.png)
 
 <!-- -->
 
-* Add Delivery Method page - PC view
+* Admin View Specific Tech Request page - PC view
 
-![image](https://user-images.githubusercontent.com/72948843/206248456-44891107-f766-4cac-a339-1eecb8912341.png)
+![image](https://user-images.githubusercontent.com/72948843/206269173-9f86780b-02f3-43aa-92fa-3853de550f8f.png)
 
-* Edit Delivery Method page - mobile view
+* Admin View Specific Tech Request page - mobile view
 
-![image](https://user-images.githubusercontent.com/72948843/206248751-25f20003-b1ed-4e93-9ecf-d719549b01ac.png)
+![image](https://user-images.githubusercontent.com/72948843/206269364-e06fe28f-1984-4fac-b430-70c27c94a450.png)
 
 <!-- -->
 
-</ul>
-<br>
-<p>The results were very positive and successful. There were a few orange flags in the performance checks of the lighthouse coverage which related to the responsive views in mobile for the urls of the admin filter. On the whole the tests have been successful in the desktop view and responsive view. This is a really good return on my the test that show the website is working correctly and behaving as is expected.</p>
-<br>
+The results were very positive and successful. I used the feedback from initial lighthouse checks to improve teh quality of these results. Along the way I had found SEO failuers in some of my tags  and buttons not labelled. I addressed these issues and this immediately improved the results and got me into the green.
+
+I also found some accessibility issues, with my text-to-background contrast ratio not being sufficiently high enough to satisfy a high score. So I addressed this issue by increasing the brightness of the font and no longer using the bootstrap secondary-text colour.
+
+There was one concern with the performance running at a lower performance accross all mobile views. the performance checks of the lighthouse did however give me some feedback on the reason for this...
+
+![image](https://user-images.githubusercontent.com/72948843/206273403-457bb0d4-7741-4597-96bb-4855ca468abe.png)
+
+I did try incognito mode to see if it would improve the performance of the mobile view and unfortunately, it did not. With my chrome extensions setup perfectly how I require it, I and not having access to another chrome pc, I decided to just check the performance manually. The deployed app performs well in real life tests, and is documented in a section further down in this file.
+
+I am really happy with these results as they demonstrate that the website passed a lot of the criteria of a high standard app.
 
 [Back to Top](<#contents>)
 <br>
 
-## Accessibility Testing
-<p>I used a website called <a href="https://color.a11y.com/" target="_blank">A11y</a> which is an accessibility validator to check the colour of the font against the background. The website passed the test, the colours passed the validations. </p>
+<!-- continue from here -->
 
-![image](https://user-images.githubusercontent.com/72948843/182040435-6931739e-ef4d-4504-be24-564813dbaea9.png)
-<br>
+## Accessibility Testing
+
+I used a website called <a href="https://color.a11y.com/" target="_blank">A11y</a> which is an accessibility validator to check the colour of the font against the background. I ran a few pages through the validation checker and the results are recorded below.
+
+* Products Page
+![image](https://user-images.githubusercontent.com/72948843/206296404-83a2d2e0-214c-48fb-b2d7-1116474f6ff8.png)
+![image](https://user-images.githubusercontent.com/72948843/206297690-2ccd0da5-b4cf-40bc-956f-58ffbea80633.png)
+
+* User Profile Page
+![image](https://user-images.githubusercontent.com/72948843/206298533-87c1376e-c213-417d-b1d3-e8873e70ad18.png)
+![image](https://user-images.githubusercontent.com/72948843/206298838-ee37a652-3e37-4671-98b1-3a9bd41e6f83.png)
+
+ The website passes, with some noted fails. The logo font is an important part of the brand image, but fails its contrast ration on smaller text. Due to the size of were these items are, they don't pose much of an issue as the font never reduces to an unreadable that the aspect ratio is going to be a problem. With these results, I am happy moving forward in my testing knowing that the website accessibility rating is high.
 
 [Back to Top](<#contents>)
 <br>
 
 ## Responsive Testing
-<p>I used a website called <a href="https://responsivedesignchecker.com/" target="_blank">responsive design checker</a> to check the responsive nature of the website and it passed in all screen aspect ratios</p>
+
+I used a website called <a href="https://responsivedesignchecker.com/" target="_blank">responsive design checker</a> to check the responsive nature of the website and it passed in all screen aspect ratios
 
 ![image](https://user-images.githubusercontent.com/72948843/182042392-7e49e776-7f57-4695-847d-965f06390a87.png)
 <br>
@@ -780,5 +788,3 @@ I had found a bug whereby if a user placed an order as a unregistered user, the 
 
 [Back to Top](<#contents>)
 <br>
-
-
