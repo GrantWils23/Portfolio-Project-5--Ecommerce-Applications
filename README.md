@@ -877,16 +877,18 @@ To create a local clone of the project, follow the steps below:
 
 * In the GitHub repository, under the repository name there is a code tab., click on the 'code' tab. and select either HTTPS or CSS link to copy the code. I will use HTTPS:
 
-![image](https://user-images.githubusercontent.com/72948843/182441657-b4116d59-ee58-4a4d-9826-2119bd34d7a8.png)
+![image](https://user-images.githubusercontent.com/72948843/206677477-36db9ba1-6ee2-41ca-9b51-072cd3d18dba.png)
+
 * In the clone tab, click the HTTPS tab. Within this section, click on the clipboard icon and copy the URL supplied for the repository.
 
 * Once the link has been copied, open an IDE (Command Prompt) of your choosing, navigate to where you wish to store the project and run the following terminal commands:
+(I have created a new folder that you called "Clone Airsoft Workshop")
 
 1. ```"git clone HTTPS or SSH link``` - This will clone the project to your computer
 2. ```cd name of project``` - This will cd (change directoy) into your project
-3. ```code .``` - This will launch your project in VSCode
+3. ```code .``` - This will launch your project in VSCode if you are not already in a coding environment
 
-![image](https://user-images.githubusercontent.com/72948843/182444495-9a5f9b21-e7e2-4a99-b055-937a7232470e.png)
+![image](https://user-images.githubusercontent.com/72948843/206681968-b9db30c7-249f-4c76-9f0e-635d22717acb.png)
 
 Now you need to setup and initialize a virtual environment for the project. follow the steps below to setup a virtual environment if you haven't done so before.
 
@@ -894,32 +896,32 @@ Now you need to setup and initialize a virtual environment for the project. foll
 
 (Step.1) Test your installation was successful:
 
-```$ python3 -m virtualenv -- version```
+```$ python -m virtualenv -- version```
 
 (Step.2) Then create the virtual environment using virtualenv
 
-```$ python3 -m virtualenv myenv```
+```$ python -m virtualenv env```
 
-![image](https://user-images.githubusercontent.com/72948843/182444824-9bafb75a-cae4-4cef-b00b-d22d9a619336.png)
+![image](https://user-images.githubusercontent.com/72948843/206683317-2196fa13-1254-41f2-be7b-d39e41c2b2a7.png)
 
 (Step.3) After creating the virtual environment, you need to activate it. <b><i>We need to activate the virtual environment every time you will work on the project!</i></b>. This can be achieved by using the following command:
 
 * ``` $ source virtualenv_name/bin/activate ``` - [For Mac] 
 * ``` $ source virtualenv_name/Scripts/activate ``` - [For Windows]  (as in my example below):
 
-!![image](https://user-images.githubusercontent.com/72948843/182445439-bca1e977-081b-46ea-85c3-312b04543870.png))
+![image](https://user-images.githubusercontent.com/72948843/206683769-54c80217-96c4-4d4c-878e-6175549c2050.png)
 
 <b>Don't forget to addd the env to your .gitignore file</b> if added correctly the file and its content's font shall be shaded a darker grey.
 
-![image](https://user-images.githubusercontent.com/72948843/182445548-45a57c2b-d86a-491e-bd25-3b03f93d0892.png)
+![image](https://user-images.githubusercontent.com/72948843/206684102-43b777c5-b193-451a-9c34-9336dbd42ace.png)
 
 Once you are in the virtual environment, the terminal will have it appear in brackets next to the command line as in the image below:
 
-![image](https://user-images.githubusercontent.com/72948843/182445662-f576728c-a54e-48de-92a3-98439108785b.png)
+![image](https://user-images.githubusercontent.com/72948843/206684251-d72fc8ec-7106-4278-9341-72fa0472d323.png)
 
 NOTE: To deactivate the virtual environment just type ```deactivate``` into the terminal (like in the image below).
 
-![image](https://user-images.githubusercontent.com/72948843/182445800-b322a679-751f-4ad3-af36-416b91451d23.png)
+![image](https://user-images.githubusercontent.com/72948843/206684374-ef7faeb9-91bb-42fe-8101-cf522716b839.png)
 
 Now within the virtual environment, we now need to install the project requirements to run the project. in the virtual environment terminal, type in the following command:
 
@@ -927,29 +929,33 @@ Now within the virtual environment, we now need to install the project requireme
 
 What this will do is download all the app's dependencies stated in the requirements.txt file which will get the project to work.
 
-![image](https://user-images.githubusercontent.com/72948843/182447722-1b86059c-319a-4ef1-9db5-7900de0b4374.png)
+![image](https://user-images.githubusercontent.com/72948843/206684741-ea460759-8a82-4e52-ae59-cb8079111b4e.png)
 
-With that now complete, We now need to create our env.py file, which tells the app what variables to use. These variables are usually hidden for security reasons as they contain sensative data that we don't want leaked and can be dangerous if shared publicly they can be vulnerable to attacks. So what we must do is first create the env.py file and immediately add it to our .gitignore file.
+If it crashes during build because of an error with backport.zoneinfo... add this code to the end of the file and it will get it be able to afterwards build the environment with all the packages. this allows it to build the program with an older version on python otherwise it can't build the environment
+
+![image](https://user-images.githubusercontent.com/72948843/206692805-8c8342bf-32b0-47d3-937f-44d5652e6547.png)
+
+With that now complete and all the dependencies downloaded, We now need to create our env.py file, which tells the app what variables to use. These variables are usually hidden for security reasons as they contain sensative data that we don't want leaked and can be dangerous if shared publicly they can be vulnerable to attacks. So what we must do is first create the env.py file and immediately add it to our .gitignore file.
 
 Any variables you declared in your settings.py file must be added to this file. (Apart from ["DEVELOPMENT"]) to your config vars when you deploy in Heroku.
 
-![image](https://user-images.githubusercontent.com/72948843/182455915-2e6da191-999a-4ffd-8fe4-0494d232e6a0.png)
+![image](https://user-images.githubusercontent.com/72948843/206685841-c51e9bca-5892-402f-9469-ad888ba56cc2.png)
 
-Now when we run the command ```python3 manage.py runserver``` if the terminal will respond with unapplied migrations which is to be expected as we haven't made any migrations into the database. If this is the case, run the migrations command in the terminal... ```python3 manage.py migrate```.
+Now when we run the command ```python manage.py runserver``` if the terminal will respond with unapplied migrations which is to be expected as we haven't made any migrations into the database. If this is the case, run the migrations command in the terminal... ```python manage.py migrate```.
 
-Once it has finished applying the migrations, you will need to run the command ```python3 manage.py runserver```
+Once it has finished applying the migrations, you will need to run the command ```python manage.py runserver```
 
-![image](https://user-images.githubusercontent.com/72948843/182458479-9d27b5ac-542c-40e4-a11e-2ed937375e73.png)
+![image](https://user-images.githubusercontent.com/72948843/206693619-7be54c46-3b37-463a-a05f-3a0cd5c5d962.png)
 
 This will now launch the project locally, successfully and ready for development.
 
-The test files that exist in the project can be run with the simple command ```python3 manage.py test```. 
+The test files that exist in the project can be run with the simple command ```python manage.py test```.
 
-If you wish to test a particular app you can run the command ```python3 manage.py test "APP_NAME"```
+If you wish to test a particular app you can run the command ```python manage.py test "APP_NAME"```
 
-(for example, the specific APP_NAME's from BeBeauty are 'booking' or 'treatment')
+(for example, the specific APP_NAME's from airsoft_workshop are 'basket' or 'products' etc...)
 
-This command will only work if you use your local database within the deployment. if for any reason you run this command using the Heroku database, the test will fail. please refer to the <a href="https://github.com/GrantWils23/Portfolio-Project-4--Full-Stack-Toolkit/blob/main/tests/TESTS.md">testing</a> file to see how the tests perform.
+This command will only work if you use your local database within the deployment. if for any reason you run this command using the Heroku database, the test will fail. please refer to the <a href="https://github.com/GrantWils23/Portfolio-Project-5--Ecommerce-Applications/blob/main/tests/TESTS.md">testing</a> file to see how the tests perform.
 
 This project has installed inside it a python package called [*Coverage*]. This app is useful as it gives you comprehensive reports on how much of your project has been tested. To get a coverage report, run the following command in the terminal: ```coverage report``` and this will output a tabled list of the results from the report. The report gives you an idea of what areas perhaps require more testing and gives you a score on how your tests perform.
 
