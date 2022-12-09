@@ -203,6 +203,7 @@ The tertiary font...
 * [Tech Services](<#tech-services>)
 * [Paint Services](<#paint-services>)
 * [Store](<#store>)
+* [Product Details](<#product-details>)
 * [Basket](<#basket>)
 * [Checkout](<#checkout>)
 * [Footer](<#footer>)
@@ -319,15 +320,13 @@ The radio buttons in the form have images attached to them help. The images are 
 
 ## Store
 
-The store hosts multiple features to make shopping more comfortable for the user. There is a "Sort By" box in the top right that allows the user to sort the products in an order the user wishes.
+The store hosts multiple features to make shopping more comfortable for the user. There is a "Sort By" box in the top right that allows the user to sort the products in an order the user wishes. There are some useful page filters to help the user filter by brands and categories in the side menu bar. This gives the user more control on specifically filtering down the prodcuts to a particular brand they may like or by a general category they are interested in. At the top of the side navbar there is a clear all button that resets any filters or search criteria that hovers red when you are ontop of it.
 
 ![image](https://user-images.githubusercontent.com/72948843/206476831-82a3ae88-d33f-4866-849c-76da7fffcca6.png)
+![image](https://user-images.githubusercontent.com/72948843/206767731-a25f3ffe-a464-4c6d-860a-9f466abfbc13.png)
 
-There are some useful page filters to help the user filter by brands and categories in the side menu bar. This gives the user more control on specifically filtering down the prodcuts to a particular brand they may like or by a general category they are interested in. At the top of the side navbar there is a clear all button that resets any filters or search criteria that hovers red when you are ontop of it.
-
-![image](https://user-images.githubusercontent.com/72948843/206477143-dca8879d-b355-43f5-88b9-bfef9dd888e2.png)
 ![image](https://user-images.githubusercontent.com/72948843/206477569-0d64d4fd-16eb-4a14-a1be-e8450c15877d.png)
-![image](https://user-images.githubusercontent.com/72948843/206481077-7fe7decf-ebbd-43ac-af03-78cdb5c7a5e6.png)
+![image](https://user-images.githubusercontent.com/72948843/206477143-dca8879d-b355-43f5-88b9-bfef9dd888e2.png)
 
 There is a search box, with which a user can search for specific keyword and the result of the seatch will be displayed back to the user what they have in store that matches the criteria of the search in the product name or product description.
 
@@ -353,11 +352,26 @@ Overall Page View:
 
 * Mobile View
 
+[Back to Existing Features](<#existing-features>)
+
+## Product Details
+
+This is the product image view. It displays clearly information regarding a selected product (the image, price, desciption, ratings etc...). It contains links to search the product brands and caterogies. The store owner (Superuser) gets a two sided small button that has links only visible to them. The links are for admin controls to edit or delete a product.
+
+There is the add to wishlist button in the middle for register users to add items to a wishlist in their profile.
+
+You have a quantity selector box with 'add/minus' buttons so you can select an ammount of an item without having to type a value into the box. Beneath that lies a 'keep shopping' button that returns you to the list store page, and to the right is the 'add to bag' button to add the product
+
+![image](https://user-images.githubusercontent.com/72948843/206769816-91a23bea-0e29-457c-9559-21169c7f62b3.png)
+![image](https://user-images.githubusercontent.com/72948843/206770804-aa5fb5ce-4080-45af-8a57-c6814e9e40e9.png)
+
+[Back to Existing Features](<#existing-features>)
+
 ## Basket
 
-<!-- Add later more content -->
+The basket view contains the list of items the shopper has added to their basket that they wish to purchase. From here the shopper has to select a delivery method of their choice, if they do not select anything, the default 3.50 shipping is selected. The shoper can also change the quantity of items in their basket before checking out or remove items completely if they feel the price is adding up too much. The user has to then decide to proceed to checkout or continue shopping and can go add some more items to the basket.
 
-![image](https://user-images.githubusercontent.com/72948843/204585310-78828b14-fb87-4131-82de-3ae474475491.png)
+![image](https://user-images.githubusercontent.com/72948843/206769635-407094bc-1489-43e1-aa34-7aa217720708.png)
 
 * Desktop view
 
@@ -367,10 +381,11 @@ Overall Page View:
 
 [Back to Existing Features](<#existing-features>)
 
+<!-- continuation point -->
+
 ## Checkout
 
-<!-- Add later more content -->
-The checkout view informs the user of all the criteria required to complete the purchase, along with a small recap window of what the user is ordering.
+The checkout view informs the user of all the criteria required to complete the purchase, along with a small recap window of what the user is ordering. The information required tocomplete the order has to be valid for the order to be successful. The user can quickly fill out the form to make a purchase making the process quick and easy.
 
 Upon completion of an order, a confirmation email and are redirected to a success page where you can review your purchase and are prompted to head back into the store.
 
@@ -403,21 +418,15 @@ Footer on a small view device
 
 The toast and messaging system gives really helpful feedback to the user in realtime on when an action is performed. Below are some examples of what the messaging system looks like. toast have a glow indicating the level of message and its importance to the user.
 
+* success - green
+* info - light-blue
+* warning - yellow
+* error - red
+
 ![image](https://user-images.githubusercontent.com/72948843/204586060-1524852a-da6e-425e-b105-fe29808cf1ce.png)
-
-* success
-
 ![image](https://user-images.githubusercontent.com/72948843/204583113-f2cbbf8b-312d-46ca-86c8-77206890b77a.png)
-
-* info
-
 ![image](https://user-images.githubusercontent.com/72948843/204582620-03d3e184-4c90-45e2-a94a-88ec6b086ef5.png)
-
-* warning
-
 ![image](https://user-images.githubusercontent.com/72948843/204583319-f92db3b8-fe05-47d2-808a-4556ea4188f8.png)
-
-* error
 
 [Back to Existing Features](<#existing-features>)
 
@@ -425,17 +434,15 @@ The toast and messaging system gives really helpful feedback to the user in real
 
 The website boasts a user profile panel and registered users have access to a multiple abilities in which they can manage their account details, reset passwords and user details. The page also has a wishlist display where users can track their favorite items or items they wish to purchase a later date.
 
-![image](https://user-images.githubusercontent.com/72948843/204586686-0372ab26-b1e7-4817-b322-dcc75f9bbba9.png)
+![image](https://user-images.githubusercontent.com/72948843/206773191-69787fd3-1075-4f26-a99d-60460264677f.png)
 
-![image](https://user-images.githubusercontent.com/72948843/204586830-a656053b-b068-4f3b-955d-9f4e20b802d4.png)
+![image](https://user-images.githubusercontent.com/72948843/206773366-b3c30c14-1903-4d96-9b2f-ef523c0c0caa.png)
 
-![image](https://user-images.githubusercontent.com/72948843/204587086-70982166-ce19-4e3b-982b-74656b72faa0.png)
+![image](https://user-images.githubusercontent.com/72948843/206773524-5c72543f-dab1-426e-bc7c-28cc955ebb75.png)
 
 [Back to Existing Features](<#existing-features>)
 
 ## Admin Controls
-
-<!-- Add later more content -->
 
 The Admin Controls are where the store owner has additional functionality outside a normal registered user. here the admin has control on product management. This can be navigated to via the offscreen canvas dropdown menu and via the footer, for easy of access. The admin views contains a tracking orders system where they can check orders placed and form submissions regarding the requested paint jobs and tech works. also the admin can add more products and related product details. Also additional new delivery methods can be added to the store, if the store admin wishes to add at a later date.
 

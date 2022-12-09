@@ -2,6 +2,7 @@
 
 To test my project, I have completed several test procedures and from a wide array of different tests. It is important to test as much of the code as possible. So please scroll down and read the various testing procedures and how I solved some problems with bugs in my code.
 
+<a href="https://github.com/GrantWils23/Portfolio-Project-5--Ecommerce-Applications">Click here</a> to return to the README.md file in the repository.
 ## Contents
 
 * [**Testing**](<#testing>)
@@ -628,6 +629,8 @@ The User Stories have been organised into epics:
 * [EPIC 4 - Purchasing and Checkout](<#epic-4-purchasing-and-checkout>)
 * [EPIC 5 - Admin Controls](<#epic-5-admin-controls>)
 
+[Back to Top](<#contents>)
+
 ### EPIC 1 VIEWING AND NAVIGATION
 
 #### User Story 1
@@ -934,3 +937,5 @@ The Website was manually tested in different browsers to check the responsive na
 * Samsung Internet
 
 [Back to Top](<#contents>)
+
+<a href="https://github.com/GrantWils23/Portfolio-Project-5--Ecommerce-Applications">Click here</a> to return to the README.md file in the repository.
