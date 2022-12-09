@@ -44,9 +44,9 @@
                 {% endif %}
                 {% if request.user.is_superuser %}
                 <br>
-                <small class="ml-3">
-                    <a class="text-decoration-none blue-on-hov" href="{% url 'edit_product' product.id %}">Edit</a> |
-                    <span type="button" class="text-danger red-on-hov" data-bs-toggle="modal" data-bs-target="#DeleteProductModal{{product.id}}">Delete</span>
+                <small class="ml-3 bg-white px-1 rounded-1 text-secondary">
+                    <a class="text-decoration-none blue-on-hov" href="{% url 'edit_product' product.id %}"><b>Edit</b></a> |
+                    <span type="button" class="text-danger red-on-hov" data-bs-toggle="modal" data-bs-target="#DeleteProductModal{{product.id}}"><b>Delete</b></span>
                 </small>
                 {% endif %}
                 <br>

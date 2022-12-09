@@ -130,7 +130,8 @@ The colour codes are:
 
 * Custom green: #198754
 * Main background colour: #222
-* Font color against the Black-Grey background: #ffffff8c 
+* Font color against the Black-Grey background: #ffffff8c
+* Font color for links against backgrounds and table elements: #9C9A9A
 * background for Navbar and Footer: #212529
 * font-color against Navbar and Footer background: #6c757d
 
