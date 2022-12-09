@@ -15,7 +15,6 @@ click here to go to the deployed website: <a href="https://airsoft-workshop.hero
 
 * [**User Experience UX**](<#user-experience-ux>)
   * [User Stories](<#user-stories>)
-  * [Epics](<#epics>)
   * [Project Management](<#project-management>)
   * [Data Model](<#data-model>)
   * [Wireframes](<#wireframes>)
@@ -48,20 +47,27 @@ User Stories make up an important part of the process to help steer the project 
 
 Follow this link to <a href="https://github.com/GrantWils23/Portfolio-Project-5--Ecommerce-Applications/blob/main/assets/User%20Stories%20Spreadsheet.pdf" target="_blank"><b><i>"The User Stories List"</i></b></a>.
 
-An additional User Story to be added on here is..... As a "User", I can "Add my favourite items to a list" So that "I can find them easily if I wish to purchase them when i return to the website."
+They were broken down into sections to give some clarity on the how to organise the User Stories to build a website that users will enjoy. By itemizing the sections into Epics, it helps target the statement problems and to come up with a solution to implement to the website that users will enjoy their experience and will encourage users to return back to this site in the future.
 
-[Back to Top](<#contents>)
+The Epics were organised as follows:
 
-## Epics
+* Viewing and Navigation
+* Registration and User Accounts
+* Sorting and Searching
+* Purchasing and Checkout
+* Admin Controls
 
-Epics Explaining what has been acheived
+During the project, I realised that some user stories did not fit the original user stories. So during production of the site, late additions were added to the list, you can notice that the numbers in the User Stories jump were they were added later on. This was challanging to make sure nothing was missed missed during development but having these user stories during testing made sure all the additional features and missed user stories were accounted for.
 
-<!-- Display in form of a picture from the PDF within Excel file i created -->
+To find out more the performance of these user stories under test, please follow this link to <a href="https://github.com/GrantWils23/Portfolio-Project-5--Ecommerce-Applications/blob/main/tests/TESTS.md" target="_blank">TESTS.md</a> to the testing page and in the contents, go to <i>user story tests</i>.
+
 [Back to Top](<#contents>)
 
 ## Project Management
 
-To work along with the user stories that i created to help build the site, I used GitHubs's Project Board to manage my workflow. The Kanban style work board is very useful when trying to implement a working Agile environment. This tool helped me break down the importance of time management and helped me track my progress. It's a super powerful tool, with the abiltity to add small notes and labels to items within the project board.
+To work along with the user stories that i created to help build the site, I used GitHubs's Project Board to manage my workflow. The Kanban style work board is very useful when trying to implement a working Agile environment. This tool helped me break down the importance of time management and helped me track my progress. It's a super powerful tool, with the abiltity to add small notes and labels to items within the project board. I found this helpful when it came to managing small problems that needed addressing. I often left a note and came back to it to make sure I ticked it off when I was done. Working with the Kanban method really helped me manage my work load and control the rate of my work. organizing things into small projects helped me identify what parts of the project I was going to address first.
+
+As stated above in the user stories. The Kanban style board also helped with the additional user stories that were implemented during production. Though some features where created without being explicitly a requirement in a user story, when it came back to the Kanban board. I could quickly identify guide myself through the items that needed doing and could identify items that were already complete.
 
 ![image](https://user-images.githubusercontent.com/72948843/200688676-60bbf45a-9a46-4b59-be1a-c8c9983a935d.png)
 
@@ -69,17 +75,23 @@ To work along with the user stories that i created to help build the site, I use
 
 ## Data Model
 
-Here below you can find the Data schema used to create the data models. This was useful in helping me understand the flow and direction on how to create the app models, views and templates. The model was split into two sections, The Services Models and the Store models.
+Here below you can find the Data schema used to create the data models. This was useful in helping me understand the flow and direction on how to create the app models, views and templates. The model was split into two sections, The Services Models and the Store models. These Models were created using <a href="https://drawsql.app/" target="_blank">drawSQL</a>.
 
-* Follow this link to <a href="https://github.com/GrantWils23/Portfolio-Project-5--Ecommerce-Applications/blob/main/assets/airsoft-workshop-database-schema-shopping-model.png" target="_blank"><b><i>"The Airsoft Workshop Database Schema Shopping Model"</i></b></a>.
+![image](https://user-images.githubusercontent.com/72948843/206748495-8f888af0-a3e9-4681-b028-6a6f6af57677.png)
 
-* Follow this link to <a href="https://github.com/GrantWils23/Portfolio-Project-5--Ecommerce-Applications/blob/main/assets/airsoft-workshop-database-schema-services-model.png" target="_blank"><b><i>"The Airsoft Workshop Database Schema Services Model"</i></b></a>.
+* Follow this link to <a href="https://github.com/GrantWils23/Portfolio-Project-5--Ecommerce-Applications/blob/main/assets/airsoft-workshop-database-schema-shopping-model.png" target="_blank"><b><i>"The Airsoft Workshop Database Schema Shopping Model"</i></b></a> in the assets folder.
+
+![image](https://user-images.githubusercontent.com/72948843/206748576-b452b29e-01da-4406-92b7-5a0bbaa6187d.png)
+
+* Follow this link to <a href="https://github.com/GrantWils23/Portfolio-Project-5--Ecommerce-Applications/blob/main/assets/airsoft-workshop-database-schema-services-model.png" target="_blank"><b><i>"The Airsoft Workshop Database Schema Services Model"</i></b></a> in the assets folder.
+
+These are the final versions of the models. They were updated during development to help fit the needs of what I was trying to build. Having a good database schema, helps with the production of a functional website. An example of this was adapting the models helped build a more robust database and install the wishlist capability. To implement a the wishlist functionality, an alteration was made to my product model. I created a relational table that with that of the user profile model by adding a "user wishlist" field to the product model. This is created in practice by a "ManyToManyField" which made it very easy to implement the logic for this wishlist feature.
 
 [Back to Top](<#contents>)
 
 ## Wireframes
 
-The Wireframes for this project are the building foundations of the website. Some of the ideas have come from user feedback. Friends and fellow airsofters who would use a service like this gave me valuable information as time went on what works and what does not... These basic templates were the foundation of which the website style is built on but with the help of real user feedback I implemented it along the way.
+The Wireframes for this project are the building foundations of the website. Some of the ideas have come from user feedback. Friends and fellow airsofters who would use a service like this gave me valuable information as time went on what works and what does not... These basic templates were the foundation of which the website style is built on but with the help of real user feedback I implemented it along the way. I used <a href="https://balsamiq.com/" target="_blank">Balsamiq Wireframes</a> to create these templates with which the website was built on"
 
 Follow this link to <a href="https://github.com/GrantWils23/Portfolio-Project-5--Ecommerce-Applications/blob/main/assets/Airsoft%20Workshop%20Wireframes.pdf" target="_blank"><b><i>"The Airsoft Workshop Wireframes"</i></b></a>.
 
@@ -112,7 +124,9 @@ The Desktop version of the site is very spacious but when the user drops down to
 
 # Web Design and Stylings
 
-To speed up the process of making a really interactive website page, I learnt to use Bootstrap to its full capability to help design an aesthetically pleasing website that and then created custom details to the brands design to give it a unique appeal and enhance the UX. by using bootstrap, I have access to working, proven code that has help build an offcanvas menu bar, cards, toasts and footers. and it allows me to spend more time on the core structure of the website in the logic and how the site should operate. below are some specification detailng the other design aspects of the website...
+To speed up the process of making a really interactive website page, I learnt to use Bootstrap to its full capability to help design an aesthetically pleasing website that and then created custom details to the brands design to give it a unique appeal and enhance the UX. by using bootstrap, I have access to working, proven code that has help build an offcanvas menu bar, cards, toasts and footers. and it allows me to spend more time on the core structure of the website in the logic and how the site should operate. below are some specification detailng the other design aspects of the website.
+
+I used CSS to its full potential to create unique designs and animations to attract the user to the website. The animations are subtle but they add a real immersive feel to the website... By making use of time transitions, on-hovers, clicks, and size-ratio adjustments, the user can see a certain attention to detail and care has gone into the whole UX, that this is not just a normal, bland online store. Its unique qualities on the homepage draws the users attention and they feel encouraged to explore more of the website.
 
 ## Colour Scheme
 
@@ -122,9 +136,9 @@ The colour scheme also around the website largely uses hints of green throughout
 
 * The main logo font is green, it naturally appears throughout the website to give the user an enhanced UX.
 
-* The homepage "GEAR UP" button is really important to the website: Its unique to all the other buttons on the site as it is designed to draw the user in. It holds the same color tones that feature throughout the site.
+* The homepage "GEAR UP" button is really important to the website: Its unique to all the other buttons on the site as it is designed to draw the user in. It holds the same color tones that feature throughout the website.
 
-* Functional buttons within the website use all of the bootstraps inbuilt buttons. The green success button features mostly thoughout the site as a button to navigate and make progressive page changes. The secondary button also appears in the site which serves a majority of the time in the site as a return button.
+* Alot of the functional button use bootstrap's inbuilt buttons. The green "success" and grey "secondary" button features mostly thoughout the site as a button to navigate and make progressive page changes. The secondary button also appears in the site which serves a majority of the time in the site as a return button.
 
 The colour codes are:
 
@@ -151,6 +165,14 @@ Home page "Gear Up" button on hover:
 
 ![image](https://user-images.githubusercontent.com/72948843/200686487-b362fa7d-6b35-49bb-8365-c254f7e02c56.png)
 
+Button Themes:
+
+![image](https://user-images.githubusercontent.com/72948843/206761868-ab5470f5-a73f-408b-adba-7d14fd747d6a.png)
+![image](https://user-images.githubusercontent.com/72948843/206762485-5818f2ae-e971-4014-a04d-ba8d957dcf64.png)
+![image](https://user-images.githubusercontent.com/72948843/206762775-9b137d28-97bc-421e-8ee1-2169b7bfae87.png)
+![image](https://user-images.githubusercontent.com/72948843/206762827-9197d58e-0a00-497f-8c3d-bfdb830e4a05.png)
+![image](https://user-images.githubusercontent.com/72948843/206763115-c07d906a-9fcd-4815-a7c3-4f2ac7069835.png)
+
 [Back to Top](<#contents>)
 
 ## Fonts
@@ -166,6 +188,7 @@ The second font...
 ![image](https://user-images.githubusercontent.com/72948843/200688308-ec471f6e-8714-4e65-8880-865be57c98fe.png)
 
 The tertiary font...
+
 ![image](https://user-images.githubusercontent.com/72948843/204630491-c58bc122-55c7-43e4-b38b-297ddd660f93.png)
 
 [Back to Top](<#contents>)
@@ -187,7 +210,6 @@ The tertiary font...
 * [Wishlist and User Profile](<#wishlist-and-user-profile>)
 * [Admin Controls](<#admin-controls>)
 
-
 ## Navigation Menu
 <!-- examples form previous, change accordingly -->
 * The nav menu is set at the top of all the pages. It is fully responsive and converts to a small dropdown menu on smaller screen ratios for a better UX. The nav contains links to all the important customer usable pages.
@@ -196,15 +218,19 @@ The tertiary font...
 * The logo is clickable with a link back to the home page for enhanced UX.
 
 ![image](https://user-images.githubusercontent.com/72948843/200792615-30d89016-b13e-4193-a272-af9e689ca7cf.png)
+
 Navbar menu - smaller aspect ratio devices
 
 ![image](https://user-images.githubusercontent.com/72948843/200794557-5d6fc4d2-cff6-4396-aa50-9433cb7a38e7.png)
+
 Off Canvas Dropdown menu
 
 ![image](https://user-images.githubusercontent.com/72948843/200793688-14d6f2c0-57e5-43a7-9b9c-f30ed583b5b8.png)
+
 Store sub category options
 
 ![image](https://user-images.githubusercontent.com/72948843/200795018-60aed44b-8229-41df-a1f0-ad74e9f97c1c.png)
+
 Account Dropdown menu - Superuser View
 
 [Back to Existing Features](<#existing-features>)
@@ -214,14 +240,16 @@ Account Dropdown menu - Superuser View
 The allauth functionality allows the generation of user profiles which helps customers create a profile that they can save and have records of their orders in their account. This has been intergrated within the airsoft workshop to give the user the ability to signin, signout, register.
 
 ![image](https://user-images.githubusercontent.com/72948843/206473481-7d031c57-5999-48d3-b06d-057f26b33d01.png)
+
 Sign in
 
 ![image](https://user-images.githubusercontent.com/72948843/206473839-692214fa-fbac-4c27-87fc-5eb744667b99.png)
+
 Sign Up
 
 ![image](https://user-images.githubusercontent.com/72948843/206474024-b2687e53-1275-42d1-a63c-56b837484b73.png)
-Sign Out
 
+Sign Out
 
 [Back to Existing Features](<#existing-features>)
 
@@ -230,15 +258,16 @@ Sign Out
 The services page is designed to give the users a brief insight into the services of what the company offers its clients with a description of the beautician’s experience and really is where you get a feel for the company and the professional nature of it. The page is designed to be eye-catching and give the user a well-rounded experience as they view what company has to offer. The cards have a green shadow appear around them when the cursor enters a card to focus your view on the card the user are reading helping to boost the user's UX.
 
 ![image](https://user-images.githubusercontent.com/72948843/200798942-5810353e-1a85-45bc-bb6b-deb8c7594b5d.png)
+
 Services page on a large-view device
 
 ![image](https://user-images.githubusercontent.com/72948843/200799508-1c5b11b1-2eb0-4190-91e8-e08138a090c4.png)
-Services page on a small view device
-
 ![image](https://user-images.githubusercontent.com/72948843/206483907-c73bc433-8fc1-4297-bc63-aba123ed9b16.png)
-On hover with a cursor the cards light up with a background glow to draw the users attention
+
+Services page on a small view device | On-hover with a cursor the cards light up with a background glow to draw the users attention
 
 ![image](https://user-images.githubusercontent.com/72948843/204614385-066b085d-0cdc-432c-91d2-3530e2f20fa3.png)
+
 Services page modal
 
 [Back to Existing Features](<#existing-features>)
@@ -248,6 +277,17 @@ Services page modal
 The Tech services page is user friendly and is very clear to read, Its high contrast background on the hover over the radio select buttons images make a great visual indicator to on hovered items, which enhances the user's experience on the page.
 
 ![image](https://user-images.githubusercontent.com/72948843/204584418-08a60b02-d0a1-4eaf-95b1-9524ddd4db33.png)
+![image](https://user-images.githubusercontent.com/72948843/206764702-eb99ad38-2422-4a6e-91a2-332bcfc7a356.png)
+
+* Radio buttons before on hover:
+
+![image](https://user-images.githubusercontent.com/72948843/206764481-1e64705a-dfc9-4dc3-a9f3-cfdf6a619864.png)
+![image](https://user-images.githubusercontent.com/72948843/206764550-90abe694-2e97-4f48-b0b5-010748adfe4f.png)
+
+* Radio buttons On hover:
+
+![image](https://user-images.githubusercontent.com/72948843/206764227-18c096a1-0b5e-4c6e-b124-6d10bd36ef84.png)
+![image](https://user-images.githubusercontent.com/72948843/206764311-da53b93c-a023-4339-8630-0b67a0d4f242.png)
 
 <!-- Add later more content -->
 
@@ -260,6 +300,18 @@ The Paint services page is user friendly and is very clear to read, Its high con
 The radio buttons in the form have images attached to them help. The images are of the paint job the user can choose from if he wishes to paint his RIF. This clear display helps the user commit to a style he is picking. This approach is far better than a text based select box which wouldn't provide thec user with a lot of information, again adding to the user experience.
 
 ![image](https://user-images.githubusercontent.com/72948843/204585034-758387cd-23c9-40c5-ad04-44f78330f48f.png)
+
+* Radio buttons before on hover:
+
+![image](https://user-images.githubusercontent.com/72948843/206765166-1d0e284a-3ffa-4492-895c-1bd6b8e8bb61.png)
+![image](https://user-images.githubusercontent.com/72948843/206764550-90abe694-2e97-4f48-b0b5-010748adfe4f.png)
+
+* Radio buttons On hover:
+
+![image](https://user-images.githubusercontent.com/72948843/206765400-39c26404-5367-44c3-810b-5bd3cc8552e8.png)
+![image](https://user-images.githubusercontent.com/72948843/206764311-da53b93c-a023-4339-8630-0b67a0d4f242.png)
+
+
 
 <!-- Add later more content -->
 
@@ -568,15 +620,16 @@ Yes, success. After sending a fake email via the form, I can see the email addre
 * <a href="https://validator.w3.org/nu/" target="_blank"> HTML Validator </a> - An online website used to validate my HTML code.
 * <a href="https://jigsaw.w3.org/css-validator/" target="_blank"> CSS Validator </a> - An online website used to validate my CSS code.
 * <a href="https://developer.chrome.com/docs/devtools/" target="_blank"> Google Chrome DevTools </a> - An online resource that lays within Google Chrome used to debug the website during development.
-* <a href="https://drawsql.app/" target="_blank"> DrawSQL </a> - An online app used to create the database schema.
 * <a href="https://color.a11y.com/" target="_blank">A11y</a> - An online accessibility validator that checks the colour of the background against the text.
 * <a href="https://stripe.com/gb" target="_blank">stripe</a> - A secure payment app used to recieve payments.
-* <a href="https://miniwebtool.com/django-secret-key-generator/">MiniWebTools</a> - Used to create a random Django secret key for my project in Heroku
-* <a href="https://temp-mail.org/">Temp-Mail</a> - A Handy tool that was used to create fake accounts to perform checks on email functionality during the deployed development stage.
-* <a href="https://www.xml-sitemaps.com/">XML-sitemaps</a> - A free sitemap generator the sitemap for my the website
+* <a href="https://miniwebtool.com/django-secret-key-generator/" target="_blank">MiniWebTools</a> - Used to create a random Django secret key for my project in Heroku
+* <a href="https://temp-mail.org/" target="_blank">Temp-Mail</a> - A Handy tool that was used to create fake accounts to perform checks on email functionality during the deployed development stage.
+* <a href="https://www.xml-sitemaps.com/" target="_blank">XML-sitemaps</a> - A free sitemap generator the sitemap for my the website
 * <a href="https://www.privacypolicygenerator.info/">Privacy Policy Generator</a> - A free privacy-policy generator that I used for the deployed heroku website
-* <a href="https://www.facebook.com/">Facebook</a> - I used Facebook to create an online marketing presence to advertise the company on to Facebook users who follow the Companies activities and who are interested in airsoft.
-* <a href="https://mailchimp.com/">Mailchimp</a> - Mailchimp is a email marketing device, used to help generate business by getting people to signup to newsletters and get information regarding the companies latest offers
+* <a href="https://www.facebook.com/" target="_blank">Facebook</a> - I used Facebook to create an online marketing presence to advertise the company on to Facebook users who follow the Companies activities and who are interested in airsoft.
+* <a href="https://mailchimp.com/" target="_blank">Mailchimp</a> - Mailchimp is a email marketing device, used to help generate business by getting people to signup to newsletters and get information regarding the companies latest offers
+* <a href="https://drawsql.app/" target="_blank"> DrawSQL </a> - An online app used to create the database schema with great easy and visual representation.
+* <a href="https://balsamiq.com/" target="_blank">Balsamiq</a> - A wireframe designing website that helps the designer create quick sketches of webpage designs quickly and efficently.
 
 [Back to Top](<#contents>)
 

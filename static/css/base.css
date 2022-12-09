@@ -470,7 +470,7 @@ nav {
 
 .clear-all-link:hover,
 .clear-all-link:active {
-    color: darkred;
+    color: rgb(226, 4, 4);
 }
 
 .product-card {
