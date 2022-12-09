@@ -405,18 +405,19 @@ The footer contains all the main menu links but also some addition links that ar
 
 * The Subscribe to newsletter feature is located in the footer so that it doesn't intefer with the Hero Image in the main view and for new potential customers they have a quick and easy means of signing up to our email marketing scheme.
 
-![image](https://user-images.githubusercontent.com/72948843/204583684-b7b53cf5-f524-4358-977b-39a9dc0170f7.png)
+![image](https://user-images.githubusercontent.com/72948843/206796852-4846b657-a686-4533-a4ef-a9eae24b8496.png)
 
 Footer on a large view device
 
-![image](https://user-images.githubusercontent.com/72948843/204584030-4cda3fe8-c432-461f-9fdc-0e1f47fc4322.png)
+![image](https://user-images.githubusercontent.com/72948843/206797133-0e2993b7-6881-45d0-8642-4945e1c563cc.png)
+
 Footer on a small view device
 
 [Back to Existing Features](<#existing-features>)
 
 ## Toast and Messages
 
-The toast and messaging system gives really helpful feedback to the user in realtime on when an action is performed. Below are some examples of what the messaging system looks like. toast have a glow indicating the level of message and its importance to the user.
+The toasts messages used with django gives really helpful feedback to the user in realtime on when an action is performed. Below are some examples of what the messaging system looks like. toast have a glow indicating the level of message and its importance to the user. An example of this is if the user adds an item to the basket, their basket appears in the pop up window and they can check what is in it without going to the basket URL so the user can carry on shopping.
 
 * success - green
 * info - light-blue
@@ -434,17 +435,37 @@ The toast and messaging system gives really helpful feedback to the user in real
 
 The website boasts a user profile panel and registered users have access to a multiple abilities in which they can manage their account details, reset passwords and user details. The page also has a wishlist display where users can track their favorite items or items they wish to purchase a later date.
 
+![image](https://user-images.githubusercontent.com/72948843/206799329-dd1957f6-c95f-438d-bcff-2b5320c4a1f0.png)
+
+![image](https://user-images.githubusercontent.com/72948843/206799024-d6774eb9-353a-4c0b-885f-c7b8a685dea5.png)
+
+![image](https://user-images.githubusercontent.com/72948843/206799133-314d70a1-15ac-40d8-9edf-1ec34b523e80.png)
+
+The wishlist:
+  The wishlist functionality is only available for registered users, which gives a shopper an insentive to sign up and have an account. If a shopper is not signed up and they happen to press add to wishlist, it will redirect the user to sign in if they wish to perform this action. If they already are signed up, the button just toggles from "add" to "remove" and the colour changes for a visual clarity. Also a message in the top right corner displays the status of the action performed.
+
 ![image](https://user-images.githubusercontent.com/72948843/206773191-69787fd3-1075-4f26-a99d-60460264677f.png)
 
 ![image](https://user-images.githubusercontent.com/72948843/206773366-b3c30c14-1903-4d96-9b2f-ef523c0c0caa.png)
 
 ![image](https://user-images.githubusercontent.com/72948843/206773524-5c72543f-dab1-426e-bc7c-28cc955ebb75.png)
 
+Toast pop up messages:
+
+![image](https://user-images.githubusercontent.com/72948843/206800279-06efc8d8-4b2d-4a92-81a7-b8650641a48d.png)
+![image](https://user-images.githubusercontent.com/72948843/206800357-8efc90ed-a527-4601-8656-72415a7f29ea.png)
+
 [Back to Existing Features](<#existing-features>)
 
 ## Admin Controls
 
-The Admin Controls are where the store owner has additional functionality outside a normal registered user. here the admin has control on product management. This can be navigated to via the offscreen canvas dropdown menu and via the footer, for easy of access. The admin views contains a tracking orders system where they can check orders placed and form submissions regarding the requested paint jobs and tech works. also the admin can add more products and related product details. Also additional new delivery methods can be added to the store, if the store admin wishes to add at a later date.
+The Admin Controls are where the store owner has additional functionality outside a normal registered user. here the admin has control on product management. This can be navigated to via the offscreen canvas dropdown menu and via the footer, for easy of access.
+
+The admin views contains an orders list and quotes lists where they can check orders placed and quotes requested regarding paint and tech services. This helps the store owner to keep track of purchases made by customers and quotes that need tendering to manage their workload. If a customer has a query and gets in contact with the site, they store owner can quickly search their order/quote by submitting some data to the search filter to the left.
+
+The admin can add more products and related product details. Additionally, new delivery methods can be added to the store, if the store admin wishes to add at a later date.
+
+ Any time the Store Owner wants to delete a product or an old order/quote, all these delete actions have a pop-up modal asking the Owner "Are you sure you want to delete...". This gives the store owner some confidence in that if they accidentally pressed a delete button, the item it would delete needs confirmation before this can be done.
 
 * Admin Control Panel
 
@@ -462,9 +483,25 @@ The Admin Controls are where the store owner has additional functionality outsid
 
 ![image](https://user-images.githubusercontent.com/72948843/205621285-95b28285-86e7-419c-9242-21a2e9846142.png)
 
-* Delete pop-up alert
+* Edit product page
+
+![image](https://user-images.githubusercontent.com/72948843/206800539-4dae675b-9d13-423a-8b17-b227a4c80bc7.png)
+
+* Delete product pop-up alert
 
 ![image](https://user-images.githubusercontent.com/72948843/204655356-5173c49a-1920-46fe-b55b-0b83e5c7fe19.png)
+
+* Add category
+
+![image](https://user-images.githubusercontent.com/72948843/206800693-aca3eadc-bd5e-4cfb-8f23-96e99f4b7e7d.png)
+
+* Add brand
+
+![image](https://user-images.githubusercontent.com/72948843/206800850-3338d3e3-0761-456f-8b28-30a0d4cf5a1f.png)
+
+* Add delivery method
+
+![image](https://user-images.githubusercontent.com/72948843/206800961-3b075f8f-881a-4893-8a61-9a0e031e179c.png)
 
 [Back to Existing Features](<#existing-features>)
 
