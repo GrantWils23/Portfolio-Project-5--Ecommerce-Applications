@@ -633,6 +633,8 @@ Yes, success. After sending a fake email via the form, I can see the email addre
 
 [Back to Top](<#web-marketing>)
 
+[Back to Top](<#contents>)
+
 ## Technologies Used
 
 * <a href="https://github.com/" target="_blank">GitHub</a> -The site was used to edit and host the website.
