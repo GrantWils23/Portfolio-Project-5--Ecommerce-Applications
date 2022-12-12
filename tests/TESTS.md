@@ -217,7 +217,7 @@ Below I have recorded the results of my Javascript validations:
 
 * Checkout / stripe_elements.js JavaScript
 
-![image](https://user![image](https://user-images.githubusercontent.com/72948843/205941873-00980434-a11b-4bb1-bcf6-146dee65b090.png)
+![image](https://user-images.githubusercontent.com/72948843/205941873-00980434-a11b-4bb1-bcf6-146dee65b090.png)
 
 * Profile / countryfield.js JavaScript
 
@@ -236,7 +236,7 @@ Below I have recorded the results of my Javascript validations:
 ## Python Validation
 
 My Python Code was directly checked for errors inside the terminal using the command ``` python3 -m flake8 ```.
-I am happy with flake8 report as the vast majority of these errors reported are lines to long on auto generated files, and changing these could harm the files for migrations, so i opted to leave these alone. The remaining files that have been flagged with errors are import errors not being tracked, where a import cannot be found unless tests are running. 
+I am happy with flake8 report as the vast majority of these errors reported are lines to long on auto generated files, and changing these could harm the files for migrations, so i opted to leave these alone. I experienced this with trying to format my settings.py file, I tried to condense the line lenght of the **AUTH_PASSWORD_VALIDATORS** to less than 79 characters. when I did this, I noticed it caused some errors with the deployed website. So I reverted it back to what it was before. The remaining files that have been flagged with errors are import errors not being tracked, where a import cannot be found unless tests are running.
 
 ### PEP* Validator using Flake8
 
@@ -789,6 +789,7 @@ As a store owner, I can delete a delivery method, so that I can remove a deliver
 [Back to Top](<#contents>)
 
 ## Manual Testing
+
 following the above User Story Tests, those tests coincide with the manual testing procedures of the website. A lot of the features above where check through manual testing to ensure a great user experience. Below is a list of the some of the features manually tested.
 
 ![image](https://user-images.githubusercontent.com/72948843/206440175-9b024cc7-471f-4e5d-885e-010d64d24224.png)
