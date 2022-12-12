@@ -198,7 +198,6 @@ Button Themes:
 
 The selections of the fonts were chosen carefully, the main logo font used is "Special Elite" which was supplied from Google Fonts. This font was chosen for its unique 'worn' style that gives it a ruggedness and slight military look. The secondary font used is 'Marcellus,' which too can be found on Google Fonts. A third font has been used in the site to give a better reading experience on the dark background 'GFS Didot'.
 
-
 The first font...
 
 ![image](https://user-images.githubusercontent.com/72948843/200687580-6dd232c4-c40c-461b-af68-701420cffdbe.png)
@@ -480,7 +479,7 @@ The admin views contain an orders list and quotes lists where they can check ord
 
 The admin can add more products and related product details. Additionally, new delivery methods can be added to the store if the store admin wishes to add at a later date.
 
- Any time the Store Owner wants to delete a product or an old order/quote, all these delete actions have a pop-up modal asking the Owner "Are you sure you want to delete...". This gives the store owner some confidence in that if they accidentally pressed a delete button, the item it would delete needs confirmation before this can be done.
+Any time the Store Owner wants to delete a product or an old order/quote, all these delete actions have a pop-up modal asking the Owner "Are you sure you want to delete...". This gives the store owner some confidence in that if they accidentally pressed a delete button, the item it would delete needs confirmation before this can be done.
 
 * Admin Control Panel
 
@@ -604,7 +603,7 @@ Below you can see the first post created for the Airsoft Workshop!
 
 ![image](https://user-images.githubusercontent.com/72948843/205509133-056403c2-2ad0-4ecf-874a-f03c44e45bb8.png)
 
-lastly but not least, we need to add the pages to the Facebook links within our website, so anywhere with an ```<a></a> ``` tag linked to Facebook needs our Facebook page link added directly to it.
+Lastly but not least, we need to add the pages to the Facebook links within our website, so anywhere with an ```<a></a> ``` tag linked to Facebook needs our Facebook page link added directly to it.
 
 ![image](https://user-images.githubusercontent.com/72948843/205509648-7574c2ad-e703-4f5a-93fc-19ccd36739e8.png)
 
@@ -618,19 +617,19 @@ To generate a larger awareness of our social media presence, I added a larger li
 
 Next, we want to take advantage of email marketing to boost brand awareness of the company. To do this, I used Mailchimp. so firstly, I created an account and once that has been set up, I can show below how Email marketing was employed in this website.
 
-click on the create button on the left of the dropdown menu.
+Click on the create button on the left of the dropdown menu.
 
 ![image](https://user-images.githubusercontent.com/72948843/205510647-f0950de2-73c3-4dbd-b016-623dbe033793.png)
 
-first in the menu you will see a list of options... click on the email link in the menu.
+First in the menu you will see a list of options... click on the email link in the menu.
 
 ![image](https://user-images.githubusercontent.com/72948843/205510697-07b56f52-914a-4f6f-9d7f-ae849650c1cc.png)
 
-now for Airsoft Workshop, I have already designed my footer in mind with a place to have an embedded sign-up form... so I will select the embedded form option of the three.
+Now for Airsoft Workshop, I have already designed my footer in mind with a place to have an embedded sign-up form... so I will select the embedded form option of the three.
 
 ![image](https://user-images.githubusercontent.com/72948843/205510574-f25b8f0e-2f21-47b8-9463-bce73ce20c3e.png)
 
-with the first step, it gives us a list of options of what we wish to add to this embedded form. I only want the email address, so i just progressed to the next step.
+With the first step, it gives us a list of options of what we wish to add to this embedded form. I only want the email address, so i just progressed to the next step.
 
 ![image](https://user-images.githubusercontent.com/72948843/205511032-3390eff6-3b40-4556-ba5d-f110f52ff0c8.png)
 
@@ -638,11 +637,11 @@ Now the form is ready... I can copy this code and add it to the footer of our we
 
 ![image](https://user-images.githubusercontent.com/72948843/205511156-21778c5f-f331-40f2-a5bd-cb1cbde92766.png)
 
-with this code, you can now implement it and style it how you wish, after some CSS alterations this is how my final embedded form looks...
+With this code, you can now implement it and style it how you wish, after some CSS alterations this is how my final embedded form looks...
 
 ![image](https://user-images.githubusercontent.com/72948843/205519068-0048a022-0d26-4673-b0b9-ec4a382b2970.png)
 
-just a quick check to see if it worked... I'll go to Mailchimp and check if my test email address went through...
+Just a quick check to see if it worked... I'll go to Mailchimp and check if my test email address went through...
 
 ![image](https://user-images.githubusercontent.com/72948843/205519366-662230c5-f455-4ec2-a379-214333979960.png)
 
@@ -851,8 +850,8 @@ Next I went to settings.py and added it to our Heroku app too the allowed hosts.
 
 Now we can add, commit, and push the code to GitHub,
 ``` git add . ``` 
-``` git add . ``` 
-``` git add . ``` 
+``` git commit -m "commit message here" ```
+``` git push ```
  and after push to Heroku too:
 ``` git push heroku main ```
 
@@ -863,7 +862,7 @@ This appeared because I created the app in the Heroku website and not the Heroku
 
 ![image](https://user-images.githubusercontent.com/72948843/204877848-a28dfe64-d737-4025-be1c-d2ace64d913c.png)
 
-with that now set, run the push to Heroku again and it will start to build.
+With that now set, run the push to Heroku again and it will start to build.
 
 ![image](https://user-images.githubusercontent.com/72948843/204880735-bda666ab-c898-41e5-b1b9-23145c52c656.png)
 
@@ -945,15 +944,15 @@ The next thing we need to do is add our media files from the media folder into t
 
 Lastly, we need to get stripe working...
 
-add the stripe public and secret keys to the config vars in the Heroku apps settings:
+Add the stripe public and secret keys to the config vars in the Heroku apps settings:
 ![9@ClippedImage](https://user-images.githubusercontent.com/72948843/205464196-13411659-465c-4c9e-ab83-d5dd07208ff5.png)
 
 Lastly, we need to create a new endpoint for the webhook to work and add its STRIPE_WH_SECRET to the Heroku’s config var.
 
-add a new endpoint...
+Add a new endpoint...
 ![5@ClippedImage](https://user-images.githubusercontent.com/72948843/205464355-713bf3bc-db51-4638-8f0f-7595460a262b.png)
 
-now add the new signing secret to the Heroku settings config vars.
+Now add the new signing secret to the Heroku settings config vars.
 ![8@ClippedImage](https://user-images.githubusercontent.com/72948843/205464495-11354d66-aec8-4556-8a5f-415c21efeee5.png)
 
 [Back to Top](<#contents>)
@@ -1021,12 +1020,12 @@ Now you need to setup and initialize a virtual environment for the project. foll
 
 (Step.3) After creating the virtual environment, you need to activate it. ***We need to activate the virtual environment every time you will work on the project!***. This can be achieved by using the following command:
 
-* ``` $ source virtualenv_name/bin/activate ``` - [For Mac] 
+* ``` $ source virtualenv_name/bin/activate ``` - [For Mac]
 * ``` $ source virtualenv_name/Scripts/activate ``` - [For Windows]  (as in my example below):
 
 ![image](https://user-images.githubusercontent.com/72948843/206683769-54c80217-96c4-4d4c-878e-6175549c2050.png)
 
-<b>Don't forget to add the env to your .gitignore file</b> if added correctly the file and its content's font shall be shaded a darker grey.
+**Don't forget to add the env to your .gitignore file** if added correctly the file and its content's font shall be shaded a darker grey.
 
 ![image](https://user-images.githubusercontent.com/72948843/206684102-43b777c5-b193-451a-9c34-9336dbd42ace.png)
 
@@ -1088,7 +1087,7 @@ Building the website was a very hard process but very rewarding. I would like to
 
 ## Acknowledgements
 
-This project is my 5th and Final Portfolio Project, as part of <a href="https://codeinstitute.net/" target="_blank">Code Institute's</a> Full Stack Software Developer (e-Commerce) Diploma. </p> A Big thank you to Precious Ijege (my mentor) for his help and expertise pushing me to right better code. Another thanks to the Slack community for posting useful content. Some of their questions were problems that I had, so it was useful to know people were experiencing the same difficulties as me. Also thank you to the tutors at Code Institute who are all fantastic. they helped me in some difficult times and a special thanks to Ed who helped explain queries and how I can use it within creating page pagination.
+This project is my 5th and Final Portfolio Project, as part of <a href="https://codeinstitute.net/" target="_blank">Code Institute's</a> Full Stack Software Developer (e-Commerce) Diploma. A Big thank you to Precious Ijege (my mentor) for his help and expertise pushing me to right better code. Another thanks to the Slack community for posting useful content. Some of their questions were problems that I had, so it was useful to know people were experiencing the same difficulties as me. Also thank you to the tutors at Code Institute who are all fantastic. they helped me in some difficult times and a special thanks to Ed who helped explain queries and how I can use it within creating page pagination.
 <br>
 <br>
 Grant Wilsmore, 2022
