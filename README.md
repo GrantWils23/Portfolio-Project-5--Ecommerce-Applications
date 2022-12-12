@@ -13,6 +13,7 @@ click here to go to the deployed website: <a href="https://airsoft-workshop.hero
 
 ## Contents
 
+* [**E-Commerce Business Model**](<#e-commerce-business-model>)
 * [**User Experience UX**](<#user-experience-ux>)
   * [User Stories](<#user-stories>)
   * [Project Management](<#project-management>)
@@ -39,7 +40,23 @@ click here to go to the deployed website: <a href="https://airsoft-workshop.hero
 * [**Credits**](<#credits>)
 * [**Acknowledgements**](<#acknowledgements>)
 
-# User Experience UX
+## E-Commerce Business Model
+
+Airsoft Workshop is an e-commerce shop that has three sides to the company. The first part is a supplier of consumable airsoft products (i.e. BBs, batteries, etc...). The second is that it provides of tech/maintenance repairs and modifications to RIF weapons. Lastly, a spray painting service to customize and camoflauge RIF weapons. The company is a start-up business that is just trying to find its place in the market. The business owner is an airsofter who got into airsoft and loves to build, repair, mod and paint RIFs and soon started to build a reputation in the local airsoft community. With people approaching him to do work, he thought he could turn it into a business.
+
+Airsoft is a big sport, but the communities are small. Often players form groups and much like a tennis player being known "on the circuit," the airsoft community and those clans are the target audiance. Word of mouth goes a long way in these groups and can spread like wildfire, so to tap into the market, the best thing to do is go to the platforms that the airsofters use to get the brand out there. An Airsoft Workshop social media presence is going to be required to help get the shoppers interested. Facebook is going to be the platform of choice as the initial social media presence and will expand in time to more platforms. Firstly, the aim would is to target people close to the business owner and to start sharing the facebook page. Then the friends would tell it to other players on game days.
+
+The idea for its social media marketing is get people interested in posts of paintjobs, builds and modifications on new projects that come in and post progress reports on successful builds through the week. Another style of posts will consist of teasing statements asking players if they have everything ready for the weekend (BBs, gas, batteries...) ready for the weekend game, if not, then click on the link to the store to buy the bits you need. An organic marketing model will hopefully build very quickly and the company can quickly become very successful.
+
+Search engine optimization is going to play its part too, trying to make sure the brand can be found by individuals who aren't aware of the company through friends and community groups. It is important to try and get the brand out their and though there are a many companies out there who offer a lot of these services, there are few that are that niche. So having the correct keywords are important. The business will also target customers who sign up to a newsletter which provide them with advertisements that will appeal to them, perhaps with promotions and special offers, as well as staying true to the brand's ethos with useful airsoft tips.
+
+SEO and Web Marketing are explained in a bit more technical detail in this README further down... [**SEO & Web Marketing**](<#seo-and-web-marketing>)
+
+(RIF stands for Realistic Immitation Firearms).
+
+[Back to Top](<#contents>)
+
+## User Experience UX
 
 ## User Stories
 
@@ -68,6 +85,8 @@ To find out more the performance of these user stories under test, please follow
 To work along with the user stories that i created to help build the site, I used GitHubs's Project Board to manage my workflow. The Kanban style work board is very useful when trying to implement a working Agile environment. This tool helped me break down the importance of time management and helped me track my progress. It's a super powerful tool, with the abiltity to add small notes and labels to items within the project board. I found this helpful when it came to managing small problems that needed addressing. I often left a note and came back to it to make sure I ticked it off when I was done. Working with the Kanban method really helped me manage my work load and control the rate of my work. organizing things into small projects helped me identify what parts of the project I was going to address first.
 
 As stated above in the user stories. The Kanban style board also helped with the additional user stories that were implemented during production. Though some features where created without being explicitly a requirement in a user story, when it came back to the Kanban board. I could quickly identify guide myself through the items that needed doing and could identify items that were already complete.
+
+<a href="https://github.com/users/GrantWils23/projects/4"> Follow this link to the public project page in github</a> 
 
 ![image](https://user-images.githubusercontent.com/72948843/200688676-60bbf45a-9a46-4b59-be1a-c8c9983a935d.png)
 
