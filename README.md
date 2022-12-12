@@ -5,9 +5,9 @@
 
 ## Airsoft Workshop
 
-The Idea for this website came from my hobby. I am an airsofter and it is my biggest passion outside work. I got really envolved in the sport and have always looked at the idea of working more closely within the airsoft community and would like to provide a unique, bespoke service that offers spray painting, camoflauging of Realistic Imitation Firearms (RIFs). When i speak with fellow airsofters they always would like a way to stand out from the crowd and have unique equipment and that is where the airsoft workshop comes into play. from selling consumables and to offering high-end services such as maintainance and repairs.
+The Idea for this website came from my hobby. I am an airsofter and it is my biggest passion outside work. I got really involved in the sport and have always looked at the idea of working more closely within the airsoft community and would like to provide a unique, bespoke service that offers spray painting, camouflaging of Realistic Imitation Firearms (RIFs). When I speak with fellow airsofters they always would like a way to stand out from the crowd and have unique equipment and that is where the airsoft workshop comes into play. from selling consumables and to offering high-end services such as maintenance and repairs.
 
-click here to go to the deployed website: <a href="https://airsoft-workshop.herokuapp.com/" target="_blank"><b><i>"Airsoft Workshop"</i></b></a>
+click here to go to the deployed website: <a href="https://airsoft-workshop.herokuapp.com/" target="_blank">**"Airsoft Workshop"**</a>
 
 ![image](https://user-images.githubusercontent.com/72948843/205629357-1a4f2095-590a-47c1-b1c9-f8f89eba4c2f.png)
 
@@ -42,17 +42,17 @@ click here to go to the deployed website: <a href="https://airsoft-workshop.hero
 
 ## E-Commerce Business Model
 
-Airsoft Workshop is an e-commerce shop that has three sides to the company. The first part is a supplier of consumable airsoft products (i.e. BBs, batteries, etc...). The second is that it provides of tech/maintenance repairs and modifications to RIF weapons. Lastly, a spray painting service to customize and camoflauge RIF weapons. The company is a start-up business that is just trying to find its place in the market. The business owner is an airsofter who got into airsoft and loves to build, repair, mod and paint RIFs and soon started to build a reputation in the local airsoft community. With people approaching him to do work, he thought he could turn it into a business.
+Airsoft Workshop is an e-commerce shop that has three sides to the company. The first part is a supplier of consumable airsoft products (i.e. BBs, batteries, etc...). The second is that it provides tech/maintenance repairs and modifications to RIF weapons. Lastly, a spray-painting service to customize and camouflage RIF weapons. The company is a start-up business that is just trying to find its place in the market. The business owner is an airsofter who got into airsoft and loves to build, repair, mod and paint RIFs and soon started to build a reputation in the local airsoft community. With people approaching him to do work, he thought he could turn it into a business.
 
-Airsoft is a big sport, but the communities are small. Often players form groups and much like a tennis player being known "on the circuit," the airsoft community and those clans are the target audiance. Word of mouth goes a long way in these groups and can spread like wildfire, so to tap into the market, the best thing to do is go to the platforms that the airsofters use to get the brand out there. An Airsoft Workshop social media presence is going to be required to help get the shoppers interested. Facebook is going to be the platform of choice as the initial social media presence and will expand in time to more platforms. Firstly, the aim would is to target people close to the business owner and to start sharing the facebook page. Then the friends would tell it to other players on game days.
+Airsoft is a big sport, but the communities are small. Often players form groups and much like a tennis player being known "on the circuit," the airsoft community and those clans are the target audience. Word of mouth goes a long way in these groups and can spread like wildfire, so to tap into the market, the best thing to do is go to the platforms that the airsofters use to get the brand out there. An Airsoft Workshop social media presence is going to be required to help get the shoppers interested. Facebook is going to be the platform of choice as the initial social media presence and will expand in time to more platforms. Firstly, the aim would be to target people close to the business owner and to start sharing the Facebook page. Then the friends would tell it to other players on game days.
 
-The idea for its social media marketing is get people interested in posts of paintjobs, builds and modifications on new projects that come in and post progress reports on successful builds through the week. Another style of posts will consist of teasing statements asking players if they have everything ready for the weekend (BBs, gas, batteries...) ready for the weekend game, if not, then click on the link to the store to buy the bits you need. An organic marketing model will hopefully build very quickly and the company can quickly become very successful.
+The idea for its social media marketing is get people interested in posts of paintjobs, builds and modifications on new projects that come in and post progress reports on successful builds through the week. Another style of posts will consist of teasing statements asking players if they have everything ready for the weekend (BBs, gas, batteries...) ready for the weekend game, if not, then click on the link to the store to buy the bits you need. An organic marketing model will hopefully build very quickly, and the company can quickly become very successful.
 
-Search engine optimization is going to play its part too, trying to make sure the brand can be found by individuals who aren't aware of the company through friends and community groups. It is important to try and get the brand out their and though there are a many companies out there who offer a lot of these services, there are few that are that niche. So having the correct keywords are important. The business will also target customers who sign up to a newsletter which provide them with advertisements that will appeal to them, perhaps with promotions and special offers, as well as staying true to the brand's ethos with useful airsoft tips.
+Search engine optimization is going to play its part too, trying to make sure the brand can be found by individuals who aren't aware of the company through friends and community groups. It is important to try and get the brand out there and though there are many companies out there who offer a lot of these services, there are few that are that niche. So having the correct keywords are important. The business will also target customers who sign up to a newsletter which provide them with advertisements that will appeal to them, perhaps with promotions and special offers, as well as staying true to the brand's ethos with useful airsoft tips.
 
 SEO and Web Marketing are explained in a bit more technical detail in this README further down... [**SEO & Web Marketing**](<#seo-and-web-marketing>)
 
-(RIF stands for Realistic Immitation Firearms).
+(RIF stands for Realistic Imitation Firearms).
 
 [Back to Top](<#contents>)
 
@@ -62,9 +62,9 @@ SEO and Web Marketing are explained in a bit more technical detail in this READM
 
 User Stories make up an important part of the process to help steer the project in the right direction. These itemized points act as a guide during the build of the project.
 
-Follow this link to <a href="https://github.com/GrantWils23/Portfolio-Project-5--Ecommerce-Applications/blob/main/assets/User%20Stories%20Spreadsheet.pdf" target="_blank"><b><i>"The User Stories List"</i></b></a>.
+Follow this link to <a href="https://github.com/GrantWils23/Portfolio-Project-5--Ecommerce-Applications/blob/main/assets/User%20Stories%20Spreadsheet.pdf" target="_blank">**"The User Stories List"**</a>.
 
-They were broken down into sections to give some clarity on the how to organise the User Stories to build a website that users will enjoy. By itemizing the sections into Epics, it helps target the statement problems and to come up with a solution to implement to the website that users will enjoy their experience and will encourage users to return back to this site in the future.
+They were broken down into sections to give some clarity on the how to organise the User Stories to build a website that users will enjoy. By itemizing the sections into Epics, it helps target the statement problems and to come up with a solution to implement to the website that users will enjoy their experience and will encourage users to return to this site in the future.
 
 The Epics were organised as follows:
 
@@ -74,19 +74,19 @@ The Epics were organised as follows:
 * Purchasing and Checkout
 * Admin Controls
 
-During the project, I realised that some user stories did not fit the original user stories. So during production of the site, late additions were added to the list, you can notice that the numbers in the User Stories jump were they were added later on. This was challanging to make sure nothing was missed missed during development but having these user stories during testing made sure all the additional features and missed user stories were accounted for.
+During the project, I realised that some user stories were missing from the original user stories. So, during production of the site, late additions were added to the list, you can notice that the numbers in the User Stories jump where they were added later on. This was challenging to make sure nothing was missed during development but having these user stories during testing made sure all the additional features and missed user stories were accounted for.
 
-To find out more the performance of these user stories under test, please follow this link to <a href="https://github.com/GrantWils23/Portfolio-Project-5--Ecommerce-Applications/blob/main/tests/TESTS.md" target="_blank">TESTS.md</a> to the testing page and in the contents, go to <i>user story tests</i>.
+To find out more the performance of these user stories under test, please follow this link to <a href="https://github.com/GrantWils23/Portfolio-Project-5--Ecommerce-Applications/blob/main/tests/TESTS.md" target="_blank">TESTS.md</a> to the testing page and in the contents, go to *user story tests*.
 
 [Back to Top](<#contents>)
 
 ## Project Management
 
-To work along with the user stories that i created to help build the site, I used GitHubs's Project Board to manage my workflow. The Kanban style work board is very useful when trying to implement a working Agile environment. This tool helped me break down the importance of time management and helped me track my progress. It's a super powerful tool, with the abiltity to add small notes and labels to items within the project board. I found this helpful when it came to managing small problems that needed addressing. I often left a note and came back to it to make sure I ticked it off when I was done. Working with the Kanban method really helped me manage my work load and control the rate of my work. organizing things into small projects helped me identify what parts of the project I was going to address first.
+To work along with the user stories that I created to help build the site, I used GitHub’s Project Board to manage my workflow. The Kanban style work board is very useful when trying to implement a working Agile environment. This tool helped me break down the importance of time management and helped me track my progress. It's a super powerful tool, with the ability to add small notes and labels to items within the project board. I found this helpful when it came to managing small problems that needed addressing. I often left a note and came back to it to make sure I ticked it off when I was done. Working with the Kanban method really helped me manage my workload and control the rate of my work. organizing things into small projects helped me identify what parts of the project I was going to address first.
 
-As stated above in the user stories. The Kanban style board also helped with the additional user stories that were implemented during production. Though some features where created without being explicitly a requirement in a user story, when it came back to the Kanban board. I could quickly identify guide myself through the items that needed doing and could identify items that were already complete.
+As stated above in the user stories. The Kanban-style board also helped with the additional user stories that were implemented during production. Though some features were created without being explicitly a requirement in a user story when it came back to the Kanban board. I could quickly identify and guide myself through the items that needed doing and could identify items that were already complete.
 
-<a href="https://github.com/users/GrantWils23/projects/4"> Follow this link to the public project page in github</a> 
+<a href="https://github.com/users/GrantWils23/projects/4"> Follow this link to the public project page in GitHub</a>
 
 ![image](https://user-images.githubusercontent.com/72948843/200688676-60bbf45a-9a46-4b59-be1a-c8c9983a935d.png)
 
@@ -98,13 +98,13 @@ Here below you can find the Data schema used to create the data models. This was
 
 ![image](https://user-images.githubusercontent.com/72948843/206748495-8f888af0-a3e9-4681-b028-6a6f6af57677.png)
 
-* Follow this link to <a href="https://github.com/GrantWils23/Portfolio-Project-5--Ecommerce-Applications/blob/main/assets/airsoft-workshop-database-schema-shopping-model.png" target="_blank"><b><i>"The Airsoft Workshop Database Schema Shopping Model"</i></b></a> in the assets folder.
+* Follow this link to <a href="https://github.com/GrantWils23/Portfolio-Project-5--Ecommerce-Applications/blob/main/assets/airsoft-workshop-database-schema-shopping-model.png" target="_blank">**"The Airsoft Workshop Database Schema Shopping Model"**</a> in the assets folder.
 
 ![image](https://user-images.githubusercontent.com/72948843/206748576-b452b29e-01da-4406-92b7-5a0bbaa6187d.png)
 
-* Follow this link to <a href="https://github.com/GrantWils23/Portfolio-Project-5--Ecommerce-Applications/blob/main/assets/airsoft-workshop-database-schema-services-model.png" target="_blank"><b><i>"The Airsoft Workshop Database Schema Services Model"</i></b></a> in the assets folder.
+* Follow this link to <a href="https://github.com/GrantWils23/Portfolio-Project-5--Ecommerce-Applications/blob/main/assets/airsoft-workshop-database-schema-services-model.png" target="_blank">**"The Airsoft Workshop Database Schema Services Model"**</a> in the assets folder.
 
-These are the final versions of the models. They were updated during development to help fit the needs of what I was trying to build. Having a good database schema, helps with the production of a functional website. An example of this was adapting the models helped build a more robust database and install the wishlist capability. To implement a the wishlist functionality, an alteration was made to my product model. I created a relational table that with that of the user profile model by adding a "user wishlist" field to the product model. This is created in practice by a "ManyToManyField" which made it very easy to implement the logic for this wishlist feature.
+These are the final versions of the models. They were updated during development to help fit the needs of what I was trying to build. Having a good database schema, helps with the production of a functional website. An example of this was adapting the models helped build a more robust database and install the Wishlist capability. To implement a the Wishlist functionality, an alteration was made to my product model. I created a relational table that with that of the user profile model by adding a "user Wishlist" field to the product model. This is created in practice by a "ManyToManyField" which made it very easy to implement the logic for this Wishlist feature.
 
 [Back to Top](<#contents>)
 
@@ -112,13 +112,13 @@ These are the final versions of the models. They were updated during development
 
 The Wireframes for this project are the building foundations of the website. Some of the ideas have come from user feedback. Friends and fellow airsofters who would use a service like this gave me valuable information as time went on what works and what does not... These basic templates were the foundation of which the website style is built on but with the help of real user feedback I implemented it along the way. I used <a href="https://balsamiq.com/" target="_blank">Balsamiq Wireframes</a> to create these templates with which the website was built on"
 
-Follow this link to <a href="https://github.com/GrantWils23/Portfolio-Project-5--Ecommerce-Applications/blob/main/assets/Airsoft%20Workshop%20Wireframes.pdf" target="_blank"><b><i>"The Airsoft Workshop Wireframes"</i></b></a>.
+Follow this link to <a href="https://github.com/GrantWils23/Portfolio-Project-5--Ecommerce-Applications/blob/main/assets/Airsoft%20Workshop%20Wireframes.pdf" target="_blank">**"The Airsoft Workshop Wireframes"**</a>.
 
 [Back to Top](<#contents>)
 
 ## Site Structure
 
-Navigating around the site is easy due to the simple layout. here below is the basic site structure. <!-- template from old project - edit accordingly -->
+Navigating around the site is easy due to the simple layout. here below is the basic site structure.
 
 * Home Page
 * Services Page
@@ -143,30 +143,30 @@ The Desktop version of the site is very spacious but when the user drops down to
 
 # Web Design and Stylings
 
-To speed up the process of making a really interactive website page, I learnt to use Bootstrap to its full capability to help design an aesthetically pleasing website that and then created custom details to the brands design to give it a unique appeal and enhance the UX. by using bootstrap, I have access to working, proven code that has help build an offcanvas menu bar, cards, toasts and footers. and it allows me to spend more time on the core structure of the website in the logic and how the site should operate. below are some specification detailng the other design aspects of the website.
+To speed up the process of making an interactive website page, I learnt to use Bootstrap to its full capability to help design an aesthetically pleasing website that and then created custom details to the brands design to give it a unique appeal and enhance the UX. by using bootstrap, I have access to working, proven code that has help build an off-canvas menu bar, cards, toasts and footers. and it allows me to spend more time on the core structure of the website in the logic and how the site should operate. below are some specifications detailing the other design aspects of the website.
 
-I used CSS to its full potential to create unique designs and animations to attract the user to the website. The animations are subtle but they add a real immersive feel to the website... By making use of time transitions, on-hovers, clicks, and size-ratio adjustments, the user can see a certain attention to detail and care has gone into the whole UX, that this is not just a normal, bland online store. Its unique qualities on the homepage draws the users attention and they feel encouraged to explore more of the website.
+I used CSS to its full potential to create unique designs and animations to attract the user to the website. The animations are subtle, but they add a real immersive feel to the website... By making use of time transitions, on-hovers, clicks, and size-ratio adjustments, the user can see a certain attention to detail and care has gone into the whole UX, that this is not just a normal, bland online store. Its unique quality on the homepage draws the users attention and they feel encouraged to explore more of the website.
 
 ## Colour Scheme
 
-the colour scheme chosen for this website is a submersive navy-blue/black colour and dark grey  <!-- colour tags go here -->. This is really nice as it highlights images and makes reading easy as a light grey font was chosen to work in contrast with the background color.
+the colour scheme chosen for this website is a navy-blue/black colour and dark grey. This is nice as it highlights images and makes reading easy as a light grey font was chosen to work in contrast with the background colour.
 
 The colour scheme also around the website largely uses hints of green throughout to add the unique personal touch of the Airsoft Workshop website.
 
-* The main logo font is green, it naturally appears throughout the website to give the user an enhanced UX.
+* The main logo font is green; it naturally appears throughout the website to give the user an enhanced UX.
 
-* The homepage "GEAR UP" button is really important to the website: Its unique to all the other buttons on the site as it is designed to draw the user in. It holds the same color tones that feature throughout the website.
+* The homepage "GEAR UP" button is important to the website: Its unique to all the other buttons on the site as it is designed to draw the user in. It holds the same colour tones that feature throughout the website.
 
-* Alot of the functional button use bootstrap's inbuilt buttons. The green "success" and grey "secondary" button features mostly thoughout the site as a button to navigate and make progressive page changes. The secondary button also appears in the site which serves a majority of the time in the site as a return button.
+* A lot of the functional button use bootstrap's inbuilt buttons. The green "success" and grey "secondary" button features mostly throughout the site as a button to navigate and make progressive page changes. The secondary button also appears in the site which serves most of the time in the site as a return button.
 
 The colour codes are:
 
 * Custom green: #198754
 * Main background colour: #222
-* Font color against the Black-Grey background: #ffffff8c
-* Font color for links against backgrounds and table elements: #9C9A9A
-* background for Navbar and Footer: #212529
-* font-color against Navbar and Footer background: #6c757d
+* Font colour against the Black-Grey background: #ffffff8c
+* Font colour for links against backgrounds and table elements: #9C9A9A
+* Background for Navbar and Footer: #212529
+* Font-colour against Navbar and Footer background: #6c757d
 
 Main Logo Colour:
 
@@ -196,7 +196,8 @@ Button Themes:
 
 ## Fonts
 
-The selections of the fonts were chosen really carefully, the main logo font used is "Special Elite" which was supplied from Google Fonts. This font was chosen for its unique 'worn' style that gives it a ruggedness and slight military look. The secondary font used is 'Marcellus,' which too can be found on Google Fonts. A third font has been used a in the site to give a better reading experience on the dark background 'GFS Didot'.
+The selections of the fonts were chosen carefully, the main logo font used is "Special Elite" which was supplied from Google Fonts. This font was chosen for its unique 'worn' style that gives it a ruggedness and slight military look. The secondary font used is 'Marcellus,' which too can be found on Google Fonts. A third font has been used in the site to give a better reading experience on the dark background 'GFS Didot'.
+
 
 The first font...
 
@@ -231,10 +232,10 @@ The tertiary font...
 * [Admin Controls](<#admin-controls>)
 
 ## Navigation Menu
-<!-- examples form previous, change accordingly -->
+
 * The nav menu is set at the top of all the pages. It is fully responsive and converts to a small dropdown menu on smaller screen ratios for a better UX. The nav contains links to all the important customer usable pages.
-* The nav menu is fitted inside of a clickable button that opens up a offcanvas dropdown menu. It is hidden off screen to increase the viewing portal space around giving the user more space and a less cultered view.
-* The offcanvas menu has link to the homepage, to the services page and then links to all the individual service links, along with the account dropdown menu with all related field options contained within.
+* The nav menu is fitted inside of a clickable button that opens an off-canvas dropdown menu. It is hidden off screen to increase the viewing portal space around giving the user more space and a less cluttered view.
+* The off-canvas menu has link to the homepage, to the services page and then links to all the individual service links, along with the account dropdown menu with all related field options contained within.
 * The logo is clickable with a link back to the home page for enhanced UX.
 
 ![image](https://user-images.githubusercontent.com/72948843/200792615-30d89016-b13e-4193-a272-af9e689ca7cf.png)
@@ -256,8 +257,8 @@ Account Dropdown menu - Superuser View
 [Back to Existing Features](<#existing-features>)
 
 ## Allauth Functionality
-<!-- example text from pervious project, change accordingly -->
-The allauth functionality allows the generation of user profiles which helps customers create a profile that they can save and have records of their orders in their account. This has been intergrated within the airsoft workshop to give the user the ability to signin, signout, register.
+
+The allauth functionality allows the generation of user profiles which helps customers create a profile that they can save and have records of their orders in their account. This has been integrated within the airsoft workshop to give the user the ability to sign in, sign out, register.
 
 ![image](https://user-images.githubusercontent.com/72948843/206473481-7d031c57-5999-48d3-b06d-057f26b33d01.png)
 
@@ -275,7 +276,7 @@ Sign Out
 
 ## Services Page
 
-The services page is designed to give the users a brief insight into the services of what the company offers its clients with a description of the beautician’s experience and really is where you get a feel for the company and the professional nature of it. The page is designed to be eye-catching and give the user a well-rounded experience as they view what company has to offer. The cards have a green shadow appear around them when the cursor enters a card to focus your view on the card the user are reading helping to boost the user's UX.
+The services page is designed to give the users a brief insight into the services of what the company offers its clients with a description of the beautician’s experience and really is where you get a feel for the company and the professional nature of it. The page is designed to be eye-catching and give the user a well-rounded experience as they view what company has to offer. The cards have a green shadow appear around them when the cursor enters a card to focus your view on the card the user is reading helping to boost the user's UX.
 
 ![image](https://user-images.githubusercontent.com/72948843/200798942-5810353e-1a85-45bc-bb6b-deb8c7594b5d.png)
 
@@ -284,7 +285,7 @@ Services page on a large-view device
 ![image](https://user-images.githubusercontent.com/72948843/200799508-1c5b11b1-2eb0-4190-91e8-e08138a090c4.png)
 ![image](https://user-images.githubusercontent.com/72948843/206483907-c73bc433-8fc1-4297-bc63-aba123ed9b16.png)
 
-Services page on a small view device | On-hover with a cursor the cards light up with a background glow to draw the users attention
+Services page on a small view device | On-hover with a cursor the cards light up with a background glow to draw the user's attention
 
 ![image](https://user-images.githubusercontent.com/72948843/204614385-066b085d-0cdc-432c-91d2-3530e2f20fa3.png)
 
@@ -294,7 +295,9 @@ Services page modal
 
 ## Tech Services
 
-The Tech services page is user friendly and is very clear to read, Its high contrast background on the hover over the radio select buttons images make a great visual indicator to on hovered items, which enhances the user's experience on the page.
+The Tech services page is user-friendly and is very clear to read, its high contrast background on the hover over the radio select buttons images make a great visual indicator to on hovered items, which enhances the user's experience on the page. The form validates on submission to make sure the data submitted is valid. The user can submit an image of their weapon to the company to have some visual record of the condition of their RIF weapon.
+
+The radio buttons in the form utilize the images attached to the models of the choices in the form. The images provide a great user experience helping the shopper understand what they are picking. This is an important part of the design of the form, trying to imitate a video game "select your loadout" experience. This approach is far better than a text based select box which wouldn't provide the user with the same level of user experience.
 
 ![image](https://user-images.githubusercontent.com/72948843/204584418-08a60b02-d0a1-4eaf-95b1-9524ddd4db33.png)
 ![image](https://user-images.githubusercontent.com/72948843/206764702-eb99ad38-2422-4a6e-91a2-332bcfc7a356.png)
@@ -309,15 +312,13 @@ The Tech services page is user friendly and is very clear to read, Its high cont
 ![image](https://user-images.githubusercontent.com/72948843/206764227-18c096a1-0b5e-4c6e-b124-6d10bd36ef84.png)
 ![image](https://user-images.githubusercontent.com/72948843/206764311-da53b93c-a023-4339-8630-0b67a0d4f242.png)
 
-<!-- Add later more content -->
-
 [Back to Existing Features](<#existing-features>)
 
 ## Paint Services
 
-The Paint services page is user friendly and is very clear to read, Its high contrast background on the hover over the radio select buttons images make a great visual indicator to on hovered items, which enhances the user's experience on the page.
+The Paint services page is user friendly and is very clear to read, Its high contrast background on the hover over the radio select buttons images make a great visual indicator to on hovered items, which enhances the user's experience on the page. The form validates on submission to make sure the data submitted is valid. The user can submit an image of their weapon to the company to have some visual record of the condition of their RIF weapon.
 
-The radio buttons in the form have images attached to them help. The images are of the paint job the user can choose from if he wishes to paint his RIF. This clear display helps the user commit to a style he is picking. This approach is far better than a text based select box which wouldn't provide thec user with a lot of information, again adding to the user experience.
+The radio buttons in the form utilize the images attached to the models of the choices in the form. The images provide a great user experience helping the shopper understand what they are picking. This is an important part of the design of the form, trying to imitate a video game "select your loadout" experience. This approach is far better than a text based select box which wouldn't provide the user with the same level of user experience.
 
 ![image](https://user-images.githubusercontent.com/72948843/204585034-758387cd-23c9-40c5-ad04-44f78330f48f.png)
 
@@ -331,15 +332,11 @@ The radio buttons in the form have images attached to them help. The images are 
 ![image](https://user-images.githubusercontent.com/72948843/206765400-39c26404-5367-44c3-810b-5bd3cc8552e8.png)
 ![image](https://user-images.githubusercontent.com/72948843/206764311-da53b93c-a023-4339-8630-0b67a0d4f242.png)
 
-
-
-<!-- Add later more content -->
-
 [Back to Existing Features](<#existing-features>)
 
 ## Store
 
-The store hosts multiple features to make shopping more comfortable for the user. There is a "Sort By" box in the top right that allows the user to sort the products in an order the user wishes. There are some useful page filters to help the user filter by brands and categories in the side menu bar. This gives the user more control on specifically filtering down the prodcuts to a particular brand they may like or by a general category they are interested in. At the top of the side navbar there is a clear all button that resets any filters or search criteria that hovers red when you are ontop of it.
+The store hosts multiple features to make shopping more comfortable for the user. There is a "Sort By" box in the top right that allows the user to sort the products in an order the user wishes. There are some useful page filters to help the user filter by brands and categories in the side menu bar. This gives the user more control on specifically filtering down the products to a particular brand they may like or by a general category they are interested in. At the top of the side navbar there is a clear all button that resets any filters or search criteria that hovers red when you are on top of it.
 
 ![image](https://user-images.githubusercontent.com/72948843/206476831-82a3ae88-d33f-4866-849c-76da7fffcca6.png)
 ![image](https://user-images.githubusercontent.com/72948843/206767731-a25f3ffe-a464-4c6d-860a-9f466abfbc13.png)
@@ -347,7 +344,7 @@ The store hosts multiple features to make shopping more comfortable for the user
 ![image](https://user-images.githubusercontent.com/72948843/206477569-0d64d4fd-16eb-4a14-a1be-e8450c15877d.png)
 ![image](https://user-images.githubusercontent.com/72948843/206477143-dca8879d-b355-43f5-88b9-bfef9dd888e2.png)
 
-There is a search box, with which a user can search for specific keyword and the result of the seatch will be displayed back to the user what they have in store that matches the criteria of the search in the product name or product description.
+There is a search box, with which a user can search for specific keyword and the result of the search will be displayed back to the user what they have in store that matches the criteria of the search in the product name or product description.
 
 ![image](https://user-images.githubusercontent.com/72948843/206478170-8acf1797-10fc-4de1-9567-4e76e3f7cc4f.png)
 ![image](https://user-images.githubusercontent.com/72948843/206478390-85295d77-f859-435d-9de7-9af401c7f8e4.png)
@@ -375,11 +372,11 @@ Overall Page View:
 
 ## Product Details
 
-This is the product image view. It displays clearly information regarding a selected product (the image, price, desciption, ratings etc...). It contains links to search the product brands and caterogies. The store owner (Superuser) gets a two sided small button that has links only visible to them. The links are for admin controls to edit or delete a product.
+This is the product image view. It clearly displays information regarding a selected product (the image, price, description, ratings etc...). It contains links to search the product brands and categories. The store owner (Superuser) gets a two-sided small button that has links only visible to them. The links are for admin controls to edit or delete a product.
 
-There is the add to wishlist button in the middle for register users to add items to a wishlist in their profile.
+There is the add to Wishlist button in the middle for register users to add items to a Wishlist in their profile.
 
-You have a quantity selector box with 'add/minus' buttons so you can select an ammount of an item without having to type a value into the box. Beneath that lies a 'keep shopping' button that returns you to the list store page, and to the right is the 'add to bag' button to add the product
+You have a quantity selector box with 'add/minus' buttons so you can select an amount of an item without having to type a value into the box. Beneath that lies a 'keep shopping' button that returns you to the list store page, and to the right is the 'add to bag' button to add the product
 
 ![image](https://user-images.githubusercontent.com/72948843/206769816-91a23bea-0e29-457c-9559-21169c7f62b3.png)
 ![image](https://user-images.githubusercontent.com/72948843/206770804-aa5fb5ce-4080-45af-8a57-c6814e9e40e9.png)
@@ -388,7 +385,7 @@ You have a quantity selector box with 'add/minus' buttons so you can select an a
 
 ## Basket
 
-The basket view contains the list of items the shopper has added to their basket that they wish to purchase. From here the shopper has to select a delivery method of their choice, if they do not select anything, the default 3.50 shipping is selected. The shoper can also change the quantity of items in their basket before checking out or remove items completely if they feel the price is adding up too much. The user has to then decide to proceed to checkout or continue shopping and can go add some more items to the basket.
+The basket view contains the list of items the shopper has added to their basket that they wish to purchase. From here the shopper must select a delivery method of their choice, if they do not select anything, the default 3.50 shipping is selected. The shopper can also change the quantity of items in their basket before checking out or remove items completely if they feel the price is adding up too much. The user must then decide to proceed to checkout or continue shopping and can go add some more items to the basket.
 
 ![image](https://user-images.githubusercontent.com/72948843/206769635-407094bc-1489-43e1-aa34-7aa217720708.png)
 
@@ -400,11 +397,9 @@ The basket view contains the list of items the shopper has added to their basket
 
 [Back to Existing Features](<#existing-features>)
 
-<!-- continuation point -->
-
 ## Checkout
 
-The checkout view informs the user of all the criteria required to complete the purchase, along with a small recap window of what the user is ordering. The information required tocomplete the order has to be valid for the order to be successful. The user can quickly fill out the form to make a purchase making the process quick and easy.
+The checkout view informs the user of all the criteria required to complete the purchase, along with a small recap window of what the user is ordering. The information required to complete the order has to be valid for the order to be successful. The user can quickly fill out the form to make a purchase making the process quick and easy.
 
 Upon completion of an order, a confirmation email and are redirected to a success page where you can review your purchase and are prompted to head back into the store.
 
@@ -420,9 +415,9 @@ Upon completion of an order, a confirmation email and are redirected to a succes
 
 ## Footer
 
-The footer contains all the main menu links but also some addition links that are to extra content in the shape of Contact_us, About_us, FAQs, Sitemap, Privacy Policy. These additional links are important to the site but in general do not need to be present in the main navbar as they are less likely to be visited. Beyond these links are some extra content too. We have a Subscribe to Newsletter housed in footer, for those who wish to join our email marketing to recieve monthly updates and promo codes. Also beneath a line break we have a copyright disclaimer and social media links and other important links related to the company.
+The footer contains all the main menu links but also some addition links that are to extra content in the shape of Contact us, About us, FAQs, Sitemap, Privacy Policy. These additional links are important to the site but in general do not need to be present in the main navbar as they are less likely to be visited. Beyond these links are some extra content too. We have a Subscribe to Newsletter housed in footer, for those who wish to join our email marketing to receive monthly updates and promo codes. Beneath a line break we have a copyright disclaimer and social media links and other important links related to the company.
 
-* The Subscribe to newsletter feature is located in the footer so that it doesn't intefer with the Hero Image in the main view and for new potential customers they have a quick and easy means of signing up to our email marketing scheme.
+* The Subscribe to newsletter feature is in the footer so that it doesn't interfere with the Hero Image in the main view and for new potential customers they have a quick and easy means of signing up to our email marketing scheme.
 
 ![image](https://user-images.githubusercontent.com/72948843/206796852-4846b657-a686-4533-a4ef-a9eae24b8496.png)
 
@@ -436,12 +431,13 @@ Footer on a small view device
 
 ## Toast and Messages
 
-The toasts messages used with django gives really helpful feedback to the user in realtime on when an action is performed. Below are some examples of what the messaging system looks like. toast have a glow indicating the level of message and its importance to the user. An example of this is if the user adds an item to the basket, their basket appears in the pop up window and they can check what is in it without going to the basket URL so the user can carry on shopping.
+The toasts messages used with Django gives helpful feedback to the user in real-time on when an action is performed. Below are some examples of what the messaging system looks like. toast have a glow indicating the level of message and its importance to the user. An example of this is if the user adds an item to the basket, their basket appears in the pop-up window, and they can check what is in it without going to the basket URL so the user can carry on shopping.
 
-* success - green
-* info - light-blue
-* warning - yellow
-* error - red
+* Success - green
+* Info - light-blue
+* Warning - yellow
+* Error - red
+
 
 ![image](https://user-images.githubusercontent.com/72948843/204586060-1524852a-da6e-425e-b105-fe29808cf1ce.png)
 ![image](https://user-images.githubusercontent.com/72948843/204583113-f2cbbf8b-312d-46ca-86c8-77206890b77a.png)
@@ -452,7 +448,7 @@ The toasts messages used with django gives really helpful feedback to the user i
 
 ## Wishlist and User Profile
 
-The website boasts a user profile panel and registered users have access to a multiple abilities in which they can manage their account details, reset passwords and user details. The page also has a wishlist display where users can track their favorite items or items they wish to purchase a later date.
+The website boasts a user profile panel and registered users have access to multiple abilities in which they can manage their account details, reset passwords and user details. The page also has a Wishlist display where users can track their favourite items or items, they wish to purchase a later date.
 
 ![image](https://user-images.githubusercontent.com/72948843/206799329-dd1957f6-c95f-438d-bcff-2b5320c4a1f0.png)
 
@@ -460,8 +456,8 @@ The website boasts a user profile panel and registered users have access to a mu
 
 ![image](https://user-images.githubusercontent.com/72948843/206799133-314d70a1-15ac-40d8-9edf-1ec34b523e80.png)
 
-The wishlist:
-  The wishlist functionality is only available for registered users, which gives a shopper an insentive to sign up and have an account. If a shopper is not signed up and they happen to press add to wishlist, it will redirect the user to sign in if they wish to perform this action. If they already are signed up, the button just toggles from "add" to "remove" and the colour changes for a visual clarity. Also a message in the top right corner displays the status of the action performed.
+The Wishlist:
+  The Wishlist functionality is only available for registered users, which gives a shopper an incentive to sign up and have an account. If a shopper is not signed up and they happen to press add to Wishlist, it will redirect the user to sign in if they wish to perform this action. If they already are signed up, the button just toggles from "add" to "remove" and the colour changes for a visual clarity. A message in the top right corner displays the status of the action performed.
 
 ![image](https://user-images.githubusercontent.com/72948843/206773191-69787fd3-1075-4f26-a99d-60460264677f.png)
 
@@ -478,11 +474,11 @@ Toast pop up messages:
 
 ## Admin Controls
 
-The Admin Controls are where the store owner has additional functionality outside a normal registered user. here the admin has control on product management. This can be navigated to via the offscreen canvas dropdown menu and via the footer, for easy of access.
+The Admin Controls are where the store owner has additional functionality outside a normal registered user. here the admin has control on product management. This can be navigated to via the offscreen canvas dropdown menu and via the footer, for ease of access.
 
-The admin views contains an orders list and quotes lists where they can check orders placed and quotes requested regarding paint and tech services. This helps the store owner to keep track of purchases made by customers and quotes that need tendering to manage their workload. If a customer has a query and gets in contact with the site, they store owner can quickly search their order/quote by submitting some data to the search filter to the left.
+The admin views contain an orders list and quotes lists where they can check orders placed and quotes requested regarding paint and tech services. This helps the store owner to keep track of purchases made by customers and quotes that need tendering to manage their workload. If a customer has a query and gets in contact with the site, they store owner can quickly search their order/quote by submitting some data to the search filter to the left.
 
-The admin can add more products and related product details. Additionally, new delivery methods can be added to the store, if the store admin wishes to add at a later date.
+The admin can add more products and related product details. Additionally, new delivery methods can be added to the store if the store admin wishes to add at a later date.
 
  Any time the Store Owner wants to delete a product or an old order/quote, all these delete actions have a pop-up modal asking the Owner "Are you sure you want to delete...". This gives the store owner some confidence in that if they accidentally pressed a delete button, the item it would delete needs confirmation before this can be done.
 
@@ -528,15 +524,15 @@ The admin can add more products and related product details. Additionally, new d
 
 ## Future Features
 
-There are some additional features that could be implemented at a later date. We have some new user stories below which express some ideas on how to make the site better:
+There are some additional features that could be implemented later. We have some new user stories below which express some ideas on how to make the site better:
 
 * Users have expressed a desire to leave comments on products and to be able to rate the products themselves. This would give the customers more product feedback on the quality of the products on sale.
 
-* Users have also expressed an interest in a more robust platform regarding paint and tech services. Similar to the above feature, a register user can leave feedback on jobs done and comment in the form of some sort of job review blog. This would give future customers more power in decision-making on the reliability of the work the company offers in the tech and painting sector.
+* Users have also expressed an interest in a more robust platform regarding paint and tech services. Like the above feature, a register user can leave feedback on jobs done and comment in the form of some sort of job review blog. This would give future customers more power in decision-making on the reliability of the work the company offers in the tech and painting sector.
 
 Some future user stories are detailed below:
 
-* As a "store Owner", I can "tick orders off as completed, shipped, cancelled or pending", so that "I can manage the status of any given order in the database."
+* As a "store Owner", I can "tick orders off as completed, shipped, cancelled, or pending", so that "I can manage the status of any given order in the database."
 
 * As a "Registered customer", I can "track the status of my order", so that "I know when I can expect it to arrive."
 
@@ -552,18 +548,20 @@ To find out more about the tests related to the project. please follow this <a h
 
 ## Search Engine Optimization
 
-To aid the reliability of the websites success, search engine optimization practices where implemented in the wesite to try and boost its raitings on a search.
-To do this, I brainstormed criteria based on the three key unique selling points of the company, two of which are specialization in services. I tried to identify those pointwebsite'splement it into the site structure where appliwere by using the meta tawebsitethe header and using keywords and descriptions to boost its chances of being found in a search result.
+To aid the reliability of the website’s success, search engine optimization practices were implemented on the website to try and boost its ratings on a search.
+To do this, I brainstormed criteria based on the three key unique selling points of the company, two of which are specialization in services. I tried to identify those key points and add them to the site structure where they best apply. Using the meta data tags in the header and using keywords and descriptions to boost its chances of being found in a search result.
+
+Organizing the structure of the semantic html is an important part as the content of the website must be useful and valuable to the user. This also means trying to avoid keyword stuffing.
 
 ![image](https://user-images.githubusercontent.com/72948843/206468148-eb7aab44-b9cd-43a7-ba1b-d32cfda59fd9.png)
 
-Also a link to the file in assets: <a href="https://github.com/GrantWils23/Portfolio-Project-5--Ecommerce-Applications/blob/main/assets/seo-research-documentation.pdf" target="_blank"><b><i>" keyword research"</i></b></a>.
+Also a link to the file in assets: <a href="https://github.com/GrantWils23/Portfolio-Project-5--Ecommerce-Applications/blob/main/assets/seo-research-documentation.pdf" target="_blank">**" keyword research"**</a>.
 
 Also part of SEO requires a sitemap.xml file and a robots.txt file these were created and added to the base level of the project.
 
 ![image](https://user-images.githubusercontent.com/72948843/206470095-c99c80fc-02e2-446a-b4a4-f63907ec0eec.png)
 
-To generate the sitemap.xml file, I used a website called <a href="https://www.xml-sitemaps.com/" target="_blank">XML Sitemaps</a> which is a free tool that scrolls your website and generates a report on your website of page impportance. This file helps boost the site's trustworthiness.
+To generate the sitemap.xml file, I used a website called <a href="https://www.xml-sitemaps.com/" target="_blank">XML Sitemaps</a> which is a free tool that scrolls your website and generates a report on your website of page importance. This file helps boost the site's trustworthiness.
 
 [Back to Top](<#contents>)
 
@@ -576,9 +574,9 @@ To generate the sitemap.xml file, I used a website called <a href="https://www.x
 
 ### Social Media Marketing
 
-As part of the company's approach to increase brand awareness, web marketing is an important part of the companies brand presence. Airsoft is a very close community sport and word of mouth goes a long way to generating brand confidence. Using web organic marketing techniques
+As part of the company's approach to increase brand awareness, web marketing is an important part of the company’s brand presence. Airsoft is a very close community sport and word of mouth goes a long way to generating brand confidence. Using web organic marketing techniques
 
-To create the page.. you need to log in and create a new page.
+To create the page... you need to log in and create a new page.
 
 ![image](https://user-images.githubusercontent.com/72948843/205505248-1960a1b9-f2dc-4a72-9fab-0780e1b03187.png)
 
@@ -586,11 +584,11 @@ Next, we need to add more information about our company including the website, a
 
 ![image](https://user-images.githubusercontent.com/72948843/205505886-5d8e70a3-a821-4a86-af1d-0f1cd0d3d908.png)
 
-Next, to comply with facebooks strict compliances in regards to advertizing firearms, even though they are not real, i have opted to change the background picturee something less intimidating. the image chosen is of a firing range, which ties in with one of the three themes of the company. The "Tech Service" side, whereby once a RIF is repaired, it would be checked down range to check how it performs post works.
+Next, to comply with Facebook’s strict compliances in regards to advertising firearms, even though they are not real, I have opted to change the background picture something less intimidating. the image chosen is of a firing range, which ties in with one of the three themes of the company. The "Tech Service" side, whereby once a RIF is repaired, it would be checked down range to check how it performs post works.
 
 ![image](https://user-images.githubusercontent.com/72948843/205507503-9a739639-9557-412c-b123-ff232093d2c2.png)
 
-Moving forward, you can choose to connect whatsapp to the page, but I skipped this part. after that you can choose to invite friends to the website. I started by inviting people who i know would be interested in this ecommerce store.
+Moving forward, you can choose to connect WhatsApp to the page, but I skipped this part. after that you can choose to invite friends to the website. I started by inviting people who I know would be interested in this ecommerce store.
 
 ![image](https://user-images.githubusercontent.com/72948843/205507882-403d7f6e-706c-4376-bac2-fd76edf83752.png)
 
@@ -598,7 +596,7 @@ Finally, the last step is to inform the users to stay informed regarding informa
 
 ![image](https://user-images.githubusercontent.com/72948843/205508019-2bdb44e0-0e27-45e1-95cc-d5f4078f890e.png)
 
-Now with that done, the page is complete... a popup will appear and you can take a tour on how to create a post...
+Now with that done, the page is complete... a popup will appear, and you can take a tour on how to create a post...
 
 ![image](https://user-images.githubusercontent.com/72948843/205508246-90640bba-22d4-46e4-8519-59bff054ef75.png)
 
@@ -606,11 +604,11 @@ Below you can see the first post created for the Airsoft Workshop!
 
 ![image](https://user-images.githubusercontent.com/72948843/205509133-056403c2-2ad0-4ecf-874a-f03c44e45bb8.png)
 
-lastly but not least, we need to add the pages to the facebook links within our website, so anywhere with an ```<a></a> ``` tag linked to facebook needs our Facebook page link added directly to it.
+lastly but not least, we need to add the pages to the Facebook links within our website, so anywhere with an ```<a></a> ``` tag linked to Facebook needs our Facebook page link added directly to it.
 
 ![image](https://user-images.githubusercontent.com/72948843/205509648-7574c2ad-e703-4f5a-93fc-19ccd36739e8.png)
 
-To generate a larger awareness of our social media presence, I added a larger link to our facebook page so that it attracts the eye of any visiting site users.
+To generate a larger awareness of our social media presence, I added a larger link to our Facebook page so that it attracts the eye of any visiting site users.
 
 ![image](https://user-images.githubusercontent.com/72948843/205509961-8ea9e613-b7a0-483f-a166-55eca4607033.png)
 
@@ -618,7 +616,7 @@ To generate a larger awareness of our social media presence, I added a larger li
 
 ### Email Marketing
 
-Next We want to take advantage of email marketing to boost brand awareness of the company. To do this, I used mailchimp. so firstly i created an account and once that has been set up I can show below how Email marketing was employed in this website.
+Next, we want to take advantage of email marketing to boost brand awareness of the company. To do this, I used Mailchimp. so firstly, I created an account and once that has been set up, I can show below how Email marketing was employed in this website.
 
 click on the create button on the left of the dropdown menu.
 
@@ -628,7 +626,7 @@ first in the menu you will see a list of options... click on the email link in t
 
 ![image](https://user-images.githubusercontent.com/72948843/205510697-07b56f52-914a-4f6f-9d7f-ae849650c1cc.png)
 
-now for Airsoft Workshop, I have already designed my footer in mind with a place to have an embedded sign up form... so I will select the embedded form option of the three.
+now for Airsoft Workshop, I have already designed my footer in mind with a place to have an embedded sign-up form... so I will select the embedded form option of the three.
 
 ![image](https://user-images.githubusercontent.com/72948843/205510574-f25b8f0e-2f21-47b8-9463-bce73ce20c3e.png)
 
@@ -636,7 +634,7 @@ with the first step, it gives us a list of options of what we wish to add to thi
 
 ![image](https://user-images.githubusercontent.com/72948843/205511032-3390eff6-3b40-4556-ba5d-f110f52ff0c8.png)
 
-Now the form is ready... I can copy this code and add it to the footer of our website. it contains some javascript so we will need to add this code in the js script tags in the base.html of our website too.
+Now the form is ready... I can copy this code and add it to the footer of our website. it contains some JavaScript so we will need to add this code in the JS script tags in the base.html of our website too.
 
 ![image](https://user-images.githubusercontent.com/72948843/205511156-21778c5f-f331-40f2-a5bd-cb1cbde92766.png)
 
@@ -657,8 +655,8 @@ Yes, success. After sending a fake email via the form, I can see the email addre
 ## Technologies Used
 
 * <a href="https://github.com/" target="_blank">GitHub</a> -The site was used to edit and host the website.
-* <a href="https://gitpod.io/projects" target="_blank">GitPod</a> - Used in the deployment and creating the website.</li>
-* <a href="https://git-scm.com/" target="_blank">GitBash</a> - Used for committing and pushing files to github in the terminal through version control. GitBash - Terminal used to push changes to the GitHub repository.</li>
+* <a href="https://gitpod.io/projects" target="_blank">Gitpod</a> - Used in the deployment and creating the website.</li>
+* <a href="https://git-scm.com/" target="_blank">GitBash</a> - Used for committing and pushing files to GitHub in the terminal through version control. GitBash - Terminal used to push changes to the GitHub repository.</li>
 * <a href="https://www.python.org/" target="_blank">Python</a> - This was used in the production to get the game running as it is required for the app to run.</li>
 * <a href="https://www.djangoproject.com/" target="_blank">Django</a> - The Django web Framework was used to create the app and maintain it.</li>
 * <a href="https://psycopg.com" target="_blank">Psycopg</a> - The database with which the app runs are PostrgeSQL.</li>
@@ -666,41 +664,41 @@ Yes, success. After sending a fake email via the form, I can see the email addre
 * <a href="https://www.heroku.com/" target="_blank">Heroku</a> - This was used to deploy the website online for users to see and active site.</li>
 * <a href="https://www.elephantsql.com/" target="_blank">ElephantSQL</a> - This free online database provider was used to host the website's database.</li>
 
-* <a href="https://pypi.org/project/django-phonenumber-field/" target="_blank">Django-phonenumber-field</a> -Is a django module used for validating a phonenumber that is to be stored into the database.</li>
+* <a href="https://pypi.org/project/django-phonenumber-field/" target="_blank">Django-phonenumber-field</a> -Is a Django module used for validating a phonenumber that is to be stored into the database.</li>
 * <a href="https://django-allauth.readthedocs.io/en/latest/" target="_blank">Django-allauth</a> - Is an authentication app that is used to check validity of the users accessing the website.</li>
 * <a href="https://django-crispy-forms.readthedocs.io/en/latest/" target="_blank">Django-crispy-forms</a> - Is a form generator helper that enables quick and tidy forms to be made with minimal input on the front end.</li>
 * <a href="https://fontawesome.com/" target="_blank">fontawesome</a> - Is used to get the icons at the bottom of the page for the social media resources.</li>
 * <a href="https://favicon.io/" target="_blank">Favicon</a> - was used to design the Favicon for display in the browser tab</li>
-* <a href="https://www.flaticon.com/" target="_blank">Flaticon</a> - Was used to get free style icon for displaying in the services form
+* <a href="https://www.flaticon.com/" target="_blank">Flaticon</a> - Was used to get freestyle icon for displaying in the services form
 
-* <a href="https://getbootstrap.com/" target="_blank"> Bootstrap </a> - Bootstrap was used in this project to help create the website with fast and easy web designs, from drop in code for modals, nav bars and how the viewports react.
+* <a href="https://getbootstrap.com/" target="_blank"> Bootstrap </a> - Bootstrap was used in this project to help create the website with fast and easy web designs, from drop-in code for modals, nav bars and how the viewports react.
 * <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" target="_blank"> CSS </a> - Aside from some basic stylings inherited from bootstrap, CSS was used to customise the website to a tailored fit. The design schema was heavily influenced by the theme and colours requested and the wireframes used at the beginning stage of development. CSS gave the ability to create a beautiful website exactly as the client requested.
 * <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" target="_blank"> HTML </a> - HTML used as the language to render the text in the front-end.
 * <a href="https://www.pexels.com/" target="_blank"> Pexels </a> - An online stock of photos that are royalty free to use.
 * <a href="https://www.istockphoto.com/" target="_blank"> IstockPhotos </a> - An online store of photos that have to be purchased in order to use on the deployed web
-* <a href="https://docs.djangoproject.com/en/4.0/topics/email/" target="_blank"> Django Email </a> -  Django Email is a very useful and powerful tool that allowed the clients to receive emails regarding their booking. It is a really useful tool that provides real time functionality with great results.
-* <a href="https://compressor.io/" target="_blank"> Compressor </a> -An online compressing tool, great for compressing stock images down to a user friendly size, and it is completely free to use.
+* <a href="https://docs.djangoproject.com/en/4.0/topics/email/" target="_blank"> Django Email </a> - Django Email is a very useful and powerful tool that allowed clients to receive emails regarding their booking. It is a really useful tool that provides real-time functionality with great results.
+* <a href="https://compressor.io/" target="_blank"> Compressor </a> -An online compressing tool, great for compressing stock images down to a user-friendly size, and it is completely free to use.
 * <a href="http://pep8online.com/" target="_blank"> PEP8 Validator </a> - An online website used to validate my Python code
 * <a href="https://jshint.com/" target="_blank"> JSHint Valdiator </a> - An online website used to validate my JavaScript code
 * <a href="https://validator.w3.org/nu/" target="_blank"> HTML Validator </a> - An online website used to validate my HTML code.
 * <a href="https://jigsaw.w3.org/css-validator/" target="_blank"> CSS Validator </a> - An online website used to validate my CSS code.
 * <a href="https://developer.chrome.com/docs/devtools/" target="_blank"> Google Chrome DevTools </a> - An online resource that lays within Google Chrome used to debug the website during development.
 * <a href="https://color.a11y.com/" target="_blank">A11y</a> - An online accessibility validator that checks the colour of the background against the text.
-* <a href="https://stripe.com/gb" target="_blank">stripe</a> - A secure payment app used to recieve payments.
+* <a href="https://stripe.com/gb" target="_blank">stripe</a> - A secure payment app used to receive payments.
 * <a href="https://miniwebtool.com/django-secret-key-generator/" target="_blank">MiniWebTools</a> - Used to create a random Django secret key for my project in Heroku
 * <a href="https://temp-mail.org/" target="_blank">Temp-Mail</a> - A Handy tool that was used to create fake accounts to perform checks on email functionality during the deployed development stage.
-* <a href="https://www.xml-sitemaps.com/" target="_blank">XML-sitemaps</a> - A free sitemap generator the sitemap for my the website
-* <a href="https://www.privacypolicygenerator.info/">Privacy Policy Generator</a> - A free privacy-policy generator that I used for the deployed heroku website
+* <a href="https://www.xml-sitemaps.com/" target="_blank">XML-sitemaps</a> - A free sitemap generator the sitemap for the website
+* <a href="https://www.privacypolicygenerator.info/">Privacy Policy Generator</a> - A free privacy-policy generator that I used for the deployed Heroku website
 * <a href="https://www.facebook.com/" target="_blank">Facebook</a> - I used Facebook to create an online marketing presence to advertise the company on to Facebook users who follow the Companies activities and who are interested in airsoft.
-* <a href="https://mailchimp.com/" target="_blank">Mailchimp</a> - Mailchimp is a email marketing device, used to help generate business by getting people to signup to newsletters and get information regarding the companies latest offers
+* <a href="https://mailchimp.com/" target="_blank">Mailchimp</a> - Mailchimp is a email marketing device, used to help generate business by getting people to signup to newsletters and get information regarding the company’s latest offers
 * <a href="https://drawsql.app/" target="_blank"> DrawSQL </a> - An online app used to create the database schema with great easy and visual representation.
-* <a href="https://balsamiq.com/" target="_blank">Balsamiq</a> - A wireframe designing website that helps the designer create quick sketches of webpage designs quickly and efficently.
+* <a href="https://balsamiq.com/" target="_blank">Balsamiq</a> - A wireframe designing website that helps the designer create quick sketches of webpage designs quickly and efficiently.
 
 [Back to Top](<#contents>)
 
 ## Libraries
 
-The libraries used in this project are located in the requirements.txt file and were set up in the virtual environment to get the project working. Below is the list of libraries used to run the website:
+The libraries used in this project are in the requirements.txt file and were set up in the virtual environment to get the project working. Below is the list of libraries used to run the website:
 
 * <a href="https://pypi.org/project/asgiref/" target="_blank">asgiref</a> -  Reference ASGI adapters and channel layers.
 * <a href="https://pypi.org/project/backports.zoneinfo/" target="_blank">backport.zoneinfo</a> - The module used to implement the IANA time zone database in the python standard libary.
@@ -742,12 +740,12 @@ The libraries used in this project are located in the requirements.txt file and 
 
 ### Creating a Database
 
-For this part, I used <a href="https://www.elephantsql.com/" target="_blank">ElephantSQL</a> as it is a wonderful free service to use as long as our database is not too large. To set this up, please follow the steps below:</p>
+For this part, I used <a href="https://www.elephantsql.com/" target="_blank">ElephantSQL</a> as it is a wonderful free service to use if our database is not too large. To set this up, please follow the steps below:
 
-1) Sign Up and make an accountDjango will need to povide some card details but that will not be charged providing you dont exceed any limits).
+1) Sign Up and make an account. You will need to provide some card details but that will not be charged providing you don’t exceed any limits).
 ![image](https://user-images.githubusercontent.com/72948843/204639943-93638333-43cd-453f-ae02-48f1ac6cccc3.png)
 
-2) Upon completion of registration, you should be able to log in and get to the instance hompage, Here  in the right corner at the top of the screen (were in green), you will see your name and just beneath it a button that says "Create Instance" press it build a database.  
+2) Upon completion of registration, you should be able to log in and get to the instance homepage, here in the right corner at the top of the screen (were in green), you will see your name and just beneath it a button that says "Create Instance" press it build a database.  
 ![image](https://user-images.githubusercontent.com/72948843/204640503-91b6d68f-3db2-4670-a96a-670770d62d0b.png) 
 
 3) You have four steps to create the database, you need to fill out the name of which you want to give for this database and select the free turtle plan. (the tags are optional) Proceed to select region...
@@ -767,7 +765,7 @@ For this part, I used <a href="https://www.elephantsql.com/" target="_blank">Ele
 
 #### Deployment to Heroku
 
-To deploy the site is a labour intensive process. follow the steps below for a stress free deployment:
+To deploy the site is a labour-intensive process. follow the steps below for a stress-free deployment:
 
 First and foremost, if you are not a user of Heroku, sign up to its services, once you are logged in, in the top right corner there is a button "New". Click on the button and then click on "create new app".
 
@@ -783,21 +781,21 @@ The page will load to the overview Heroku app page. Click on 'settings'. Once in
 
 Now we have gotten this far, we need to make sure the database URL is ready to receive the new ElephantSQL database. For this we need to install two new packages from pip into the project:
 
-1) Firstly we need to install <strong>dj_database_url</strong> and <strong>psycopg2</strong> for us to connect our external database.
+1) Firstly we need to install **dj_database_url** and **psycopg2** for us to connect our external database.
 ``` pip install dj_database_url==0.5.0 psycopg2 ```
 2) Next freeze the requirements in a txt file.
 ``` pip freeze > requirements.txt ```
-3) In settings.py, underneath the import <strong>import os</strong>, import dj_database_url.
+3) In settings.py, underneath the import **import os**, import dj_database_url.
 ``` import os ```
 ``` import dj_database_url ```
-4) Then scroll down to <strong>DATABASES</strong> and update the following code so the original test database that is connected to sqlite3 is temporarily commented out and we can now connect our ElephantSQL database to the project. (as per the picture below)
+4) Then scroll down to **DATABASES** and update the following code so the original test database that is connected to sqlite3 is temporarily commented out and we can now connect our ElephantSQL database to the project. (as per the picture below)
 
 ![image](https://user-images.githubusercontent.com/72948843/204847520-afc8b35b-ee37-4c9d-ac43-8728e802271d.png)
 
-<strong> IMPORTANT! </strong>
-DO NOT COMMIT at this point as this will expose your ElephantSQL database link on Github. This is just a temporary measure to prepare our database for migration. It will be removed shortly.
+**IMPORTANT!**
+DO NOT COMMIT at this point as this will expose your ElephantSQL database link on GitHub. This is just a temporary measure to prepare our database for migration. It will be removed shortly.
 
-5) In the terminal run <strong>showmigrations</strong> to confirm that it is now connected to the external database.
+5) In the terminal run **showmigrations** to confirm that it is now connected to the external database.
 ``` python3 manage.py showmigrations ```
 
 6) If you are, a list of all migrations shall appear but all unchecked.
@@ -806,7 +804,7 @@ DO NOT COMMIT at this point as this will expose your ElephantSQL database link o
 
 7) Now migrate the database models over to the new database.
  ``` python3 manage.py migrate ```
-8) Now the migrations are complte we need to install all fixtures... The products model requires both categories and brands to be set first as they are dependant on this due to the model of products. Follow the order below to successfully load all fixtures that this project requires to get you started.
+8) Now the migrations are complete we need to install all fixtures... The products model requires both categories and brands to be set first as they are dependent on this due to the model of products. Follow the order below to successfully load all fixtures that this project requires to get you started.
 ``` python3 manage.py loaddata categories ```
 ``` python3 manage.py loaddata brands ```
 ``` python3 manage.py loaddata products ```
@@ -816,22 +814,21 @@ DO NOT COMMIT at this point as this will expose your ElephantSQL database link o
 ``` python3 manage.py loaddata weaponsystems ```
 9) Now create a superuser for your new database
 ``` python3 manage.py createsuperuser ```
-10) Now with that complete, we can now unstage step 4, being sure to restore our sqlite3 database as the primary database and removing the ElephantSQL database. Doing this now just prevents us accidentally exposing the database URL for all to see in our repository.
+10) Now with that complete, we can now reverse stage step 4, being sure to restore our sqlite3 database as the primary database and removing the ElephantSQL database. Doing this now just prevents us accidentally exposing the database URL for all to see in our repository.
 
 ![image](https://user-images.githubusercontent.com/72948843/204858073-459ec562-d225-4c71-b2c7-0cf226f55334.png)
 
-(head over to the database in your elephantSQL file to make sure the migrations were successful)
+(head over to the database in your ElephantSQL file to make sure the migrations were successful)
 
-
-The next step needed is to avoid posting environmental variables on github and to do this we have to ammend our code in settings. So firstly we need to write an if statement to check if that when our app is running on Heroku where the database URL environment variable will be defined. We connect to Postgres and otherwise, we connect to SQLite.
+The next step needed is to avoid posting environmental variables on GitHub and to do this we have to amend our code in settings. So firstly, we need to write an if statement to check if that when our app is running on Heroku where the database URL environment variable will be defined. We connect to Postgres and otherwise, we connect to SQLite.
 
 ![image](https://user-images.githubusercontent.com/72948843/204858447-0a7b3dfd-8040-40a6-8c8a-5bc85ec63dd3.png)
 
-Also we need to install <strong>gunicorn</strong>
+Also we need to install **gunicorn**
 ``` pip install gunicorn ```
 Then freeze this into our requirements.txt
 ``` pip freeze > requirments.txt ```
-With that complete, we can create a <strong>Procfile</strong> as the base level in our directory. Inside the file we want Heroku to create a web dyno and gunicorn will host it.
+With that complete, we can create a **Procfile** as the base level in our directory. Inside the file we want Heroku to create a web dyno and gunicorn will host it.
 
 ![image](https://user-images.githubusercontent.com/72948843/204861086-f1d89b76-690a-4e9d-b030-c4de41acc455.png)
 
@@ -839,7 +836,7 @@ You can find wsgi_application for your app in the settings.py file
 
 (![image](https://user-images.githubusercontent.com/72948843/204861226-bc6958ba-6725-4279-9a89-54c771045cab.png))
 
-Next login to heroku in the terminal:
+Next login to Heroku in the terminal:
 
 ![image](https://user-images.githubusercontent.com/72948843/204874022-6bac6a23-8ee7-4ad2-acd4-17552d70dd39.png)(I used the command with -i on the end in gitpod)
 
@@ -848,29 +845,29 @@ Once logged in, run the line below, this ensures that we disable collecting stat
 
 ![image](https://user-images.githubusercontent.com/72948843/204874624-089d5fa5-9bf8-45f7-99ff-d10f02e06cc6.png)
 
-Next I went to settings.py and added it to our heroku app too the allowed hosts.
+Next I went to settings.py and added it to our Heroku app too the allowed hosts.
 
 ![image](https://user-images.githubusercontent.com/72948843/204875408-ebd62a84-775e-4746-a550-e3d1994ca4e5.png)
 
-Now we can add, commmit and push the code to GitHub,
+Now we can add, commit, and push the code to GitHub,
 ``` git add . ``` 
 ``` git add . ``` 
 ``` git add . ``` 
- and after push to heroku too:
+ and after push to Heroku too:
 ``` git push heroku main ```
 
 ![image](https://user-images.githubusercontent.com/72948843/204877276-cbf3160e-4ffe-4748-98ee-b4a0622a3934.png)
 
-This appeared because i created the app in the heroku website and not the Heroku CLI, so instead run this command below: 
+This appeared because I created the app in the Heroku website and not the Heroku CLI, so instead run this command below: 
 ``` heroku git:remote -a airsoft-workshop ```
 
 ![image](https://user-images.githubusercontent.com/72948843/204877848-a28dfe64-d737-4025-be1c-d2ace64d913c.png)
 
-with that now set, run the push to heroku again and it will start to build.
+with that now set, run the push to Heroku again and it will start to build.
 
 ![image](https://user-images.githubusercontent.com/72948843/204880735-bda666ab-c898-41e5-b1b9-23145c52c656.png)
 
-This error occured due to how heroku 22 stack builds and it no longer supports python version 3.8... So to overcome this, in the requirements.txt file on the backports.zoneinfo add the following line of code... 
+This error occurred due to how Heroku 22 stack builds, and it no longer supports python version 3.8... So to overcome this, in the requirements.txt file on the backports.zoneinfo add the following line of code...
 
 ![image](https://user-images.githubusercontent.com/72948843/204885019-a3657f57-6aa2-498e-9c51-b1177634868f.png)
 
@@ -888,7 +885,7 @@ Now I added a new Secret Key for the project in the Heroku config vars (in the s
 
 ![image](https://user-images.githubusercontent.com/72948843/204886753-b3f52d73-9433-4364-830a-8bb34b706025.png)
 
-Now go back to VSCode and create a new file called <b><i>env.py</i></b> if it has not already been created. <b>Make sure you add it to your '.gitignore' file</b>. copy the code below. This is nothing new, its just the same config vars from the heroku app and we need them inside our env.py file. make sure to add <b>your</b> config var values inside.
+Now go back to VSCode and create a new file called ***env.py*** if it has not already been created. **Make sure you add it to your '.gitignore' file**. copy the code below. This is nothing new, it’s just the same config vars from the Heroku app and we need them inside our env.py file. make sure to add **your** config var values inside.
 
 ![image](https://user-images.githubusercontent.com/72948843/205462075-424412b9-a0d6-4915-a195-e42f1ce1960a.png)
 
@@ -900,7 +897,7 @@ Replace the default random security key that Django provides you with your SECRE
 
 ![image](https://user-images.githubusercontent.com/72948843/182258087-fd940b53-a297-49fa-8445-dcd45aba6892.png)
 
-Set <b>DEBUG = 'DEVELOPMENT' in os.environ</b> This allows you to have Debug set to True when developing locally. However DEBUG will be set to False when deployed to Heroku.
+Set **DEBUG = 'DEVELOPMENT' in os.environ** This allows you to have Debug set to True when developing locally. However, DEBUG will be set to False when deployed to Heroku.
 
 ![image](https://user-images.githubusercontent.com/72948843/182258392-dcce5dac-62ea-48fc-a9d0-35e9b5a7d956.png)
 
@@ -908,11 +905,10 @@ Whilst working in development, we want to keep the ElephantSQL for deployment. S
 
 ![image](https://user-images.githubusercontent.com/72948843/205462193-c7fd414f-4f1e-42ea-a492-f3a3b2deb0f1.png)
 
-Next we need to add a place to store our media and static files for the application... follow the steps in the pdf files below to setup a AMAZON WEB SERVICES bucket to host these files...
+Next, we need to add a place to store our media and static files for the application... follow the steps in the pdf files below to setup an AMAZON WEB SERVICES bucket to host these files...
 
-
-* Setting up a S3 Bucket: <a href="https://github.com/GrantWils23/Portfolio-Project-5--Ecommerce-Applications/blob/main/assets/aws-s3-bucket-services-setup.pdf" taret="_blank">AWS-S3-Bucket setup</a>
-* Setting up the IAM controls: <a href="https://github.com/GrantWils23/Portfolio-Project-5--Ecommerce-Applications/blob/main/assets/aws-iam-setup.pdf" taret="_blank">AWS-IAM setup</a>
+* Setting up a S3 Bucket: <a href="https://github.com/GrantWils23/Portfolio-Project-5--Ecommerce-Applications/blob/main/assets/aws-s3-bucket-services-setup.pdf" target="_blank">AWS-S3-Bucket setup</a>
+* Setting up the IAM controls: <a href="https://github.com/GrantWils23/Portfolio-Project-5--Ecommerce-Applications/blob/main/assets/aws-iam-setup.pdf" target="_blank">AWS-IAM setup</a>
 
 Django to S3...
 
@@ -931,7 +927,7 @@ With that done, we need to write some code to allow us to use the AWS bucket we 
 
 ![image](https://user-images.githubusercontent.com/72948843/205462422-a7081814-a78d-4bc9-97ab-6eb49272a975.png)
 
-We need to also remove ``` DISABLE_COLLECTSTATIC = 1 ``` inside the heroku settings config vars so when it next deploys it can search for the static and media files.
+We need to also remove ``` DISABLE_COLLECTSTATIC = 1 ``` inside the Heroku settings config vars so when it next deploys it can search for the static and media files.
 
 Next create a new file called ``` custom_storages.py ``` at the base level.
 
@@ -941,40 +937,40 @@ Copy the code below into the custom_storages.py file
 
 ![image](https://user-images.githubusercontent.com/72948843/205463525-3c54cb10-78db-4f17-936a-0b4b8fc4ce95.png)
 
-Now make sure the variables are added to your heroku apps config vars. add commit and push the files... it will now load and you can see the css static files are working but the media files dont.
+Now make sure the variables are added to your Heroku apps config vars. add commit and push the files... it will now load, and you can see the CSS static files are working but the media files don’t.
 
 The next thing we need to do is add our media files from the media folder into the S3 bucket... This will allow us to then see the images... follow the steps in the pdf below:
 
-* <a href="https://github.com/GrantWils23/Portfolio-Project-5--Ecommerce-Applications/blob/main/assets/caching-media-files.pdf" taret="_blank">>chaching media files</a>
+* <a href="https://github.com/GrantWils23/Portfolio-Project-5--Ecommerce-Applications/blob/main/assets/caching-media-files.pdf" target="_blank">>caching media files</a>
 
-Lastly we need to get stripe working...
+Lastly, we need to get stripe working...
 
-add the stripe public and secret keys to the config vars in the heroku apps settings:
+add the stripe public and secret keys to the config vars in the Heroku apps settings:
 ![9@ClippedImage](https://user-images.githubusercontent.com/72948843/205464196-13411659-465c-4c9e-ab83-d5dd07208ff5.png)
 
-Lastly we need to create a new endpoint for the webhook to work and add its STRIPE_WH_SECRET to the heorku's config var.
+Lastly, we need to create a new endpoint for the webhook to work and add its STRIPE_WH_SECRET to the Heroku’s config var.
 
 add a new endpoint...
 ![5@ClippedImage](https://user-images.githubusercontent.com/72948843/205464355-713bf3bc-db51-4638-8f0f-7595460a262b.png)
 
-now add the new signing secret to the heroku settings config vars.
+now add the new signing secret to the Heroku settings config vars.
 ![8@ClippedImage](https://user-images.githubusercontent.com/72948843/205464495-11354d66-aec8-4556-8a5f-415c21efeee5.png)
 
 [Back to Top](<#contents>)
 
-(Side Note: When the app is deployed, Debug has to be set to False! this is for security reasons as it can expose sensative data.)
+(Side Note: When the app is deployed, Debug must be set to False! this is for security reasons as it can expose sensitive data.)
 
 [Back to Top](<#contents>)
 
 ### Setting the email service
 
-The last part that needs setting up is the django emails. Two variables are required... ```['EMAIL_HOST_USER']``` and ```['EMAIL_HOST_PASSWORD']```.
+The last part that needs setting up is the Django emails. Two variables are required... ```['EMAIL_HOST_USER']``` and ```['EMAIL_HOST_PASSWORD']```.
 
 ![image](https://user-images.githubusercontent.com/72948843/205464839-789fde98-24b9-4274-bba8-c424eba2e8c5.png)
 
- I found a really useful tutorial by "Toumi Abderrahmane" on how to set up googlemail sync up to send emails with django in deployment. please click on this link below.
+ I found a useful tutorial by "Toumi Abderrahmane" on how to set up google mail sync up to send emails with Django in deployment. please click on this link below.
 
-<a href="https://dev.to/abderrahmanemustapha/how-to-send-email-with-django-and-gmail-in-production-the-right-way-24ab" target="_blank">how to send email with django and gmail</a>
+<a href="https://dev.to/abderrahmanemustapha/how-to-send-email-with-django-and-gmail-in-production-the-right-way-24ab" target="_blank">how to send email with Django and Gmail</a>
 
 Within the env.py file, at the bottom two lines, you have to insert you email address and password, just look below:
 
@@ -1004,7 +1000,7 @@ To create a local clone of the project, follow the steps below:
 (I have created a new folder that you called "Clone Airsoft Workshop")
 
 1. ```"git clone HTTPS or SSH link``` - This will clone the project to your computer
-2. ```cd name of project``` - This will cd (change directoy) into your project
+2. ```cd name of project``` - This will cd (change directory) into your project
 3. ```code .``` - This will launch your project in VSCode if you are not already in a coding environment
 
 ![image](https://user-images.githubusercontent.com/72948843/206681968-b9db30c7-249f-4c76-9f0e-635d22717acb.png)
@@ -1023,14 +1019,14 @@ Now you need to setup and initialize a virtual environment for the project. foll
 
 ![image](https://user-images.githubusercontent.com/72948843/206683317-2196fa13-1254-41f2-be7b-d39e41c2b2a7.png)
 
-(Step.3) After creating the virtual environment, you need to activate it. <b><i>We need to activate the virtual environment every time you will work on the project!</i></b>. This can be achieved by using the following command:
+(Step.3) After creating the virtual environment, you need to activate it. ***We need to activate the virtual environment every time you will work on the project!***. This can be achieved by using the following command:
 
 * ``` $ source virtualenv_name/bin/activate ``` - [For Mac] 
 * ``` $ source virtualenv_name/Scripts/activate ``` - [For Windows]  (as in my example below):
 
 ![image](https://user-images.githubusercontent.com/72948843/206683769-54c80217-96c4-4d4c-878e-6175549c2050.png)
 
-<b>Don't forget to addd the env to your .gitignore file</b> if added correctly the file and its content's font shall be shaded a darker grey.
+<b>Don't forget to add the env to your .gitignore file</b> if added correctly the file and its content's font shall be shaded a darker grey.
 
 ![image](https://user-images.githubusercontent.com/72948843/206684102-43b777c5-b193-451a-9c34-9336dbd42ace.png)
 
@@ -1054,7 +1050,7 @@ If it crashes during build because of an error with backport.zoneinfo... add thi
 
 ![image](https://user-images.githubusercontent.com/72948843/206692805-8c8342bf-32b0-47d3-937f-44d5652e6547.png)
 
-With that now complete and all the dependencies downloaded, We now need to create our env.py file, which tells the app what variables to use. These variables are usually hidden for security reasons as they contain sensative data that we don't want leaked and can be dangerous if shared publicly they can be vulnerable to attacks. So what we must do is first create the env.py file and immediately add it to our .gitignore file.
+With that now complete and all the dependencies downloaded, we now need to create our env.py file, which tells the app what variables to use. These variables are usually hidden for security reasons as they contain sensitive data that we don't want leaked and can be dangerous if shared publicly they can be vulnerable to attacks. So what we must do is first create the env.py file and immediately add it to our .gitignore file.
 
 Any variables you declared in your settings.py file must be added to this file. (Apart from ["DEVELOPMENT"]) to your config vars when you deploy in Heroku.
 
@@ -1072,7 +1068,7 @@ The test files that exist in the project can be run with the simple command ```p
 
 If you wish to test a particular app you can run the command ```python manage.py test "APP_NAME"```
 
-(for example, the specific APP_NAME's from airsoft_workshop are 'basket' or 'products' etc...)
+(for example, the specific APP_NAME's from airsoft workshop are 'basket' or 'products' etc...)
 
 This command will only work if you use your local database within the deployment. if for any reason you run this command using the Heroku database, the test will fail. please refer to the <a href="https://github.com/GrantWils23/Portfolio-Project-5--Ecommerce-Applications/blob/main/tests/TESTS.md">testing</a> file to see how the tests perform.
 
@@ -1083,16 +1079,16 @@ This project has installed inside it a python package called [*Coverage*]. This 
 Building the website was a very hard process but very rewarding. I would like to mention below some credits to my project:
 
 * I used Bootstrap a lot when building this website. I mentioned a link to the website in the above technologies used section.
-* Django documentation was used a lot during the build of the website to make sense of how to build the MVT. The documention is very thorough and explains a lot of things clearly. When I had a problem, I could read their docs with a large degree of success
+* Django documentation was used a lot during the build of the website to make sense of how to build the MVT. The documentation is very thorough and explains a lot of things clearly. When I had a problem, I could read their docs with a large degree of success
 * I also used <a href="https://stackoverflow.com/" target="_blank">Stacker Overflow</a> to help me when I had problems as there was a lot of times people had the same problems as I and I could lean on some of these questions for help.
-* There were some fantastic youtube videos that I watched along the way to boost my understanding of how powerful Django is.
-* pip documentation aslo came in handy on learning how to use certain packages and what is required to set them up.
+* There were some fantastic YouTube videos that I watched along the way to boost my understanding of how powerful Django is.
+* Pip documentation also came in handy on learning how to use certain packages and what is required to set them up.
 
 [Back to Top](<#contents>)
 
 ## Acknowledgements
 
-This project is my 5th and Final Portfolio Project, as part of <a href="https://codeinstitute.net/" target="_blank">Code Institute's</a> Full Stack Software Developer (e-Commerce) Diploma.</p> A Big thank you to Precious Ijege (my mentor) for his help and expertise pushing me to right better code. Another thank you to the Slack community for posting really useful content. Some of their questions were problems that I had, so it was useful to know people were experiencing the same difficulties as me. Also thank you to the tutors at Code Institute who are all fantastic. they helped me in some difficult times and a special thanks to Ed who helped explain queries and how I can use it within creating page pagination.
+This project is my 5th and Final Portfolio Project, as part of <a href="https://codeinstitute.net/" target="_blank">Code Institute's</a> Full Stack Software Developer (e-Commerce) Diploma. </p> A Big thank you to Precious Ijege (my mentor) for his help and expertise pushing me to right better code. Another thanks to the Slack community for posting useful content. Some of their questions were problems that I had, so it was useful to know people were experiencing the same difficulties as me. Also thank you to the tutors at Code Institute who are all fantastic. they helped me in some difficult times and a special thanks to Ed who helped explain queries and how I can use it within creating page pagination.
 <br>
 <br>
 Grant Wilsmore, 2022

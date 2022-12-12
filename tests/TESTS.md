@@ -3,6 +3,7 @@
 To test my project, I have completed several test procedures and from a wide array of different tests. It is important to test as much of the code as possible. So please scroll down and read the various testing procedures and how I solved some problems with bugs in my code.
 
 <a href="https://github.com/GrantWils23/Portfolio-Project-5--Ecommerce-Applications">Click here</a> to return to the README.md file in the repository.
+
 ## Contents
 
 * [**Testing**](<#testing>)
@@ -259,8 +260,6 @@ To check the production levels against its performance, I used the Lighthouse te
 
 ![image](https://user-images.githubusercontent.com/72948843/206150009-129a7a9c-f9ad-4c1e-93b3-7179058393a9.png)
 
-<!--  -->
-
 * Services page - PC view
 
 ![image](https://user-images.githubusercontent.com/72948843/206159904-a0400ac5-71a6-44c3-b2b5-4dd3d3bdb86d.png)
@@ -268,8 +267,6 @@ To check the production levels against its performance, I used the Lighthouse te
 * Services page - mobile view
 
 ![image](https://user-images.githubusercontent.com/72948843/206159677-2a85a894-085d-4db5-8161-c3611cfcdd5f.png)
-
-<!--  -->
 
 * Paint Services Quote page - PC view
 
@@ -279,8 +276,6 @@ To check the production levels against its performance, I used the Lighthouse te
 
 ![image](https://user-images.githubusercontent.com/72948843/206160945-d1154fe4-0332-4245-8b74-507e0f435b1c.png)
 
-<!--  -->
-
 * Tech Services Quote page - PC view
 
 ![image](https://user-images.githubusercontent.com/72948843/206161630-89c6bd7b-ae74-4884-b513-075d053d7c52.png)
@@ -288,8 +283,6 @@ To check the production levels against its performance, I used the Lighthouse te
 * Tech Services Quote page - mobile view
 
 ![image](https://user-images.githubusercontent.com/72948843/206161465-5acdc978-61d9-428f-be53-816be37c4aea.png)
-
-<!--  -->
 
 * Thank You Services Note page - PC view
 
@@ -299,8 +292,6 @@ To check the production levels against its performance, I used the Lighthouse te
 
 ![image](https://user-images.githubusercontent.com/72948843/206161465-5acdc978-61d9-428f-be53-816be37c4aea.png)
 
-<!--  -->
-
 * Store page - PC view
 
 ![image](https://user-images.githubusercontent.com/72948843/206163587-e6055f9a-59e8-41f1-babd-a20da6ef3048.png)
@@ -308,8 +299,6 @@ To check the production levels against its performance, I used the Lighthouse te
 * Store page - mobile view
 
 ![image](https://user-images.githubusercontent.com/72948843/206162937-7d403411-af44-4e5f-9add-097ebb547e41.png)
-
-<!--  -->
 
 * Product Detail page - PC view
 
@@ -319,8 +308,6 @@ To check the production levels against its performance, I used the Lighthouse te
 
 ![image](https://user-images.githubusercontent.com/72948843/206161465-5acdc978-61d9-428f-be53-816be37c4aea.png)
 
-<!--  -->
-
 * Basket page - PC view
 
 ![image](https://user-images.githubusercontent.com/72948843/206180539-65d70399-0208-4345-8deb-8f10c9ce8bbd.png)
@@ -328,8 +315,6 @@ To check the production levels against its performance, I used the Lighthouse te
 * Basket page - mobile view
 
 ![image](https://user-images.githubusercontent.com/72948843/206181288-ead2fb29-60fd-4d77-9959-9af58b93aa23.png)
-
-<!--  -->
 
 * Checkout page - PC view
 
@@ -339,8 +324,6 @@ To check the production levels against its performance, I used the Lighthouse te
 
 ![image](https://user-images.githubusercontent.com/72948843/206181690-c8b44c7f-5c9a-4507-93e5-439f49081f23.png)
 
-<!--  -->
-
 * Checkout success page - PC view
 
 ![image](https://user-images.githubusercontent.com/72948843/206182230-6f9da288-2f82-4116-b566-b20aef61a2b0.png)
@@ -348,8 +331,6 @@ To check the production levels against its performance, I used the Lighthouse te
 * Checkout success page - mobile view
 
 ![image](https://user-images.githubusercontent.com/72948843/206182577-edbbd8a4-21c0-485b-b735-4ab618dbc293.png)
-
-<!--  -->
 
 * Profiles page - PC view
 
@@ -359,8 +340,6 @@ To check the production levels against its performance, I used the Lighthouse te
 
 ![image](https://user-images.githubusercontent.com/72948843/206182815-70690084-7fbd-4e88-8240-6d90ee79dc05.png)
 
-<!--   -->
-
 * Update profile page - PC view
 
 ![image](https://user-images.githubusercontent.com/72948843/206239673-c6db2d3f-08d2-4b7b-bcb5-b4b4e9bb6588.png)
@@ -368,8 +347,6 @@ To check the production levels against its performance, I used the Lighthouse te
 * Update profiles page - mobile view
 
 ![image](https://user-images.githubusercontent.com/72948843/206240876-5e4453f8-9512-439a-b76a-00be9bd284ba.png)
-
-<!--  -->
 
 * Update password page - PC view
 
@@ -379,8 +356,6 @@ To check the production levels against its performance, I used the Lighthouse te
 
 ![image](https://user-images.githubusercontent.com/72948843/206242765-5a742426-4c67-4213-bd45-d967676e554e.png)
 
-<!--  -->
-
 * Contact Us page - PC view
 
 ![image](https://user-images.githubusercontent.com/72948843/206243384-5fd3a4b0-0d25-466c-a0fa-07a861685e24.png)
@@ -388,8 +363,6 @@ To check the production levels against its performance, I used the Lighthouse te
 * Contact Us page - mobile view
 
 ![image](https://user-images.githubusercontent.com/72948843/206243034-66e89de7-3131-491d-97a0-28a66228d34b.png)
-
-<!--  -->
 
 * About Us page - PC view
 
@@ -399,8 +372,6 @@ To check the production levels against its performance, I used the Lighthouse te
 
 ![image](https://user-images.githubusercontent.com/72948843/206244047-7136f54c-d09c-4d13-90b5-da26a73a1c05.png)
 
-<!--  -->
-
 * FAQs page - PC view
 
 ![image](https://user-images.githubusercontent.com/72948843/206244606-18ad5109-bb62-4888-9115-7c18fcaacea5.png)
@@ -408,8 +379,6 @@ To check the production levels against its performance, I used the Lighthouse te
 * FAQs page - mobile view
 
 ![image](https://user-images.githubusercontent.com/72948843/206244356-113347fe-80fd-449f-858d-0aef0d854f6e.png)
-
-<!--  -->
 
 * Privacy Policy page - PC view
 
@@ -419,8 +388,6 @@ To check the production levels against its performance, I used the Lighthouse te
 
 ![image](https://user-images.githubusercontent.com/72948843/206246522-2e252c82-5376-42dd-b559-f4856e337a62.png)
 
-<!--  -->
-
 * Sitemap page - PC view
 
 ![image](https://user-images.githubusercontent.com/72948843/206246890-74b430e6-a999-4423-981a-a00946efa41b.png)
@@ -428,8 +395,6 @@ To check the production levels against its performance, I used the Lighthouse te
 * Sitemap page - mobile view
 
 ![image](https://user-images.githubusercontent.com/72948843/206247133-dcdb500f-b669-473e-b3c1-eb55685a59a5.png)
-
-<!--  -->
 
 * Store Management page - PC view
 
@@ -439,8 +404,6 @@ To check the production levels against its performance, I used the Lighthouse te
 
 ![image](https://user-images.githubusercontent.com/72948843/206247481-2f3116b3-808c-4e03-8296-5e1df4276a1d.png)
 
-<!--  -->
-
 * Add Product page - PC view
 
 ![image](https://user-images.githubusercontent.com/72948843/206248456-44891107-f766-4cac-a339-1eecb8912341.png)
@@ -448,8 +411,6 @@ To check the production levels against its performance, I used the Lighthouse te
 * Add Porduct page - mobile view
 
 ![image](https://user-images.githubusercontent.com/72948843/206248751-25f20003-b1ed-4e93-9ecf-d719549b01ac.png)
-
-<!--  -->
 
 * Edit Product page - PC view
 
@@ -459,8 +420,6 @@ To check the production levels against its performance, I used the Lighthouse te
 
 ![image](https://user-images.githubusercontent.com/72948843/206254309-202b1ed2-bf7b-4e12-bb47-816f9e308795.png)
 
-<!--  -->
-
 * Add Brand page - PC view
 
 ![image](https://user-images.githubusercontent.com/72948843/206258616-6335f035-3510-44ba-840c-331ae59885a8.png)
@@ -468,8 +427,6 @@ To check the production levels against its performance, I used the Lighthouse te
 * Add Brand page - mobile view
 
 ![image](https://user-images.githubusercontent.com/72948843/206257509-e4ecb1fe-b6aa-40c9-bd68-9b4b43bfb863.png)
-
-<!--  -->
 
 * Edit Brand page - PC view
 
@@ -479,8 +436,6 @@ To check the production levels against its performance, I used the Lighthouse te
 
 ![image](https://user-images.githubusercontent.com/72948843/206259716-cede9c29-5986-4c73-b308-4d7bec80f223.png)
 
-<!--  -->
-
 * Add Category page - PC view
 
 ![image](https://user-images.githubusercontent.com/72948843/206260003-8904fa89-49e4-44c4-8e55-bfb179a06a7e.png)
@@ -488,8 +443,6 @@ To check the production levels against its performance, I used the Lighthouse te
 * Add Category page - mobile view
 
 ![image](https://user-images.githubusercontent.com/72948843/206260167-15d09bfd-8398-4322-b3db-152594177218.png)
-
-<!--  -->
 
 * Edit Category page - PC view
 
@@ -499,8 +452,6 @@ To check the production levels against its performance, I used the Lighthouse te
 
 ![image](https://user-images.githubusercontent.com/72948843/206260641-676d6f8b-c16c-4c75-9510-80a4261dbf81.png)
 
-<!--  -->
-
 * Add Delivery Method page - PC view
 
 ![image](https://user-images.githubusercontent.com/72948843/206260838-0e9d5bf0-2dbe-457f-8ab2-220fe61479b0.png)
@@ -508,8 +459,6 @@ To check the production levels against its performance, I used the Lighthouse te
 * Add Delivery Method page - mobile view
 
 ![image](https://user-images.githubusercontent.com/72948843/206261000-ccc9dd4d-7bae-4ae0-8b27-7ce4a24c6f17.png)
-
-<!-- -->
 
 * Edit Delivery Method page - PC view
 
@@ -519,8 +468,6 @@ To check the production levels against its performance, I used the Lighthouse te
 
 ![image](https://user-images.githubusercontent.com/72948843/206261513-1b163e78-d2f3-4e61-a692-d4695c47477b.png)
 
-<!-- -->
-
 * Admin View Orders page - PC view
 
 ![image](https://user-images.githubusercontent.com/72948843/206262044-8cb10a54-3ded-4d98-8e69-22f53852ff0c.png)
@@ -528,8 +475,6 @@ To check the production levels against its performance, I used the Lighthouse te
 * Admin View Orders page - mobile view
 
 ![image](https://user-images.githubusercontent.com/72948843/206262193-b43ff32b-9efe-4618-9262-789efc4d9def.png)
-
-<!-- -->
 
 * Admin View Specific Order page - PC view
 
@@ -539,8 +484,6 @@ To check the production levels against its performance, I used the Lighthouse te
 
 ![image](https://user-images.githubusercontent.com/72948843/206262582-ae20b40f-7e31-4931-8bb4-588ca6926ebf.png)
 
-<!-- -->
-
 * Admin View Paint Requests page - PC view
 
 ![image](https://user-images.githubusercontent.com/72948843/206263404-230a7273-a9d3-49e6-8f16-2ef9a2370afa.png)
@@ -548,8 +491,6 @@ To check the production levels against its performance, I used the Lighthouse te
 * Admin View Paint Requests page - mobile view
 
 ![image](https://user-images.githubusercontent.com/72948843/206264151-270d4ae2-fcec-49a7-a2ea-4445e73a14d6.png)
-
-<!-- -->
 
 * Admin View Specific Paint Request page - PC view
 
@@ -559,8 +500,6 @@ To check the production levels against its performance, I used the Lighthouse te
 
 ![image](https://user-images.githubusercontent.com/72948843/206267125-79dbf220-90e7-4a93-a8ea-85a43b39230f.png)
 
-<!-- -->
-
 * Admin View Tech Requests page - PC view
 
 ![image](https://user-images.githubusercontent.com/72948843/206268169-ddfb54b7-7d3b-4b15-9d89-aef1f5668538.png)
@@ -568,8 +507,6 @@ To check the production levels against its performance, I used the Lighthouse te
 * Admin View Tech Requests page - mobile view
 
 ![image](https://user-images.githubusercontent.com/72948843/206268780-8aa178d1-e6aa-4d2d-b980-eece1bebae3c.png)
-
-<!-- -->
 
 * Admin View Specific Tech Request page - PC view
 
@@ -579,19 +516,17 @@ To check the production levels against its performance, I used the Lighthouse te
 
 ![image](https://user-images.githubusercontent.com/72948843/206269364-e06fe28f-1984-4fac-b430-70c27c94a450.png)
 
-<!-- -->
+The results were very positive and successful. I used the feedback from initial lighthouse checks to improve the quality of these results. Along the way I had found SEO failures in some of my tags and buttons not labelled. I addressed these issues, and this immediately improved the results and got me into the green.
 
-The results were very positive and successful. I used the feedback from initial lighthouse checks to improve teh quality of these results. Along the way I had found SEO failuers in some of my tags  and buttons not labelled. I addressed these issues and this immediately improved the results and got me into the green.
+I also found some accessibility issues, with my text-to-background contrast ratio not being sufficiently high enough to satisfy a high score. So, I addressed this issue by increasing the brightness of the font and no longer using the bootstrap secondary-text colour.
 
-I also found some accessibility issues, with my text-to-background contrast ratio not being sufficiently high enough to satisfy a high score. So I addressed this issue by increasing the brightness of the font and no longer using the bootstrap secondary-text colour.
-
-There was one concern with the performance running at a lower performance accross all mobile views. the performance checks of the lighthouse did however give me some feedback on the reason for this...
+There was one concern with the performance running at a lower performance across all mobile views. the performance checks of the lighthouse did however give me some feedback on the reason for this...
 
 ![image](https://user-images.githubusercontent.com/72948843/206273403-457bb0d4-7741-4597-96bb-4855ca468abe.png)
 
 I did try incognito mode to see if it would improve the performance of the mobile view and unfortunately, it did not. With my chrome extensions setup perfectly how I require it, I and not having access to another chrome pc, I decided to just check the performance manually. The deployed app performs well in real-life tests and is documented in a section further down in this file.
 
-I am really happy with these results as they demonstrate that the website passed a lot of the criteria of a high-standard app.
+I am happy with these results as they demonstrate that the website passed a lot of the criteria of a high-standard app.
 
 [Back to Top](<#contents>)
 
@@ -607,13 +542,13 @@ I used a website called <a href="https://color.a11y.com/" target="_blank">A11y</
 ![image](https://user-images.githubusercontent.com/72948843/206298533-87c1376e-c213-417d-b1d3-e8873e70ad18.png)
 ![image](https://user-images.githubusercontent.com/72948843/206298838-ee37a652-3e37-4671-98b1-3a9bd41e6f83.png)
 
- The website passes, with some noted fails. The logo font is an important part of the brand image, but fails its contrast ration on smaller text. Due to the size of were these items are, they don't pose much of an issue as the font never reduces to an unreadable that the aspect ratio is going to be a problem. With these results, I am happy moving forward in my testing knowing that the website accessibility rating is high.
+ The website passes, with some noted fails. The logo font is an important part of the brand image but fails its contrast ration on smaller text. Due to the size of where these items are, they don't pose much of an issue as the font never reduces to an unreadable that the aspect ratio is going to be a problem. With these results, I am happy moving forward in my testing knowing that the website accessibility rating is high.
 
 [Back to Top](<#contents>)
 
 ## Responsive Testing
 
-To do my Responsive checks of the page, I done manual checks to ensure the page responsed well at different aspect ratios. during this test i found that my footer was moving up the page and generating deadspace beneath it which was not pretty and gave a poor user experience... I made some css changes to fix this issue so now the footer alwatys sits on the bottom of the page. The results following the corrections are recorded in a spreadsheet below:
+To do my Responsive checks of the page, I done manual checks to ensure the page responded well at different aspect ratios. during this test I found that my footer was moving up the page and generating dead space beneath it which was not pretty and gave a poor user experience... I made some CSS changes to fix this issue so now the footer always sits on the bottom of the page. The results following the corrections are recorded in a spreadsheet below:
 
 ![image](https://user-images.githubusercontent.com/72948843/206443633-59f0466b-294e-4245-8ece-483819aed3ac.png)
 
@@ -635,33 +570,33 @@ The User Stories have been organised into epics:
 
 #### User Story 1
 
-As a shopper, I can view a list of products i wish to purchase.
+As a shopper, I can view a list of products I wish to purchase.
    This user can browse the products in a list of products in the store and click on a selected item and add it to the basket.
 
 #### User Story 2
 
-As a shopper, I am able to view and individual product, so that I can identify the price, descritpion, product rating and product image.
+As a shopper, I can view and individual product, so that I can identify the price, description, product rating and product image.
    This is achieved when the user clicks on the image in the card from the products view, it takes them into the product detail page. Here the user can see the description along with the price rating and image.
 
 #### User Story 3
 
 As a shopper, I can quickly identify categories and brands, so that I can find products by a general category or brand.
-   under each product there is a little tags stating the brand and category of the item. When you click on the tag, it acts a tag to search products by the tag selected.
+   under each product there is a little tag stating the brand and category of the item. When you click on the tag, it acts a tag to search products by the tag selected.
 
 #### User Story 4
 
 As a shopper, I can easily view the total of what I am about to purchase, so that I can avoid spending too much money.
-   The box next to the menu button in the top right corner provides feedback of a total sum of items in your basket. when an item is added to a basket the pop up toast also appears with a sum totaling up the total of your basket.
+   The box next to the menu button in the top right corner provides feedback of a total sum of items in your basket. when an item is added to a basket the pop up toast also appears with a sum totalling up the total of your basket.
 
 #### User Story 40
 
 As a shopper, I can view the paint and tech services they offer, so that I can make an informed decision on whether I like the company enough that I would send my RIF to them for works.
-   In the services page, the user can read about the services on offer. From all the details in contact us and about us pages in the site, the user can build a connection with the company as he can see that it is a genuiene and trusted site with experience in tech and paint services. The user can navigate to Airsoft Workshops facebook page which can be followed and company updates are posted here. The user can see new posts of projects they are working on.
+   In the services page, the user can read about the services on offer. From all the details in contact us and about us pages in the site, the user can build a connection with the company as he can see that it is a genuine and trusted site with experience in tech and paint services. The user can navigate to Airsoft Workshops Facebook page which can be followed, and company updates are posted here. The user can see new posts of projects they are working on.
 
 #### User Story 5
 
 As a shopper, I can easily fill in a form to get a quote for a paint or tech service form, so that I can get a quote for how much the work I want done will cost.
-   The User can easily fill out a tech services form or a paint services form if they like the look of the company. The form is very clear to read and the visual icons on the radio buttons give the shopper a clear understanding of what the are selecting rather than just a standard form. This gives the shopper more confidence with what they are looking at before they submit a form.
+   The User can easily fill out a tech services form or a paint services form if they like the look of the company. The form is very clear to read and the visual icons on the radio buttons give the shopper a clear understanding of what they are selecting rather than just a standard form. This gives the shopper more confidence with what they are looking at before they submit a form.
 
 [Back to User Stories Testing](<#user-story-tests>)
 
@@ -670,32 +605,32 @@ As a shopper, I can easily fill in a form to get a quote for a paint or tech ser
 #### User Story 6
 
 As a site user, I can easily register for an account, so that I can have a personal account and be able to view my profile.
-   The user can click on the menu button and register for an account by clicking on the "register" link. The user also can acheive this by clicking on the link in the footer. The links takes you to the signup page and from here you can quickly sign up for an account. all you need to do is supply a password, username and email and once submitted, the last step required is to confirm your registration by replying to the confirm email address sent to the users personal email
+   The user can click on the menu button and register for an account by clicking on the "register" link. The user also can achieve this by clicking on the link in the footer. The links takes you to the signup page and from here you can quickly sign up for an account. all you need to do is supply a password, username and email and once submitted, the last step required is to confirm your registration by replying to the confirm email address sent to the users personal email
 
 #### User Story 7
 
-As a site user, I am able to easily login and logout, so that I can access my personal account information.
-   The user can click on the links in the offcanvas menu or the footer to log in and log out of the website. Once logged in the user has a new option appear in the menu and footer called "my Profile" the user can click on it to get access to their profile data.
+As a site user, I can easily login and logout, so that I can access my personal account information.
+   The user can click on the links in the off-canvas menu or the footer to log in and log out of the website. Once logged in the user has a new option appear in the menu and footer called "my Profile" the user can click on it to get access to their profile data.
 
 #### User Story 8
 
-As a site user, I am able to recover my password in case I forget it, so that I can regain access to my account.
-   The User can click on the sign in button and if they have forgot their password, they can click on the link at the bottom of the sign in page and it will send them an email. When they receive the email they get a link to create a new password for their website. The user can also change their password if they are logged in too. if they go to their profile and update their profile, there is a link at the bottom of the page where they can update their password to something new.
+As a site user, I can recover my password in case I forget it, so that I can regain access to my account.
+   The User can click on the sign in button and if they have forgot their password, they can click on the link at the bottom of the sign in page and it will send them an email. When they receive the email, they get a link to create a new password for their website. The user can also change their password if they are logged in too. if they go to their profile and update their profile, there is a link at the bottom of the page where they can update their password to something new.
 
 #### User Story 9
 
-As a site user, I want to receive an email confirmation after registering, so that I can view my acccount registration was successful.
-   The user recieves an email upon successfully completing their registration. They can log in and go to the website and open their profile page.
+As a site user, I want to receive an email confirmation after registering, so that I can view my account registration was successful.
+   The user receives an email upon successfully completing their registration. They can log in and go to the website and open their profile page.
 
 #### User Story 10
 
 As a site user, I can a personalized user profile, so that I can view my personal order history, and order confirmations and save key payment information.
-   When logged in the user can click on their profile in the menu and it will redirect them to their personalized information. from here they can view their wishlist, order history and they can update their default delivery information.
+   When logged in the user can click on their profile in the menu and it will redirect them to their personalized information. from here they can view their Wishlist, order history and they can update their default delivery information.
 
 #### User Story 29
 
-As a registed user, I want to be able to save products to a wishlist, so that I can save items that I like to purchase later.
-   When the user scrolls through the website and clicks on an item they like, from inside the view, the user then can click on the add to wishlist. The link toggles to "remove from wishlist" upon successfully adding the item to your wishlist. a popup appears confirming the item was successfully added to the users wishlist. To view the items in the users wishlist, the user then just needs to head over to the user profile and from there inside the view items in their wishlist.
+As a register user, I want to be able to save products to a Wishlist, so that I can save items that I like to purchase later.
+   When the user scrolls through the website and clicks on an item they like, from inside the view, the user then can click on the add to Wishlist. The link toggles to "remove from Wishlist" upon successfully adding the item to your Wishlist. a popup appears confirming the item was successfully added to the users Wishlist. To view the items in the users Wishlist, the user then just needs to head over to the user profile and from there inside the view items in their Wishlist.
 
 [Back to User Stories Testing](<#user-story-tests>)
 
@@ -703,13 +638,13 @@ As a registed user, I want to be able to save products to a wishlist, so that I 
 
 #### User Story 11
 
-As a shopper, I want to be able to sort the list of available products, so that I can easily identify the best-rated, best-priced and categorically sorted products.
-   The user can sort the list of products by clicking on the sort box in the top right corner and selecting an item within the selector box. On clicking the field selected in the dropdown box. list of products are sorted in the order specified.
+As a shopper, I want to be able to sort the list of available products, so that I can easily identify the best-rated, best-priced, and categorically sorted products.
+   The user can sort the list of products by clicking on the sort of box in the top right corner and selecting an item within the selector box. On clicking the field selected in the dropdown box. list of products is sorted in the order specified.
 
 #### User Story 12
 
-As a shopper, I can sort a specific category or brand of products, so that I can find the best-priced, or best-rated products in a specific brand or category, or sort the products in that brand or category by name.
-   The user can click on a category and brand, from the side menu bar and then sort it by the value selected in the sort box.
+As a shopper, I can sort a specific category or brand of products, so that I can find the best-priced, or best-rated products in a specific brand or category or sort the products in that brand or category by name.
+   The user can click on a category and brand, from the side menu bar and then sort it by the value selected in the “sort box”.
 
 #### User Story 13
 
@@ -719,11 +654,11 @@ As a shopper, I can sort the list of available products, so that I can find the 
 #### User Story 14
 
 As a shopper, I can search for a product by name or description, so that I can find a specific product I would like to purchase.
-   There is a search box in the main off canvas menu that searches products in the store and redirects you to the store with results on what you have searched for. Also in the products view the user can see a search form in the products navbar to perform the same task. If nothing is entered and the form is submitted, the view redirects with an error message informing the user the search was empty.
+   There is a search box in the main off canvas menu that searches products in the store and redirects you to the store with results on what you have searched for. Also, in the products view the user can see a search form in the products navbar to perform the same task. If nothing is entered and the form is submitted, the view redirects with an error message informing the user the search was empty.
 
 #### User Story 15
 
-As a shopper, I can easily see what I've searched for and the number of resutls, so that I can quickly decide on whether the product I want is available.
+As a shopper, I can easily see what I've searched for and the number of results, so that I can quickly decide on whether the product I want is available.
    The shopper can see at the top of the products page, information regarding the numbers of products returned in the view with details on what parameters were submitted in the search.
 
 [Back to User Stories Testing](<#user-story-tests>)
@@ -733,27 +668,27 @@ As a shopper, I can easily see what I've searched for and the number of resutls,
 #### User Story 16
 
 As a Shopper, I can select the quantity of a product when purchasing it, so that I ensure I don't accidentally select the wrong product or quantity.
-   In the product_details view, there is an input number box which you can click on to specify the number of a specific product you want to add to the basket.
+   In the product details view, there is an input number box which you can click on to specify the number of a specific product you want to add to the basket.
 
 #### User Story 17
 
-As a shopper, I can view items in my bag to be purchased, so that I can identifythe total cost of my purchase and all items I will recieve.
-   Once the user is happy with his basket, they can click on the basket in the top right corner and it will take the user view items in their basket.
+As a shopper, I can view items in my bag to be purchased, so that I can identify the total cost of my purchase and all items I will receive.
+   Once the user is happy with his basket, they can click on the basket in the top right corner, and it will take the user view items in their basket.
 
 ### User Story 18
 
 As a shopper, I can adjust the number of individual items in my bag, so that I can easily make changes to my purchases before I checkout.
-   In the basket view, you can edit the quantity in the basket to either add or minus the ammount in the shoppers basket and hitting update. You can also remove the item completely from the order by selecting remove on the item specified.
+   In the basket view, you can edit the quantity in the basket to either add or minus the amount in the shopper’s basket and hitting update. You can also remove the item completely from the order by selecting remove on the item specified.
 
 #### User Story 19
 
-As a shopper, I can easily enter my payment information, so that I can checkout quickly with no hasssles.
-   In the basket view the user has to select a delivery payment method before moving on the checkout form, if one is not selected, the default standard shipping is selected. The user then has to hit the checkout button and inside the checkout form the user can fill in the payment method hassle free, the form validates itself and if the form is incorrect the form and/or the stripe card payment box will provide information what is required to successfully complete an order.
+As a shopper, I can easily enter my payment information, so that I can checkout quickly with no hassles.
+   In the basket view the user must select a delivery payment method before moving on the checkout form, if one is not selected, the default standard shipping is selected. The user then has to hit the checkout button and inside the checkout form the user can fill in the payment method hassle free; the form validates itself and if the form is incorrect the form and/or the stripe card payment box will provide information what is required to successfully complete an order.
 
 #### User Story 20
 
 As a shopper, I can fill out my personal and payment information safely and securely, so that I can confidently provide the needed information to make a purchase.
-   The form is labelled clearly, so it is easy to read what details are needed to fill out complete the purchase. If the user is signed up, they can click the save info button if they dont have any default delivery information to populate the form. On a return purchase the form will be already populated with the necessary details to complete the order, just a card number will be needed to complete the purchase.
+   The form is labelled clearly, so it is easy to read what details are needed to fill out complete the purchase. If the user is signed up, they can click the save info button if they don’t have any default delivery information to populate the form. On a return purchase the form will be already populated with the necessary details to complete the order, just a card number will be needed to complete the purchase.
 
 #### User Story 21
 
@@ -762,8 +697,8 @@ As a shopper, I can view an order confirmation after checkout, so that I can ver
 
 #### User Story 22
 
-As a shopper, I can Recieve an email confirmation after checking out, I can keep the confirmation of what I have purchased for my records.
-   Once an order has been placed, The order automatically sends an email with the order details inside it with the price and delivery method, address and contact information inside. along with the products purchased.
+As a shopper, I can Receive an email confirmation after checking out, I can keep the confirmation of what I have purchased for my records.
+   Once an order has been placed, the order automatically sends an email with the order details inside it with the price and delivery method, address and contact information inside. along with the products purchased.
 
 #### User Story 28
 
@@ -776,13 +711,13 @@ As a shopper, I can get a confirmation email that my quote for the services sele
 
 #### User Story 23
 
-As a store owner, I can add a product, so that I can add a new items to my store.
+As a store owner, I can add a product, so that I can add a new item to my store.
    The Store owner can go to the store admin view and select the "add new product" button. It opens a form that allows the user to add a new product to the store. The form validates itself, so if the form is correct the new product will be added to the store. Only a superuser has access to this view.
 
 #### User Story 24
 
-As a store owner, I can edit/update a product, so that I can change the product price, descriptions,images and other product criteria.
-   The store owner can navigate to a either the products or product_details view and only store owners can see an edit button under the product in the view. When the store owner clicks on it, the store owner is redirected to the form with the data of the item to be updated. Only a superuser has access to this view.
+As a store owner, I can edit/update a product, so that I can change the product price, descriptions, images and other product criteria.
+   The store owner can navigate to a either the products or product details view and only store owners can see an edit button under the product in the view. When the store owner clicks on it, the store owner is redirected to the form with the data of the item to be updated. Only a superuser has access to this view.
 
 #### User Story 25
 
@@ -854,7 +789,6 @@ As a store owner, I can delete a delivery method, so that I can remove a deliver
 [Back to Top](<#contents>)
 
 ## Manual Testing
-
 following the above User Story Tests, those tests coincide with the manual testing procedures of the website. A lot of the features above where check through manual testing to ensure a great user experience. Below is a list of the some of the features manually tested.
 
 ![image](https://user-images.githubusercontent.com/72948843/206440175-9b024cc7-471f-4e5d-885e-010d64d24224.png)
@@ -875,8 +809,8 @@ following the above User Story Tests, those tests coincide with the manual testi
 
 Validation of the form is implemented by checking before the document is submitted is valid to submit. This is achieved by multiple methods:
 
-* To validate the phone number being entered into the form, django-phonenumber-field was used. It checks the input to see if it is a valid phone number and returns an error message if it is not valid upon submission. This inbuild validation was used on the profile, tech and paint services models but not the Order Model.
-* To validate the country field, django-countries were used. It checks whether the data entered into the field is entered correctly.
+* To validate the phone number being entered into the form, django-phonenumber-field was used. It checks the input to see if it is a valid phone number and returns an error message if it is not valid upon submission. This inbuild validation was used on the profile, tech, and paint services models but not the Order Model.
+* To validate the country field, django-countries were used. It checks whether the data entered the field is entered correctly.
 
 Using all the inbuild form validations helped create quick clean code without having to write many custom form validations.
 
@@ -901,13 +835,13 @@ Missing field upon submitting validation:
 
 To check the code, I ran <a href="https://pypi.org/project/coverage/" target="_blank">Coverage</a> (A Third party package) to check how well my Automated tests performed
 
-* I created and ran 9 tests, with coverage report of 43% statments tested to 57% missed.
-* To run these tests, you need to run the command <i>"python3 manage.py test"</i> in the terminal.
+* I created and ran 9 tests, with coverage report of 43% statements tested to 57% missed.
+* To run these tests, you need to run the command *"python3 manage.py test"* in the terminal.
 
 ![image](https://user-images.githubusercontent.com/72948843/206062848-5cdda1b1-3b4d-4984-bf8a-830d82c549d7.png)
 ![image](https://user-images.githubusercontent.com/72948843/206063262-7222dcb4-9d9b-4e4b-8d06-2c3eea1de224.png)
 
-Ideally, with more time, I would like to improve this figure so that it is at least 70% but with a lack of time and the majority of testing done manually (recorded in a section above), it is something that I definitely would look to improve, going forward.
+Ideally, with more time, I would like to improve this figure so that it is at least 70% but with a lack of time and most testing done manually (recorded in a section above), it is something that I definitely would look to improve, going forward.
 
 [Back to Top](<#contents>)
 
@@ -915,9 +849,9 @@ Ideally, with more time, I would like to improve this figure so that it is at le
 
 ### Solved Bugs
 
-I had found a bug whereby if a user placed an order as a unregistered user, the code in my webhookhandler.py would not be able to find the order that was generated at the checkout view. This in turn created a double booking in the database, one for the frist correct order that had the right value charged by stripe, the second order will be the incorrect order with the wrong order information being inserted into the order with incorrect information regarding the grand total paid and shipping method cost changing and then the customer getting the wrong information was sent to them on the email.
+I had found a bug whereby if a user placed an order as an unregistered user, the code in my webhookhandler.py would not be able to find the order that was generated at the checkout view. This in turn created a double booking in the database, one for the first correct order that had the right value charged by stripe, the second order will be the incorrect order with the wrong order information being inserted into the order with incorrect information regarding the grand total paid and shipping method cost changing and then the customer getting the wrong information was sent to them on the email.
 
-After lots of time spent trying to find the fault for this, I had found that it was the django-phonenumber-field used in the model that was causing the problem. during the order process, it would not validate correctly, the order would be created before the forms self-validation would take place and it would cause the site to crash. Therefore decided to remove this from the order model and just keep it in the user profile form. That way, if the user sets up their profile first the form will validate the number here and it will be correct when the saved data gets used at checkout. if the user updates the profile, if for ever reason the telephone number is wrong, the form will prompt the user to make sure it is a valid telephone number.
+After lots of time spent trying to find the fault for this, I had found that it was the django-phonenumber-field used in the model that was causing the problem. during the order process, it would not validate correctly, the order would be created before the forms self-validation would take place and it would cause the site to crash. Therefore, decided to remove this from the order model and just keep it in the user profile form. That way, if the user sets up their profile first the form will validate the number here and it will be correct when the saved data gets used at checkout. if the user updates the profile, if for ever reason the telephone number is wrong, the form will prompt the user to make sure it is a valid telephone number.
 
 [Back to Top](<#contents>)
 
